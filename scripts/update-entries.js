@@ -4,7 +4,7 @@ function run(filePath, inFileName, outFileName) {
   const inFile = `${filePath}${inFileName}`;
   const outFile = `${filePath}${outFileName}`;
 
-  const data = fs.readFileSync(inFile);
+  const data = fs.readFileSync(inFile, { encoding: "utf-8" });
 
   const runSteps = [
     cleanDailyStandupEntry,
@@ -28,17 +28,34 @@ function run(filePath, inFileName, outFileName) {
   };
 
   const input = JSON.parse(data);
+
   const finalData = runSteps.reduce(runner, input);
 
   fs.writeFileSync(outFile, JSON.stringify(finalData));
 }
 
+function generateHash(input) {
+  var hash = 0,
+    i,
+    chr;
+  if (input.length === 0) return hash;
+  for (i = 0; i < input.length; i++) {
+    chr = input.charCodeAt(i);
+    hash = (hash << 5) - hash + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+}
+
 function updateEntryToHaveIdentifier(entry) {
-  const updateEntry = (e) => {
-    return Object.assign({}, e, { key: escape(btoa(e.descriptor)) });
+  const updateEntry = (e, section) => {
+    return Object.assign({}, e, { key: generateHash(section + e.descriptor) });
   };
 
-  return Object.assign({}, entry, { entries: entry.entries.map(updateEntry) });
+  return Object.assign({}, entry, {
+    key: generateHash(entry.section),
+    entries: entry.entries.map((e) => updateEntry(e, entry.section)),
+  });
 }
 
 function addIdentifier(input) {
@@ -82,7 +99,7 @@ function cleanDailyStandupEntry(input) {
 
 function handleLevelEntries(input) {
   const fixLevels = (l) => {
-    return l.entries.map((e) => ({ value: l.number, display: e }));
+    return l.entries.map((e) => ({ score: l.number, display: e }));
   };
 
   const updateInput = (input) => {
@@ -96,18 +113,21 @@ function handleLevelEntries(input) {
   return input.map(updateInput);
 }
 
+function cleanString(input) {
+  return input
+    .replace("– TEST THIS", ".")
+    .replace(/[“”]/g, '"')
+    .replace(/’/g, "'")
+    .replace(/–/g, "-");
+}
+
 function cleanEntryDescription(input) {
   const entries = input;
 
   const cleanDescription = (e) =>
     Object.assign({}, e, {
-      entries: e.entries.map((x) =>
-        x
-          .replace("– TEST THIS", ".")
-          .replace(/[“”]/g, '"')
-          .replace("’", "'")
-          .replace("–", "-")
-      ),
+      descriptor: cleanString(e.descriptor),
+      entries: e.entries.map((x) => cleanString(x)),
     });
 
   return [...entries.map(cleanDescription)];
@@ -136,13 +156,13 @@ function changeEntry(section) {
     const values = "-1,0,1,2,3,4".split(",");
 
     if (values.includes(scrubbedEntry)) {
-      return Object.assign({}, state, { value: entry });
+      return Object.assign({}, state, { score: entry });
     }
 
     return Object.assign({}, state, {
       entries: [
         ...state.entries,
-        { value: parseInt(state.value, 10), descriptor: entry },
+        { score: parseInt(state.score || "-1", 10), descriptor: entry },
       ],
     });
   };

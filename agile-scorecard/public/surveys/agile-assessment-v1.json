@@ -8,56 +8,57 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Chaos, no defined standards or processes have been formed",
-          "key": "Q2hhb3MsIG5vIGRlZmluZWQgc3RhbmRhcmRzIG9yIHByb2Nlc3NlcyBoYXZlIGJlZW4gZm9ybWVk"
+          "key": -250749821
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
-          "key": "VGhlIHRlYW0gaGFzIHNvbWUgZGVmaW5lZCBwcmFjdGljZXMsIHdoaWNoIG1heSBpbmNsdWRlOyBkZWZpbml0aW9uIG9mIGRvbmUsIG1lZXRpbmcgcmh5dGhtcywgY29kaW5nIHN0YW5kYXJkcywgc3Rvcnkgc2l6ZSBndWlkZWxpbmVzIGFuZCBjb2RlIG1hbmFnZW1lbnQgJiBpbnRlZ3JhdGlvbiBwcmFjdGljZXMu"
+          "key": 134407754
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Everyone is aware of the practices.",
-          "key": "RXZlcnlvbmUgaXMgYXdhcmUgb2YgdGhlIHByYWN0aWNlcy4%3D"
+          "key": -1445875429
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Everyone follows the practices consistently.",
-          "key": "RXZlcnlvbmUgZm9sbG93cyB0aGUgcHJhY3RpY2VzIGNvbnNpc3RlbnRseS4%3D"
+          "key": 639183189
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team has discussed and agreed on the practices they will follow. ",
-          "key": "VGVhbSBoYXMgZGlzY3Vzc2VkIGFuZCBhZ3JlZWQgb24gdGhlIHByYWN0aWNlcyB0aGV5IHdpbGwgZm9sbG93LqA%3D"
+          "key": -744745204
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "If asked, all team members would describe this common set of practices consistently .",
-          "key": "SWYgYXNrZWQsIGFsbCB0ZWFtIG1lbWJlcnMgd291bGQgZGVzY3JpYmUgdGhpcyBjb21tb24gc2V0IG9mIHByYWN0aWNlcyBjb25zaXN0ZW50bHkgLg%3D%3D"
+          "key": -71718635
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "All team members generally respect and mostly follow the agreements.",
-          "key": "QWxsIHRlYW0gbWVtYmVycyBnZW5lcmFsbHkgcmVzcGVjdCBhbmQgbW9zdGx5IGZvbGxvdyB0aGUgYWdyZWVtZW50cy4%3D"
+          "key": -1928267026
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves. ",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIGFyZSByZXZpc2l0ZWQgcGVyaW9kaWNhbGx5IChzdWNoIGFzIGR1cmluZyByZXRyb3NwZWN0aXZlcykgYW5kIHJlZmluZWQgb3ZlciB0aW1lIGFzIHRlYW0gZXZvbHZlcyBhbmQgaW1wcm92ZXMuoA%3D%3D"
+          "key": 2138686813
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "he team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
-          "key": "aGUgdGVhbSBnZW5lcmFsbHkgc2VsZiBlbmZvcmNlcyB0aGUgd29ya2luZyBhZ3JlZW1lbnRzIGFuZCBkb2VzIG5vdCByZWx5IG9uIGEgc2NydW0gbWFzdGVyIG9yIG90aGVyIHNpbmdsZSBhdXRob3JpdHkgZmlndXJlLg%3D%3D"
+          "key": -109592142
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Working agreements include elements that encourage innovation, cross-training, excellent collaboration, and growth for the team members.",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIGluY2x1ZGUgZWxlbWVudHMgdGhhdCBlbmNvdXJhZ2UgaW5ub3ZhdGlvbiwgY3Jvc3MtdHJhaW5pbmcsIGV4Y2VsbGVudCBjb2xsYWJvcmF0aW9uLCBhbmQgZ3Jvd3RoIGZvciB0aGUgdGVhbSBtZW1iZXJzLg%3D%3D"
+          "key": -959641526
         }
-      ]
+      ],
+      "key": -1889210512
     },
     {
       "section": "Team Workflow",
@@ -66,57 +67,58 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Developers operate \"on an island\" and might not check in with others every day",
-          "key": "RGV2ZWxvcGVycyBvcGVyYXRlICJvbiBhbiBpc2xhbmQiIGFuZCBtaWdodCBub3QgY2hlY2sgaW4gd2l0aCBvdGhlcnMgZXZlcnkgZGF5"
+          "key": -567793722
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Developers work from written documents and do not communicate directly with PO or other teammates",
-          "key": "RGV2ZWxvcGVycyB3b3JrIGZyb20gd3JpdHRlbiBkb2N1bWVudHMgYW5kIGRvIG5vdCBjb21tdW5pY2F0ZSBkaXJlY3RseSB3aXRoIFBPIG9yIG90aGVyIHRlYW1tYXRlcw%3D%3D"
+          "key": 3959548
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Developers work in close digital proximity to each other",
-          "key": "RGV2ZWxvcGVycyB3b3JrIGluIGNsb3NlIGRpZ2l0YWwgcHJveGltaXR5IHRvIGVhY2ggb3RoZXI%3D"
+          "key": 1584517284
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team has standard tools for sharing in their workflow",
-          "key": "VGVhbSBoYXMgc3RhbmRhcmQgdG9vbHMgZm9yIHNoYXJpbmcgaW4gdGhlaXIgd29ya2Zsb3c%3D"
+          "key": 1452737540
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team has digital collaboration space dedicated to the team",
-          "key": "VGVhbSBoYXMgZGlnaXRhbCBjb2xsYWJvcmF0aW9uIHNwYWNlIGRlZGljYXRlZCB0byB0aGUgdGVhbQ%3D%3D"
+          "key": -1247690948
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team has management support to acquire additional non-standard tools needed to be successful",
-          "key": "VGVhbSBoYXMgbWFuYWdlbWVudCBzdXBwb3J0IHRvIGFjcXVpcmUgYWRkaXRpb25hbCBub24tc3RhbmRhcmQgdG9vbHMgbmVlZGVkIHRvIGJlIHN1Y2Nlc3NmdWw%3D"
+          "key": -889696090
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Product Owner works closely with the rest of the team",
-          "key": "UHJvZHVjdCBPd25lciB3b3JrcyBjbG9zZWx5IHdpdGggdGhlIHJlc3Qgb2YgdGhlIHRlYW0%3D"
+          "key": -277512583
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team has flexibility to schedule face-to-face video chats as needed",
-          "key": "VGVhbSBoYXMgZmxleGliaWxpdHkgdG8gc2NoZWR1bGUgZmFjZS10by1mYWNlIHZpZGVvIGNoYXRzIGFzIG5lZWRlZA%3D%3D"
+          "key": 1111337322
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Other key stakeholders are available to the team",
-          "key": "T3RoZXIga2V5IHN0YWtlaG9sZGVycyBhcmUgYXZhaWxhYmxlIHRvIHRoZSB0ZWFt"
+          "key": 453312622
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team members are empowered to get time with those they need without regard to organizational hierarchy",
-          "key": "VGVhbSBtZW1iZXJzIGFyZSBlbXBvd2VyZWQgdG8gZ2V0IHRpbWUgd2l0aCB0aG9zZSB0aGV5IG5lZWQgd2l0aG91dCByZWdhcmQgdG8gb3JnYW5pemF0aW9uYWwgaGllcmFyY2h5"
+          "key": 723578962
         },
-        { "value": 3, "descriptor": "TBD", "key": "VEJE" }
-      ]
+        { "score": 3, "descriptor": "TBD", "key": 1509430836 }
+      ],
+      "key": 1216700962
     },
     {
       "section": "Team Working Agreements",
@@ -125,56 +127,57 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Chaos, no defined standards or processes have been formed.",
-          "key": "Q2hhb3MsIG5vIGRlZmluZWQgc3RhbmRhcmRzIG9yIHByb2Nlc3NlcyBoYXZlIGJlZW4gZm9ybWVkLg%3D%3D"
+          "key": 2068507542
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
-          "key": "VGhlIHRlYW0gaGFzIHNvbWUgZGVmaW5lZCBwcmFjdGljZXMsIHdoaWNoIG1heSBpbmNsdWRlOyBkZWZpbml0aW9uIG9mIGRvbmUsIG1lZXRpbmcgcmh5dGhtcywgY29kaW5nIHN0YW5kYXJkcywgc3Rvcnkgc2l6ZSBndWlkZWxpbmVzIGFuZCBjb2RlIG1hbmFnZW1lbnQgJiBpbnRlZ3JhdGlvbiBwcmFjdGljZXMu"
+          "key": -1836603809
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Everyone is aware of the practices.",
-          "key": "RXZlcnlvbmUgaXMgYXdhcmUgb2YgdGhlIHByYWN0aWNlcy4%3D"
+          "key": -1490855440
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Everyone follows the practices consistently.",
-          "key": "RXZlcnlvbmUgZm9sbG93cyB0aGUgcHJhY3RpY2VzIGNvbnNpc3RlbnRseS4%3D"
+          "key": 121610272
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team has discussed and agreed on the practices they will follow. ",
-          "key": "VGVhbSBoYXMgZGlzY3Vzc2VkIGFuZCBhZ3JlZWQgb24gdGhlIHByYWN0aWNlcyB0aGV5IHdpbGwgZm9sbG93LqA%3D"
+          "key": -1773773535
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "If asked, all team members would describe this common set of practices consistently .",
-          "key": "SWYgYXNrZWQsIGFsbCB0ZWFtIG1lbWJlcnMgd291bGQgZGVzY3JpYmUgdGhpcyBjb21tb24gc2V0IG9mIHByYWN0aWNlcyBjb25zaXN0ZW50bHkgLg%3D%3D"
+          "key": -1592716630
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "All team members generally respect and mostly follow the agreements.",
-          "key": "QWxsIHRlYW0gbWVtYmVycyBnZW5lcmFsbHkgcmVzcGVjdCBhbmQgbW9zdGx5IGZvbGxvdyB0aGUgYWdyZWVtZW50cy4%3D"
+          "key": -234716999
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves. ",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIGFyZSByZXZpc2l0ZWQgcGVyaW9kaWNhbGx5IChzdWNoIGFzIGR1cmluZyByZXRyb3NwZWN0aXZlcykgYW5kIHJlZmluZWQgb3ZlciB0aW1lIGFzIHRlYW0gZXZvbHZlcyBhbmQgaW1wcm92ZXMuoA%3D%3D"
+          "key": 388917736
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
-          "key": "VGhlIHRlYW0gZ2VuZXJhbGx5IHNlbGYgZW5mb3JjZXMgdGhlIHdvcmtpbmcgYWdyZWVtZW50cyBhbmQgZG9lcyBub3QgcmVseSBvbiBhIHNjcnVtIG1hc3RlciBvciBvdGhlciBzaW5nbGUgYXV0aG9yaXR5IGZpZ3VyZS4%3D"
+          "key": -198321221
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Working agreements include elements that encourage innovation, cross-training, excellent collaboration, and growth for the team members.",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIGluY2x1ZGUgZWxlbWVudHMgdGhhdCBlbmNvdXJhZ2UgaW5ub3ZhdGlvbiwgY3Jvc3MtdHJhaW5pbmcsIGV4Y2VsbGVudCBjb2xsYWJvcmF0aW9uLCBhbmQgZ3Jvd3RoIGZvciB0aGUgdGVhbSBtZW1iZXJzLg%3D%3D"
+          "key": -25634667
         }
-      ]
+      ],
+      "key": -1505826117
     },
     {
       "section": "Cross Team Working Agreements",
@@ -183,71 +186,72 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Processes are decided and documented by what the performing team feels is required, i.e not collaboratively.",
-          "key": "UHJvY2Vzc2VzIGFyZSBkZWNpZGVkIGFuZCBkb2N1bWVudGVkIGJ5IHdoYXQgdGhlIHBlcmZvcm1pbmcgdGVhbSBmZWVscyBpcyByZXF1aXJlZCwgaS5lIG5vdCBjb2xsYWJvcmF0aXZlbHku"
+          "key": -1854722342
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Ad-hoc and unplanned working agreements are in place around security scans, risk management, export control, cross team integration for full feature integration regarding release and deploy procedures.",
-          "key": "QWQtaG9jIGFuZCB1bnBsYW5uZWQgd29ya2luZyBhZ3JlZW1lbnRzIGFyZSBpbiBwbGFjZSBhcm91bmQgc2VjdXJpdHkgc2NhbnMsIHJpc2sgbWFuYWdlbWVudCwgZXhwb3J0IGNvbnRyb2wsIGNyb3NzIHRlYW0gaW50ZWdyYXRpb24gZm9yIGZ1bGwgZmVhdHVyZSBpbnRlZ3JhdGlvbiByZWdhcmRpbmcgcmVsZWFzZSBhbmQgZGVwbG95IHByb2NlZHVyZXMu"
+          "key": 170492182
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "An attempt at collaboratively authoring working agreements has been made and they meet the needs of most parties.",
-          "key": "QW4gYXR0ZW1wdCBhdCBjb2xsYWJvcmF0aXZlbHkgYXV0aG9yaW5nIHdvcmtpbmcgYWdyZWVtZW50cyBoYXMgYmVlbiBtYWRlIGFuZCB0aGV5IG1lZXQgdGhlIG5lZWRzIG9mIG1vc3QgcGFydGllcy4%3D"
+          "key": 1129318934
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Scrum of scrums in place.",
-          "key": "U2NydW0gb2Ygc2NydW1zIGluIHBsYWNlLg%3D%3D"
+          "key": -1696622781
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Key dependencies between teams are mostly delivered on-time.",
-          "key": "S2V5IGRlcGVuZGVuY2llcyBiZXR3ZWVuIHRlYW1zIGFyZSBtb3N0bHkgZGVsaXZlcmVkIG9uLXRpbWUu"
+          "key": -971133386
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Working agreements have been collaboratively authored, and they meet the needs of all concerned.",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIGhhdmUgYmVlbiBjb2xsYWJvcmF0aXZlbHkgYXV0aG9yZWQsIGFuZCB0aGV5IG1lZXQgdGhlIG5lZWRzIG9mIGFsbCBjb25jZXJuZWQu"
+          "key": -247095338
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Working agreements may be expressed as SLAs.",
-          "key": "V29ya2luZyBhZ3JlZW1lbnRzIG1heSBiZSBleHByZXNzZWQgYXMgU0xBcy4%3D"
+          "key": -1487270053
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "When SLAs are not met, efforts are made to retrospect and identify cause.",
-          "key": "V2hlbiBTTEFzIGFyZSBub3QgbWV0LCBlZmZvcnRzIGFyZSBtYWRlIHRvIHJldHJvc3BlY3QgYW5kIGlkZW50aWZ5IGNhdXNlLg%3D%3D"
+          "key": -1766297097
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Inspection of unmet agreements result in continuous improvement changes.",
-          "key": "SW5zcGVjdGlvbiBvZiB1bm1ldCBhZ3JlZW1lbnRzIHJlc3VsdCBpbiBjb250aW51b3VzIGltcHJvdmVtZW50IGNoYW5nZXMu"
+          "key": -256647188
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Teams work together to proactively find and address problems before they arise.",
-          "key": "VGVhbXMgd29yayB0b2dldGhlciB0byBwcm9hY3RpdmVseSBmaW5kIGFuZCBhZGRyZXNzIHByb2JsZW1zIGJlZm9yZSB0aGV5IGFyaXNlLg%3D%3D"
+          "key": 1196909876
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Improvements are implemented that will break down the cross-team dependencies such as empowering teams to perform functions internally.",
-          "key": "SW1wcm92ZW1lbnRzIGFyZSBpbXBsZW1lbnRlZCB0aGF0IHdpbGwgYnJlYWsgZG93biB0aGUgY3Jvc3MtdGVhbSBkZXBlbmRlbmNpZXMgc3VjaCBhcyBlbXBvd2VyaW5nIHRlYW1zIHRvIHBlcmZvcm0gZnVuY3Rpb25zIGludGVybmFsbHku"
+          "key": 1198352165
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Meritocracy is used among teams. ",
-          "key": "TWVyaXRvY3JhY3kgaXMgdXNlZCBhbW9uZyB0ZWFtcy6g"
+          "key": -1005783558
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Self-organizing approaches to collaboration have emerged and are providing significant value to teams.",
-          "key": "U2VsZi1vcmdhbml6aW5nIGFwcHJvYWNoZXMgdG8gY29sbGFib3JhdGlvbiBoYXZlIGVtZXJnZWQgYW5kIGFyZSBwcm92aWRpbmcgc2lnbmlmaWNhbnQgdmFsdWUgdG8gdGVhbXMu"
+          "key": -413711917
         }
-      ]
+      ],
+      "key": 1139281595
     },
     {
       "section": "Business Partner Working Agreements",
@@ -256,76 +260,77 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There are frequent misunderstandings around scope and schedule.",
-          "key": "VGhlcmUgYXJlIGZyZXF1ZW50IG1pc3VuZGVyc3RhbmRpbmdzIGFyb3VuZCBzY29wZSBhbmQgc2NoZWR1bGUu"
+          "key": 642564547
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Business partners are not clear on their role or are not providing support needed to be successful. ",
-          "key": "QnVzaW5lc3MgcGFydG5lcnMgYXJlIG5vdCBjbGVhciBvbiB0aGVpciByb2xlIG9yIGFyZSBub3QgcHJvdmlkaW5nIHN1cHBvcnQgbmVlZGVkIHRvIGJlIHN1Y2Nlc3NmdWwuoA%3D%3D"
+          "key": 1322306266
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Poor transparency, inconsistent information as to real project status.",
-          "key": "UG9vciB0cmFuc3BhcmVuY3ksIGluY29uc2lzdGVudCBpbmZvcm1hdGlvbiBhcyB0byByZWFsIHByb2plY3Qgc3RhdHVzLg%3D%3D"
+          "key": 1800559373
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There are realistic expectations as to how scope and schedule will be managed.  ",
-          "key": "VGhlcmUgYXJlIHJlYWxpc3RpYyBleHBlY3RhdGlvbnMgYXMgdG8gaG93IHNjb3BlIGFuZCBzY2hlZHVsZSB3aWxsIGJlIG1hbmFnZWQuoKA%3D"
+          "key": -1773505228
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Some agreement as to roles / responsibilities exists.",
-          "key": "U29tZSBhZ3JlZW1lbnQgYXMgdG8gcm9sZXMgLyByZXNwb25zaWJpbGl0aWVzIGV4aXN0cy4%3D"
+          "key": 1089616891
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Informal expectations or agreement on how the team should interact with the business or what the business should expect from the team exist.",
-          "key": "SW5mb3JtYWwgZXhwZWN0YXRpb25zIG9yIGFncmVlbWVudCBvbiBob3cgdGhlIHRlYW0gc2hvdWxkIGludGVyYWN0IHdpdGggdGhlIGJ1c2luZXNzIG9yIHdoYXQgdGhlIGJ1c2luZXNzIHNob3VsZCBleHBlY3QgZnJvbSB0aGUgdGVhbSBleGlzdC4%3D"
+          "key": 965727204
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "When the business adds new scope, realistic tradeoffs are made.",
-          "key": "V2hlbiB0aGUgYnVzaW5lc3MgYWRkcyBuZXcgc2NvcGUsIHJlYWxpc3RpYyB0cmFkZW9mZnMgYXJlIG1hZGUu"
+          "key": 1055267110
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Roles and expectations are clear and understood by all parties. ",
-          "key": "Um9sZXMgYW5kIGV4cGVjdGF0aW9ucyBhcmUgY2xlYXIgYW5kIHVuZGVyc3Rvb2QgYnkgYWxsIHBhcnRpZXMuoA%3D%3D"
+          "key": 978065518
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The project management approach is well-understood and agreed upon",
-          "key": "VGhlIHByb2plY3QgbWFuYWdlbWVudCBhcHByb2FjaCBpcyB3ZWxsLXVuZGVyc3Rvb2QgYW5kIGFncmVlZCB1cG9u"
+          "key": 1190085998
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Both parties are committed to transparency and reality-based management and agree adjustments to scope and timeline will be negotiated as risks emerge. ",
-          "key": "Qm90aCBwYXJ0aWVzIGFyZSBjb21taXR0ZWQgdG8gdHJhbnNwYXJlbmN5IGFuZCByZWFsaXR5LWJhc2VkIG1hbmFnZW1lbnQgYW5kIGFncmVlIGFkanVzdG1lbnRzIHRvIHNjb3BlIGFuZCB0aW1lbGluZSB3aWxsIGJlIG5lZ290aWF0ZWQgYXMgcmlza3MgZW1lcmdlLqA%3D"
+          "key": -1264085012
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The backlog is the only mechanism by which scope is managed.",
-          "key": "VGhlIGJhY2tsb2cgaXMgdGhlIG9ubHkgbWVjaGFuaXNtIGJ5IHdoaWNoIHNjb3BlIGlzIG1hbmFnZWQu"
+          "key": -1662751963
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The business partner has taken steps to revise their governance (which may be a tollgate process) to align to the development team's agile processes.",
-          "key": "VGhlIGJ1c2luZXNzIHBhcnRuZXIgaGFzIHRha2VuIHN0ZXBzIHRvIHJldmlzZSB0aGVpciBnb3Zlcm5hbmNlICh3aGljaCBtYXkgYmUgYSB0b2xsZ2F0ZSBwcm9jZXNzKSB0byBhbGlnbiB0byB0aGUgZGV2ZWxvcG1lbnQgdGVhbSdzIGFnaWxlIHByb2Nlc3Nlcy4%3D"
+          "key": -87598195
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Business and Engineering form true collaborative partnership. ",
-          "key": "QnVzaW5lc3MgYW5kIEVuZ2luZWVyaW5nIGZvcm0gdHJ1ZSBjb2xsYWJvcmF0aXZlIHBhcnRuZXJzaGlwLqA%3D"
+          "key": 1940374511
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Engineering is a key player in driving product strategic direction, while business team leverages agile process to drive discovery and critical learning to guide business direction.",
-          "key": "RW5naW5lZXJpbmcgaXMgYSBrZXkgcGxheWVyIGluIGRyaXZpbmcgcHJvZHVjdCBzdHJhdGVnaWMgZGlyZWN0aW9uLCB3aGlsZSBidXNpbmVzcyB0ZWFtIGxldmVyYWdlcyBhZ2lsZSBwcm9jZXNzIHRvIGRyaXZlIGRpc2NvdmVyeSBhbmQgY3JpdGljYWwgbGVhcm5pbmcgdG8gZ3VpZGUgYnVzaW5lc3MgZGlyZWN0aW9uLg%3D%3D"
+          "key": 37066014
         }
-      ]
+      ],
+      "key": 1086781168
     },
     {
       "section": "Release Planning",
@@ -334,222 +339,225 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Estimates are not done by the team who will be doing the work.",
-          "key": "RXN0aW1hdGVzIGFyZSBub3QgZG9uZSBieSB0aGUgdGVhbSB3aG8gd2lsbCBiZSBkb2luZyB0aGUgd29yay4%3D"
+          "key": 1178882223
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There is no flexibility on resources, scope, or timeframe (iron triangle). ",
-          "key": "VGhlcmUgaXMgbm8gZmxleGliaWxpdHkgb24gcmVzb3VyY2VzLCBzY29wZSwgb3IgdGltZWZyYW1lIChpcm9uIHRyaWFuZ2xlKS6g"
+          "key": -991809900
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The team is asked to commit without a realistic plan.",
-          "key": "VGhlIHRlYW0gaXMgYXNrZWQgdG8gY29tbWl0IHdpdGhvdXQgYSByZWFsaXN0aWMgcGxhbi4%3D"
+          "key": -1825609648
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Some but not all key stakeholders and functions are included.",
-          "key": "U29tZSBidXQgbm90IGFsbCBrZXkgc3Rha2Vob2xkZXJzIGFuZCBmdW5jdGlvbnMgYXJlIGluY2x1ZGVkLg%3D%3D"
+          "key": -1979864217
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team capacity is considered during release planning.",
-          "key": "VGVhbSBjYXBhY2l0eSBpcyBjb25zaWRlcmVkIGR1cmluZyByZWxlYXNlIHBsYW5uaW5nLg%3D%3D"
+          "key": 1785147812
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team velocity (if available) is considered during release planning.",
-          "key": "VGVhbSB2ZWxvY2l0eSAoaWYgYXZhaWxhYmxlKSBpcyBjb25zaWRlcmVkIGR1cmluZyByZWxlYXNlIHBsYW5uaW5nLg%3D%3D"
+          "key": 898960314
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Planning is completed in a reasonable time and completed before the start of the next release.",
-          "key": "UGxhbm5pbmcgaXMgY29tcGxldGVkIGluIGEgcmVhc29uYWJsZSB0aW1lIGFuZCBjb21wbGV0ZWQgYmVmb3JlIHRoZSBzdGFydCBvZiB0aGUgbmV4dCByZWxlYXNlLg%3D%3D"
+          "key": -270746209
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is an understanding that scope will change during the release as new information is discovered.",
-          "key": "VGhlcmUgaXMgYW4gdW5kZXJzdGFuZGluZyB0aGF0IHNjb3BlIHdpbGwgY2hhbmdlIGR1cmluZyB0aGUgcmVsZWFzZSBhcyBuZXcgaW5mb3JtYXRpb24gaXMgZGlzY292ZXJlZC4%3D"
+          "key": -2007799161
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Risks, opportunities, and assumptions are made visible.",
-          "key": "Umlza3MsIG9wcG9ydHVuaXRpZXMsIGFuZCBhc3N1bXB0aW9ucyBhcmUgbWFkZSB2aXNpYmxlLg%3D%3D"
+          "key": -154888969
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The release plan covers a time box no larger than 3 months and if larger than six weeks, includes at least 1 internal release (UAT). ",
-          "key": "VGhlIHJlbGVhc2UgcGxhbiBjb3ZlcnMgYSB0aW1lIGJveCBubyBsYXJnZXIgdGhhbiAzIG1vbnRocyBhbmQgaWYgbGFyZ2VyIHRoYW4gc2l4IHdlZWtzLCBpbmNsdWRlcyBhdCBsZWFzdCAxIGludGVybmFsIHJlbGVhc2UgKFVBVCkuoA%3D%3D"
+          "key": 784831051
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Clear and measurable success criteria for the release have been agreed upon and documented. ",
-          "key": "Q2xlYXIgYW5kIG1lYXN1cmFibGUgc3VjY2VzcyBjcml0ZXJpYSBmb3IgdGhlIHJlbGVhc2UgaGF2ZSBiZWVuIGFncmVlZCB1cG9uIGFuZCBkb2N1bWVudGVkLqA%3D"
+          "key": -206099579
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "All key stakeholders and functions are included.",
-          "key": "QWxsIGtleSBzdGFrZWhvbGRlcnMgYW5kIGZ1bmN0aW9ucyBhcmUgaW5jbHVkZWQu"
+          "key": -1344865413
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Adequate slack is left in the plan to allow for discovery and risk.",
-          "key": "QWRlcXVhdGUgc2xhY2sgaXMgbGVmdCBpbiB0aGUgcGxhbiB0byBhbGxvdyBmb3IgZGlzY292ZXJ5IGFuZCByaXNrLg%3D%3D"
+          "key": 1420786769
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The release plan considers historical performance beyond just velocity.",
-          "key": "VGhlIHJlbGVhc2UgcGxhbiBjb25zaWRlcnMgaGlzdG9yaWNhbCBwZXJmb3JtYW5jZSBiZXlvbmQganVzdCB2ZWxvY2l0eS4%3D"
+          "key": 161064775
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The release plan is well-understood by the team and reviewed and reworked on a regular basis.",
-          "key": "VGhlIHJlbGVhc2UgcGxhbiBpcyB3ZWxsLXVuZGVyc3Rvb2QgYnkgdGhlIHRlYW0gYW5kIHJldmlld2VkIGFuZCByZXdvcmtlZCBvbiBhIHJlZ3VsYXIgYmFzaXMu"
+          "key": -1946204382
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Just enough UX and architectural runway work for this release was done ahead of time.",
-          "key": "SnVzdCBlbm91Z2ggVVggYW5kIGFyY2hpdGVjdHVyYWwgcnVud2F5IHdvcmsgZm9yIHRoaXMgcmVsZWFzZSB3YXMgZG9uZSBhaGVhZCBvZiB0aW1lLg%3D%3D"
+          "key": -1480098332
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team and stakeholders are readily available at short notice to build or update the release plan.",
-          "key": "VGhlIHRlYW0gYW5kIHN0YWtlaG9sZGVycyBhcmUgcmVhZGlseSBhdmFpbGFibGUgYXQgc2hvcnQgbm90aWNlIHRvIGJ1aWxkIG9yIHVwZGF0ZSB0aGUgcmVsZWFzZSBwbGFuLg%3D%3D"
+          "key": 816659634
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team applies the concept of MVP to advantage and is skilled at crafting a scope that answers critical questions and tests assumptions.",
-          "key": "VGhlIHRlYW0gYXBwbGllcyB0aGUgY29uY2VwdCBvZiBNVlAgdG8gYWR2YW50YWdlIGFuZCBpcyBza2lsbGVkIGF0IGNyYWZ0aW5nIGEgc2NvcGUgdGhhdCBhbnN3ZXJzIGNyaXRpY2FsIHF1ZXN0aW9ucyBhbmQgdGVzdHMgYXNzdW1wdGlvbnMu"
+          "key": -443656282
         }
-      ]
+      ],
+      "key": 1097260950
     },
     {
       "section": "Business Goals & Objectives",
-      "descriptor": "Collaboratively build the customer’s definition of success for a program",
+      "descriptor": "Collaboratively build the customer's definition of success for a program",
       "raw": "Business Goals & Objectives Collaboratively build the customer’s definition of success for a program",
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Vague expressions of need received from the business.",
-          "key": "VmFndWUgZXhwcmVzc2lvbnMgb2YgbmVlZCByZWNlaXZlZCBmcm9tIHRoZSBidXNpbmVzcy4%3D"
+          "key": -90366598
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The business is not bought into our methodology around requirements definition.",
-          "key": "VGhlIGJ1c2luZXNzIGlzIG5vdCBib3VnaHQgaW50byBvdXIgbWV0aG9kb2xvZ3kgYXJvdW5kIHJlcXVpcmVtZW50cyBkZWZpbml0aW9uLg%3D%3D"
+          "key": 238914748
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There are less than 20 high level goals.",
-          "key": "VGhlcmUgYXJlIGxlc3MgdGhhbiAyMCBoaWdoIGxldmVsIGdvYWxzLg%3D%3D"
+          "key": -2125393830
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Goals map back to users and their problems.",
-          "key": "R29hbHMgbWFwIGJhY2sgdG8gdXNlcnMgYW5kIHRoZWlyIHByb2JsZW1zLg%3D%3D"
+          "key": 1159771215
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Goals have metrics (KPI's) that will prove business value delivered.",
-          "key": "R29hbHMgaGF2ZSBtZXRyaWNzIChLUEkncykgdGhhdCB3aWxsIHByb3ZlIGJ1c2luZXNzIHZhbHVlIGRlbGl2ZXJlZC4%3D"
+          "key": 1639509632
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There are less than 12 high level goals.",
-          "key": "VGhlcmUgYXJlIGxlc3MgdGhhbiAxMiBoaWdoIGxldmVsIGdvYWxzLg%3D%3D"
+          "key": 889453949
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Relative prioritization of the business goals and objectives is in place.",
-          "key": "UmVsYXRpdmUgcHJpb3JpdGl6YXRpb24gb2YgdGhlIGJ1c2luZXNzIGdvYWxzIGFuZCBvYmplY3RpdmVzIGlzIGluIHBsYWNlLg%3D%3D"
+          "key": 412778896
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is clear traceability from business goals to the release backlog.",
-          "key": "VGhlcmUgaXMgY2xlYXIgdHJhY2VhYmlsaXR5IGZyb20gYnVzaW5lc3MgZ29hbHMgdG8gdGhlIHJlbGVhc2UgYmFja2xvZy4%3D"
+          "key": -1940558958
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Business goals are revisited after each deployment, reviewed and updated.",
-          "key": "QnVzaW5lc3MgZ29hbHMgYXJlIHJldmlzaXRlZCBhZnRlciBlYWNoIGRlcGxveW1lbnQsIHJldmlld2VkIGFuZCB1cGRhdGVkLg%3D%3D"
+          "key": 2115188850
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The business goals have acceptance criteria.",
-          "key": "VGhlIGJ1c2luZXNzIGdvYWxzIGhhdmUgYWNjZXB0YW5jZSBjcml0ZXJpYS4%3D"
+          "key": -1008102015
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The problem, who the users are and the goals themselves have been experimentally tested and validated with some kind of experiment.",
-          "key": "VGhlIHByb2JsZW0sIHdobyB0aGUgdXNlcnMgYXJlIGFuZCB0aGUgZ29hbHMgdGhlbXNlbHZlcyBoYXZlIGJlZW4gZXhwZXJpbWVudGFsbHkgdGVzdGVkIGFuZCB2YWxpZGF0ZWQgd2l0aCBzb21lIGtpbmQgb2YgZXhwZXJpbWVudC4%3D"
+          "key": -1290549686
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team seeks ways to evaluate the KPI's as soon as reasonably possible after deployment.",
-          "key": "VGVhbSBzZWVrcyB3YXlzIHRvIGV2YWx1YXRlIHRoZSBLUEkncyBhcyBzb29uIGFzIHJlYXNvbmFibHkgcG9zc2libGUgYWZ0ZXIgZGVwbG95bWVudC4%3D"
+          "key": 969309782
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The business goals have customer success criteria.",
-          "key": "VGhlIGJ1c2luZXNzIGdvYWxzIGhhdmUgY3VzdG9tZXIgc3VjY2VzcyBjcml0ZXJpYS4%3D"
+          "key": -1524067285
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "There is fluid collaboration between the team and the business. ",
-          "key": "VGhlcmUgaXMgZmx1aWQgY29sbGFib3JhdGlvbiBiZXR3ZWVuIHRoZSB0ZWFtIGFuZCB0aGUgYnVzaW5lc3MuoA%3D%3D"
+          "key": -666816785
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The business has supplied one or more people who are experts in the problem domain. ",
-          "key": "VGhlIGJ1c2luZXNzIGhhcyBzdXBwbGllZCBvbmUgb3IgbW9yZSBwZW9wbGUgd2hvIGFyZSBleHBlcnRzIGluIHRoZSBwcm9ibGVtIGRvbWFpbi6g"
+          "key": 1260871794
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The engineering and business partnership is flexible to adapt to emergent requirements and needs. ",
-          "key": "VGhlIGVuZ2luZWVyaW5nIGFuZCBidXNpbmVzcyBwYXJ0bmVyc2hpcCBpcyBmbGV4aWJsZSB0byBhZGFwdCB0byBlbWVyZ2VudCByZXF1aXJlbWVudHMgYW5kIG5lZWRzLqA%3D"
+          "key": -1540632327
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Timely specification documents are created and revised so that external stakeholders are informed. ",
-          "key": "VGltZWx5IHNwZWNpZmljYXRpb24gZG9jdW1lbnRzIGFyZSBjcmVhdGVkIGFuZCByZXZpc2VkIHNvIHRoYXQgZXh0ZXJuYWwgc3Rha2Vob2xkZXJzIGFyZSBpbmZvcm1lZC6g"
+          "key": 2106196017
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "This document could have the capability of linking the specification to the working application in an automated fashion.",
-          "key": "VGhpcyBkb2N1bWVudCBjb3VsZCBoYXZlIHRoZSBjYXBhYmlsaXR5IG9mIGxpbmtpbmcgdGhlIHNwZWNpZmljYXRpb24gdG8gdGhlIHdvcmtpbmcgYXBwbGljYXRpb24gaW4gYW4gYXV0b21hdGVkIGZhc2hpb24u"
+          "key": 343233659
         }
-      ]
+      ],
+      "key": 1521760116
     },
     {
       "section": "User Stories",
-      "descriptor": "Express work as small, independent requests for value from a customer persona’s perspective",
+      "descriptor": "Express work as small, independent requests for value from a customer persona's perspective",
       "raw": "User Stories Express work as small, independent requests for value from a customer persona’s perspective",
       "number": 2,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "User story acceptance criteria follow a BDD approach an example of which can be found in the Gherkin syntax (https://cucumber.io/docs/gherkin/). ",
-          "key": "VXNlciBzdG9yeSBhY2NlcHRhbmNlIGNyaXRlcmlhoGZvbGxvdyBhIEJERCBhcHByb2FjaCBhbiBleGFtcGxlIG9mIHdoaWNoIGNhbiBiZSBmb3VuZCBpbiB0aGUgR2hlcmtpbiBzeW50YXigKGh0dHBzOi8vY3VjdW1iZXIuaW8vZG9jcy9naGVya2luLykuoA%3D%3D"
+          "key": -129606981
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Multiple scenarios are included in acceptance criteria including success conditions, failure modes and edge cases.",
-          "key": "TXVsdGlwbGUgc2NlbmFyaW9zIGFyZSBpbmNsdWRlZCBpbiBhY2NlcHRhbmNlIGNyaXRlcmlhIGluY2x1ZGluZyBzdWNjZXNzIGNvbmRpdGlvbnMsIGZhaWx1cmUgbW9kZXMgYW5kIGVkZ2UgY2FzZXMu"
+          "key": -1431545583
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "All user stories are traceable back to the vision and business goals & objectives.",
-          "key": "QWxsIHVzZXIgc3RvcmllcyBhcmUgdHJhY2VhYmxlIGJhY2sgdG8gdGhlIHZpc2lvbiBhbmQgYnVzaW5lc3MgZ29hbHMgJiBvYmplY3RpdmVzLg%3D%3D"
+          "key": 991149262
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Other stakeholders and users are brought into the discussion whenever needed to develop user stories. ",
-          "key": "T3RoZXIgc3Rha2Vob2xkZXJzIGFuZCB1c2VycyBhcmUgYnJvdWdodCBpbnRvIHRoZSBkaXNjdXNzaW9uIHdoZW5ldmVyIG5lZWRlZCB0byBkZXZlbG9wIHVzZXIgc3Rvcmllcy6g"
+          "key": 2126652055
         }
-      ]
+      ],
+      "key": -952510210
     },
     {
       "section": "Information Radiators Ensure visibility of valuable project status indicators",
@@ -558,42 +566,43 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "No project status information of any kind is posted in the (physical or digital) team area.",
-          "key": "Tm8gcHJvamVjdCBzdGF0dXMgaW5mb3JtYXRpb24gb2YgYW55IGtpbmQgaXMgcG9zdGVkIGluIHRoZSAocGh5c2ljYWwgb3IgZGlnaXRhbCkgdGVhbSBhcmVhLg%3D%3D"
+          "key": -1356644742
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Project status details are available in the (physical or digital) team area.",
-          "key": "UHJvamVjdCBzdGF0dXMgZGV0YWlscyBhcmUgYXZhaWxhYmxlIGluIHRoZSAocGh5c2ljYWwgb3IgZGlnaXRhbCkgdGVhbSBhcmVhLg%3D%3D"
+          "key": -2133546050
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Information radiators are up-to-date.",
-          "key": "SW5mb3JtYXRpb24gcmFkaWF0b3JzIGFyZSB1cC10by1kYXRlLg%3D%3D"
+          "key": -173471586
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "At least one of the following valuable project status indicators is available to the team AND to in-house visitors:Release Plan & Road BlocksBurn Up & VelocityStory Card WallUnit Test & Acceptance Test CoverageCI Metrics",
-          "key": "QXQgbGVhc3Qgb25lIG9mIHRoZSBmb2xsb3dpbmcgdmFsdWFibGUgcHJvamVjdCBzdGF0dXMgaW5kaWNhdG9ycyBpcyBhdmFpbGFibGUgdG8gdGhlIHRlYW0gQU5EIHRvIGluLWhvdXNlIHZpc2l0b3JzOlJlbGVhc2UgUGxhbiAmIFJvYWQgQmxvY2tzQnVybiBVcCAmIFZlbG9jaXR5U3RvcnkgQ2FyZCBXYWxsVW5pdCBUZXN0ICYgQWNjZXB0YW5jZSBUZXN0IENvdmVyYWdlQ0kgTWV0cmljcw%3D%3D"
+          "key": 796882616
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team decides what is visible.",
-          "key": "VGVhbSBkZWNpZGVzIHdoYXQgaXMgdmlzaWJsZS4%3D"
+          "key": 910914915
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Some advanced examples of information radiators are used - like for instance;Flow of information is centered around the workspace. The walls should tell a story to the team and customerCharts track everything from future product requests to fully-tested stories",
-          "key": "U29tZSBhZHZhbmNlZCBleGFtcGxlcyBvZiBpbmZvcm1hdGlvbiByYWRpYXRvcnMgYXJlIHVzZWQgLSBsaWtlIGZvciBpbnN0YW5jZTtGbG93IG9mIGluZm9ybWF0aW9uIGlzIGNlbnRlcmVkIGFyb3VuZCB0aGUgd29ya3NwYWNlLiBUaGUgd2FsbHMgc2hvdWxkIHRlbGwgYSBzdG9yeSB0byB0aGUgdGVhbSBhbmQgY3VzdG9tZXJDaGFydHMgdHJhY2sgZXZlcnl0aGluZyBmcm9tIGZ1dHVyZSBwcm9kdWN0IHJlcXVlc3RzIHRvIGZ1bGx5LXRlc3RlZCBzdG9yaWVz"
+          "key": -1625341927
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Other charts are available and accurate - may include;Organizational Value stream mapProgram Demand ManagementPersonas / Persona Maps",
-          "key": "T3RoZXIgY2hhcnRzIGFyZSBhdmFpbGFibGUgYW5kIGFjY3VyYXRlIC0gbWF5IGluY2x1ZGU7T3JnYW5pemF0aW9uYWwgVmFsdWUgc3RyZWFtIG1hcFByb2dyYW0gRGVtYW5kIE1hbmFnZW1lbnRQZXJzb25hcyAvIFBlcnNvbmEgTWFwcw%3D%3D"
+          "key": 718858293
         },
-        { "value": 3, "descriptor": "TBD", "key": "VEJE" }
-      ]
+        { "score": 3, "descriptor": "TBD", "key": 55419563 }
+      ],
+      "key": 638386443
     },
     {
       "section": "Learning and Development",
@@ -602,82 +611,83 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The only learning is mandated corporate learning.",
-          "key": "VGhlIG9ubHkgbGVhcm5pbmcgaXMgbWFuZGF0ZWQgY29ycG9yYXRlIGxlYXJuaW5nLg%3D%3D"
+          "key": 1441518394
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is budget available for learning and development.",
-          "key": "VGhlcmUgaXMgYnVkZ2V0IGF2YWlsYWJsZSBmb3IgbGVhcm5pbmcgYW5kIGRldmVsb3BtZW50Lg%3D%3D"
+          "key": -1062946145
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Both management and team values learning and development.",
-          "key": "Qm90aCBtYW5hZ2VtZW50IGFuZCB0ZWFtIHZhbHVlcyBsZWFybmluZyBhbmQgZGV2ZWxvcG1lbnQu"
+          "key": -1804005076
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is some level of team self-organized and self-motivated learning.  ",
-          "key": "VGhlcmUgaXMgc29tZSBsZXZlbCBvZiB0ZWFtIHNlbGYtb3JnYW5pemVkIGFuZCBzZWxmLW1vdGl2YXRlZCBsZWFybmluZy6goA%3D%3D"
+          "key": 1788137585
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Opportunities are taken by team members to learn from each other and knowledge share.",
-          "key": "T3Bwb3J0dW5pdGllcyBhcmUgdGFrZW4gYnkgdGVhbSBtZW1iZXJzIHRvIGxlYXJuIGZyb20gZWFjaCBvdGhlciBhbmQga25vd2xlZGdlIHNoYXJlLg%3D%3D"
+          "key": -629995473
         },
-        { "value": 1, "descriptor": "~8", "key": "fjg%3D" },
+        { "score": 1, "descriptor": "~8", "key": -1064916246 },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Learning and development takes place even when teams are stretched or understaffed.",
-          "key": "TGVhcm5pbmcgYW5kIGRldmVsb3BtZW50IHRha2VzIHBsYWNlIGV2ZW4gd2hlbiB0ZWFtcyBhcmUgc3RyZXRjaGVkIG9yIHVuZGVyc3RhZmZlZC4%3D"
+          "key": 1049774313
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team owns budget and decides how to invest in learning and development.",
-          "key": "VGVhbSBvd25zIGJ1ZGdldCBhbmQgZGVjaWRlcyBob3cgdG8gaW52ZXN0IGluIGxlYXJuaW5nIGFuZCBkZXZlbG9wbWVudC4%3D"
+          "key": -718897230
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Majority of team are involved when a learning & development activity takes place.",
-          "key": "TWFqb3JpdHkgb2YgdGVhbSBhcmUgaW52b2x2ZWQgd2hlbiBhIGxlYXJuaW5nICYgZGV2ZWxvcG1lbnQgYWN0aXZpdHkgdGFrZXMgcGxhY2Uu"
+          "key": -1537507496
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Learning and development is included in OKRs.",
-          "key": "TGVhcm5pbmcgYW5kIGRldmVsb3BtZW50IGlzIGluY2x1ZGVkIGluIE9LUnMu"
+          "key": -2139491740
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Attendance at conferences, meetups, and other Socratic forums is encouraged and sponsored.",
-          "key": "QXR0ZW5kYW5jZSBhdCBjb25mZXJlbmNlcywgbWVldHVwcywgYW5kIG90aGVyIFNvY3JhdGljIGZvcnVtcyBpcyBlbmNvdXJhZ2VkIGFuZCBzcG9uc29yZWQu"
+          "key": 787765328
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Majority of team is involved in deciding topics and developing content for learning and development.",
-          "key": "TWFqb3JpdHkgb2YgdGVhbSBpcyBpbnZvbHZlZCBpbiBkZWNpZGluZyB0b3BpY3MgYW5kIGRldmVsb3BpbmcgY29udGVudCBmb3IgbGVhcm5pbmcgYW5kIGRldmVsb3BtZW50Lg%3D%3D"
+          "key": -119586030
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team shares learning and development information on the team wiki.",
-          "key": "VGVhbSBzaGFyZXMgbGVhcm5pbmcgYW5kIGRldmVsb3BtZW50IGluZm9ybWF0aW9uIG9uIHRoZSB0ZWFtIHdpa2ku"
+          "key": -553845248
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team makes use of local communities for learning and development.",
-          "key": "VGVhbSBtYWtlcyB1c2Ugb2YgbG9jYWwgY29tbXVuaXRpZXMgZm9yIGxlYXJuaW5nIGFuZCBkZXZlbG9wbWVudC4%3D"
+          "key": -672579049
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Learning groups go beyond team members and include members from management.",
-          "key": "TGVhcm5pbmcgZ3JvdXBzIGdvIGJleW9uZCB0ZWFtIG1lbWJlcnMgYW5kIGluY2x1ZGUgbWVtYmVycyBmcm9tIG1hbmFnZW1lbnQu"
+          "key": 870979828
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team holds regular (weekly) learning events.",
-          "key": "VGhlIHRlYW0gaG9sZHMgcmVndWxhciAod2Vla2x5KSBsZWFybmluZyBldmVudHMu"
+          "key": -220185665
         }
-      ]
+      ],
+      "key": 995538800
     },
     {
       "section": "Sprint Planning",
@@ -686,19 +696,19 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Sprint planning is a long meeting >5% of a sprint duration) that includes backlog grooming, narrative writing, estimation, capacity planning and/or other context setting activities.",
-          "key": "U3ByaW50IHBsYW5uaW5nIGlzIGEgbG9uZyBtZWV0aW5nID41JSBvZiBhIHNwcmludCBkdXJhdGlvbikgdGhhdCBpbmNsdWRlcyBiYWNrbG9nIGdyb29taW5nLCBuYXJyYXRpdmUgd3JpdGluZywgZXN0aW1hdGlvbiwgY2FwYWNpdHkgcGxhbm5pbmcgYW5kL29yIG90aGVyIGNvbnRleHQgc2V0dGluZyBhY3Rpdml0aWVzLg%3D%3D"
+          "key": 35786887
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Attempts are made to plan a sprint day by day or per team member.  ",
-          "key": "QXR0ZW1wdHMgYXJlIG1hZGUgdG8gcGxhbiBhIHNwcmludCBkYXkgYnkgZGF5IG9yIHBlciB0ZWFtIG1lbWJlci6goA%3D%3D"
+          "key": -1582373995
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The team is handed a commitment.",
-          "key": "VGhlIHRlYW0gaXMgaGFuZGVkIGEgY29tbWl0bWVudC4%3D"
+          "key": 571136941
         }
       ],
       "level": {
@@ -719,7 +729,8 @@
         "3",
         "Planning is real-time based on a blue-print of an agile release plan.",
         "Intent behind planning is not team commitment but adaptive change, balancing business value with cost and time."
-      ]
+      ],
+      "key": -121495901
     },
     {
       "section": "Backlog Refinement",
@@ -728,46 +739,47 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There is no meeting to refine the backlog.",
-          "key": "VGhlcmUgaXMgbm8gbWVldGluZyB0byByZWZpbmUgdGhlIGJhY2tsb2cu"
+          "key": 1394254598
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The three amigos sometimes meet to refine the backlog.",
-          "key": "VGhlIHRocmVlIGFtaWdvcyBzb21ldGltZXMgbWVldCB0byByZWZpbmUgdGhlIGJhY2tsb2cu"
+          "key": -38486138
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The three amigos always meet to refine the backlog.",
-          "key": "VGhlIHRocmVlIGFtaWdvcyBhbHdheXMgbWVldCB0byByZWZpbmUgdGhlIGJhY2tsb2cu"
+          "key": 2042342217
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Sufficient work is done during the Backlog Refinement meeting (and perhaps afterward) so that stories for Sprint Planning generally meet most INVEST criteria and have well-understood acceptance criteria so that the team considers them \"ready\".",
-          "key": "U3VmZmljaWVudCB3b3JrIGlzIGRvbmUgZHVyaW5nIHRoZSBCYWNrbG9nIFJlZmluZW1lbnQgbWVldGluZyAoYW5kIHBlcmhhcHMgYWZ0ZXJ3YXJkKSBzbyB0aGF0IHN0b3JpZXMgZm9yIFNwcmludCBQbGFubmluZyBnZW5lcmFsbHkgbWVldCBtb3N0IElOVkVTVCBjcml0ZXJpYSBhbmQgaGF2ZSB3ZWxsLXVuZGVyc3Rvb2QgYWNjZXB0YW5jZSBjcml0ZXJpYSBzbyB0aGF0IHRoZSB0ZWFtIGNvbnNpZGVycyB0aGVtICJyZWFkeSIu"
+          "key": -377224053
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "By the end of the Backlog Refinement meeting all stories pre-positioned for the coming sprint have sufficient definition and acceptance criteria so that the team considers them \"ready\".",
-          "key": "QnkgdGhlIGVuZCBvZiB0aGUgQmFja2xvZyBSZWZpbmVtZW50IG1lZXRpbmcgYWxsIHN0b3JpZXMgcHJlLXBvc2l0aW9uZWQgZm9yIHRoZSBjb21pbmcgc3ByaW50IGhhdmUgc3VmZmljaWVudCBkZWZpbml0aW9uIGFuZCBhY2NlcHRhbmNlIGNyaXRlcmlhIHNvIHRoYXQgdGhlIHRlYW0gY29uc2lkZXJzIHRoZW0gInJlYWR5Ii4%3D"
+          "key": 453502639
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Work on defining stories for the next release(s) sometimes occurs.",
-          "key": "V29yayBvbiBkZWZpbmluZyBzdG9yaWVzIGZvciB0aGUgbmV4dCByZWxlYXNlKHMpIHNvbWV0aW1lcyBvY2N1cnMu"
+          "key": 1319522306
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "By the end of the Backlog Refinement meeting all stories pre-positioned for the coming sprint have Gherkin (or other behavioral specification) acceptance criteria and the team considers them \"ready\".",
-          "key": "QnkgdGhlIGVuZCBvZiB0aGUgQmFja2xvZyBSZWZpbmVtZW50IG1lZXRpbmcgYWxsIHN0b3JpZXMgcHJlLXBvc2l0aW9uZWQgZm9yIHRoZSBjb21pbmcgc3ByaW50IGhhdmUgR2hlcmtpbiAob3Igb3RoZXIgYmVoYXZpb3JhbCBzcGVjaWZpY2F0aW9uKSBhY2NlcHRhbmNlIGNyaXRlcmlhIGFuZCB0aGUgdGVhbSBjb25zaWRlcnMgdGhlbSAicmVhZHkiLg%3D%3D"
+          "key": 531638953
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Work on defining stories and story maps for the next release(s) occurs regularly enough that additional events for epic decomposition, story writing and mapping is not required prior to Release Planning (regular in-the-flow-of-the-day collaboration on stories is not an additional event).",
-          "key": "V29yayBvbiBkZWZpbmluZyBzdG9yaWVzIGFuZCBzdG9yeSBtYXBzIGZvciB0aGUgbmV4dCByZWxlYXNlKHMpIG9jY3VycyByZWd1bGFybHkgZW5vdWdoIHRoYXQgYWRkaXRpb25hbCBldmVudHMgZm9yIGVwaWMgZGVjb21wb3NpdGlvbiwgc3Rvcnkgd3JpdGluZyBhbmQgbWFwcGluZyBpcyBub3QgcmVxdWlyZWQgcHJpb3IgdG8gUmVsZWFzZSBQbGFubmluZyAocmVndWxhciBpbi10aGUtZmxvdy1vZi10aGUtZGF5IGNvbGxhYm9yYXRpb24gb24gc3RvcmllcyBpcyBub3QgYW4gYWRkaXRpb25hbCBldmVudCku"
+          "key": 643004505
         }
-      ]
+      ],
+      "key": 128714894
     },
     {
       "section": "Daily Standup",
@@ -776,44 +788,44 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Stand-ups are frequently monopolized by individuals or hijacked by management.",
-          "key": "U3RhbmQtdXBzIGFyZSBmcmVxdWVudGx5IG1vbm9wb2xpemVkIGJ5IGluZGl2aWR1YWxzIG9yIGhpamFja2VkIGJ5IG1hbmFnZW1lbnQu"
+          "key": -1304139681
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Standup is used to update the team board causing longer meetings.",
-          "key": "U3RhbmR1cCBpcyB1c2VkIHRvIHVwZGF0ZSB0aGUgdGVhbSBib2FyZCBjYXVzaW5nIGxvbmdlciBtZWV0aW5ncy4%3D"
+          "key": -1622011569
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The standup is not attended on time.",
-          "key": "VGhlIHN0YW5kdXAgaXMgbm90IGF0dGVuZGVkIG9uIHRpbWUu"
+          "key": -1730096788
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team members highlight what they did yesterday, what they will do today.  ",
-          "key": "VGVhbSBtZW1iZXJzIGhpZ2hsaWdodCB3aGF0IHRoZXkgZGlkIHllc3RlcmRheSwgd2hhdCB0aGV5IHdpbGwgZG8gdG9kYXkuIKA%3D"
+          "key": -833480163
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team members highlight any impediments/blockers.  ",
-          "key": "VGVhbSBtZW1iZXJzIGhpZ2hsaWdodCBhbnkgaW1wZWRpbWVudHMvYmxvY2tlcnMuIKA%3D"
+          "key": 1641578845
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Highlights are related to the sprint backlog.  ",
-          "key": "SGlnaGxpZ2h0cyBhcmUgcmVsYXRlZCB0byB0aGUgc3ByaW50IGJhY2tsb2cuIKA%3D"
+          "key": 955463643
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team avoids using Daily Standup to solve problems. ",
-          "key": "VGVhbSBhdm9pZHMgdXNpbmcgRGFpbHkgU3RhbmR1cCB0byBzb2x2ZSBwcm9ibGVtcy6g"
+          "key": 529342961
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Standups are completed in an average of < 15 mins.",
-          "key": "U3RhbmR1cHMgYXJlIGNvbXBsZXRlZCBpbiBhbiBhdmVyYWdlIG9mIDwgMTUgbWlucy4%3D"
+          "key": -1833477234
         }
       ],
       "level": {
@@ -1270,7 +1282,8 @@
           "Branches are used effectively, and merges are are easily supported.",
           ""
         ]
-      }
+      },
+      "key": 1753632170
     },
     {
       "section": "Sprint Demo",
@@ -1278,83 +1291,84 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There is no clear indication of working software.  ",
-          "key": "VGhlcmUgaXMgbm8gY2xlYXIgaW5kaWNhdGlvbiBvZiB3b3JraW5nIHNvZnR3YXJlLqCg"
+          "key": 520748882
         },
-        { "value": 0, "descriptor": "444", "key": "NDQ0" },
+        { "score": 0, "descriptor": "444", "key": -175168277 },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Demonstration always takes place.",
-          "key": "RGVtb25zdHJhdGlvbqBhbHdheXMgdGFrZXMgcGxhY2Uu"
+          "key": -241690030
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Feedback is captured.",
-          "key": "RmVlZGJhY2sgaXMgY2FwdHVyZWQu"
+          "key": -110702932
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The Product Owner is present.",
-          "key": "VGhlIFByb2R1Y3QgT3duZXIgaXMgcHJlc2VudC4%3D"
+          "key": 1694231379
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team knows the stories to demonstrate, and they are complete.",
-          "key": "VGVhbSBrbm93cyB0aGUgc3RvcmllcyB0byBkZW1vbnN0cmF0ZSwgYW5kIHRoZXkgYXJlIGNvbXBsZXRlLg%3D%3D"
+          "key": 1725315459
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Effective time management allow team to complete demonstration of planned stories within the meeting timebox.",
-          "key": "RWZmZWN0aXZlIHRpbWUgbWFuYWdlbWVudCBhbGxvdyB0ZWFtIHRvIGNvbXBsZXRlIGRlbW9uc3RyYXRpb24gb2YgcGxhbm5lZCBzdG9yaWVzIHdpdGhpbiB0aGUgbWVldGluZyB0aW1lYm94Lg%3D%3D"
+          "key": -1389702054
         },
-        { "value": 1, "descriptor": "444", "key": "NDQ0" },
+        { "score": 1, "descriptor": "444", "key": -175168277 },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Demonstration is at an appropriate level for the stakeholders, focused on how product is used instead of how it is implemented",
-          "key": "RGVtb25zdHJhdGlvbiBpcyBhdCBhbiBhcHByb3ByaWF0ZSBsZXZlbCBmb3IgdGhlIHN0YWtlaG9sZGVycyygZm9jdXNlZCBvbiBob3cgcHJvZHVjdCBpcyB1c2VkIGluc3RlYWQgb2YgaG93IGl0IGlzIGltcGxlbWVudGVk"
+          "key": -282210512
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Stories are accepted and approved by Product Owner in order for stories to make it to the demo.",
-          "key": "U3RvcmllcyBhcmUgYWNjZXB0ZWQgYW5kIGFwcHJvdmVkIGJ5IFByb2R1Y3QgT3duZXIgaW4gb3JkZXIgZm9yIHN0b3JpZXMgdG8gbWFrZSBpdCB0byB0aGUgZGVtby4%3D"
+          "key": 34951276
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Demonstration is planned in advance and demoed features clearly work.",
-          "key": "RGVtb25zdHJhdGlvbiBpcyBwbGFubmVkIGluIGFkdmFuY2UgYW5kIGRlbW9lZCBmZWF0dXJlcyBjbGVhcmx5IHdvcmsu"
+          "key": 1902833000
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Demonstration uses realistic data.",
-          "key": "RGVtb25zdHJhdGlvbiB1c2VzIHJlYWxpc3RpYyBkYXRhLg%3D%3D"
+          "key": 2005486416
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Demonstration only shows new features, unless old features are necessary to provide context.",
-          "key": "RGVtb25zdHJhdGlvbiBvbmx5IHNob3dzIG5ldyBmZWF0dXJlcywgdW5sZXNzIG9sZCBmZWF0dXJlcyBhcmUgbmVjZXNzYXJ5IHRvIHByb3ZpZGUgY29udGV4dC4%3D"
+          "key": -1180013195
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Demonstrations are well scripted with a value-based story line.",
-          "key": "RGVtb25zdHJhdGlvbnOgYXJlIHdlbGwgc2NyaXB0ZWQgd2l0aCBhIHZhbHVlLWJhc2VkIHN0b3J5IGxpbmUu"
+          "key": -1499194928
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Majority of stakeholders get to see the demo. For example, this may be achieved by multiple demos or recording.",
-          "key": "TWFqb3JpdHkgb2Ygc3Rha2Vob2xkZXJzIGdldCB0byBzZWUgdGhlIGRlbW8uIEZvciBleGFtcGxlLCB0aGlzIG1heSBiZSBhY2hpZXZlZCBieSBtdWx0aXBsZSBkZW1vcyBvciByZWNvcmRpbmcu"
+          "key": -963114627
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Product Owner articulates on how sprint results align to business goals & objectives.",
-          "key": "UHJvZHVjdCBPd25lcqBhcnRpY3VsYXRlcyBvbiBob3cgc3ByaW50IHJlc3VsdHMgYWxpZ24gdG8gYnVzaW5lc3MgZ29hbHMgJiBvYmplY3RpdmVzLg%3D%3D"
+          "key": 1932243443
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Product Owner finds ways of maximizing business participation.",
-          "key": "UHJvZHVjdCBPd25lciBmaW5kcyB3YXlzIG9mIG1heGltaXppbmcgYnVzaW5lc3MgcGFydGljaXBhdGlvbi4%3D"
+          "key": 530294992
         }
-      ]
+      ],
+      "key": 1256146985
     },
     {
       "section": "Retrospective",
@@ -1362,61 +1376,62 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "No sprint retrospective held",
-          "key": "Tm8gc3ByaW50IHJldHJvc3BlY3RpdmUgaGVsZA%3D%3D"
+          "key": -1151344100
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "When retrospectives are held, the same topics resurface again and again because problems are not being solved.",
-          "key": "V2hlbiByZXRyb3NwZWN0aXZlcyBhcmUgaGVsZCwgdGhlIHNhbWUgdG9waWNzIHJlc3VyZmFjZSBhZ2FpbiBhbmQgYWdhaW4gYmVjYXVzZSBwcm9ibGVtcyBhcmUgbm90IGJlaW5nIHNvbHZlZC4%3D"
+          "key": 981838675
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Retrospectives are held every sprint.",
-          "key": "UmV0cm9zcGVjdGl2ZXMgYXJlIGhlbGQgZXZlcnkgc3ByaW50Lg%3D%3D"
+          "key": -1952744867
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Retrospectives generate a list of pluses and deltas for improvement action. ",
-          "key": "UmV0cm9zcGVjdGl2ZXMgZ2VuZXJhdGUgYSBsaXN0IG9mIHBsdXNlcyBhbmQgZGVsdGFzIGZvciBpbXByb3ZlbWVudCBhY3Rpb24uoA%3D%3D"
+          "key": 516506577
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is a list of who is assigned to each action item and be accountable for the task.",
-          "key": "VGhlcmUgaXMgYSBsaXN0IG9mIHdobyBpcyBhc3NpZ25lZCB0byBlYWNoIGFjdGlvbiBpdGVtIGFuZCBiZSBhY2NvdW50YWJsZSBmb3IgdGhlIHRhc2su"
+          "key": 1724496436
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Problems identified in the retrospective have resulted in a root cause analysis or have been followed by change to the team's set of working agreements.",
-          "key": "UHJvYmxlbXMgaWRlbnRpZmllZCBpbiB0aGUgcmV0cm9zcGVjdGl2ZSBoYXZlIHJlc3VsdGVkIGluIGEgcm9vdCBjYXVzZSBhbmFseXNpcyBvciBoYXZlIGJlZW4gZm9sbG93ZWQgYnkgY2hhbmdlIHRvIHRoZSB0ZWFtJ3Mgc2V0IG9mIHdvcmtpbmcgYWdyZWVtZW50cy4%3D"
+          "key": 1264376146
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress. ",
-          "key": "RHVyaW5nIHRoZSByZXRyb3NwZWN0aXZlIChvciBhdCBsZWFzdCBvbmNlIHBlciBzcHJpbnQpIHRoZSB0ZWFtIHJldmlld3MgcGVyZm9ybWFuY2UgbWV0cmljcyBzdWNoIGFzIHZlbG9jaXR5LCBxdWFsaXR5LCBhbmQgcHJvZ3Jlc3MuoA%3D%3D"
+          "key": -105187097
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Retrospective action items are followed up in subsequent retrospectives.",
-          "key": "UmV0cm9zcGVjdGl2ZSBhY3Rpb24gaXRlbXMgYXJlIGZvbGxvd2VkIHVwIGluIHN1YnNlcXVlbnQgcmV0cm9zcGVjdGl2ZXMu"
+          "key": -729358723
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Retrospectives identify learning & development opportunities.",
-          "key": "UmV0cm9zcGVjdGl2ZXMgaWRlbnRpZnkgbGVhcm5pbmcgJiBkZXZlbG9wbWVudCBvcHBvcnR1bml0aWVzLg%3D%3D"
+          "key": 2032533367
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Retrospectives have flexibility so that a specific topic may be addressed and solved in the session.",
-          "key": "UmV0cm9zcGVjdGl2ZXMgaGF2ZSBmbGV4aWJpbGl0eSBzbyB0aGF0IGEgc3BlY2lmaWMgdG9waWMgbWF5IGJlIGFkZHJlc3NlZCBhbmQgc29sdmVkIGluIHRoZSBzZXNzaW9uLg%3D%3D"
+          "key": 673961958
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "This higher order of agility around retrospectives describes an organization where best lessons learned and best practices resulting from retrospective activities are rapidly shared and implemented, where appropriate, across all teams.",
-          "key": "VGhpcyBoaWdoZXIgb3JkZXIgb2YgYWdpbGl0eSBhcm91bmQgcmV0cm9zcGVjdGl2ZXMgZGVzY3JpYmVzIGFuIG9yZ2FuaXphdGlvbiB3aGVyZSBiZXN0IGxlc3NvbnMgbGVhcm5lZCBhbmQgYmVzdCBwcmFjdGljZXMgcmVzdWx0aW5nIGZyb20gcmV0cm9zcGVjdGl2ZSBhY3Rpdml0aWVzIGFyZSByYXBpZGx5IHNoYXJlZCBhbmQgaW1wbGVtZW50ZWQsIHdoZXJlIGFwcHJvcHJpYXRlLCBhY3Jvc3MgYWxsIHRlYW1zLg%3D%3D"
+          "key": -772951485
         }
-      ]
+      ],
+      "key": 2046020253
     },
     {
       "section": "Unit Testing",
@@ -1424,57 +1439,58 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The team does not understand or value unit testing.",
-          "key": "VGhlIHRlYW0gZG9lcyBub3QgdW5kZXJzdGFuZCBvciB2YWx1ZSB1bml0IHRlc3Rpbmcu"
+          "key": 1713664220
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Developers write unit tests during a sprint for some stories.",
-          "key": "RGV2ZWxvcGVycyB3cml0ZSB1bml0IHRlc3RzIGR1cmluZyBhIHNwcmludCBmb3Igc29tZSBzdG9yaWVzLg%3D%3D"
+          "key": 986502833
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is an awareness of mocks, stubs and test doubles and some use of them in tests.",
-          "key": "VGhlcmUgaXMgYW4gYXdhcmVuZXNzIG9moG1vY2tzLCBzdHVicyBhbmQgdGVzdCBkb3VibGVzoGFuZCBzb21lIHVzZSBvZiB0aGVtIGluIHRlc3RzLg%3D%3D"
+          "key": 615372685
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The unit tests always isolate the functionality under test, hence a failing test pinpoints a problem.",
-          "key": "VGhlIHVuaXQgdGVzdHMgYWx3YXlzIGlzb2xhdGUgdGhlIGZ1bmN0aW9uYWxpdHkgdW5kZXIgdGVzdCwgaGVuY2UgYSBmYWlsaW5nIHRlc3QgcGlucG9pbnRzIGEgcHJvYmxlbS4%3D"
+          "key": -976043620
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The unit tests are part of the CI build.",
-          "key": "VGhlIHVuaXQgdGVzdHMgYXJlIHBhcnQgb2YgdGhlIENJIGJ1aWxkLg%3D%3D"
+          "key": 244443851
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Tests are independent, can be run in any order, and don't share test data.",
-          "key": "VGVzdHMgYXJlIGluZGVwZW5kZW50LCBjYW4gYmUgcnVuIGluIGFueaBvcmRlciwgYW5kIGRvbid0IHNoYXJlIHRlc3QgZGF0YS4%3D"
+          "key": 2098609526
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team values fast and durable tests. ",
-          "key": "VGhlIHRlYW0gdmFsdWVzIGZhc3QgYW5kIGR1cmFibGUgdGVzdHMuoA%3D%3D"
+          "key": -2109287649
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI). ",
-          "key": "VGhlIHRlYW0gcmVjb2duaXplcyB0aGUgdmFsdWUgb2YgQkREIGluIHRoZSBlbWVyZ2luZyBkZXNpZ24gYW5kIHRoZSBwcmV2ZW50aW9uIG9mIHdhc3RlIGJ5IG9ubHkgYnVpbGRpbmcgZnVuY3Rpb25hbGl0eSB0aGF0IGlzIHJlcXVpcmVkIChZQUdOSSkuoA%3D%3D"
+          "key": -56892298
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team has a standard mocking framework that they use for all mocks, stubs, doubles. ",
-          "key": "VGhlIHRlYW0gaGFzIGEgc3RhbmRhcmQgbW9ja2luZyBmcmFtZXdvcmsgdGhhdCB0aGV5IHVzZSBmb3IgYWxsIG1vY2tzLCBzdHVicywgZG91Ymxlcy6g"
+          "key": 1566932386
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The entire team recognizes the value of refactoring of unit tests.",
-          "key": "VGhlIGVudGlyZSB0ZWFtIHJlY29nbml6ZXMgdGhlIHZhbHVlIG9mIHJlZmFjdG9yaW5nIG9mIHVuaXQgdGVzdHMu"
+          "key": -1427326649
         },
-        { "value": 3, "descriptor": "TBD", "key": "VEJE" }
-      ]
+        { "score": 3, "descriptor": "TBD", "key": -755511390 }
+      ],
+      "key": -201863308
     },
     {
       "section": "Automated Acceptance Testing",
@@ -1482,56 +1498,57 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Heavy post development Test Case suite generation culture followed by a UAT phase.",
-          "key": "SGVhdnkgcG9zdCBkZXZlbG9wbWVudCBUZXN0IENhc2Ugc3VpdGUgZ2VuZXJhdGlvbiBjdWx0dXJlIGZvbGxvd2VkIGJ5IGEgVUFUIHBoYXNlLg%3D%3D"
+          "key": -1846722146
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team understands BDD conceptually.",
-          "key": "VGVhbSB1bmRlcnN0YW5kcyBCREQgY29uY2VwdHVhbGx5Lg%3D%3D"
+          "key": -288102284
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Test cases utilize BDD style specifications.",
-          "key": "VGVzdCBjYXNlcyB1dGlsaXplIEJERCBzdHlsZSBzcGVjaWZpY2F0aW9ucy4%3D"
+          "key": 1707067471
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "User stories have BDD style acceptance criteria, which are leveraged for QA (could be manual or automated testing).",
-          "key": "VXNlciBzdG9yaWVzIGhhdmUgQkREIHN0eWxlIGFjY2VwdGFuY2UgY3JpdGVyaWEsIHdoaWNoIGFyZSBsZXZlcmFnZWQgZm9yIFFBIChjb3VsZCBiZSBtYW51YWwgb3IgYXV0b21hdGVkIHRlc3RpbmcpLg%3D%3D"
+          "key": -1796797771
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The Three Amigo's have collective ownership of the testing approach.",
-          "key": "VGhlIFRocmVlIEFtaWdvJ3MgaGF2ZSBjb2xsZWN0aXZlIG93bmVyc2hpcCBvZiB0aGUgdGVzdGluZyBhcHByb2FjaC4%3D"
+          "key": -869226944
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "User stories are rich in Acceptance Criteria illustrated by example(s) that have corresponding automated (acceptance/regression) test suites.",
-          "key": "VXNlciBzdG9yaWVzIGFyZSByaWNoIGluIEFjY2VwdGFuY2UgQ3JpdGVyaWEgaWxsdXN0cmF0ZWQgYnkgZXhhbXBsZShzKSB0aGF0IGhhdmUgY29ycmVzcG9uZGluZyBhdXRvbWF0ZWQgKGFjY2VwdGFuY2UvcmVncmVzc2lvbikgdGVzdCBzdWl0ZXMu"
+          "key": -1775798821
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "These tests are developed in parallel to story development by QA using our standard tools - Karate and Playwright.",
-          "key": "VGhlc2UgdGVzdHMgYXJlIGRldmVsb3BlZCBpbiBwYXJhbGxlbCB0byBzdG9yeSBkZXZlbG9wbWVudCBieSBRQSB1c2luZyBvdXIgc3RhbmRhcmQgdG9vbHMgLSBLYXJhdGUgYW5kIFBsYXl3cmlnaHQu"
+          "key": 437920594
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Tests are peer-reviewed and managed like code",
-          "key": "VGVzdHMgYXJlIHBlZXItcmV2aWV3ZWQgYW5kIG1hbmFnZWQgbGlrZSBjb2Rl"
+          "key": -79105908
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "These tests are kept fresh with newer richer examples with the growth of codebase and are frequently reviewed by the business.",
-          "key": "VGhlc2UgdGVzdHMgYXJlIGtlcHQgZnJlc2ggd2l0aCBuZXdlciByaWNoZXIgZXhhbXBsZXMgd2l0aCB0aGUgZ3Jvd3RoIG9mIGNvZGViYXNlIGFuZCBhcmUgZnJlcXVlbnRseSByZXZpZXdlZCBieSB0aGUgYnVzaW5lc3Mu"
+          "key": -122397168
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Acceptance Criteria generated by the business with rich example(s) are the core of user stories.",
-          "key": "QWNjZXB0YW5jZSBDcml0ZXJpYSBnZW5lcmF0ZWQgYnkgdGhlIGJ1c2luZXNzIHdpdGggcmljaCBleGFtcGxlKHMpIGFyZSB0aGUgY29yZSBvZiB1c2VyIHN0b3JpZXMu"
+          "key": -1697959053
         }
-      ]
+      ],
+      "key": -1709086249
     },
     {
       "section": "Refactoring",
@@ -1539,66 +1556,67 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The value of the continuous improvement of the design of the code is not understood by the team.",
-          "key": "VGhlIHZhbHVlIG9mIHRoZSBjb250aW51b3VzIGltcHJvdmVtZW50IG9mIHRoZSBkZXNpZ24gb2YgdGhlIGNvZGUgaXMgbm90IHVuZGVyc3Rvb2QgYnkgdGhlIHRlYW0u"
+          "key": -226563567
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is a general understanding of what refactoring is.",
-          "key": "VGhlcmUgaXMgYSBnZW5lcmFsIHVuZGVyc3RhbmRpbmcgb2Ygd2hhdCByZWZhY3RvcmluZyBpcy4%3D"
+          "key": -1869203260
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The team knows how to use the IDE tools for refactoring.",
-          "key": "VGhlIHRlYW0ga25vd3MgaG93IHRvIHVzZSB0aGUgSURFIHRvb2xzIGZvciByZWZhY3RvcmluZy4%3D"
+          "key": 2087799953
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The team understands refactoring and how to apply it.",
-          "key": "VGhlIHRlYW0gdW5kZXJzdGFuZHMgcmVmYWN0b3JpbmcgYW5kIGhvdyB0byBhcHBseSBpdC4%3D"
+          "key": -181346012
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Refactoring is applied to targeted problem areas.",
-          "key": "UmVmYWN0b3JpbmcgaXMgYXBwbGllZCB0byB0YXJnZXRlZCBwcm9ibGVtIGFyZWFzLg%3D%3D"
+          "key": -2111438419
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Static code analysis metrics are used to target areas in the code base for refactoring.",
-          "key": "U3RhdGljIGNvZGUgYW5hbHlzaXMgbWV0cmljcyBhcmUgdXNlZCB0byB0YXJnZXQgYXJlYXMgaW4gdGhlIGNvZGUgYmFzZSBmb3IgcmVmYWN0b3Jpbmcu"
+          "key": 277259152
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Refactoring is applied consistently across the code base.",
-          "key": "UmVmYWN0b3JpbmcgaXMgYXBwbGllZCBjb25zaXN0ZW50bHkgYWNyb3NzIHRoZSBjb2RlIGJhc2Uu"
+          "key": 1768769970
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Static code analysis thresholds are a gating item for the definition of a successful build.",
-          "key": "U3RhdGljIGNvZGUgYW5hbHlzaXMgdGhyZXNob2xkcyBhcmUgYSBnYXRpbmcgaXRlbSBmb3IgdGhlIGRlZmluaXRpb24gb2YgYSBzdWNjZXNzZnVsIGJ1aWxkLg%3D%3D"
+          "key": 780457616
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "There is a technical debt list that is used to prioritize refactoring activities with new feature development or other sustaining activities.",
-          "key": "VGhlcmUgaXMgYSB0ZWNobmljYWwgZGVidCBsaXN0IHRoYXQgaXMgdXNlZCB0byBwcmlvcml0aXplIHJlZmFjdG9yaW5nIGFjdGl2aXRpZXMgd2l0aCBuZXcgZmVhdHVyZSBkZXZlbG9wbWVudCBvciBvdGhlciBzdXN0YWluaW5nIGFjdGl2aXRpZXMu"
+          "key": -646879866
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team refactors tests as well as code (all code artifacts - Models, Views, Controllers, DB Schema, Stored Procedures, HTML, CSS, etc).",
-          "key": "VGhlIHRlYW0gcmVmYWN0b3JzIHRlc3RzIGFzIHdlbGwgYXMgY29kZSAoYWxsIGNvZGUgYXJ0aWZhY3RzIC0gTW9kZWxzLCBWaWV3cywgQ29udHJvbGxlcnMsIERCIFNjaGVtYSwgU3RvcmVkIFByb2NlZHVyZXMsIEhUTUwsIENTUywgZXRjKS4%3D"
+          "key": -1135252533
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Design patterns such as the SOLID principles are applied to guide improvement.",
-          "key": "RGVzaWduIHBhdHRlcm5zIHN1Y2ggYXMgdGhlIFNPTElEIHByaW5jaXBsZXMgYXJlIGFwcGxpZWQgdG8gZ3VpZGUgaW1wcm92ZW1lbnQu"
+          "key": -1965353635
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Refactoring enables emergent design.",
-          "key": "UmVmYWN0b3JpbmcgZW5hYmxlcyBlbWVyZ2VudCBkZXNpZ24u"
+          "key": -762730503
         }
-      ]
+      ],
+      "key": -1021457600
     },
     {
       "section": "Pair Programming",
@@ -1606,86 +1624,83 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "No understanding of pair programming or there is concern that It will lower the utilization rate of individual developers.",
-          "key": "Tm8gdW5kZXJzdGFuZGluZyBvZiBwYWlyIHByb2dyYW1taW5nIG9yIHRoZXJlIGlzIGNvbmNlcm4gdGhhdCBJdCB3aWxsIGxvd2VyIHRoZSB1dGlsaXphdGlvbiByYXRlIG9mIGluZGl2aWR1YWwgZGV2ZWxvcGVycy4%3D"
+          "key": 554758396
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Random acts of pair programming.",
-          "key": "UmFuZG9tIGFjdHMgb2YgcGFpciBwcm9ncmFtbWluZy4%3D"
+          "key": -1680109529
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "At least 1 hour per developer per week of pair programming.",
-          "key": "QXQgbGVhc3QgMSBob3VyIHBlciBkZXZlbG9wZXIgcGVyIHdlZWsgb2YgcGFpciBwcm9ncmFtbWluZy4%3D"
+          "key": -1044580570
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Pairing happens when an issue arises and there is significant pressure to fix it fast.",
-          "key": "UGFpcmluZyBoYXBwZW5zIHdoZW4gYW4gaXNzdWUgYXJpc2VzIGFuZCB0aGVyZSBpcyBzaWduaWZpY2FudCBwcmVzc3VyZSB0byBmaXggaXQgZmFzdC4%3D"
+          "key": -1030576153
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "At least 1 hour per developer per day of pair programming.",
-          "key": "QXQgbGVhc3QgMSBob3VyIHBlciBkZXZlbG9wZXIgcGVyIGRheSBvZiBwYWlyIHByb2dyYW1taW5nLg%3D%3D"
+          "key": 503068270
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Pair programming includes the navigator and driver, switching roles often.",
-          "key": "UGFpciBwcm9ncmFtbWluZyBpbmNsdWRlcyB0aGUgbmF2aWdhdG9yIGFuZCBkcml2ZXIsIHN3aXRjaGluZyByb2xlcyBvZnRlbi4%3D"
+          "key": 2141968789
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Pair programming takes place whenever a new person joins the team.",
-          "key": "UGFpciBwcm9ncmFtbWluZyB0YWtlcyBwbGFjZSB3aGVuZXZlciBhIG5ldyBwZXJzb24gam9pbnMgdGhlIHRlYW0u"
+          "key": 1173728448
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is some thought by the team to rotate or switch pairs on a regular basis.",
-          "key": "VGhlcmUgaXMgc29tZSB0aG91Z2h0IGJ5IHRoZSB0ZWFtIHRvIHJvdGF0ZSBvciBzd2l0Y2ggcGFpcnMgb24gYSByZWd1bGFyIGJhc2lzLg%3D%3D"
+          "key": -469510713
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Since pair programming results in more intense work, active attention is given to sustainable pace - perhaps the pomodoro technique is employed.",
-          "key": "U2luY2UgcGFpciBwcm9ncmFtbWluZyByZXN1bHRzIGluIG1vcmUgaW50ZW5zZSB3b3JrLCBhY3RpdmUgYXR0ZW50aW9uIGlzIGdpdmVuIHRvIHN1c3RhaW5hYmxlIHBhY2UgLSBwZXJoYXBzIHRoZSBwb21vZG9ybyB0ZWNobmlxdWUgaXMgZW1wbG95ZWQu"
+          "key": 1895375038
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "More than 4 hours of pair programming per day.",
-          "key": "TW9yZSB0aGFuIDQgaG91cnMgb2YgcGFpciBwcm9ncmFtbWluZyBwZXIgZGF5Lg%3D%3D"
+          "key": 247655293
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team has a working agreement to actively switch pair partners and ensure everyone has a chance to pair with everyone else on the team.",
-          "key": "VGhlIHRlYW0gaGFzIGEgd29ya2luZyBhZ3JlZW1lbnQgdG8gYWN0aXZlbHkgc3dpdGNoIHBhaXIgcGFydG5lcnMgYW5kIGVuc3VyZSBldmVyeW9uZSBoYXMgYSBjaGFuY2UgdG8gcGFpciB3aXRoIGV2ZXJ5b25lIGVsc2Ugb24gdGhlIHRlYW0u"
+          "key": -1224996887
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Management encourages pair programming.",
-          "key": "TWFuYWdlbWVudCBlbmNvdXJhZ2VzIHBhaXIgcHJvZ3JhbW1pbmcu"
+          "key": 836734347
         },
+        { "score": 3, "descriptor": "Promiscuous pairing.", "key": -705068152 },
         {
-          "value": 3,
-          "descriptor": "Promiscuous pairing.",
-          "key": "UHJvbWlzY3VvdXMgcGFpcmluZy4%3D"
-        },
-        {
-          "value": 3,
+          "score": 3,
           "descriptor": "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday. ",
-          "key": "SW4gYWRkaXRpb24gdG8gbW9yZSB0aGFuIDQgaG91cnMgb2YgcGFpciBwcm9ncmFtbWluZywgcmVndWxhcmx5IHN3aXRjaGluZyBuYXZpZ2F0b3IgYW5kIGRyaXZlciByb2xlcyB3aXRob3V0IHBhaXJpbmcgd2l0aCB0aGUgc2FtZSBwYXJ0bmVyIGV2ZXJ5ZGF5LqA%3D"
+          "key": -288302154
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Team manages risk and uncertainty for the team by making coding decisions in pairs leading to a higher degree of confidence when problems or solutions are not 100% defined.",
-          "key": "VGVhbSBtYW5hZ2VzIHJpc2sgYW5kIHVuY2VydGFpbnR5IGZvciB0aGUgdGVhbSBieSBtYWtpbmcgY29kaW5nIGRlY2lzaW9ucyBpbiBwYWlycyBsZWFkaW5nIHRvIGEgaGlnaGVyIGRlZ3JlZSBvZiBjb25maWRlbmNlIHdoZW4gcHJvYmxlbXMgb3Igc29sdXRpb25zIGFyZSBub3QgMTAwJSBkZWZpbmVkLg%3D%3D"
+          "key": -1935882701
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Pair programming is a promoted as part of a desirable environment for potential recruits.",
-          "key": "UGFpciBwcm9ncmFtbWluZyBpcyBhIHByb21vdGVkIGFzIHBhcnQgb2YgYSBkZXNpcmFibGUgZW52aXJvbm1lbnQgZm9yIHBvdGVudGlhbCByZWNydWl0cy4%3D"
+          "key": 1923438816
         }
-      ]
+      ],
+      "key": -101784429
     },
     {
       "section": "Design Simplicity",
@@ -1693,163 +1708,165 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Big up-front design that attempts to accommodate all potential future needs.",
-          "key": "QmlnIHVwLWZyb250IGRlc2lnbiB0aGF0IGF0dGVtcHRzIHRvIGFjY29tbW9kYXRlIGFsbCBwb3RlbnRpYWwgZnV0dXJlIG5lZWRzLg%3D%3D"
+          "key": 316274228
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Team disagrees with YAGNI (You Aren't Going to Need It).",
-          "key": "VGVhbSBkaXNhZ3JlZXMgd2l0aCBZQUdOSSAoWW91IEFyZW4ndCBHb2luZyB0byBOZWVkIEl0KS4%3D"
+          "key": 255358624
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Team disagrees with evolving design and architecture.",
-          "key": "VGVhbSBkaXNhZ3JlZXMgd2l0aCBldm9sdmluZyBkZXNpZ24gYW5kIGFyY2hpdGVjdHVyZS4%3D"
+          "key": 1287560935
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Team does not feel they can update their design / refactor their way to the future - they feel a need to invent everything up front - especially data design.",
-          "key": "VGVhbSBkb2VzIG5vdCBmZWVsIHRoZXkgY2FuIHVwZGF0ZSB0aGVpciBkZXNpZ24gLyByZWZhY3RvciB0aGVpciB3YXkgdG8gdGhlIGZ1dHVyZSAtIHRoZXkgZmVlbCBhIG5lZWQgdG8gaW52ZW50IGV2ZXJ5dGhpbmcgdXAgZnJvbnQgLSBlc3BlY2lhbGx5IGRhdGEgZGVzaWduLg%3D%3D"
+          "key": 898582182
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Team is aware of YAGNI and evolving design and architecture, and there is some evidence of following these principles.",
-          "key": "VGVhbSBpcyBhd2FyZSBvZiBZQUdOSSBhbmQgZXZvbHZpbmcgZGVzaWduIGFuZCBhcmNoaXRlY3R1cmUsIGFuZCB0aGVyZSBpcyBzb21lIGV2aWRlbmNlIG9mIGZvbGxvd2luZyB0aGVzZSBwcmluY2lwbGVzLg%3D%3D"
+          "key": 952335684
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "If there is an external architecture group, then the team has some input on architectural choices.",
-          "key": "SWYgdGhlcmUgaXMgYW4gZXh0ZXJuYWwgYXJjaGl0ZWN0dXJlIGdyb3VwLCB0aGVuIHRoZSB0ZWFtIGhhcyBzb21lIGlucHV0IG9uIGFyY2hpdGVjdHVyYWwgY2hvaWNlcy4%3D"
+          "key": -1505236969
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Team is aware of low coupling and high cohesion and can find examples in their code base.",
-          "key": "VGVhbSBpcyBhd2FyZSBvZiBsb3cgY291cGxpbmcgYW5kIGhpZ2ggY29oZXNpb24gYW5kIGNhbiBmaW5kIGV4YW1wbGVzIGluIHRoZWlyIGNvZGUgYmFzZS4%3D"
+          "key": -8437521
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Most of the team has some understanding of design patterns and can find examples in their code base.",
-          "key": "TW9zdCBvZiB0aGUgdGVhbSBoYXMgc29tZSB1bmRlcnN0YW5kaW5nIG9mIGRlc2lnbiBwYXR0ZXJucyBhbmQgY2FuIGZpbmQgZXhhbXBsZXMgaW4gdGhlaXIgY29kZSBiYXNlLg%3D%3D"
+          "key": -174070597
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is some acceptance by the team that refactoring can be a valuable tool in updating their design with new requirements.",
-          "key": "VGhlcmUgaXMgc29tZSBhY2NlcHRhbmNlIGJ5IHRoZSB0ZWFtIHRoYXQgcmVmYWN0b3JpbmcgY2FuIGJlIGEgdmFsdWFibGUgdG9vbCBpbiB1cGRhdGluZyB0aGVpciBkZXNpZ24gd2l0aCBuZXcgcmVxdWlyZW1lbnRzLg%3D%3D"
+          "key": 794709881
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team discusses accidental complexity and will make changes to remove it.",
-          "key": "VGhlIHRlYW0gZGlzY3Vzc2VzIGFjY2lkZW50YWwgY29tcGxleGl0eSBhbmQgd2lsbCBtYWtlIGNoYW5nZXMgdG8gcmVtb3ZlIGl0Lg%3D%3D"
+          "key": 205674275
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Many of the developers embrace single responsibility, design by contract, dependency injection, the Law of Demeter etc.",
-          "key": "TWFueSBvZiB0aGUgZGV2ZWxvcGVycyBlbWJyYWNlIHNpbmdsZSByZXNwb25zaWJpbGl0eSwgZGVzaWduIGJ5IGNvbnRyYWN0LCBkZXBlbmRlbmN5IGluamVjdGlvbiwgdGhlIExhdyBvZiBEZW1ldGVyIGV0Yy4%3D"
+          "key": 1017779331
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team polices each other on YAGNI and are disciplined about implementing only the code to pass the story acceptance tests.",
-          "key": "VGhlIHRlYW0gcG9saWNlcyBlYWNoIG90aGVyIG9uIFlBR05JIGFuZCBhcmUgZGlzY2lwbGluZWQgYWJvdXQgaW1wbGVtZW50aW5nIG9ubHkgdGhlIGNvZGUgdG8gcGFzcyB0aGUgc3RvcnkgYWNjZXB0YW5jZSB0ZXN0cy4%3D"
+          "key": -47414135
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Spikes are used with each release to introduce new ideas and test architectural decisions.",
-          "key": "U3Bpa2VzIGFyZSB1c2VkIHdpdGggZWFjaCByZWxlYXNlIHRvIGludHJvZHVjZSBuZXcgaWRlYXMgYW5kIHRlc3QgYXJjaGl0ZWN0dXJhbCBkZWNpc2lvbnMu"
+          "key": 111501338
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "All of the developers understand and work to SOLID (https://en.wikipedia.org/wiki/SOLID).",
-          "key": "QWxsIG9mIHRoZSBkZXZlbG9wZXJzIHVuZGVyc3RhbmQgYW5kIHdvcmsgdG8gU09MSUQgKGh0dHBzOi8vZW4ud2lraXBlZGlhLm9yZy93aWtpL1NPTElEKS4%3D"
+          "key": 19372086
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team values and updates the design documents to ensure we can teach new people and potential customers.",
-          "key": "VGhlIHRlYW0gdmFsdWVzIGFuZCB1cGRhdGVzIHRoZSBkZXNpZ24gZG9jdW1lbnRzIHRvIGVuc3VyZSB3ZSBjYW4gdGVhY2ggbmV3IHBlb3BsZSBhbmQgcG90ZW50aWFsIGN1c3RvbWVycy4%3D"
+          "key": -607868172
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team actively works to recognize and remove accidental complexity from evolving designs.",
-          "key": "VGhlIHRlYW0gYWN0aXZlbHkgd29ya3MgdG8gcmVjb2duaXplIGFuZCByZW1vdmUgYWNjaWRlbnRhbCBjb21wbGV4aXR5IGZyb20gZXZvbHZpbmcgZGVzaWducy4%3D"
+          "key": 910496091
         }
-      ]
+      ],
+      "key": 1888735171
     },
     {
       "section": "Definition of Done",
-      "descriptor": "Formalize a shared definition of what it means to be truly “done” with a unit of work",
+      "descriptor": "Formalize a shared definition of what it means to be truly \"done\" with a unit of work",
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There is no Definition of Done.",
-          "key": "VGhlcmUgaXMgbm8gRGVmaW5pdGlvbiBvZiBEb25lLg%3D%3D"
+          "key": -1098738963
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "There is a Definition of Done that is 'code complete' only.",
-          "key": "VGhlcmUgaXMgYSBEZWZpbml0aW9uIG9mIERvbmUgdGhhdCBpcyAnY29kZSBjb21wbGV0ZScgb25seS4%3D"
+          "key": 288245280
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Individuals complete work to varying levels of done-ness with no visibility to what work is or is not being completed for each story.",
-          "key": "SW5kaXZpZHVhbHMgY29tcGxldGUgd29yayB0byB2YXJ5aW5nIGxldmVscyBvZiBkb25lLW5lc3Mgd2l0aCBubyB2aXNpYmlsaXR5IHRvIHdoYXQgd29yayBpcyBvciBpcyBub3QgYmVpbmcgY29tcGxldGVkIGZvciBlYWNoIHN0b3J5Lg%3D%3D"
+          "key": -15908355
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is a reasonable and documented Definition of Done.",
-          "key": "VGhlcmUgaXMgYSByZWFzb25hYmxlIGFuZCBkb2N1bWVudGVkIERlZmluaXRpb24gb2YgRG9uZS4%3D"
+          "key": 513995738
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Definition of Done is mostly followed.",
-          "key": "RGVmaW5pdGlvbiBvZiBEb25lIGlzIG1vc3RseSBmb2xsb3dlZC4%3D"
+          "key": 1806389792
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Definition of Done was created by the team",
-          "key": "RGVmaW5pdGlvbiBvZiBEb25lIHdhcyBjcmVhdGVkIGJ5IHRoZSB0ZWFt"
+          "key": 1936740098
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Definition of Done documents the breadth of activities necessary for code to be ready for production. ",
-          "key": "RGVmaW5pdGlvbiBvZiBEb25lIGRvY3VtZW50cyB0aGUgYnJlYWR0aCBvZiBhY3Rpdml0aWVzIG5lY2Vzc2FyeSBmb3IgY29kZSB0byBiZSByZWFkeSBmb3IgcHJvZHVjdGlvbi6g"
+          "key": -248014839
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Everyone on the team knows the Definition of Done, follows it consistently and can explain what Done means for their team.",
-          "key": "RXZlcnlvbmUgb24gdGhlIHRlYW0ga25vd3MgdGhlIERlZmluaXRpb24gb2YgRG9uZSwgZm9sbG93cyBpdCBjb25zaXN0ZW50bHkgYW5kIGNhbiBleHBsYWluIHdoYXQgRG9uZSBtZWFucyBmb3IgdGhlaXIgdGVhbS4%3D"
+          "key": 869967889
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There may be a Release level Definition of Done that captures activities that cannot be achieved in a user story definition of done.",
-          "key": "VGhlcmUgbWF5IGJlIGEgUmVsZWFzZSBsZXZlbCBEZWZpbml0aW9uIG9mIERvbmUgdGhhdCBjYXB0dXJlcyBhY3Rpdml0aWVzIHRoYXQgY2Fubm90IGJlIGFjaGlldmVkIGluIGEgdXNlciBzdG9yeSBkZWZpbml0aW9uIG9mIGRvbmUu"
+          "key": 1393288611
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Stories that do not meet the Definition of Done are not accepted and are not demonstrated to the customer.",
-          "key": "U3RvcmllcyB0aGF0IGRvIG5vdCBtZWV0IHRoZSBEZWZpbml0aW9uIG9mIERvbmUgYXJlIG5vdCBhY2NlcHRlZCBhbmQgYXJlIG5vdCBkZW1vbnN0cmF0ZWQgdG8gdGhlIGN1c3RvbWVyLg%3D%3D"
+          "key": -13167536
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed. ",
-          "key": "RGVmaW5pdGlvbiBvZiBEb25lIGlzIHJldmlld2VkIGJ5IHRoZSB0ZWFtIG9uIGEgcmVndWxhciBiYXNpcyBhbmQgYWRqdXN0bWVudHMgLyBpbXByb3ZlbWVudHMgYXJlIG1hZGUgYXMgbmVlZGVkLqA%3D"
+          "key": -1696476223
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories. ",
-          "key": "RGVidCByZXBheW1lbnQgbmVlZGVkIHRvIGJyaW5nIGV4aXN0aW5nIGNvZGUgdXAgdG8gYW4gdXBkYXRlZCBEZWZpbml0aW9uIG9mIERvbmUgZW50ZXJzIHRoZSBiYWNrbG9nIGFzIG9uZSBvciBtb3JlIG5ldyBzdG9yaWVzLqA%3D"
+          "key": -2120135462
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Changes to process, infrastructure, teams or organizational structure are made as needed to enable all work to meet the Definition of Done at the story level so any Release level Definition of Done becomes moot.",
-          "key": "Q2hhbmdlcyB0byBwcm9jZXNzLCBpbmZyYXN0cnVjdHVyZSwgdGVhbXMgb3Igb3JnYW5pemF0aW9uYWwgc3RydWN0dXJlIGFyZSBtYWRlIGFzIG5lZWRlZCB0byBlbmFibGUgYWxsIHdvcmsgdG8gbWVldCB0aGUgRGVmaW5pdGlvbiBvZiBEb25lIGF0IHRoZSBzdG9yeSBsZXZlbCBzbyBhbnkgUmVsZWFzZSBsZXZlbCBEZWZpbml0aW9uIG9mIERvbmUgYmVjb21lcyBtb290Lg%3D%3D"
+          "key": 1822829650
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Continuous deployment enabled.",
-          "key": "Q29udGludW91cyBkZXBsb3ltZW50IGVuYWJsZWQu"
+          "key": 758810549
         }
-      ]
+      ],
+      "key": 1902318238
     },
     {
       "section": "Continuous Integration - Legacy",
@@ -1857,101 +1874,102 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
-          "key": "QnVpbGQgaXMgbWFudWFsbHkgcGVyZm9ybWVkLCBpbmZyZXF1ZW50bHksIGN1c3RvbSBldmVyeSB0aW1lIG9yIG1heSBiZSByZXBlYXRhYmxlIGJ1dCBzdGF0aWMu"
+          "key": 1296098912
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Steps to run and configure builds are not captured in any manner.",
-          "key": "U3RlcHMgdG8gcnVuIGFuZCBjb25maWd1cmUgYnVpbGRzIGFyZSBub3QgY2FwdHVyZWQgaW4gYW55IG1hbm5lci4%3D"
+          "key": -1146762025
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The build process is considered 'tribal knowledge'.",
-          "key": "VGhlIGJ1aWxkIHByb2Nlc3MgaXMgY29uc2lkZXJlZCAndHJpYmFsIGtub3dsZWRnZScu"
+          "key": -449654831
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Build to a dedicated environment is repeatable and automated.",
-          "key": "QnVpbGQgdG8gYSBkZWRpY2F0ZWQgZW52aXJvbm1lbnQgaXMgcmVwZWF0YWJsZSBhbmQgYXV0b21hdGVkLg%3D%3D"
+          "key": 2004354035
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is automated unit testing in the build.",
-          "key": "VGhlcmUgaXMgYXV0b21hdGVkIHVuaXQgdGVzdGluZyBpbiB0aGUgYnVpbGQu"
+          "key": 1750457391
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "State of the build is a responsibility of the team.",
-          "key": "U3RhdGUgb2YgdGhlIGJ1aWxkIGlzIGEgcmVzcG9uc2liaWxpdHkgb2YgdGhlIHRlYW0u"
+          "key": -1633155976
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Build is automatically triggered.",
-          "key": "QnVpbGQgaXMgYXV0b21hdGljYWxseSB0cmlnZ2VyZWQu"
+          "key": 941541727
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Broken builds get fixed within 24 hours.",
-          "key": "QnJva2VuIGJ1aWxkcyBnZXQgZml4ZWQgd2l0aGluIDI0IGhvdXJzLg%3D%3D"
+          "key": 1362021287
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is reporting of code quality, build statistics, and testing results. ",
-          "key": "VGhlcmUgaXMgcmVwb3J0aW5nIG9mIGNvZGUgcXVhbGl0eSwgYnVpbGQgc3RhdGlzdGljcywgYW5kIHRlc3RpbmcgcmVzdWx0cy6g"
+          "key": -486569584
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
-          "key": "SWYgY29tcGxldGUgcmVncmVzc2lvbiBidWlsZCBydW5zIHRvbyBsb25nLCB0aGVuIHRoZSBidWlsZCBtYXkgYmUgc3BsaXQgaW50byAoMSkgRmFzdCwgaW5jcmVtZW50YWwgY29tbWl0IGJ1aWxkIGxhdW5jaGVkIGZvciBlYWNoIGNoZWNrLWluIGFuZCAoMikgQ29tcGxldGUgcmVncmVzc2lvbiBidWlsZCB3aXRoIGF1dG9tYXRlZCBmdW5jdGlvbmFsIHRlc3RzIGFzIHBhcnQgb2Ygc3VjY2VzcyBjcml0ZXJpYS4%3D"
+          "key": 1074750945
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The commit build provides feedback on common build problems in under 10 minutes.",
-          "key": "VGhlIGNvbW1pdCBidWlsZCBwcm92aWRlcyBmZWVkYmFjayBvbiBjb21tb24gYnVpbGQgcHJvYmxlbXMgaW4gdW5kZXIgMTAgbWludXRlcy4%3D"
+          "key": 202022675
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Each team member's code is pulled regularly (at least once a day) triggering the CI system.",
-          "key": "RWFjaCB0ZWFtIG1lbWJlcidzIGNvZGUgaXMgcHVsbGVkIHJlZ3VsYXJseSAoYXQgbGVhc3Qgb25jZSBhIGRheSkgdHJpZ2dlcmluZyB0aGUgQ0kgc3lzdGVtLg%3D%3D"
+          "key": 41585830
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Build stages (incremental and regression) are linked in order to remove duplication across end-to-end build process.",
-          "key": "QnVpbGQgc3RhZ2VzIChpbmNyZW1lbnRhbCBhbmQgcmVncmVzc2lvbikgYXJlIGxpbmtlZCBpbiBvcmRlciB0byByZW1vdmUgZHVwbGljYXRpb24gYWNyb3NzIGVuZC10by1lbmQgYnVpbGQgcHJvY2Vzcy4%3D"
+          "key": 798807711
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
-          "key": "QnVpbGQgc3VjY2VzcyBjcml0ZXJpYSBleHRlbmQgdG8gbm9uLWZ1bmN0aW9uYWwgY29uc2lkZXJhdGlvbnMgLSBzdWNoIGFzIGFyY2hpdGVjdHVyYWwgYnJlYWNoZXMsIHNsb3cgdGVzdHMsIGFuZCBjb2Rpbmcgc3RhbmRhcmQgdmlvbGF0aW9ucy4%3D"
+          "key": -1428877358
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
-          "key": "UmVwb3J0aW5nIGNhcGFiaWxpdGllcyBwcm92aWRlIGNvbXBsZXRlIHRyYW5zcGFyZW5jeSBhY3Jvc3MgYWxsIGFzcGVjdHMgb2YgY29kZSBxdWFsaXR5LCBidWlsZCBzdGF0aXN0aWNzLCBhbmQgdGVzdGluZyByZXN1bHRzLg%3D%3D"
+          "key": -698119235
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Builds are done in parallel reducing overall build time.",
-          "key": "QnVpbGRzIGFyZSBkb25lIGluIHBhcmFsbGVsIHJlZHVjaW5nIG92ZXJhbGwgYnVpbGQgdGltZS4%3D"
+          "key": -76491443
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Targeted feedback for corrective measures on failed builds occur across builds.",
-          "key": "VGFyZ2V0ZWQgZmVlZGJhY2sgZm9yIGNvcnJlY3RpdmUgbWVhc3VyZXMgb24gZmFpbGVkIGJ1aWxkcyBvY2N1ciBhY3Jvc3MgYnVpbGRzLg%3D%3D"
+          "key": -1412088127
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
-          "key": "UmVwb3J0aW5nIGNhcGFiaWxpdGllcyBwcm92aWRlIGFuYWx5dGljcywgYW5kIGNyb3NzIG1vZHVsZSBjb21wYXJpc29ucy4%3D"
+          "key": 1868732307
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "There are rollback capabilities for broken builds.",
-          "key": "VGhlcmUgYXJlIHJvbGxiYWNrIGNhcGFiaWxpdGllcyBmb3IgYnJva2VuIGJ1aWxkcy4%3D"
+          "key": -507775932
         }
-      ]
+      ],
+      "key": -431178631
     },
     {
       "section": "Continuous Integration - Microservices",
@@ -1959,96 +1977,97 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
-          "key": "QnVpbGQgaXMgbWFudWFsbHkgcGVyZm9ybWVkLCBpbmZyZXF1ZW50bHksIGN1c3RvbSBldmVyeSB0aW1lIG9yIG1heSBiZSByZXBlYXRhYmxlIGJ1dCBzdGF0aWMu"
+          "key": 31907079
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Steps to run and configure builds are not captured in any manner.",
-          "key": "U3RlcHMgdG8gcnVuIGFuZCBjb25maWd1cmUgYnVpbGRzIGFyZSBub3QgY2FwdHVyZWQgaW4gYW55IG1hbm5lci4%3D"
+          "key": 1779463166
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The build process is considered 'tribal knowledge'.",
-          "key": "VGhlIGJ1aWxkIHByb2Nlc3MgaXMgY29uc2lkZXJlZCAndHJpYmFsIGtub3dsZWRnZScu"
+          "key": 342226744
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Build to a dedicated environment is repeatable and automated.",
-          "key": "QnVpbGQgdG8gYSBkZWRpY2F0ZWQgZW52aXJvbm1lbnQgaXMgcmVwZWF0YWJsZSBhbmQgYXV0b21hdGVkLg%3D%3D"
+          "key": 1110070938
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is automated unit testing in the build.",
-          "key": "VGhlcmUgaXMgYXV0b21hdGVkIHVuaXQgdGVzdGluZyBpbiB0aGUgYnVpbGQu"
+          "key": -1455924010
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "State of the build is a responsibility of the team.",
-          "key": "U3RhdGUgb2YgdGhlIGJ1aWxkIGlzIGEgcmVzcG9uc2liaWxpdHkgb2YgdGhlIHRlYW0u"
+          "key": -841274401
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Build is automatically triggered.",
-          "key": "QnVpbGQgaXMgYXV0b21hdGljYWxseSB0cmlnZ2VyZWQu"
+          "key": -680014714
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Broken builds get fixed within 24 hours.",
-          "key": "QnJva2VuIGJ1aWxkcyBnZXQgZml4ZWQgd2l0aGluIDI0IGhvdXJzLg%3D%3D"
+          "key": -494256480
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "There is reporting of code quality, build statistics, and testing results. ",
-          "key": "VGhlcmUgaXMgcmVwb3J0aW5nIG9mIGNvZGUgcXVhbGl0eSwgYnVpbGQgc3RhdGlzdGljcywgYW5kIHRlc3RpbmcgcmVzdWx0cy6g"
+          "key": -195253257
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
-          "key": "SWYgY29tcGxldGUgcmVncmVzc2lvbiBidWlsZCBydW5zIHRvbyBsb25nLCB0aGVuIHRoZSBidWlsZCBtYXkgYmUgc3BsaXQgaW50byAoMSkgRmFzdCwgaW5jcmVtZW50YWwgY29tbWl0IGJ1aWxkIGxhdW5jaGVkIGZvciBlYWNoIGNoZWNrLWluIGFuZCAoMikgQ29tcGxldGUgcmVncmVzc2lvbiBidWlsZCB3aXRoIGF1dG9tYXRlZCBmdW5jdGlvbmFsIHRlc3RzIGFzIHBhcnQgb2Ygc3VjY2VzcyBjcml0ZXJpYS4%3D"
+          "key": 1069820424
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The commit build provides feedback on common build problems in under 10 minutes.",
-          "key": "VGhlIGNvbW1pdCBidWlsZCBwcm92aWRlcyBmZWVkYmFjayBvbiBjb21tb24gYnVpbGQgcHJvYmxlbXMgaW4gdW5kZXIgMTAgbWludXRlcy4%3D"
+          "key": 22406412
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Each team member pushes code regularly (at least once a day) triggering the CI system.",
-          "key": "RWFjaCB0ZWFtIG1lbWJlciBwdXNoZXMgY29kZSByZWd1bGFybHkgKGF0IGxlYXN0IG9uY2UgYSBkYXkpIHRyaWdnZXJpbmcgdGhlIENJIHN5c3RlbS4%3D"
+          "key": 1747036471
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
-          "key": "QnVpbGQgc3VjY2VzcyBjcml0ZXJpYSBleHRlbmQgdG8gbm9uLWZ1bmN0aW9uYWwgY29uc2lkZXJhdGlvbnMgLSBzdWNoIGFzIGFyY2hpdGVjdHVyYWwgYnJlYWNoZXMsIHNsb3cgdGVzdHMsIGFuZCBjb2Rpbmcgc3RhbmRhcmQgdmlvbGF0aW9ucy4%3D"
+          "key": 910946891
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
-          "key": "UmVwb3J0aW5nIGNhcGFiaWxpdGllcyBwcm92aWRlIGNvbXBsZXRlIHRyYW5zcGFyZW5jeSBhY3Jvc3MgYWxsIGFzcGVjdHMgb2YgY29kZSBxdWFsaXR5LCBidWlsZCBzdGF0aXN0aWNzLCBhbmQgdGVzdGluZyByZXN1bHRzLg%3D%3D"
+          "key": -2123294556
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Builds are done in parallel reducing overall build time.",
-          "key": "QnVpbGRzIGFyZSBkb25lIGluIHBhcmFsbGVsIHJlZHVjaW5nIG92ZXJhbGwgYnVpbGQgdGltZS4%3D"
+          "key": -1864288698
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Targeted feedback for corrective measures on failed builds occur across builds.",
-          "key": "VGFyZ2V0ZWQgZmVlZGJhY2sgZm9yIGNvcnJlY3RpdmUgbWVhc3VyZXMgb24gZmFpbGVkIGJ1aWxkcyBvY2N1ciBhY3Jvc3MgYnVpbGRzLg%3D%3D"
+          "key": -1417882200
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
-          "key": "UmVwb3J0aW5nIGNhcGFiaWxpdGllcyBwcm92aWRlIGFuYWx5dGljcywgYW5kIGNyb3NzIG1vZHVsZSBjb21wYXJpc29ucy4%3D"
+          "key": 1711736186
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "There are rollback capabilities for broken builds.",
-          "key": "VGhlcmUgYXJlIHJvbGxiYWNrIGNhcGFiaWxpdGllcyBmb3IgYnJva2VuIGJ1aWxkcy4%3D"
+          "key": 1734525949
         }
-      ]
+      ],
+      "key": 1093229682
     },
     {
       "section": "Continuous Delivery - Legacy",
@@ -2056,82 +2075,83 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
-          "key": "RGVwbG95bWVudCBpcyBtYW51YWxseSBwZXJmb3JtZWQsIGluZnJlcXVlbnRseSBjdXN0b20gZXZlcnkgdGltZTsgb3IgbWF5IGJlIHJlcGVhdGFibGUgYnV0IHN0YXRpYy6g"
+          "key": 643155718
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Deployment is owned by a specific member of the team.",
-          "key": "RGVwbG95bWVudCBpcyBvd25lZCBieSBhIHNwZWNpZmljIG1lbWJlciBvZiB0aGUgdGVhbS4%3D"
+          "key": 2109118412
         },
-        { "value": 0, "descriptor": "no", "key": "bm8%3D" },
+        { "score": 0, "descriptor": "no", "key": 634596120 },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
-          "key": "RGVwbG95bWVudCB0byBhIGRlZGljYXRlZCBlbnZpcm9ubWVudCBpcyByZXBlYXRhYmxlIGFuZCBhdXRvbWF0ZWQgYW5kIHRyaWdnZXJlZCBvbiBhIHNjaGVkdWxlLqA%3D"
+          "key": 127378123
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
-          "key": "U3RhdGUgb2YgdGhlIGRlcGxveW1lbnQgaXMgYSByZXNwb25zaWJpbGl0eSBvZiBhIHJvbGUgZGVmaW5lZCBmb3IgYnVpbGQgYW5kIHJlbGVhc2UgZW5naW5lZXIu"
+          "key": -1829356363
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Software is built in every stage of the deployment pipeline.",
-          "key": "U29mdHdhcmUgaXMgYnVpbHQgaW4gZXZlcnkgc3RhZ2Ugb2YgdGhlIGRlcGxveW1lbnQgcGlwZWxpbmUu"
+          "key": -252485475
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
-          "key": "RGVwbG95bWVudCBvY2N1cnMgYmFzZWQgb24gYSBjeWNsZSB0aGF0IGlzIGFzIHNob3J0IGFzIHBvc3NpYmxlIHdoaWxlIGFjY29tbW9kYXRpbmcgYSBmdWxsIGxvb3Agb2YgdGhlIHRlc3RpbmcgZmVlZGJhY2sgY3ljbGUuoA%3D%3D"
+          "key": 2091276122
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "State of the deployment is the responsibility of the team.",
-          "key": "U3RhdGUgb2YgdGhlIGRlcGxveW1lbnQgaXMgdGhlIHJlc3BvbnNpYmlsaXR5IG9mIHRoZSB0ZWFtLg%3D%3D"
+          "key": -959317745
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary. ",
-          "key": "QmluYXJpZXMgYXJlIGJ1aWx0IG9uY2UsIGFuZCBkZXBsb3llZCB0byBtdWx0aXBsZSBlbnZpcm9ubWVudHMsIGFzIG5lY2Vzc2FyeS6g"
+          "key": -20034762
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Testing and release environment mirror production. ",
-          "key": "VGVzdGluZyBhbmQgcmVsZWFzZSBlbnZpcm9ubWVudCBtaXJyb3IgcHJvZHVjdGlvbi6g"
+          "key": 1661294038
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
-          "key": "RGVwbG95bWVudCBvY2N1cnMgYmFzZWQgb24gYSBjeWNsZSB0aGF0IGlzIGFzIHNob3J0IGFzIHBvc3NpYmxlIHdoaWxlIGFjY29tbW9kYXRpbmcgYSBmdWxsIGxvb3Agb2YgdGhlIHVzZXIgZmVlZGJhY2sgY3ljbGUu"
+          "key": 1909098619
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
-          "key": "RGVwbG95bWVudCBjYW4gYmUgbWFkZSBvbiBjb21wb25lbnRzIHRoYXQgYWxsb3cgZm9yIHRhcmdldGVkIGZlYXR1cmVzLCAtIGFsbG93aW5nIGZvciBpbmNyZW1lbnRhbCBmZWF0dXJlIHJlbGVhc2VzLg%3D%3D"
+          "key": -300547316
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Automation extends to non-server configuration such as networks, and external services.",
-          "key": "QXV0b21hdGlvbiBleHRlbmRzIHRvIG5vbi1zZXJ2ZXIgY29uZmlndXJhdGlvbiBzdWNoIGFzIG5ldHdvcmtzLCBhbmQgZXh0ZXJuYWwgc2VydmljZXMu"
+          "key": -636943571
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Deploy can be made based on limited access to specific target end users.",
-          "key": "RGVwbG95IGNhbiBiZSBtYWRlIGJhc2VkIG9uIGxpbWl0ZWQgYWNjZXNzIHRvIHNwZWNpZmljIHRhcmdldCBlbmQgdXNlcnMu"
+          "key": 1091675311
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Incremental rollback occurs as needed.",
-          "key": "SW5jcmVtZW50YWwgcm9sbGJhY2sgb2NjdXJzIGFzIG5lZWRlZC4%3D"
+          "key": -344351579
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
-          "key": "Q29udGludW91cyBkZWxpdmVyeSBlbnZpcm9ubWVudCBjb2xsZWN0cyBkYXRhIGFib3V0IGZlYXR1cmUgdXNhZ2UgYW5kIGFsbG93cyBmb3IgYmx1ZSBncmVlbiB0ZXN0aW5nIGJlZm9yZSBmdWxsIGZlYXR1cmUgcmVsZWFzZSBpbiBwcm9kdWN0aW9uLg%3D%3D"
+          "key": -1143884170
         }
-      ]
+      ],
+      "key": 970491671
     },
     {
       "section": "Continuous Delivery - Microservices",
@@ -2139,83 +2159,84 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
-          "key": "RGVwbG95bWVudCBpcyBtYW51YWxseSBwZXJmb3JtZWQsIGluZnJlcXVlbnRseSBjdXN0b20gZXZlcnkgdGltZTsgb3IgbWF5IGJlIHJlcGVhdGFibGUgYnV0IHN0YXRpYy6g"
+          "key": -445191959
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Deployment is owned by a specific member of the team.",
-          "key": "RGVwbG95bWVudCBpcyBvd25lZCBieSBhIHNwZWNpZmljIG1lbWJlciBvZiB0aGUgdGVhbS4%3D"
+          "key": 1859174127
         },
-        { "value": 0, "descriptor": "no", "key": "bm8%3D" },
-        { "value": 0, "descriptor": "no", "key": "bm8%3D" },
+        { "score": 0, "descriptor": "no", "key": -844145451 },
+        { "score": 0, "descriptor": "no", "key": -844145451 },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
-          "key": "RGVwbG95bWVudCB0byBhIGRlZGljYXRlZCBlbnZpcm9ubWVudCBpcyByZXBlYXRhYmxlIGFuZCBhdXRvbWF0ZWQgYW5kIHRyaWdnZXJlZCBvbiBhIHNjaGVkdWxlLqA%3D"
+          "key": 1208167982
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
-          "key": "U3RhdGUgb2YgdGhlIGRlcGxveW1lbnQgaXMgYSByZXNwb25zaWJpbGl0eSBvZiBhIHJvbGUgZGVmaW5lZCBmb3IgYnVpbGQgYW5kIHJlbGVhc2UgZW5naW5lZXIu"
+          "key": -2105326376
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "Software is built in every stage of the deployment pipeline.",
-          "key": "U29mdHdhcmUgaXMgYnVpbHQgaW4gZXZlcnkgc3RhZ2Ugb2YgdGhlIGRlcGxveW1lbnQgcGlwZWxpbmUu"
+          "key": -264733670
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
-          "key": "RGVwbG95bWVudCBvY2N1cnMgYmFzZWQgb24gYSBjeWNsZSB0aGF0IGlzIGFzIHNob3J0IGFzIHBvc3NpYmxlIHdoaWxlIGFjY29tbW9kYXRpbmcgYSBmdWxsIGxvb3Agb2YgdGhlIHRlc3RpbmcgZmVlZGJhY2sgY3ljbGUuoA%3D%3D"
+          "key": 512988861
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "State of the deployment is the responsibility of the team.",
-          "key": "U3RhdGUgb2YgdGhlIGRlcGxveW1lbnQgaXMgdGhlIHJlc3BvbnNpYmlsaXR5IG9mIHRoZSB0ZWFtLg%3D%3D"
+          "key": 1051840460
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary. ",
-          "key": "QmluYXJpZXMgYXJlIGJ1aWx0IG9uY2UsIGFuZCBkZXBsb3llZCB0byBtdWx0aXBsZSBlbnZpcm9ubWVudHMsIGFzIG5lY2Vzc2FyeS6g"
+          "key": -78356109
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Testing and release environment mirror production. ",
-          "key": "VGVzdGluZyBhbmQgcmVsZWFzZSBlbnZpcm9ubWVudCBtaXJyb3IgcHJvZHVjdGlvbi6g"
+          "key": 1102375353
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
-          "key": "RGVwbG95bWVudCBvY2N1cnMgYmFzZWQgb24gYSBjeWNsZSB0aGF0IGlzIGFzIHNob3J0IGFzIHBvc3NpYmxlIHdoaWxlIGFjY29tbW9kYXRpbmcgYSBmdWxsIGxvb3Agb2YgdGhlIHVzZXIgZmVlZGJhY2sgY3ljbGUu"
+          "key": -1901268642
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
-          "key": "RGVwbG95bWVudCBjYW4gYmUgbWFkZSBvbiBjb21wb25lbnRzIHRoYXQgYWxsb3cgZm9yIHRhcmdldGVkIGZlYXR1cmVzLCAtIGFsbG93aW5nIGZvciBpbmNyZW1lbnRhbCBmZWF0dXJlIHJlbGVhc2VzLg%3D%3D"
+          "key": -1217069329
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Automation extends to non-server configuration such as networks, and external services.",
-          "key": "QXV0b21hdGlvbiBleHRlbmRzIHRvIG5vbi1zZXJ2ZXIgY29uZmlndXJhdGlvbiBzdWNoIGFzIG5ldHdvcmtzLCBhbmQgZXh0ZXJuYWwgc2VydmljZXMu"
+          "key": 427532688
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Deploy can be made based on limited access to specific target end users.",
-          "key": "RGVwbG95IGNhbiBiZSBtYWRlIGJhc2VkIG9uIGxpbWl0ZWQgYWNjZXNzIHRvIHNwZWNpZmljIHRhcmdldCBlbmQgdXNlcnMu"
+          "key": -931107668
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Incremental rollback occurs as needed.",
-          "key": "SW5jcmVtZW50YWwgcm9sbGJhY2sgb2NjdXJzIGFzIG5lZWRlZC4%3D"
+          "key": 2008576994
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
-          "key": "Q29udGludW91cyBkZWxpdmVyeSBlbnZpcm9ubWVudCBjb2xsZWN0cyBkYXRhIGFib3V0IGZlYXR1cmUgdXNhZ2UgYW5kIGFsbG93cyBmb3IgYmx1ZSBncmVlbiB0ZXN0aW5nIGJlZm9yZSBmdWxsIGZlYXR1cmUgcmVsZWFzZSBpbiBwcm9kdWN0aW9uLg%3D%3D"
+          "key": -2092473165
         }
-      ]
+      ],
+      "key": -1247804396
     },
     {
       "section": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
@@ -2223,107 +2244,108 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "No automated regression tests - it is all done manually.",
-          "key": "Tm8gYXV0b21hdGVkIHJlZ3Jlc3Npb24gdGVzdHMgLSBpdCBpcyBhbGwgZG9uZSBtYW51YWxseS4%3D"
+          "key": -1346457115
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "The team complains that they have tried to get automated functional tests to work in the past, but they say it slows them down and is too expensive for this group to do.",
-          "key": "VGhlIHRlYW0gY29tcGxhaW5zIHRoYXQgdGhleSBoYXZlIHRyaWVkIHRvIGdldCBhdXRvbWF0ZWQgZnVuY3Rpb25hbCB0ZXN0cyB0byB3b3JrIGluIHRoZSBwYXN0LCBidXQgdGhleSBzYXkgaXQgc2xvd3MgdGhlbSBkb3duIGFuZCBpcyB0b28gZXhwZW5zaXZlIGZvciB0aGlzIGdyb3VwIHRvIGRvLg%3D%3D"
+          "key": -67464215
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Little to no organizational support for leadership promoting an investment in test automation.",
-          "key": "TGl0dGxlIHRvIG5vIG9yZ2FuaXphdGlvbmFsIHN1cHBvcnQgZm9yIGxlYWRlcnNoaXAgcHJvbW90aW5nIGFuIGludmVzdG1lbnQgaW4gdGVzdCBhdXRvbWF0aW9uLg%3D%3D"
+          "key": 2002065400
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "There is some automated testing, including some in the automated regression build.",
-          "key": "VGhlcmUgaXMgc29tZSBhdXRvbWF0ZWQgdGVzdGluZywgaW5jbHVkaW5nIHNvbWUgaW4gdGhlIGF1dG9tYXRlZCByZWdyZXNzaW9uIGJ1aWxkLg%3D%3D"
+          "key": 1400701178
         },
-        { "value": 1, "descriptor": "448", "key": "NDQ4" },
+        { "score": 1, "descriptor": "448", "key": 14679058 },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Automated regression tests complete in less than two hours.",
-          "key": "QXV0b21hdGVkIHJlZ3Jlc3Npb24gdGVzdHMgY29tcGxldGUgaW4gbGVzcyB0aGFuIHR3byBob3Vycy4%3D"
+          "key": -1196985977
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Code coverage is measured on automated functional tests.",
-          "key": "Q29kZSBjb3ZlcmFnZSBpcyBtZWFzdXJlZCBvbiBhdXRvbWF0ZWQgZnVuY3Rpb25hbCB0ZXN0cy4%3D"
+          "key": -803418648
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "All of the tests are included in a CI build and there are rarely test cases commented out or ignored.",
-          "key": "QWxsIG9mIHRoZSB0ZXN0cyBhcmUgaW5jbHVkZWQgaW4gYSBDSSBidWlsZCBhbmQgdGhlcmUgYXJlIHJhcmVseSB0ZXN0IGNhc2VzIGNvbW1lbnRlZCBvdXQgb3IgaWdub3JlZC4%3D"
+          "key": 21216610
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The team values automated testing.",
-          "key": "VGhlIHRlYW0gdmFsdWVzIGF1dG9tYXRlZCB0ZXN0aW5nLg%3D%3D"
+          "key": -576271266
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Pipeline includes gating factor to ensure that important code quality metrics don't backslide",
-          "key": "UGlwZWxpbmUgaW5jbHVkZXMgZ2F0aW5nIGZhY3RvciB0byBlbnN1cmUgdGhhdCBpbXBvcnRhbnQgY29kZSBxdWFsaXR5IG1ldHJpY3MgZG9uJ3QgYmFja3NsaWRl"
+          "key": -1456410195
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "The team agrees that the automated tests are valuable and organize to run them in various CI builds.",
-          "key": "VGhlIHRlYW0gYWdyZWVzIHRoYXQgdGhlIGF1dG9tYXRlZCB0ZXN0cyBhcmUgdmFsdWFibGUgYW5kIG9yZ2FuaXplIHRvIHJ1biB0aGVtIGluIHZhcmlvdXMgQ0kgYnVpbGRzLg%3D%3D"
+          "key": 114394395
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "They recognize that they can't be run all of the time for each build, so they will be segregated and run at different times.",
-          "key": "VGhleSByZWNvZ25pemUgdGhhdCB0aGV5IGNhbid0IGJlIHJ1biBhbGwgb2YgdGhlIHRpbWUgZm9yIGVhY2ggYnVpbGQsIHNvIHRoZXkgd2lsbCBiZSBzZWdyZWdhdGVkIGFuZCBydW4gYXQgZGlmZmVyZW50IHRpbWVzLg%3D%3D"
+          "key": 680670674
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "There may be time sequences where all of the builds are not running successfully because the tests are failing.",
-          "key": "VGhlcmUgbWF5IGJlIHRpbWUgc2VxdWVuY2VzIHdoZXJlIGFsbCBvZiB0aGUgYnVpbGRzIGFyZSBub3QgcnVubmluZyBzdWNjZXNzZnVsbHkgYmVjYXVzZSB0aGUgdGVzdHMgYXJlIGZhaWxpbmcu"
+          "key": 1703021089
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Sometimes they will allow a small set of tests to be commented out as they are difficult to debug/fix.",
-          "key": "U29tZXRpbWVzIHRoZXkgd2lsbCBhbGxvdyBhIHNtYWxsIHNldCBvZiB0ZXN0cyB0byBiZSBjb21tZW50ZWQgb3V0IGFzIHRoZXkgYXJlIGRpZmZpY3VsdCB0byBkZWJ1Zy9maXgu"
+          "key": 407089893
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Similar to automated unit testing, the team understands and works to have fast and reliable automated feature tests.",
-          "key": "U2ltaWxhciB0byBhdXRvbWF0ZWQgdW5pdCB0ZXN0aW5nLCB0aGUgdGVhbSB1bmRlcnN0YW5kcyBhbmQgd29ya3MgdG8gaGF2ZSBmYXN0IGFuZCByZWxpYWJsZSBhdXRvbWF0ZWQgZmVhdHVyZSB0ZXN0cy4%3D"
+          "key": -1929812921
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "A smoke test is included with the unit tests to ensure major capabilities continue to work with each check-in.",
-          "key": "QSBzbW9rZSB0ZXN0IGlzIGluY2x1ZGVkIHdpdGggdGhlIHVuaXQgdGVzdHMgdG8gZW5zdXJlIG1ham9yIGNhcGFiaWxpdGllcyBjb250aW51ZSB0byB3b3JrIHdpdGggZWFjaCBjaGVjay1pbi4%3D"
+          "key": -1706123894
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Speed and durability are significant concerns, and the team works at writing good and fast tests.",
-          "key": "U3BlZWQgYW5kIGR1cmFiaWxpdHkgYXJlIHNpZ25pZmljYW50IGNvbmNlcm5zLCBhbmQgdGhlIHRlYW0gd29ya3MgYXQgd3JpdGluZyBnb29kIGFuZCBmYXN0IHRlc3RzLg%3D%3D"
+          "key": 1596356316
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "All the tests are allocated to a CI build to ensure they run at some times.",
-          "key": "QWxsIHRoZSB0ZXN0cyBhcmUgYWxsb2NhdGVkIHRvIGEgQ0kgYnVpbGQgdG8gZW5zdXJlIHRoZXkgcnVuIGF0IHNvbWUgdGltZXMu"
+          "key": -1076292649
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The team understand that the automated tests are a real safety net and use them to strive for zero defects to production.",
-          "key": "VGhlIHRlYW0gdW5kZXJzdGFuZCB0aGF0IHRoZSBhdXRvbWF0ZWQgdGVzdHMgYXJlIGEgcmVhbCBzYWZldHkgbmV0IGFuZCB1c2UgdGhlbSB0byBzdHJpdmUgZm9yIHplcm8gZGVmZWN0cyB0byBwcm9kdWN0aW9uLg%3D%3D"
+          "key": -1357967562
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Performance and other non-functional requirements are included in the tests.",
-          "key": "UGVyZm9ybWFuY2UgYW5kIG90aGVyIG5vbi1mdW5jdGlvbmFsIHJlcXVpcmVtZW50cyBhcmUgaW5jbHVkZWQgaW4gdGhlIHRlc3RzLg%3D%3D"
+          "key": 2100112033
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "The tests are structured so that the developers run all unit tests and key functional tests (smoke tests) prior to every check-in.",
-          "key": "VGhlIHRlc3RzIGFyZSBzdHJ1Y3R1cmVkIHNvIHRoYXQgdGhlIGRldmVsb3BlcnMgcnVuIGFsbCB1bml0IHRlc3RzIGFuZCBrZXkgZnVuY3Rpb25hbCB0ZXN0cyAoc21va2UgdGVzdHMpIHByaW9yIHRvIGV2ZXJ5IGNoZWNrLWluLg%3D%3D"
+          "key": -1243662946
         }
-      ]
+      ],
+      "key": -896304154
     },
     {
       "section": "Source Code Management - Legacy",
@@ -2331,96 +2353,97 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
-          "key": "VHJhZGl0aW9uYWwgc2NoZW1lcyBiYXNlZCBvbiBmaWxlLWxvY2tpbmcgYW5kIHRpbWUtc2hhcmluZyBvciBubyBjb2RlIHJlcG9zaXRvcnkgaXMgdXNlZC4%3D"
+          "key": -1772188769
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
-          "key": "Q2hlY2staW5zIGFyZSBub3QgcGVyZm9ybWVkIGluIHNob3J0IHRpbWUtZnJhbWVzLCBsZWF2aW5nIGNvZGUgdW5wcm90ZWN0ZWQgYW5kIG5vdCBpbnRlZ3JhdGVkIGZvciBsb25nIHBlcmlvZHMgb2YgdGltZSAoZ3JlYXRlciB0aGFuIGEgY291cGxlIG9mIGRheXMpLg%3D%3D"
+          "key": -1530757537
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Code branches are not well understood or managed.",
-          "key": "Q29kZSBicmFuY2hlcyBhcmUgbm90IHdlbGwgdW5kZXJzdG9vZCBvciBtYW5hZ2VkLg%3D%3D"
+          "key": 809377864
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The team uses a supported SCM for code and tests..",
-          "key": "VGhlIHRlYW0gdXNlcyBhIHN1cHBvcnRlZCBTQ00gZm9yIGNvZGUgYW5kIHRlc3RzLi4%3D"
+          "key": -1774829701
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "IDE(s) integrate with SCM.",
-          "key": "SURFKHMpIGludGVncmF0ZSB3aXRoIFNDTS4%3D"
+          "key": 1722687067
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Developers include meaningful comments in commits.",
-          "key": "RGV2ZWxvcGVycyBpbmNsdWRlIG1lYW5pbmdmdWwgY29tbWVudHMgaW4gY29tbWl0cy4%3D"
+          "key": 1067143293
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Build can pull code from repository.",
-          "key": "QnVpbGQgY2FuIHB1bGwgY29kZSBmcm9tIHJlcG9zaXRvcnku"
+          "key": -545750573
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The team checks in at least every couple of days into the mainline trunk.",
-          "key": "VGhlIHRlYW0gY2hlY2tzIGluIGF0IGxlYXN0IGV2ZXJ5IGNvdXBsZSBvZiBkYXlzIGludG8gdGhlIG1haW5saW5lIHRydW5rLg%3D%3D"
+          "key": -703282812
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Mainline branches are protected from inadvertent changes.",
-          "key": "TWFpbmxpbmUgYnJhbmNoZXMgYXJlIHByb3RlY3RlZCBmcm9tIGluYWR2ZXJ0ZW50IGNoYW5nZXMu"
+          "key": -863766391
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Each team member can often merge their code with no merge problems.",
-          "key": "RWFjaCB0ZWFtIG1lbWJlciBjYW4gb2Z0ZW4gbWVyZ2UgdGhlaXIgY29kZSB3aXRoIG5vIG1lcmdlIHByb2JsZW1zLg%3D%3D"
+          "key": 2091833481
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "SCM supports merging; optimistic check-ins.",
-          "key": "U0NNIHN1cHBvcnRzIG1lcmdpbmc7IG9wdGltaXN0aWMgY2hlY2staW5zLg%3D%3D"
+          "key": -966377076
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Build does pull code from repository.",
-          "key": "QnVpbGQgZG9lcyBwdWxsIGNvZGUgZnJvbSByZXBvc2l0b3J5Lg%3D%3D"
+          "key": 1466610672
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Check-ins are done daily, if not several times per day.",
-          "key": "Q2hlY2staW5zIGFyZSBkb25lIGRhaWx5LCBpZiBub3Qgc2V2ZXJhbCB0aW1lcyBwZXIgZGF5Lg%3D%3D"
+          "key": -131225498
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
-          "key": "VGVhbSBkb2VzIG5vdCBjaGVjayBpbiBjb2RlIGlmIHRoZSBidWlsZCBpcyBicm9rZW4sIHVubGVzcyB0aGUgY2hlY2staW4gaXMgdG8gZml4IHRoZSBidWlsZC4%3D"
+          "key": 485400489
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Production or release branch fixes are always applied consistently to trunk.",
-          "key": "UHJvZHVjdGlvbiBvciByZWxlYXNlIGJyYW5jaCBmaXhlcyBhcmUgYWx3YXlzIGFwcGxpZWQgY29uc2lzdGVudGx5IHRvIHRydW5rLg%3D%3D"
+          "key": 802971301
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "key": "Q29tbWl0cyBhcmUgbG9naWNhbGx5IG9yY2hlc3RyYXRlZDsgYWxsIGRldmVsb3BtZW50IGFuZCByZWxlYXNlIGNvbGxhdGVyYWwgaXMgaW4gU0NNLg%3D%3D"
+          "key": -62157527
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics. ",
-          "key": "R2F0ZWQgY2hlY2staW4ncyBhcmUgZW5mb3JjZWQ7IGFsbCBzdGVwcyBwYXNzaW5nIHdpdGggaW1wcm92aW5nIG1ldHJpY3MuoA%3D%3D"
+          "key": -1604029502
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Branches are used effectively, and merges are are easily supported.",
-          "key": "QnJhbmNoZXMgYXJlIHVzZWQgZWZmZWN0aXZlbHksIGFuZCBtZXJnZXMgYXJlIGFyZSBlYXNpbHkgc3VwcG9ydGVkLg%3D%3D"
+          "key": -1028175933
         }
-      ]
+      ],
+      "key": 589451275
     },
     {
       "section": "Source Code Management - Microservices",
@@ -2428,91 +2451,92 @@
       "number": -1,
       "entries": [
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
-          "key": "VHJhZGl0aW9uYWwgc2NoZW1lcyBiYXNlZCBvbiBmaWxlLWxvY2tpbmcgYW5kIHRpbWUtc2hhcmluZyBvciBubyBjb2RlIHJlcG9zaXRvcnkgaXMgdXNlZC4%3D"
+          "key": -325950294
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
-          "key": "Q2hlY2staW5zIGFyZSBub3QgcGVyZm9ybWVkIGluIHNob3J0IHRpbWUtZnJhbWVzLCBsZWF2aW5nIGNvZGUgdW5wcm90ZWN0ZWQgYW5kIG5vdCBpbnRlZ3JhdGVkIGZvciBsb25nIHBlcmlvZHMgb2YgdGltZSAoZ3JlYXRlciB0aGFuIGEgY291cGxlIG9mIGRheXMpLg%3D%3D"
+          "key": -235190742
         },
         {
-          "value": -1,
+          "score": -1,
           "descriptor": "Code branches are not well understood or managed.",
-          "key": "Q29kZSBicmFuY2hlcyBhcmUgbm90IHdlbGwgdW5kZXJzdG9vZCBvciBtYW5hZ2VkLg%3D%3D"
+          "key": -1248845741
         },
         {
-          "value": 0,
+          "score": 0,
           "descriptor": "The team uses a supported SCM for code and tests..",
-          "key": "VGhlIHRlYW0gdXNlcyBhIHN1cHBvcnRlZCBTQ00gZm9yIGNvZGUgYW5kIHRlc3RzLi4%3D"
+          "key": -1155252016
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "IDE(s) integrate with SCM.",
-          "key": "SURFKHMpIGludGVncmF0ZSB3aXRoIFNDTS4%3D"
+          "key": -505246032
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Developers include meaningful comments in commits.",
-          "key": "RGV2ZWxvcGVycyBpbmNsdWRlIG1lYW5pbmdmdWwgY29tbWVudHMgaW4gY29tbWl0cy4%3D"
+          "key": 1686720978
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Build can pull code from repository.",
-          "key": "QnVpbGQgY2FuIHB1bGwgY29kZSBmcm9tIHJlcG9zaXRvcnku"
+          "key": 1741704168
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "The team checks in at least every couple of days into the mainline trunk.",
-          "key": "VGhlIHRlYW0gY2hlY2tzIGluIGF0IGxlYXN0IGV2ZXJ5IGNvdXBsZSBvZiBkYXlzIGludG8gdGhlIG1haW5saW5lIHRydW5rLg%3D%3D"
+          "key": -1283846001
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Mainline branches are protected from inadvertent changes.",
-          "key": "TWFpbmxpbmUgYnJhbmNoZXMgYXJlIHByb3RlY3RlZCBmcm9tIGluYWR2ZXJ0ZW50IGNoYW5nZXMu"
+          "key": 1053212052
         },
         {
-          "value": 1,
+          "score": 1,
           "descriptor": "Each team member can often merge their code with no merge problems.",
-          "key": "RWFjaCB0ZWFtIG1lbWJlciBjYW4gb2Z0ZW4gbWVyZ2UgdGhlaXIgY29kZSB3aXRoIG5vIG1lcmdlIHByb2JsZW1zLg%3D%3D"
+          "key": -405599276
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "SCM supports merging; optimistic check-ins.",
-          "key": "U0NNIHN1cHBvcnRzIG1lcmdpbmc7IG9wdGltaXN0aWMgY2hlY2staW5zLg%3D%3D"
+          "key": -1324358185
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Build does pull code from repository.",
-          "key": "QnVpbGQgZG9lcyBwdWxsIGNvZGUgZnJvbSByZXBvc2l0b3J5Lg%3D%3D"
+          "key": -636736389
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Check-ins are done daily, if not several times per day.",
-          "key": "Q2hlY2staW5zIGFyZSBkb25lIGRhaWx5LCBpZiBub3Qgc2V2ZXJhbCB0aW1lcyBwZXIgZGF5Lg%3D%3D"
+          "key": -35376079
         },
         {
-          "value": 2,
+          "score": 2,
           "descriptor": "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
-          "key": "VGVhbSBkb2VzIG5vdCBjaGVjayBpbiBjb2RlIGlmIHRoZSBidWlsZCBpcyBicm9rZW4sIHVubGVzcyB0aGUgY2hlY2staW4gaXMgdG8gZml4IHRoZSBidWlsZC4%3D"
+          "key": -1736104258
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "key": "Q29tbWl0cyBhcmUgbG9naWNhbGx5IG9yY2hlc3RyYXRlZDsgYWxsIGRldmVsb3BtZW50IGFuZCByZWxlYXNlIGNvbGxhdGVyYWwgaXMgaW4gU0NNLg%3D%3D"
+          "key": -1730960460
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics. ",
-          "key": "R2F0ZWQgY2hlY2staW4ncyBhcmUgZW5mb3JjZWQ7IGFsbCBzdGVwcyBwYXNzaW5nIHdpdGggaW1wcm92aW5nIG1ldHJpY3MuoA%3D%3D"
+          "key": 2110374605
         },
         {
-          "value": 3,
+          "score": 3,
           "descriptor": "Branches are used effectively, and merges are are easily supported.",
-          "key": "QnJhbmNoZXMgYXJlIHVzZWQgZWZmZWN0aXZlbHksIGFuZCBtZXJnZXMgYXJlIGFyZSBlYXNpbHkgc3VwcG9ydGVkLg%3D%3D"
+          "key": 769358606
         }
-      ]
+      ],
+      "key": 1709441184
     }
   ]
 }

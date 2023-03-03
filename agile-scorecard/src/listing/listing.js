@@ -32,8 +32,10 @@ export default function Listing(props) {
   useEffect(mountAssessments, []);
 
   return (
-    <div>
-      <div className="listing-title">Surveys</div>
+    <div key="base">
+      <div key="title" className="listing-title">
+        Surveys
+      </div>
       <nav>
         <AssessmentList assessment={assessments}></AssessmentList>
       </nav>
