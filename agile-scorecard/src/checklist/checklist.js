@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
-import "./css/checklist.css";
-
 function getChecklist({ get }, fileName) {
   return get(`/surveys/${fileName}`).then((x) => x.data);
+}
+
+function mapEntriesToSorted(entries) {
+  return [...entries].sort((a, b) => a.score - b.score);
 }
 
 export default function Checklist(props) {
@@ -36,7 +38,7 @@ export default function Checklist(props) {
 
     updateChecklist(survey);
 
-    const sectionScore = calculateScore(entries).score;
+    const sectionScore = calculateScore(entries).finalScore;
 
     const newKeyValue = Object.assign({}, urlData, {
       [key]: value,
@@ -46,6 +48,8 @@ export default function Checklist(props) {
     navigate(convertForUrl(newKeyValue), { replace: false });
   };
 
+  const sectionScoreDefault = survey.sectionScoreDefault;
+
   useEffect(loadChecklist, []);
 
   const getValue = (k) => {
@@ -54,6 +58,7 @@ export default function Checklist(props) {
 
   return (
     <div>
+      <h2 data-total-score>Total Score: 100</h2>
       <div data-header>
         <h1 data-survey-title>{parameters.name}</h1>
         <div data-actions>
@@ -64,27 +69,52 @@ export default function Checklist(props) {
       </div>
       <div>
         {(survey.items || []).map((x) =>
-          createSection(x, updateChecklistValue, getValue, createSectionKey)
+          createSection(
+            x,
+            updateChecklistValue,
+            getValue,
+            createSectionKey,
+            (entries) => calculateScore(entries, sectionScoreDefault)
+          )
         )}
       </div>
     </div>
   );
 }
 
-function calculateScore(entries) {
-  return entries.reduce(
+function calculateScore(entries, defaultValue) {
+  const sortedEntries = mapEntriesToSorted(entries);
+  return sortedEntries.reduce(
     (s, c) => {
-      if (!s.continue) {
-        return s;
-      }
       const continueProcess = s.continue && c.value == "yes";
 
-      return {
-        score: continueProcess ? s.score : c.score,
-        continue: continueProcess,
-      };
+      if (continueProcess) {
+        const updateScore = !s.score || s.score < c.score;
+
+        /*
+          0, 0,
+          1, 1,
+          2, 1
+       */
+
+        const newState = {
+          finalScore:
+            (updateScore ? s.previousScore : s.finalScore) ||
+            s.previousScore ||
+            c.score,
+          previousScore:
+            (updateScore ? s.currentScore : s.previousScore) ||
+            c.currentScore ||
+            c.score,
+          currentScore: c.score,
+          continue: continueProcess,
+        };
+
+        return newState;
+      }
+      return s;
     },
-    { current: null, continue: true }
+    { finalScore: defaultValue, continue: true }
   );
 }
 
@@ -112,45 +142,30 @@ function createSectionKey(k) {
   return `section-${k}`;
 }
 
-function generateHash(key) {
-  var hash = 0,
-    i,
-    chr;
-  if (key.length === 0) return hash;
-  for (i = 0; i < key.length; i++) {
-    chr = key.charCodeAt(i);
-    hash = (hash << 5) - hash + chr;
-    hash |= 0; // Convert to 32bit integer
-  }
-  return hash;
-}
-
 function createSection(
   { name, section, entries, key },
   update,
   getValue,
-  createSectionKey
+  createSectionKey,
+  calculateScore
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
   };
 
-  const score = getValue(createSectionKey(key));
+  const score = calculateScore(entries).finalScore;
   const sectionKey = createSectionKey(key);
 
   return (
     <section data-section-wrapper>
       <div data-name="name" key={`name-${name}`}>
-        <h2>{section}</h2>
-        <div data-section-score>
-          {score} - {sectionKey}
-        </div>
-      </div>
-      <div data-name="section" key={"score-" + sectionKey}>
-        {score}
+        <h2 data-section-name>{section}</h2>
+        <h3 key={"score-" + sectionKey}>Score: {score}</h3>
       </div>
       <section key={sectionKey}>
-        {entries.map((x) => createEntry(x, updateSection, getValue))}
+        {mapEntriesToSorted(entries).map((x) =>
+          createEntry(x, updateSection, getValue)
+        )}
       </section>
     </section>
   );

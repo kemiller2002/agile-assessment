@@ -8,7 +8,7 @@ function AssessmentList({ assessment }) {
     <ol>
       {list.map((l) => (
         <li>
-          <a href={l.file} key={l.file}>
+          <a href={`survey/${l.file}`} key={l.file}>
             {l.name}
           </a>
         </li>

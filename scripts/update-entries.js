@@ -66,6 +66,7 @@ function addMetaData(input) {
   return {
     name: "Ren Agile Survey V1",
     items: input,
+    sectionScoreDefault: -1,
   };
 }
 

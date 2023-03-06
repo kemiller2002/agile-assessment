@@ -7,7 +7,9 @@ section[data-section-wrapper]{
 }
 
 [data-name="name"] {
-    font-weight: 600;
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 div[data-entry-value]
@@ -33,6 +35,10 @@ div[data-entry-value]
 
 [data-name="section"]{
     background-color: lightgray;
+}
+
+[data-section-name]{
+    flex-grow: 2;
 }
 
 label {
@@ -95,4 +101,17 @@ div[data-header]{
 
 [data-entry-value]:first-child{
     border-radius: 50px 0px 0px 20px;
+}
+
+
+[data-total-score]{
+    position: fixed;
+    display: float;
+    bottom: 20px;
+    left: calc(100% - 220px);
+    background-color: white;
+    border: thin solid darkgray;
+    padding:.5em .25em .5em .25em;
+    border-radius: 20px;
+    box-shadow: 7px 5px 5px #555555;
 }
