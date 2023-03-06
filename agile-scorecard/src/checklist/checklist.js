@@ -38,7 +38,7 @@ export default function Checklist(props) {
 
     updateChecklist(survey);
 
-    const sectionScore = calculateScore(entries).finalScore;
+    const sectionScore = calculateScore(entries);
 
     const newKeyValue = Object.assign({}, urlData, {
       [key]: value,
@@ -56,11 +56,13 @@ export default function Checklist(props) {
     return urlData[k];
   };
 
+  const si = survey.items.length > 0 ? [survey.items[0]] : [];
+
   return (
     <div>
       <h2 data-total-score>Total Score: 100</h2>
       <div data-header>
-        <h1 data-survey-title>{parameters.name}</h1>
+        <h1 data-survey-title>{survey.name}</h1>
         <div data-actions>
           <button type="button" onClick={() => exportData(getData)}>
             Export Data
@@ -68,7 +70,7 @@ export default function Checklist(props) {
         </div>
       </div>
       <div>
-        {(survey.items || []).map((x) =>
+        {si.map((x) =>
           createSection(
             x,
             updateChecklistValue,
@@ -84,38 +86,32 @@ export default function Checklist(props) {
 
 function calculateScore(entries, defaultValue) {
   const sortedEntries = mapEntriesToSorted(entries);
-  return sortedEntries.reduce(
+  const scored = sortedEntries.reduce(
     (s, c) => {
-      const continueProcess = s.continue && c.value == "yes";
-
-      if (continueProcess) {
-        const updateScore = !s.score || s.score < c.score;
-
-        /*
-          0, 0,
-          1, 1,
-          2, 1
-       */
-
-        const newState = {
-          finalScore:
-            (updateScore ? s.previousScore : s.finalScore) ||
-            s.previousScore ||
-            c.score,
-          previousScore:
-            (updateScore ? s.currentScore : s.previousScore) ||
-            c.currentScore ||
-            c.score,
-          currentScore: c.score,
-          continue: continueProcess,
-        };
-
-        return newState;
+      if (!s.continueToProcess) {
+        return s;
       }
-      return s;
+
+      const continueToProcess = s.continueToProcess && c.value == "yes";
+
+      const updateScore = !s.inProcessScore || s.inProcessScore < c.score;
+
+      const newState = {
+        inProcessScore: s.score < c.score ? s.score : s.inProcessScore,
+        continueToProcess,
+        score: c.score,
+      };
+
+      return newState;
     },
-    { finalScore: defaultValue, continue: true }
+    {
+      inProcessScore: defaultValue,
+      continueToProcess: true,
+      score: defaultValue,
+    }
   );
+
+  return scored.continueToProcess ? scored.score : scored.inProcessScore;
 }
 
 function exportData(getData) {
@@ -153,7 +149,13 @@ function createSection(
     return update(key, entries, entryKey, value);
   };
 
-  const score = calculateScore(entries).finalScore;
+  const entriesWithValues = entries.map((x) =>
+    Object.assign({}, x, { value: getValue(x.key) })
+  );
+  const sortedEntriesWithValues = mapEntriesToSorted(entriesWithValues);
+
+  const score = calculateScore(sortedEntriesWithValues);
+
   const sectionKey = createSectionKey(key);
 
   return (
@@ -163,16 +165,14 @@ function createSection(
         <h3 key={"score-" + sectionKey}>Score: {score}</h3>
       </div>
       <section key={sectionKey}>
-        {mapEntriesToSorted(entries).map((x) =>
-          createEntry(x, updateSection, getValue)
-        )}
+        {sortedEntriesWithValues.map((x) => createEntry(x, updateSection))}
       </section>
     </section>
   );
 }
 
-function createEntry(entry, update, getValue) {
-  const { descriptor, key, score } = entry;
+function createEntry(entry, update) {
+  const { descriptor, key, score, value } = entry;
 
   const updateEvent = (e) => {
     const value = e.target.value;
@@ -180,7 +180,7 @@ function createEntry(entry, update, getValue) {
     update(key, value);
   };
 
-  const value = getValue(key);
+  //const value = getValue(key);
 
   return (
     <div data-entry data-value={score}>
