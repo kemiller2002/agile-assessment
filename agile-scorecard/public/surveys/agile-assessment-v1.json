@@ -13,7 +13,7 @@
           "key": -250749821
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
           "key": 134407754
         },
@@ -77,12 +77,12 @@
           "key": 3959548
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Developers work in close digital proximity to each other",
           "key": 1584517284
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team has standard tools for sharing in their workflow",
           "key": 1452737540
         },
@@ -132,7 +132,7 @@
           "key": 2068507542
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
           "key": -1836603809
         },
@@ -196,17 +196,17 @@
           "key": 170492182
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "An attempt at collaboratively authoring working agreements has been made and they meet the needs of most parties.",
           "key": 1129318934
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Scrum of scrums in place.",
           "key": -1696622781
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Key dependencies between teams are mostly delivered on-time.",
           "key": -971133386
         },
@@ -275,22 +275,22 @@
           "key": 1800559373
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There are realistic expectations as to how scope and schedule will be managed.  ",
           "key": -1773505228
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Some agreement as to roles / responsibilities exists.",
           "key": 1089616891
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Informal expectations or agreement on how the team should interact with the business or what the business should expect from the team exist.",
           "key": 965727204
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "When the business adds new scope, realistic tradeoffs are made.",
           "key": 1055267110
         },
@@ -354,27 +354,27 @@
           "key": -1825609648
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Some but not all key stakeholders and functions are included.",
           "key": -1979864217
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team capacity is considered during release planning.",
           "key": 1785147812
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team velocity (if available) is considered during release planning.",
           "key": 898960314
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Planning is completed in a reasonable time and completed before the start of the next release.",
           "key": -270746209
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is an understanding that scope will change during the release as new information is discovered.",
           "key": -2007799161
         },
@@ -448,7 +448,7 @@
           "key": 238914748
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There are less than 20 high level goals.",
           "key": -2125393830
         },
@@ -571,7 +571,7 @@
           "key": -1356644742
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Project status details are available in the (physical or digital) team area.",
           "key": -2133546050
         },
@@ -616,22 +616,22 @@
           "key": 1441518394
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is budget available for learning and development.",
           "key": -1062946145
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Both management and team values learning and development.",
           "key": -1804005076
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is some level of team self-organized and self-motivated learning.  ",
           "key": 1788137585
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Opportunities are taken by team members to learn from each other and knowledge share.",
           "key": -629995473
         },
@@ -744,7 +744,7 @@
           "key": 1394254598
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The three amigos sometimes meet to refine the backlog.",
           "key": -38486138
         },
@@ -803,27 +803,27 @@
           "key": -1730096788
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team members highlight what they did yesterday, what they will do today.  ",
           "key": -833480163
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team members highlight any impediments/blockers.  ",
           "key": 1641578845
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Highlights are related to the sprint backlog.  ",
           "key": 955463643
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team avoids using Daily Standup to solve problems. ",
           "key": 529342961
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Standups are completed in an average of < 15 mins.",
           "key": -1833477234
         }
@@ -1295,29 +1295,29 @@
           "descriptor": "There is no clear indication of working software.  ",
           "key": 520748882
         },
-        { "score": 0, "descriptor": "444", "key": -175168277 },
+        { "score": 1, "descriptor": "444", "key": -175168277 },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Demonstration always takes place.",
           "key": -241690030
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Feedback is captured.",
           "key": -110702932
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The Product Owner is present.",
           "key": 1694231379
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team knows the stories to demonstrate, and they are complete.",
           "key": 1725315459
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Effective time management allow team to complete demonstration of planned stories within the meeting timebox.",
           "key": -1389702054
         },
@@ -1386,7 +1386,7 @@
           "key": 981838675
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Retrospectives are held every sprint.",
           "key": -1952744867
         },
@@ -1444,12 +1444,12 @@
           "key": 1713664220
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Developers write unit tests during a sprint for some stories.",
           "key": 986502833
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is an awareness of mocks, stubs and test doubles and some use of them in tests.",
           "key": 615372685
         },
@@ -1503,7 +1503,7 @@
           "key": -1846722146
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team understands BDD conceptually.",
           "key": -288102284
         },
@@ -1561,7 +1561,7 @@
           "key": -226563567
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is a general understanding of what refactoring is.",
           "key": -1869203260
         },
@@ -1629,17 +1629,17 @@
           "key": 554758396
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Random acts of pair programming.",
           "key": -1680109529
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "At least 1 hour per developer per week of pair programming.",
           "key": -1044580570
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Pairing happens when an issue arises and there is significant pressure to fix it fast.",
           "key": -1030576153
         },
@@ -1728,12 +1728,12 @@
           "key": 898582182
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Team is aware of YAGNI and evolving design and architecture, and there is some evidence of following these principles.",
           "key": 952335684
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "If there is an external architecture group, then the team has some input on architectural choices.",
           "key": -1505236969
         },
@@ -1811,12 +1811,12 @@
           "key": -15908355
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is a reasonable and documented Definition of Done.",
           "key": 513995738
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Definition of Done is mostly followed.",
           "key": 1806389792
         },
@@ -1889,17 +1889,17 @@
           "key": -449654831
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Build to a dedicated environment is repeatable and automated.",
           "key": 2004354035
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is automated unit testing in the build.",
           "key": 1750457391
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "State of the build is a responsibility of the team.",
           "key": -1633155976
         },
@@ -1992,17 +1992,17 @@
           "key": 342226744
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Build to a dedicated environment is repeatable and automated.",
           "key": 1110070938
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is automated unit testing in the build.",
           "key": -1455924010
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "State of the build is a responsibility of the team.",
           "key": -841274401
         },
@@ -2084,19 +2084,19 @@
           "descriptor": "Deployment is owned by a specific member of the team.",
           "key": 2109118412
         },
-        { "score": 0, "descriptor": "no", "key": 634596120 },
+        { "score": 1, "descriptor": "no", "key": 634596120 },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
           "key": 127378123
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "key": -1829356363
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Software is built in every stage of the deployment pipeline.",
           "key": -252485475
         },
@@ -2168,20 +2168,20 @@
           "descriptor": "Deployment is owned by a specific member of the team.",
           "key": 1859174127
         },
-        { "score": 0, "descriptor": "no", "key": -844145451 },
-        { "score": 0, "descriptor": "no", "key": -844145451 },
+        { "score": 1, "descriptor": "no", "key": -844145451 },
+        { "score": 1, "descriptor": "no", "key": -844145451 },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
           "key": 1208167982
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "key": -2105326376
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "Software is built in every stage of the deployment pipeline.",
           "key": -264733670
         },
@@ -2259,7 +2259,7 @@
           "key": 2002065400
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "There is some automated testing, including some in the automated regression build.",
           "key": 1400701178
         },
@@ -2368,7 +2368,7 @@
           "key": 809377864
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The team uses a supported SCM for code and tests..",
           "key": -1774829701
         },
@@ -2466,7 +2466,7 @@
           "key": -1248845741
         },
         {
-          "score": 0,
+          "score": 1,
           "descriptor": "The team uses a supported SCM for code and tests..",
           "key": -1155252016
         },
@@ -2539,5 +2539,5 @@
       "key": 1709441184
     }
   ],
-  "sectionScoreDefault": -1
+  "sectionScoreDefault": 0
 }

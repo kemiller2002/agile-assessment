@@ -9,16 +9,49 @@ function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
 }
 
+function calculateMetrics(survey, getValue) {
+  const defaultValue = survey.sectionScoreDefault;
+  const updateItem = (item) => {
+    return Object.assign({}, item, { value: getValue(item.key) });
+  };
+
+  const updateSection = (section) => {
+    const entries = section.entries.map(updateItem);
+    const score = calculateScore(entries, defaultValue);
+
+    return Object.assign({}, section, { entries, score });
+  };
+
+  return Object.assign({}, survey, {
+    items: [survey.items[0]].map(updateSection),
+  });
+}
+
 export default function Checklist(props) {
   const [survey, updateChecklist] = useState({ items: [] });
+  const [total, updateTotal] = useState({ total: 0 });
 
   const parameters = useParams();
   const name = parameters.name;
 
   const navigate = useNavigate();
 
+  const getData = () =>
+    convertAndParse(parameters.data) || { surveyName: parameters.name };
+
+  const urlData = getData();
+
+  const getValue = (k) => {
+    return urlData[k];
+  };
+
   const loadChecklist = () => {
-    getChecklist(props.http, name).then((d) => updateChecklist(d));
+    getChecklist(props.http, name)
+      .then((d) => calculateMetrics(d, getValue))
+      .then((x) => {
+        return x;
+      })
+      .then((d) => updateChecklist(d));
   };
 
   const findItem = (key) => {
@@ -27,10 +60,6 @@ export default function Checklist(props) {
       .flat()
       .filter((x) => x.key === key)[0];
   };
-
-  const getData = () =>
-    convertAndParse(parameters.data) || { surveyName: parameters.name };
-  const urlData = getData();
 
   const updateChecklistValue = (sectionKey, entries, key, value) => {
     const item = findItem(key);
@@ -48,19 +77,23 @@ export default function Checklist(props) {
     navigate(convertForUrl(newKeyValue), { replace: false });
   };
 
-  const sectionScoreDefault = survey.sectionScoreDefault;
-
   useEffect(loadChecklist, []);
 
-  const getValue = (k) => {
-    return urlData[k];
+  const sectionScoreDefault = survey.sectionScoreDefault;
+
+  const scoreData = {};
+
+  const updateSectionScore = (k, s) => {
+    total[k] = s;
+    //updateTotal({ total: 5 });
   };
 
-  const si = survey.items.length > 0 ? [survey.items[0]] : [];
+  const calculateScoreData = (data) =>
+    Object.keys(data).reduce((s, i) => (data[i] += s), 0);
 
   return (
     <div>
-      <h2 data-total-score>Total Score: 100</h2>
+      <h2 data-total-score>Total Score: {scoreData.total || 0}</h2>
       <div data-header>
         <h1 data-survey-title>{survey.name}</h1>
         <div data-actions>
@@ -70,13 +103,13 @@ export default function Checklist(props) {
         </div>
       </div>
       <div>
-        {si.map((x) =>
+        {(survey.items || []).map((x) =>
           createSection(
             x,
             updateChecklistValue,
-            getValue,
             createSectionKey,
-            (entries) => calculateScore(entries, sectionScoreDefault)
+            (entries) => calculateScore(entries, sectionScoreDefault),
+            updateSectionScore
           )
         )}
       </div>
@@ -88,6 +121,18 @@ function calculateScore(entries, defaultValue) {
   const sortedEntries = mapEntriesToSorted(entries);
   const scored = sortedEntries.reduce(
     (s, c) => {
+      if (c.score < 0) {
+        if (c.value != "no") {
+          return {
+            inProcessScore: -1,
+            continueToProcess: false,
+            score: -1,
+          };
+        }
+
+        return s;
+      }
+
       if (!s.continueToProcess) {
         return s;
       }
@@ -141,22 +186,19 @@ function createSectionKey(k) {
 function createSection(
   { name, section, entries, key },
   update,
-  getValue,
   createSectionKey,
-  calculateScore
+  calculateScore,
+  updateSectionScore
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
   };
 
-  const entriesWithValues = entries.map((x) =>
-    Object.assign({}, x, { value: getValue(x.key) })
-  );
-  const sortedEntriesWithValues = mapEntriesToSorted(entriesWithValues);
-
+  const sortedEntriesWithValues = mapEntriesToSorted(entries);
   const score = calculateScore(sortedEntriesWithValues);
-
   const sectionKey = createSectionKey(key);
+
+  updateSectionScore(sectionKey, score);
 
   return (
     <section data-section-wrapper>
@@ -173,14 +215,11 @@ function createSection(
 
 function createEntry(entry, update) {
   const { descriptor, key, score, value } = entry;
-
   const updateEvent = (e) => {
     const value = e.target.value;
     entry.value = value;
     update(key, value);
   };
-
-  //const value = getValue(key);
 
   return (
     <div data-entry data-value={score}>
@@ -190,7 +229,7 @@ function createEntry(entry, update) {
           <input
             type="radio"
             name={key}
-            value={null}
+            value="no"
             key={`no-${key}`}
             onChange={updateEvent}
             checked={!value}

@@ -15,6 +15,7 @@ function run(filePath, inFileName, outFileName) {
     handleLevelEntries,
     addIdentifier,
     addMetaData,
+    changeScoreFromZeroToOne,
   ];
 
   const runner = (state, item) => {
@@ -32,6 +33,17 @@ function run(filePath, inFileName, outFileName) {
   const finalData = runSteps.reduce(runner, input);
 
   fs.writeFileSync(outFile, JSON.stringify(finalData));
+}
+
+function changeScoreFromZeroToOne(input) {
+  const changeEntry = (e) => {
+    return Object.assign({}, e, { score: e.score == 0 ? 1 : e.score });
+  };
+
+  const updateSection = (s) => {
+    return Object.assign({}, s, { entries: s.entries.map(changeEntry) });
+  };
+  return Object.assign({}, input, { items: input.items.map(updateSection) });
 }
 
 function generateHash(input) {
@@ -66,7 +78,7 @@ function addMetaData(input) {
   return {
     name: "Ren Agile Survey V1",
     items: input,
-    sectionScoreDefault: -1,
+    sectionScoreDefault: 0,
   };
 }
 
