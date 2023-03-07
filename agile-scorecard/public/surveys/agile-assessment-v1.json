@@ -1,5 +1,5 @@
 {
-  "name": "Team Agile Survey V1",
+  "name": "Ren Agile Survey V1",
   "items": [
     {
       "section": "Team Structure",
@@ -534,20 +534,101 @@
       "section": "User Stories",
       "descriptor": "Express work as small, independent requests for value from a customer persona's perspective",
       "raw": "User Stories Express work as small, independent requests for value from a customer persona’s perspective",
-      "number": 2,
+      "number": -1,
       "entries": [
         {
           "score": -1,
+          "descriptor": "Development work is driven by large requirements documents. ",
+          "key": 1090026646
+        },
+        {
+          "score": -1,
+          "descriptor": "Development work is planned out 6 months in advance or longer. ",
+          "key": -1514344438
+        },
+        {
+          "score": -1,
+          "descriptor": "Development work is split along process lines or functional areas, e.g., design, code, test, integrate, architect, UX etc. ",
+          "key": -1041573921
+        },
+        {
+          "score": -1,
+          "descriptor": "Development work is split along architectural lines, e.g., UI, database, data access layer, etc. ",
+          "key": 588015327
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories include 'end user' aspect.",
+          "key": -2092661598
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories can all be easily found in one place.",
+          "key": -130995449
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories are ordered by priority in a backlog.",
+          "key": -1986111307
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories are sized or estimated. (E in INVEST)",
+          "key": 604737598
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST)",
+          "key": 1862383731
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories contain acceptance criteria. (T in INVEST)",
+          "key": 678092195
+        },
+        { "score": 1, "descriptor": "8~", "key": -534275900 },
+        {
+          "score": 1,
+          "descriptor": "User stories are a starting point for a conversation and there is evidence that the team refines or rewrites user stories. (N in INVEST)",
+          "key": -13868428
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories have a narrative around business value. (V in INVEST)",
+          "key": 608703510
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories are all small enough to be finished in a sprint. (S in INVEST)",
+          "key": -723318666
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories follow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>. ",
+          "key": 1712016642
+        },
+        {
+          "score": 1,
+          "descriptor": "User story development is driven by collaborative lightweight artifacts (e.g. lo-fi prototypes, story mapping). ",
+          "key": -1524955088
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories represent an agreement between the Product Owner (business, customer) and the development team.",
+          "key": -216383851
+        },
+        {
+          "score": 2,
           "descriptor": "User story acceptance criteria follow a BDD approach an example of which can be found in the Gherkin syntax (https://cucumber.io/docs/gherkin/). ",
           "key": -129606981
         },
         {
-          "score": -1,
+          "score": 2,
           "descriptor": "Multiple scenarios are included in acceptance criteria including success conditions, failure modes and edge cases.",
           "key": -1431545583
         },
         {
-          "score": -1,
+          "score": 2,
           "descriptor": "All user stories are traceable back to the vision and business goals & objectives.",
           "key": 991149262
         },
@@ -635,7 +716,6 @@
           "descriptor": "Opportunities are taken by team members to learn from each other and knowledge share.",
           "key": -629995473
         },
-        { "score": 1, "descriptor": "~8", "key": -1064916246 },
         {
           "score": 1,
           "descriptor": "Learning and development takes place even when teams are stretched or understaffed.",
@@ -702,33 +782,74 @@
         },
         {
           "score": -1,
-          "descriptor": "Attempts are made to plan a sprint day by day or per team member.  ",
-          "key": -1582373995
+          "descriptor": "Attempts are made to plan a sprint day by day or per team member.",
+          "key": 2027401429
         },
         {
           "score": -1,
           "descriptor": "The team is handed a commitment.",
           "key": 571136941
+        },
+        {
+          "score": 1,
+          "descriptor": "Sprint Planning always takes place.",
+          "key": 907224524
+        },
+        {
+          "score": 1,
+          "descriptor": "Product owner participates in the planning.",
+          "key": 80023089
+        },
+        {
+          "score": 1,
+          "descriptor": "Team members gain valuable direction from Sprint Planning.",
+          "key": -691562840
+        },
+        {
+          "score": 1,
+          "descriptor": "All user stories meet the definition of ready prior to the start of the sprint.",
+          "key": -1576944905
+        },
+        {
+          "score": 1,
+          "descriptor": "User stories are tasked out (if necessary) in the sprint planning meeting.",
+          "key": 2003004114
+        },
+        {
+          "score": 1,
+          "descriptor": "Team makes their own commitments for the sprint based on velocity and capacity planning. ",
+          "key": -1721168934
+        },
+        {
+          "score": 1,
+          "descriptor": "The team has a shared agreement on the achievable scope of work plan for the sprint.",
+          "key": 208082182
+        },
+        {
+          "score": 2,
+          "descriptor": "Sprint planning is a short event where team comes together to get a go/no-go decision on stories.",
+          "key": -1345262969
+        },
+        {
+          "score": 2,
+          "descriptor": "Acceptance criteria and assumptions are revisited and tasks are highlighted as a reminder.",
+          "key": 923087764
+        },
+        {
+          "score": 2,
+          "descriptor": "The focus of planning shifts from the team to product owners and the business to prioritize the next set of user stories.",
+          "key": 1389293442
+        },
+        {
+          "score": 3,
+          "descriptor": "Planning is real-time based on a blue-print of an agile release plan.",
+          "key": -1101137711
+        },
+        {
+          "score": 3,
+          "descriptor": "Intent behind planning is not team commitment but adaptive change, balancing business value with cost and time.",
+          "key": -1226389511
         }
-      ],
-      "level": {
-        "number": "1",
-        "entries": [
-          "Team members gain valuable direction from Sprint Planning.",
-          "All user stories meet the definition of ready prior to the start of the sprint.",
-          "User stories are tasked out (if necessary) in the sprint planning meeting.",
-          "Team makes their own commitments for the sprint based on velocity and capacity planning. ",
-          "The team has a shared agreement on the achievable scope of work plan for the sprint."
-        ]
-      },
-      "unsortedEntries": [
-        "2",
-        "Sprint planning is a short event where team comes together to get a go/no-go decision on stories.",
-        "Acceptance criteria and assumptions are revisited and tasks are highlighted as a reminder.",
-        "The focus of planning shifts from the team to product owners and the business to prioritize the next set of user stories.",
-        "3",
-        "Planning is real-time based on a blue-print of an agile release plan.",
-        "Intent behind planning is not team commitment but adaptive change, balancing business value with cost and time."
       ],
       "key": -121495901
     },
@@ -1295,7 +1416,6 @@
           "descriptor": "There is no clear indication of working software.  ",
           "key": 520748882
         },
-        { "score": 1, "descriptor": "444", "key": -175168277 },
         {
           "score": 1,
           "descriptor": "Demonstration always takes place.",
@@ -1321,7 +1441,6 @@
           "descriptor": "Effective time management allow team to complete demonstration of planned stories within the meeting timebox.",
           "key": -1389702054
         },
-        { "score": 1, "descriptor": "444", "key": -175168277 },
         {
           "score": 1,
           "descriptor": "Demonstration is at an appropriate level for the stakeholders, focused on how product is used instead of how it is implemented",
@@ -2263,7 +2382,6 @@
           "descriptor": "There is some automated testing, including some in the automated regression build.",
           "key": 1400701178
         },
-        { "score": 1, "descriptor": "448", "key": 14679058 },
         {
           "score": 1,
           "descriptor": "Automated regression tests complete in less than two hours.",

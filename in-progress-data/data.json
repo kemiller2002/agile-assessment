@@ -258,10 +258,8 @@
       "User stories are all small enough to be finished in a sprint. (S in INVEST)",
       "User stories follow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>. ",
       "User story development is driven by collaborative lightweight artifacts (e.g. lo-fi prototypes, story mapping). ",
-      "User stories represent an agreement between the Product Owner (business, customer) and the development team."
-    ],
-    "number": 2,
-    "entries": [
+      "User stories represent an agreement between the Product Owner (business, customer) and the development team.",
+      "2",
       "~",
       "88",
       "User story acceptance criteria follow a BDD approach an example of which can be found in the Gherkin syntax (https://cucumber.io/docs/gherkin/). ",
@@ -344,36 +342,23 @@
     "number": -1,
     "entries": [
       "Sprint planning is a long meeting >5% of a sprint duration) that includes backlog grooming, narrative writing, estimation, capacity planning and/or other context setting activities.",
-      "Attempts are made to plan a sprint day by day or per team member.  ",
-      "The team is handed a commitment."
-    ],
-    "level": {
-      "number": 0,
-      "entries": [
-        "Sprint Planning always takes place.",
-        "Product owner participates in the planning."
-      ]
-    },
-    "level": {
-      "number": "1",
+      "Attempts are made to plan a sprint day by day or per team member.",
+      "The team is handed a commitment.",
+      "0",
+      "Sprint Planning always takes place.",
+      "Product owner participates in the planning.",
+      "1",
 
-      "entries": [
-        "Team members gain valuable direction from Sprint Planning.",
-        "All user stories meet the definition of ready prior to the start of the sprint.",
-        "User stories are tasked out (if necessary) in the sprint planning meeting.",
-        "Team makes their own commitments for the sprint based on velocity and capacity planning. ",
-        "The team has a shared agreement on the achievable scope of work plan for the sprint."
-      ]
-    },
-
-    "unsortedEntries": [
+      "Team members gain valuable direction from Sprint Planning.",
+      "All user stories meet the definition of ready prior to the start of the sprint.",
+      "User stories are tasked out (if necessary) in the sprint planning meeting.",
+      "Team makes their own commitments for the sprint based on velocity and capacity planning. ",
+      "The team has a shared agreement on the achievable scope of work plan for the sprint.",
       "2",
-
       "Sprint planning is a short event where team comes together to get a go/no-go decision on stories.",
       "Acceptance criteria and assumptions are revisited and tasks are highlighted as a reminder.",
       "The focus of planning shifts from the team to product owners and the business to prioritize the next set of user stories.",
       "3",
-
       "Planning is real-time based on a blue-print of an agile release plan.",
       "Intent behind planning is not team commitment but adaptive change, balancing business value with cost and time."
     ]

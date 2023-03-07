@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function getChecklist({ get }, fileName) {
   return get(`/surveys/${fileName}`).then((x) => x.data);
@@ -27,14 +29,20 @@ function calculateMetrics(survey, getValue) {
   });
 }
 
+function updateDataObject(state, key, value) {
+  return Object.assign({}, state, {
+    [key]: value,
+  });
+}
+
 export default function Checklist(props) {
   const [survey, updateChecklist] = useState({ items: [] });
-  const [total, updateTotal] = useState({ total: 0 });
-
   const parameters = useParams();
-  const name = parameters.name;
-
   const navigate = useNavigate();
+
+  const name = parameters.name;
+  const scoreData = {};
+  const sectionScoreDefault = survey.sectionScoreDefault;
 
   const getData = () =>
     convertAndParse(parameters.data) || { surveyName: parameters.name };
@@ -61,6 +69,10 @@ export default function Checklist(props) {
       .filter((x) => x.key === key)[0];
   };
 
+  const updateState = (newKeyValue) => {
+    navigate(convertForUrl(newKeyValue), { replace: false });
+  };
+
   const updateChecklistValue = (sectionKey, entries, key, value) => {
     const item = findItem(key);
     item.value = value;
@@ -68,20 +80,16 @@ export default function Checklist(props) {
     updateChecklist(survey);
 
     const sectionScore = calculateScore(entries);
+    const updatedSurveyObject = updateDataObject(urlData, key, value);
+    const updatedSection = updateDataObject(
+      updatedSurveyObject,
+      createSectionKey(sectionKey, sectionScore)
+    );
 
-    const newKeyValue = Object.assign({}, urlData, {
-      [key]: value,
-      [createSectionKey(sectionKey)]: sectionScore,
-    });
-
-    navigate(convertForUrl(newKeyValue), { replace: false });
+    updateState(updatedSection);
   };
 
   useEffect(loadChecklist, []);
-
-  const sectionScoreDefault = survey.sectionScoreDefault;
-
-  const scoreData = {};
 
   const updateSectionScore = (k, s) => {
     scoreData[k] = s;
@@ -91,15 +99,25 @@ export default function Checklist(props) {
     const results = Object.keys(data).reduce((s, i) => (data[i] += s), 0);
     return results;
   };
+
+  const updateTeam = (e) => {
+    const team = e.target.value;
+    const updatedTeam = updateDataObject(urlData, "team", team);
+    updateState(updatedTeam);
+  };
+
   return (
     <div>
       <div data-header>
         <h1 data-survey-title>{survey.name}</h1>
-        <div data-actions>
-          <button type="button" onClick={() => exportData(getData)}>
-            Export Data
-          </button>
-        </div>
+        <input
+          type="text"
+          key="team-name"
+          placeholder="Team Name"
+          data-team-name
+          onChange={updateTeam}
+          value={getValue("team")}
+        ></input>
       </div>
       <div>
         {(survey.items || []).map((x) =>
@@ -115,6 +133,24 @@ export default function Checklist(props) {
       <h2 data-total-score>
         Total Score: {calculateScoreData(scoreData) || 0}
       </h2>
+
+      <div data-menu>
+        <label for="toggle-menu" data-menu-hamburger>
+          <FontAwesomeIcon icon={faBars} />
+        </label>
+        <input
+          type="checkbox"
+          id="toggle-menu"
+          name="toggle-menu"
+          data-toggle-menu
+          key="toggle-menu"
+        />
+        <div data-menu-options>
+          <button type="button" onClick={() => exportData(getData)}>
+            Export Data
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
