@@ -17,6 +17,8 @@ div[data-entry-value]
     display: flex;
     flex-direction: row;
     margin-bottom: .25em;
+    margin-left: .5em;
+    margin-top: .5em;
 }
 
 [data-entry] {
@@ -26,6 +28,7 @@ div[data-entry-value]
 
 [data-entry-description]{
     font-weight: 600;
+    display: flex;
 }
 
 [data-section-wrapper]{
@@ -41,15 +44,19 @@ div[data-entry-value]
     flex-grow: 2;
 }
 
+
+
 label {
     flex-direction: row-reverse;
     display: flex;
     vertical-align: bottom;
+    padding: .25em;
    
 }
 
 input:checked ~ span {
-    color:green;
+    font-weight: 600;
+    color: black;
 }
 
 input ~ span{

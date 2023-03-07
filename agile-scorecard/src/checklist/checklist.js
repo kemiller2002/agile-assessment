@@ -23,7 +23,7 @@ function calculateMetrics(survey, getValue) {
   };
 
   return Object.assign({}, survey, {
-    items: [survey.items[0]].map(updateSection),
+    items: survey.items.map(updateSection),
   });
 }
 
@@ -84,16 +84,15 @@ export default function Checklist(props) {
   const scoreData = {};
 
   const updateSectionScore = (k, s) => {
-    total[k] = s;
-    //updateTotal({ total: 5 });
+    scoreData[k] = s;
   };
 
-  const calculateScoreData = (data) =>
-    Object.keys(data).reduce((s, i) => (data[i] += s), 0);
-
+  const calculateScoreData = (data) => {
+    const results = Object.keys(data).reduce((s, i) => (data[i] += s), 0);
+    return results;
+  };
   return (
     <div>
-      <h2 data-total-score>Total Score: {scoreData.total || 0}</h2>
       <div data-header>
         <h1 data-survey-title>{survey.name}</h1>
         <div data-actions>
@@ -113,6 +112,9 @@ export default function Checklist(props) {
           )
         )}
       </div>
+      <h2 data-total-score>
+        Total Score: {calculateScoreData(scoreData) || 0}
+      </h2>
     </div>
   );
 }
@@ -122,7 +124,7 @@ function calculateScore(entries, defaultValue) {
   const scored = sortedEntries.reduce(
     (s, c) => {
       if (c.score < 0) {
-        if (c.value != "no") {
+        if (c.value && c.value != "no") {
           return {
             inProcessScore: -1,
             continueToProcess: false,
