@@ -142,12 +142,21 @@ export default function Checklist(props) {
           type="checkbox"
           id="toggle-menu"
           name="toggle-menu"
-          data-toggle-menu
+          data-toggle-menu-checkbox
           key="toggle-menu"
         />
         <div data-menu-options>
           <button type="button" onClick={() => exportData(getData)}>
             Export Data
+          </button>
+          <button type="button" onClick={() => exportData(getData)}>
+            Display Report
+          </button>
+          <button type="button" onClick={() => exportData(getData)}>
+            Load Data
+          </button>
+          <button type="button" onClick={() => exportData(getData)}>
+            Copy URL
           </button>
         </div>
       </div>

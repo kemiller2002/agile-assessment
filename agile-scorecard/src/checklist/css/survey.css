@@ -151,20 +151,84 @@ div[data-header]{
     cursor: pointer;
 }
 
+
+@keyframes show {
+    from {
+        opacity:  0%;
+        display: none;
+    }
+
+    to {
+        opacity: 100%;
+        display: block;
+    }
+}
+
+@keyframes show-reverse {
+    from {
+        opacity: 100%;
+        display: none;
+    }
+
+    to {
+        opacity: 0%;
+        display: block;
+    }
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    30% {
+        width: 50px;
+        height: 0px;
+    }
+
+    60% {
+        width: 50px;
+        height: 80px;
+    }
+}
+
 [data-menu-options]{
-    display:none;
+    display: flex;
+    flex-direction: column;
 }
 
-input:checked ~ [data-menu-options] {
-    display: block;
+[data-menu-options]{
+    cursor:default
+}
+
+input:not(:checked)~[data-menu-options] {
+    animation-name: show;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    display: none;
+}
+
+input:checked~[data-menu-options] {
     border: thin solid gray;
-    padding:.2em;
+    padding: .2em;
+    animation-name: show;
+    animation-duration: 1s;
+    display: flex;
+    background-color: white;
 }
 
-[data-toggle-menu]
-{
-    display:none;
+[data-toggle-menu-checkbox]{
+    display: none;
 }
+
+[data-menu-options] > button{
+    margin: .25em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 [data-menu-hamburger]
 {
     cursor: pointer;
