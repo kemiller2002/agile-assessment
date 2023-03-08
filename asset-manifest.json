@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/agile-scorecard/static/css/main.cb4f4c37.css",
+    "main.js": "/agile-scorecard/static/js/main.d3788285.js",
+    "static/js/787.a2451e9d.chunk.js": "/agile-scorecard/static/js/787.a2451e9d.chunk.js",
+    "static/media/logo.svg": "/agile-scorecard/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/agile-scorecard/index.html",
+    "main.cb4f4c37.css.map": "/agile-scorecard/static/css/main.cb4f4c37.css.map",
+    "main.d3788285.js.map": "/agile-scorecard/static/js/main.d3788285.js.map",
+    "787.a2451e9d.chunk.js.map": "/agile-scorecard/static/js/787.a2451e9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb4f4c37.css",
+    "static/js/main.d3788285.js"
+  ]
+}
