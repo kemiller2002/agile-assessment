@@ -76,7 +76,7 @@ function addIdentifier(input) {
 
 function addMetaData(input) {
   return {
-    name: "Ren Agile Survey V1",
+    name: "Agile Survey V1",
     items: input,
     sectionScoreDefault: 0,
   };
