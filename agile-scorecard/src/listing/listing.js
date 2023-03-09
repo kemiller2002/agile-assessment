@@ -1,16 +1,12 @@
-import React, { useState, componentDidMount, useEffect } from "react";
-
-let count = 0;
-
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 function AssessmentList({ assessment }) {
   const list = assessment || [];
   return (
     <ol>
       {list.map((l) => (
         <li>
-          <a href={`survey/${l.file}`} key={l.file}>
-            {l.name}
-          </a>
+          <Link to={`survey/${l.file}`}> {l.name}</Link>
         </li>
       ))}
     </ol>

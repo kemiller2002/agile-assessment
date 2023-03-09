@@ -1,12 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Checklist from "./checklist/checklist";
 import { Survey } from "./checklist/survey";
 import axios from "axios";
 
 import React from "react";
 import { Route, Routes } from "react-router";
 import Listing from "./listing/listing";
+import { Report } from "./checklist/report";
 
 function Http() {
   const axiosInstance = axios.create();
@@ -33,6 +32,11 @@ function App() {
             ></Listing>
           }
         />
+        <Route
+          path="report/:name/:data"
+          element={<Report http={http} />}
+        ></Route>
+
         <Route path="survey/:name" element={<Survey http={http} />}>
           <Route path=":data" element={<Survey http={http} />}></Route>
         </Route>

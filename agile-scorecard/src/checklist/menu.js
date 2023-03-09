@@ -1,0 +1,74 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
+import "./css/menu.css";
+
+function exportData(getData) {
+  const data = getData();
+  const serializedData = JSON.stringify(data);
+  const blob = new Blob([serializedData], { type: "application/data" });
+  window.open(URL.createObjectURL(blob));
+}
+
+function copyUrl() {
+  const href = window.location.href;
+  navigator.clipboard.writeText(href);
+}
+
+export default function Menu(props) {
+  const uploadReference = React.useRef(null);
+  const name = props.name;
+  const data = props.data;
+  const getData = props.getData;
+  const disabled = props.disabled;
+
+  console.log(disabled);
+
+  return (
+    <div data-menu>
+      <label for="toggle-menu" data-menu-hamburger>
+        <FontAwesomeIcon icon={faBars} />
+      </label>
+      <input
+        type="checkbox"
+        id="toggle-menu"
+        name="toggle-menu"
+        data-toggle-menu-checkbox
+        key="toggle-menu"
+      />
+      <div data-menu-options>
+        <Link
+          to={`/report/${name}/${data}`}
+          disabled={disabled}
+          data-transfer-link={!disabled}
+        >
+          Display Report
+        </Link>
+        <Link
+          to={`/survey/${name}/${data}`}
+          disabled={disabled}
+          data-transfer-link={!!disabled}
+          data-link
+        >
+          Display Survey
+        </Link>
+
+        <hr></hr>
+
+        <button type="button" onClick={() => exportData(getData)}>
+          Export Data
+        </button>
+        <input type="file" ref={uploadReference}></input>
+
+        <button type="button" onClick={() => uploadReference.current.click()}>
+          Load Data
+        </button>
+        <button type="button" onClick={() => copyUrl()}>
+          Copy URL
+        </button>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,18 @@
+[data-transfer-link="false"]{
+    display:none;
+}
+
+[type="file"]{
+    display:none;
+}
+
+[data-transfer-link]{
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
+
+hr {
+    width: 90%;
+}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import Menu from "./menu";
 
 function getChecklist({ get }, fileName) {
   return get(`/surveys/${fileName}`).then((x) => x.data);
@@ -35,17 +34,21 @@ function updateDataObject(state, key, value) {
   });
 }
 
+function loadData() {}
+
 export default function Checklist(props) {
   const [survey, updateChecklist] = useState({ items: [] });
   const parameters = useParams();
   const navigate = useNavigate();
 
   const name = parameters.name;
+  const data = parameters.data;
+
   const scoreData = {};
   const sectionScoreDefault = survey.sectionScoreDefault;
+  const disabled = props.disabled;
 
-  const getData = () =>
-    convertAndParse(parameters.data) || { surveyName: parameters.name };
+  const getData = () => convertAndParse(data) || { surveyName: name };
 
   const urlData = getData();
 
@@ -115,6 +118,7 @@ export default function Checklist(props) {
           key="team-name"
           placeholder="Team Name"
           data-team-name
+          disabled={disabled}
           onChange={updateTeam}
           value={getValue("team")}
         ></input>
@@ -126,40 +130,20 @@ export default function Checklist(props) {
             updateChecklistValue,
             createSectionKey,
             (entries) => calculateScore(entries, sectionScoreDefault),
-            updateSectionScore
+            updateSectionScore,
+            disabled
           )
         )}
       </div>
       <h2 data-total-score>
         Total Score: {calculateScoreData(scoreData) || 0}
       </h2>
-
-      <div data-menu>
-        <label for="toggle-menu" data-menu-hamburger>
-          <FontAwesomeIcon icon={faBars} />
-        </label>
-        <input
-          type="checkbox"
-          id="toggle-menu"
-          name="toggle-menu"
-          data-toggle-menu-checkbox
-          key="toggle-menu"
-        />
-        <div data-menu-options>
-          <button type="button" onClick={() => exportData(getData)}>
-            Export Data
-          </button>
-          <button type="button" onClick={() => exportData(getData)}>
-            Display Report
-          </button>
-          <button type="button" onClick={() => exportData(getData)}>
-            Load Data
-          </button>
-          <button type="button" onClick={() => exportData(getData)}>
-            Copy URL
-          </button>
-        </div>
-      </div>
+      <Menu
+        name={name}
+        data={data}
+        getData={getData}
+        disabled={disabled}
+      ></Menu>
     </div>
   );
 }
@@ -169,7 +153,7 @@ function calculateScore(entries, defaultValue) {
   const scored = sortedEntries.reduce(
     (s, c) => {
       if (c.score < 0) {
-        if (c.value && c.value != "no") {
+        if (c.value && c.value !== "no") {
           return {
             inProcessScore: -1,
             continueToProcess: false,
@@ -184,9 +168,7 @@ function calculateScore(entries, defaultValue) {
         return s;
       }
 
-      const continueToProcess = s.continueToProcess && c.value == "yes";
-
-      const updateScore = !s.inProcessScore || s.inProcessScore < c.score;
+      const continueToProcess = s.continueToProcess && c.value === "yes";
 
       const newState = {
         inProcessScore: s.score < c.score ? s.score : s.inProcessScore,
@@ -204,13 +186,6 @@ function calculateScore(entries, defaultValue) {
   );
 
   return scored.continueToProcess ? scored.score : scored.inProcessScore;
-}
-
-function exportData(getData) {
-  const data = getData();
-  const serializedData = JSON.stringify(data);
-  const blob = new Blob([serializedData], { type: "application/data" });
-  window.open(URL.createObjectURL(blob));
 }
 
 function convertForUrl(input) {
@@ -235,7 +210,8 @@ function createSection(
   update,
   createSectionKey,
   calculateScore,
-  updateSectionScore
+  updateSectionScore,
+  disabled
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
@@ -254,13 +230,15 @@ function createSection(
         <h3 key={"score-" + sectionKey}>Score: {score}</h3>
       </div>
       <section key={sectionKey}>
-        {sortedEntriesWithValues.map((x) => createEntry(x, updateSection))}
+        {sortedEntriesWithValues.map((x) =>
+          createEntry(x, updateSection, disabled)
+        )}
       </section>
     </section>
   );
 }
 
-function createEntry(entry, update) {
+function createEntry(entry, update, disabled) {
   const { descriptor, key, score, value } = entry;
   const updateEvent = (e) => {
     const value = e.target.value;
@@ -280,6 +258,7 @@ function createEntry(entry, update) {
             key={`no-${key}`}
             onChange={updateEvent}
             checked={!value}
+            disabled={disabled}
           ></input>
           <span>No</span>
         </label>
@@ -291,6 +270,7 @@ function createEntry(entry, update) {
             onChange={updateEvent}
             checked={value === "in-progress"}
             key={`inprogress-${key}`}
+            disabled={disabled}
           ></input>
           <span>In Progress</span>
         </label>
@@ -302,6 +282,7 @@ function createEntry(entry, update) {
             checked={value === "yes"}
             key={`yes-${key}`}
             onChange={updateEvent}
+            disabled={disabled}
           ></input>
           <span>Yes</span>
         </label>
