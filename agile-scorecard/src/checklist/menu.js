@@ -24,7 +24,17 @@ export default function Menu(props) {
   const getData = props.getData;
   const disabled = props.disabled;
 
-  console.log(disabled);
+  const handleFileSelected = (e) => {
+    const files = Array.from(e.target.files);
+
+    let reader = new FileReader();
+
+    reader.onload = (e) => {
+      console.log(e.target.result);
+    };
+
+    reader.readAsText(files[0]);
+  };
 
   return (
     <div data-menu>
@@ -60,7 +70,11 @@ export default function Menu(props) {
         <button type="button" onClick={() => exportData(getData)}>
           Export Data
         </button>
-        <input type="file" ref={uploadReference}></input>
+        <input
+          type="file"
+          ref={uploadReference}
+          onChange={handleFileSelected}
+        ></input>
 
         <button type="button" onClick={() => uploadReference.current.click()}>
           Load Data

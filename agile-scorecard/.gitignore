@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+# /build -- need this for github pages, so commenting out.
+
+/in-progress-data
 
 # misc
 .DS_Store
