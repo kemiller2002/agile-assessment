@@ -9,7 +9,7 @@
 /coverage
 
 # production
-# /build -- need this for github pages, so commenting out.
+/build 
 
 /in-progress-data
 
