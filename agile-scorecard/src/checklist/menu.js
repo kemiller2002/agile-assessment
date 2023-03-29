@@ -29,16 +29,14 @@ export default function Menu(props) {
 
     let reader = new FileReader();
 
-    reader.onload = (e) => {
-      console.log(e.target.result);
-    };
+    reader.onload = (e) => {};
 
     reader.readAsText(files[0]);
   };
 
   return (
     <div data-menu>
-      <label for="toggle-menu" data-menu-hamburger>
+      <label htmlFor="toggle-menu" data-menu-hamburger>
         <FontAwesomeIcon icon={faBars} />
       </label>
       <input

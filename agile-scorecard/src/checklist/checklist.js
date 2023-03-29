@@ -51,7 +51,7 @@ export default function Checklist(props) {
   const getData = () => convertAndParse(data) || { surveyName: name };
 
   const urlData = getData();
-
+  console.log(urlData);
   const getValue = (k) => {
     return urlData[k];
   };
@@ -109,6 +109,12 @@ export default function Checklist(props) {
     updateState(updatedTeam);
   };
 
+  const updateAssessmentDate = (e) => {
+    const date = e.target.value;
+    const updatedTeam = updateDataObject(urlData, "assessmentDate", date);
+    updateState(updatedTeam);
+  };
+
   return (
     <div>
       <div data-header>
@@ -121,6 +127,16 @@ export default function Checklist(props) {
           disabled={disabled}
           onChange={updateTeam}
           value={getValue("team")}
+          id="team-name"
+        ></input>
+        <input
+          type="date"
+          data-assessment-date
+          value={getValue("assessmentDate")}
+          onChange={updateAssessmentDate}
+          key="assessmentDate"
+          id="assessmentDate"
+          disabled={disabled}
         ></input>
       </div>
       <div>
@@ -231,14 +247,14 @@ function createSection(
       </div>
       <section key={sectionKey}>
         {sortedEntriesWithValues.map((x) =>
-          createEntry(x, updateSection, disabled)
+          createEntry(x, updateSection, disabled, sectionKey)
         )}
       </section>
     </section>
   );
 }
 
-function createEntry(entry, update, disabled) {
+function createEntry(entry, update, disabled, sectionName) {
   const { descriptor, key, score, value } = entry;
   const updateEvent = (e) => {
     const value = e.target.value;
@@ -247,8 +263,14 @@ function createEntry(entry, update, disabled) {
   };
 
   return (
-    <div data-entry data-value={score}>
-      <div data-entry-description>{descriptor}</div>
+    <div
+      key={`wrapper-score-${key}:${sectionName}`}
+      data-entry
+      data-value={score}
+    >
+      <div key={descriptor} data-entry-description>
+        {descriptor}
+      </div>
       <div data-entry-value>
         <label data-input-value="no">
           <input
