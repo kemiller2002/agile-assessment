@@ -2202,7 +2202,6 @@
           "descriptor": "Deployment is owned by a specific member of the team.",
           "key": 2109118412
         },
-        { "score": 1, "descriptor": "no", "key": 634596120 },
         {
           "score": 1,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
@@ -2286,8 +2285,6 @@
           "descriptor": "Deployment is owned by a specific member of the team.",
           "key": 1859174127
         },
-        { "score": 1, "descriptor": "no", "key": -844145451 },
-        { "score": 1, "descriptor": "no", "key": -844145451 },
         {
           "score": 1,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
