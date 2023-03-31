@@ -149,9 +149,11 @@ function cleanEntryDescription(input) {
 function removeNoiseDataFromEntries(input) {
   const filterItems = "~,88,4,44,~8,448,444,8~".split(",");
   const filterEntries = (x) => !(filterItems.includes(x) || x == "");
-
+  const removeNo = (x) => (x || x.trim()) !== "no";
   return input.map((x) =>
-    Object.assign({}, x, { entries: x.entries.filter(filterEntries) })
+    Object.assign({}, x, {
+      entries: x.entries.filter(filterEntries).filter(removeNo),
+    })
   );
 }
 

@@ -51,7 +51,6 @@ export default function Checklist(props) {
   const getData = () => convertAndParse(data) || { surveyName: name };
 
   const urlData = getData();
-  console.log(urlData);
   const getValue = (k) => {
     return urlData[k];
   };

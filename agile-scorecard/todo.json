@@ -3,13 +3,19 @@
     "message": "CSS for menu is strange.  It's in 2 places and not in menu.css"
   },
   {
-    "message": "add survey date"
+    "message": "add survey date",
+    "fixed": true
   },
   {
     "message": "missing from Daily standup ups - 2 points::Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans."
   },
   {
-    "message": "'no' found in continuous delivery legacy."
+    "message": "'no' found in continuous delivery legacy.",
+    "fixed": true
   },
-  { "message": "'no' found in Continuous Delivery - Microservices" }
+  {
+    "message": "'no' found in Continuous Delivery - Microservices",
+    "fixed": true
+  },
+  { "message": "Found: he team generally self enforces" }
 ]
