@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Menu from "./menu";
 
 function getChecklist({ get }, fileName) {
-  return get(`./surveys/${fileName}`).then((x) => x.data);
+  return get(`./surveys/${fileName}.json`).then((x) => x.data);
 }
 
 function mapEntriesToSorted(entries) {

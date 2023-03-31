@@ -4,5 +4,12 @@
   },
   {
     "message": "add survey date"
-  }
+  },
+  {
+    "message": "missing from Daily standup ups - 2 points::Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans."
+  },
+  {
+    "message": "'no' found in continuous delivery legacy."
+  },
+  { "message": "'no' found in Continuous Delivery - Microservices" }
 ]

@@ -1,6 +1,7 @@
 [
   {
     "name": "Agile Assessment v1",
-    "file": "agile-assessment-v1.json"
+    "file": "agile-assessment-v1",
+    "type": "json"
   }
 ]
