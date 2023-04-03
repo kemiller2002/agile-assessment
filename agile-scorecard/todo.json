@@ -17,5 +17,5 @@
     "message": "'no' found in Continuous Delivery - Microservices",
     "fixed": true
   },
-  { "message": "Found: he team generally self enforces" }
+  { "message": "Found: he team generally self enforces", "fixed": true }
 ]
