@@ -30,6 +30,9 @@ export default function Listing(props) {
   return (
     <div key="base">
       <div key="title" className="listing-title">
+        <Link to="graph">Create Dashboard</Link>
+      </div>
+      <div key="title" className="listing-title">
         Surveys
       </div>
       <nav>

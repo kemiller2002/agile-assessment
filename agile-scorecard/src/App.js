@@ -1,5 +1,6 @@
 import "./App.css";
 import { Survey } from "./checklist/survey";
+import { ComparativeScore } from "./checklist/comparative-score";
 import axios from "axios";
 
 import React from "react";
@@ -36,9 +37,15 @@ function App() {
           path="report/:name/:data"
           element={<Report http={http} />}
         ></Route>
-
         <Route path="survey/:name" element={<Survey http={http} />}>
           <Route path=":data" element={<Survey http={http} />}></Route>
+        </Route>
+
+        <Route path="graph" element={<ComparativeScore http={http} />}>
+          <Route
+            path=":data"
+            element={<ComparativeScore http={http} />}
+          ></Route>
         </Route>
       </Route>
     </Routes>

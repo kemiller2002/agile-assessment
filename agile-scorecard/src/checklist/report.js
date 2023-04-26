@@ -1,5 +1,5 @@
 import React from "react";
-import Checklist from "./checklist";
+import { Checklist } from "./checklist";
 import "./css/main.css";
 import "./css/report.css";
 

@@ -185,10 +185,6 @@ function changeEntry(section) {
   return (section.entries || []).reduce(convert, { value: -1, entries: [] });
 }
 
-function testPath(i, o) {
-  console.log(i, o);
-}
-
 run(
   `${__dirname}/../in-progress-data/`,
   `data.json`,

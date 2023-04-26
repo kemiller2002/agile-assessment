@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Menu from "./menu";
 
-function getChecklist({ get }, fileName) {
+export function getChecklist({ get }, fileName) {
   return get(`./surveys/${fileName}`).then((x) => x.data);
 }
 
@@ -10,7 +10,7 @@ function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
 }
 
-function calculateMetrics(survey, getValue) {
+export function calculateMetrics(survey, getValue) {
   const defaultValue = survey.sectionScoreDefault;
   const updateItem = (item) => {
     return Object.assign({}, item, { value: getValue(item.key) });
@@ -34,29 +34,32 @@ function updateDataObject(state, key, value) {
   });
 }
 
-function loadData() {}
+export function calculateScoreData(data) {
+  const results = Object.keys(data).reduce((s, i) => (data[i] += s), 0);
+  return results;
+}
 
-export default function Checklist(props) {
+export function Checklist({ data, callback, disabled, http }) {
   const [survey, updateChecklist] = useState({ items: [] });
   const parameters = useParams();
   const navigate = useNavigate();
 
-  const name = parameters.name;
-  const data = parameters.data;
-
+  const parsedData = convertAndParse(data || parameters.data);
+  const name = parameters.name || parsedData.surveyName;
   const scoreData = {};
   const sectionScoreDefault = survey.sectionScoreDefault;
-  const disabled = props.disabled;
 
-  const getData = () => convertAndParse(data) || { surveyName: name };
+  const getData = () => parsedData || { surveyName: name };
 
   const urlData = getData();
   const getValue = (k) => {
     return urlData[k];
   };
 
+  const notify = callback || (() => {});
+
   const loadChecklist = () => {
-    getChecklist(props.http, name)
+    getChecklist(http, name)
       .then((d) => calculateMetrics(d, getValue))
       .then((x) => {
         return x;
@@ -95,11 +98,6 @@ export default function Checklist(props) {
 
   const updateSectionScore = (k, s) => {
     scoreData[k] = s;
-  };
-
-  const calculateScoreData = (data) => {
-    const results = Object.keys(data).reduce((s, i) => (data[i] += s), 0);
-    return results;
   };
 
   const updateTeam = (e) => {
@@ -210,7 +208,7 @@ function convertForUrl(input) {
   return steps.reduce(convert, input);
 }
 
-function convertAndParse(input) {
+export function convertAndParse(input) {
   const steps = [(i) => atob(i), (i) => JSON.parse(i)];
   const convert = (e, fn) => (e ? fn(e) : e);
 
