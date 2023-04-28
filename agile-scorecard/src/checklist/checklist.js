@@ -201,7 +201,7 @@ function calculateScore(entries, defaultValue) {
   return scored.continueToProcess ? scored.score : scored.inProcessScore;
 }
 
-function convertForUrl(input) {
+export function convertForUrl(input) {
   const steps = [(i) => JSON.stringify(i), (i) => btoa(i)];
   const convert = (e, fn) => (e ? fn(e) : e);
 
