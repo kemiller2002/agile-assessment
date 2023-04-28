@@ -7,6 +7,7 @@ import {
   convertForUrl,
 } from "./checklist";
 import "./css/main.css";
+import { Line } from "react-chartjs-2";
 
 function createChecklist(encodedData, http) {
   const data = convertAndParse(encodedData);
@@ -36,11 +37,54 @@ function addMetricEntry(metric) {
   return <div>metric</div>;
 }
 
+function createMonthArray(state, number, start) {
+  return number >= 0
+    ? createMonthArray(
+        [new Date(start.setMonth(start.getMonth() + number)), ...state],
+        --number,
+        start
+      )
+    : state;
+}
+function createDateEntries(min, max) {
+  let months = (max.getFullYear() - min.getFullYear()) * 12;
+  months -= min.getMonth();
+  months += max.getMonth();
+
+  const dates = createMonthArray([], months, min);
+  return dates;
+}
+
+function createDashboardDataset(data) {
+  const separatedData = Object.keys(data).reduce((s, key) => {
+    const value = data[key];
+    const [team, sDate] = key.split("~");
+    const date = new Date(sDate);
+    const entryName = `${team}~${value.surveyName}`;
+    const entries = s[entryName] || {};
+    const minDate = s.minDate < date ? s.minDate : date;
+    const maxDate = s.maxDate > date ? s.maxDate : date;
+
+    const teamData = Object.assign(entries, { [date]: value });
+
+    return Object.assign(s, { minDate, maxDate }, { [entryName]: teamData });
+  }, {});
+
+  const dateEntries = createDateEntries(
+    separatedData.minDate,
+    separatedData.maxDate
+  );
+  return {
+    labels: dateEntries.map((d) => `${d.getMonth() + 1}-${d.getFullYear()}`),
+  };
+  console.log(dateEntries);
+}
+
 function saveMetric(metric) {
   console.log(metric);
   const data = this.get();
   const updatedData = Object.assign({}, data, {
-    [`${metric.team}-${metric.assessmentDate}`]: metric,
+    [`${metric.team}~${metric.assessmentDate}`]: metric,
   });
 
   this.save(updatedData);
@@ -52,7 +96,9 @@ export function ComparativeScore(props) {
   const [metrics, updateMetric] = useState([]);
   const navigate = useNavigate();
   const encodedParameterData = parameters.data;
-  const decodedData = convertAndParse(encodedParameterData);
+  const decodedData = encodedParameterData
+    ? convertAndParse(encodedParameterData)
+    : [];
   const updateState = (newKeyValue) => {
     navigate(convertForUrl(newKeyValue), { replace: false });
   };
@@ -74,7 +120,10 @@ export function ComparativeScore(props) {
   };
 
   const updateUrlData = (e) => updateUrl(e.target.value);
+  const metricsData = createDashboardDataset(decodedData);
 
+  //[{ name: "Page A", uv: 400, pv: 2400, amt: 2400 }];
+  /* <Line data={metricsData} /> */
   return (
     <>
       <div>
@@ -97,6 +146,7 @@ export function ComparativeScore(props) {
         </div>
         <div data-graph>{metrics.forEach((x) => addMetricEntry(x))}</div>
       </div>
+      <div></div>
     </>
   );
 }
