@@ -69,7 +69,7 @@ function createMetricLegendDisplay(data) {
       return { team, date: new Date(dateAsString), data };
     })
     .map(({ team, data, date }) => (
-      <div>
+      <div key={`${team}${date}`}>
         {team} : {date.getMonth() + 1} - {date.getFullYear()}
       </div>
     ));
@@ -215,7 +215,6 @@ export function ComparativeScore(props) {
     labels: metricsData.labels,
     datasets: metricsData.datasets,
   };
-  console.log(metricsData);
 
   const chartOptions = {
     responsive: true,
@@ -242,7 +241,7 @@ export function ComparativeScore(props) {
   return (
     <div>
       <div data-flyout>
-        <input type="checkbox" id="enactFlyout" checked></input>
+        <input type="checkbox" id="enactFlyout"></input>
         <div data-window>
           <div data-legend>
             <div data-add>

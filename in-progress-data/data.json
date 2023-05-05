@@ -5,26 +5,21 @@
     "raw": "Team Structure Build long-lived teams and bring the work to them",
     "number": -1,
     "entries": [
-      "Chaos, no defined standards or processes have been formed",
+      "Team has significantly unhealthy churn.",
+      "Communication is ineffective, for example reliance on email or other asynchronous forms of communication.",
       "0",
-
-      "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
+      "Team has limited reliance on outside resources for day-to-day needs, and this is not causing a significant bottleneck for the team.",
+      "Product owner is at least part time, 50% of time dedicated to team.",
+      "Team has limited distractions outside of sprint goals.",
+      "Team can deliver end to end features with business value.",
       "1",
-
-      "Everyone is aware of the practices.",
-      "Everyone follows the practices consistently.",
-      "Team has discussed and agreed on the practices they will follow. ",
-      "If asked, all team members would describe this common set of practices consistently – TEST THIS",
-      "All team members generally respect and mostly follow the agreements.",
+      "Team is cross-functional with skill set mix that is well-balanced to match the needs of the work.",
+      "Team is dedicated to single value stream and does not multi-task outside of sprint goals.",
+      "Product owner is dedicated to team and spends whatever time necessary for direct collaboration with team members.",
       "2",
-
-      "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves. ",
-      "The team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
+      "Team members are becoming T-shaped and can manage a variety of responsibilities as the work demands.",
       "3",
-
-      "Working agreements include elements that encourage innovation, cross-training, excellent collaboration, and growth for the team members.",
-
-      ""
+      "Team members' skill sets are highly flexible - almost any team member can flex to take on any type of work."
     ]
   },
   {
@@ -402,11 +397,21 @@
 
       "44",
       "44",
-      "Team members highlight what they did yesterday, what they will do today.  ",
-      "Team members highlight any impediments/blockers.  ",
-      "Highlights are related to the sprint backlog.  ",
-      "Team avoids using Daily Standup to solve problems. ",
-      "Standups are completed in an average of < 15 mins."
+      "Team members highlight what they did yesterday, what they will do today.",
+      "Team members highlight any impediments/blockers.",
+      "Highlights are related to the sprint backlog.",
+      "Team avoids using Daily Standup to solve problems.",
+      "Standups are completed in an average of < 15 mins.",
+      "The full team turns up on time.",
+      "Problem solving is taken outside of the standup.",
+      "Someone will stop conversations from going down 'rat holes'.",
+      "Stand ups are always completed in 15 mins.",
+      "2",
+      "44",
+      "Team has improved stand ups through the retrospective process.",
+      "Standup is self-facilitated by the team.",
+      "3",
+      "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans."
     ],
     "level": {
       "number": 1,
@@ -414,16 +419,13 @@
         "The full team turns up on time.",
         "Problem solving is taken outside of the standup.",
         "Someone will stop conversations from going down 'rat holes'.",
-        "Standups are always completed in 15 mins.",
+        "Stand ups are always completed in 15 mins.",
         "2",
         "44",
-        "Team has improved standups through the retrospective process.  ",
+        "Team has improved stand ups through the retrospective process.",
         "Standup is self-facilitated by the team.",
         "3",
-
-        "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans.",
-
-        ""
+        "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans."
       ]
     },
     "section-sprint": {
@@ -432,7 +434,7 @@
       "raw": "Sprint Demo Confirm that sprint output meets customer expectations and gather feedback",
       "number": -1,
       "entries": [
-        "There is no clear indication of working software.  ",
+        "There is no clear indication of working software.",
         "0",
         "44",
         "444",
