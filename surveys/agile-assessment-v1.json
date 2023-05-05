@@ -9,53 +9,58 @@
       "entries": [
         {
           "score": -1,
-          "descriptor": "Chaos, no defined standards or processes have been formed",
-          "key": -250749821
+          "descriptor": "Team has significantly unhealthy churn.",
+          "key": 603643639
+        },
+        {
+          "score": -1,
+          "descriptor": "Communication is ineffective, for example reliance on email or other asynchronous forms of communication.",
+          "key": 51650458
         },
         {
           "score": 1,
-          "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
-          "key": 134407754
+          "descriptor": "Team has limited reliance on outside resources for day-to-day needs, and this is not causing a significant bottleneck for the team.",
+          "key": -1932378888
         },
         {
           "score": 1,
-          "descriptor": "Everyone is aware of the practices.",
-          "key": -1445875429
+          "descriptor": "Product owner is at least part time, 50% of time dedicated to team.",
+          "key": -262049105
         },
         {
           "score": 1,
-          "descriptor": "Everyone follows the practices consistently.",
-          "key": 639183189
+          "descriptor": "Team has limited distractions outside of sprint goals.",
+          "key": -1398304618
         },
         {
           "score": 1,
-          "descriptor": "Team has discussed and agreed on the practices they will follow. ",
-          "key": -744745204
+          "descriptor": "Team can deliver end to end features with business value.",
+          "key": -161009569
         },
         {
           "score": 1,
-          "descriptor": "If asked, all team members would describe this common set of practices consistently .",
-          "key": -71718635
+          "descriptor": "Team is cross-functional with skill set mix that is well-balanced to match the needs of the work.",
+          "key": 1901380099
         },
         {
           "score": 1,
-          "descriptor": "All team members generally respect and mostly follow the agreements.",
-          "key": -1928267026
+          "descriptor": "Team is dedicated to single value stream and does not multi-task outside of sprint goals.",
+          "key": 1287856108
+        },
+        {
+          "score": 1,
+          "descriptor": "Product owner is dedicated to team and spends whatever time necessary for direct collaboration with team members.",
+          "key": 746186312
         },
         {
           "score": 2,
-          "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves. ",
-          "key": 2138686813
-        },
-        {
-          "score": 2,
-          "descriptor": "he team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
-          "key": -109592142
+          "descriptor": "Team members are becoming T-shaped and can manage a variety of responsibilities as the work demands.",
+          "key": 1556315022
         },
         {
           "score": 3,
-          "descriptor": "Working agreements include elements that encourage innovation, cross-training, excellent collaboration, and growth for the team members.",
-          "key": -959641526
+          "descriptor": "Team members' skill sets are highly flexible - almost any team member can flex to take on any type of work.",
+          "key": -1646158005
         }
       ],
       "key": -1889210512
@@ -924,28 +929,63 @@
         },
         {
           "score": 1,
-          "descriptor": "Team members highlight what they did yesterday, what they will do today.  ",
-          "key": -833480163
+          "descriptor": "Team members highlight what they did yesterday, what they will do today.",
+          "key": 1143265501
         },
         {
           "score": 1,
-          "descriptor": "Team members highlight any impediments/blockers.  ",
-          "key": 1641578845
+          "descriptor": "Team members highlight any impediments/blockers.",
+          "key": 412880925
         },
         {
           "score": 1,
-          "descriptor": "Highlights are related to the sprint backlog.  ",
-          "key": 955463643
+          "descriptor": "Highlights are related to the sprint backlog.",
+          "key": -749842917
         },
         {
           "score": 1,
-          "descriptor": "Team avoids using Daily Standup to solve problems. ",
-          "key": 529342961
+          "descriptor": "Team avoids using Daily Standup to solve problems.",
+          "key": 848359567
         },
         {
           "score": 1,
           "descriptor": "Standups are completed in an average of < 15 mins.",
           "key": -1833477234
+        },
+        {
+          "score": 1,
+          "descriptor": "The full team turns up on time.",
+          "key": -1430734000
+        },
+        {
+          "score": 1,
+          "descriptor": "Problem solving is taken outside of the standup.",
+          "key": -358973670
+        },
+        {
+          "score": 1,
+          "descriptor": "Someone will stop conversations from going down 'rat holes'.",
+          "key": 1763246482
+        },
+        {
+          "score": 1,
+          "descriptor": "Stand ups are always completed in 15 mins.",
+          "key": 240739694
+        },
+        {
+          "score": 2,
+          "descriptor": "Team has improved stand ups through the retrospective process.",
+          "key": 324795091
+        },
+        {
+          "score": 2,
+          "descriptor": "Standup is self-facilitated by the team.",
+          "key": -1970863115
+        },
+        {
+          "score": 3,
+          "descriptor": "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans.",
+          "key": -1368935879
         }
       ],
       "level": {
@@ -954,14 +994,13 @@
           "The full team turns up on time.",
           "Problem solving is taken outside of the standup.",
           "Someone will stop conversations from going down 'rat holes'.",
-          "Standups are always completed in 15 mins.",
+          "Stand ups are always completed in 15 mins.",
           "2",
           "44",
-          "Team has improved standups through the retrospective process.  ",
+          "Team has improved stand ups through the retrospective process.",
           "Standup is self-facilitated by the team.",
           "3",
-          "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans.",
-          ""
+          "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans."
         ]
       },
       "section-sprint": {
@@ -970,7 +1009,7 @@
         "raw": "Sprint Demo Confirm that sprint output meets customer expectations and gather feedback",
         "number": -1,
         "entries": [
-          "There is no clear indication of working software.  ",
+          "There is no clear indication of working software.",
           "0",
           "44",
           "444",
@@ -1412,8 +1451,8 @@
       "entries": [
         {
           "score": -1,
-          "descriptor": "There is no clear indication of working software.  ",
-          "key": 520748882
+          "descriptor": "There is no clear indication of working software.",
+          "key": 282105810
         },
         {
           "score": 1,
