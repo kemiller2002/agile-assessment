@@ -1346,8 +1346,8 @@
         ]
       },
       "section-automatedTesting": {
-        "section": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
-        "descriptor": "",
+        "section": "Automated Regression Testing",
+        "descriptor": "Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
         "raw": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria ",
         "number": -1,
         "entries": [
@@ -2393,112 +2393,112 @@
       "key": -1247804396
     },
     {
-      "section": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
-      "descriptor": "",
+      "section": "Automated Regression Testing",
+      "descriptor": "Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
       "number": -1,
       "entries": [
         {
           "score": -1,
           "descriptor": "No automated regression tests - it is all done manually.",
-          "key": -1346457115
+          "key": -890399040
         },
         {
           "score": -1,
           "descriptor": "The team complains that they have tried to get automated functional tests to work in the past, but they say it slows them down and is too expensive for this group to do.",
-          "key": -67464215
+          "key": -1051024274
         },
         {
           "score": -1,
           "descriptor": "Little to no organizational support for leadership promoting an investment in test automation.",
-          "key": 2002065400
+          "key": -1878228845
         },
         {
           "score": 1,
           "descriptor": "There is some automated testing, including some in the automated regression build.",
-          "key": 1400701178
+          "key": -328189419
         },
         {
           "score": 1,
           "descriptor": "Automated regression tests complete in less than two hours.",
-          "key": -1196985977
+          "key": 247569100
         },
         {
           "score": 1,
           "descriptor": "Code coverage is measured on automated functional tests.",
-          "key": -803418648
+          "key": -347360573
         },
         {
           "score": 1,
           "descriptor": "All of the tests are included in a CI build and there are rarely test cases commented out or ignored.",
-          "key": 21216610
+          "key": 1547534439
         },
         {
           "score": 1,
           "descriptor": "The team values automated testing.",
-          "key": -576271266
+          "key": -1625766023
         },
         {
           "score": 1,
           "descriptor": "Pipeline includes gating factor to ensure that important code quality metrics don't backslide",
-          "key": -1456410195
+          "key": 1743554994
         },
         {
           "score": 2,
           "descriptor": "The team agrees that the automated tests are valuable and organize to run them in various CI builds.",
-          "key": 114394395
+          "key": 163630454
         },
         {
           "score": 2,
           "descriptor": "They recognize that they can't be run all of the time for each build, so they will be segregated and run at different times.",
-          "key": 680670674
+          "key": -1588273875
         },
         {
           "score": 2,
           "descriptor": "There may be time sequences where all of the builds are not running successfully because the tests are failing.",
-          "key": 1703021089
+          "key": 970689254
         },
         {
           "score": 2,
           "descriptor": "Sometimes they will allow a small set of tests to be commented out as they are difficult to debug/fix.",
-          "key": 407089893
+          "key": 478302336
         },
         {
           "score": 2,
           "descriptor": "Similar to automated unit testing, the team understands and works to have fast and reliable automated feature tests.",
-          "key": -1929812921
+          "key": 1153078946
         },
         {
           "score": 2,
           "descriptor": "A smoke test is included with the unit tests to ensure major capabilities continue to work with each check-in.",
-          "key": -1706123894
+          "key": 1041199141
         },
         {
           "score": 3,
           "descriptor": "Speed and durability are significant concerns, and the team works at writing good and fast tests.",
-          "key": 1596356316
+          "key": -1499691935
         },
         {
           "score": 3,
           "descriptor": "All the tests are allocated to a CI build to ensure they run at some times.",
-          "key": -1076292649
+          "key": -1807084772
         },
         {
           "score": 3,
           "descriptor": "The team understand that the automated tests are a real safety net and use them to strive for zero defects to production.",
-          "key": -1357967562
+          "key": -1786372677
         },
         {
           "score": 3,
           "descriptor": "Performance and other non-functional requirements are included in the tests.",
-          "key": 2100112033
+          "key": 920392700
         },
         {
           "score": 3,
           "descriptor": "The tests are structured so that the developers run all unit tests and key functional tests (smoke tests) prior to every check-in.",
-          "key": -1243662946
+          "key": 329231545
         }
       ],
-      "key": -896304154
+      "key": 140881345
     },
     {
       "section": "Source Code Management - Legacy",

@@ -834,8 +834,8 @@
       ]
     },
     "section-automatedTesting": {
-      "section": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
-      "descriptor": "",
+      "section": "Automated Regression Testing",
+      "descriptor": "Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
       "raw": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria ",
       "number": -1,
       "entries": [
