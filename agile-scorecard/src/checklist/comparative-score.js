@@ -206,7 +206,7 @@ export function ComparativeScore(props) {
     const data = url.split("/").reverse()[0].split("?")[0];
     const checklistCreation = createChecklist(data, props.http);
 
-    checklistCreation.then((x) => saveMetricBound(x));
+    checklistCreation.then((x) => saveMetricBound(x)).then(() => updateUrl(""));
   };
 
   const updateUrlData = (e) => updateUrl(e.target.value);
