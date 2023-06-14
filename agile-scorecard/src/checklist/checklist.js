@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Menu from "./menu";
 
-export function getChecklist({ get }, fileName) {
-  return get(`./surveys/${fileName}`).then((x) => x.data);
-}
+import * as CompressionUtilities from "../utilities/compression";
+
+import { getChecklist } from "../utilities/surveyData";
 
 function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
@@ -13,7 +13,7 @@ function mapEntriesToSorted(entries) {
 export function calculateMetrics(survey, getValue) {
   const defaultValue = survey.sectionScoreDefault;
   const updateItem = (item) => {
-    return Object.assign({}, item, { value: getValue(item.key) });
+    return Object.assign({}, item, { value: getValue(item.id) });
   };
 
   const updateSection = (section) => {
@@ -29,6 +29,9 @@ export function calculateMetrics(survey, getValue) {
 }
 
 function updateDataObject(state, key, value) {
+  const stateAnswerKey = state.answerKey || {};
+  const stateAnswerKeyWithNewValue = Object.assign({});
+
   return Object.assign({}, state, {
     [key]: value,
   });
@@ -67,25 +70,25 @@ export function Checklist({ data, callback, disabled, http }) {
       .then((d) => updateChecklist(d));
   };
 
-  const findItem = (key) => {
+  const findItem = (id) => {
     return survey.items
       .map((x) => x.entries)
       .flat()
-      .filter((x) => x.key === key)[0];
+      .filter((x) => x.id === id)[0];
   };
 
   const updateState = (newKeyValue) => {
     navigate(convertForUrl(newKeyValue), { replace: false });
   };
 
-  const updateChecklistValue = (sectionKey, entries, key, value) => {
-    const item = findItem(key);
+  const updateChecklistValue = (sectionKey, entries, id, value) => {
+    const item = findItem(id);
     item.value = value;
 
     updateChecklist(survey);
 
     const sectionScore = calculateScore(entries);
-    const updatedSurveyObject = updateDataObject(urlData, key, value);
+    const updatedSurveyObject = updateDataObject(urlData, id, value);
     const updatedSection = updateDataObject(
       updatedSurveyObject,
       createSectionKey(sectionKey, sectionScore)
@@ -202,14 +205,25 @@ function calculateScore(entries, defaultValue) {
 }
 
 export function convertForUrl(input) {
-  const steps = [(i) => JSON.stringify(i), (i) => btoa(i)];
+  const steps = [
+    (i) => JSON.stringify(i),
+    (i) => {
+      console.log(i);
+      return i;
+    },
+    (i) => CompressionUtilities.compress(i),
+  ];
   const convert = (e, fn) => (e ? fn(e) : e);
 
   return steps.reduce(convert, input);
 }
 
 export function convertAndParse(input) {
-  const steps = [(i) => atob(i), (i) => JSON.parse(i)];
+  const steps = [
+    (i) => CompressionUtilities.decompress(i),
+    (i) => JSON.parse(i),
+  ];
+
   const convert = (e, fn) => (e ? fn(e) : e);
 
   return steps.reduce(convert, input);
@@ -252,16 +266,16 @@ function createSection(
 }
 
 function createEntry(entry, update, disabled, sectionName) {
-  const { descriptor, key, score, value } = entry;
+  const { descriptor, score, value, id } = entry;
   const updateEvent = (e) => {
     const value = e.target.value;
     entry.value = value;
-    update(key, value);
+    update(id, value);
   };
 
   return (
     <div
-      key={`wrapper-score-${key}:${sectionName}`}
+      key={`wrapper-score-${id}:${sectionName}`}
       data-entry
       data-value={score}
     >
@@ -272,9 +286,9 @@ function createEntry(entry, update, disabled, sectionName) {
         <label data-input-value="no">
           <input
             type="radio"
-            name={key}
+            name={id}
             value="no"
-            key={`no-${key}`}
+            key={`no-${id}`}
             onChange={updateEvent}
             checked={!value}
             disabled={disabled}
@@ -284,11 +298,11 @@ function createEntry(entry, update, disabled, sectionName) {
         <label data-input-value="in progress">
           <input
             type="radio"
-            name={key}
+            name={id}
             value="in-progress"
             onChange={updateEvent}
             checked={value === "in-progress"}
-            key={`inprogress-${key}`}
+            key={`inprogress-${id}`}
             disabled={disabled}
           ></input>
           <span>In Progress</span>
@@ -296,10 +310,10 @@ function createEntry(entry, update, disabled, sectionName) {
         <label data-input-value="yes">
           <input
             type="radio"
-            name={key}
+            name={id}
             value="yes"
             checked={value === "yes"}
-            key={`yes-${key}`}
+            key={`yes-${id}`}
             onChange={updateEvent}
             disabled={disabled}
           ></input>

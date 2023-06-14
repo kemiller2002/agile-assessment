@@ -1,6 +1,7 @@
 import "./App.css";
 import { Survey } from "./checklist/survey";
 import { ComparativeScore } from "./checklist/comparative-score";
+import { Compression } from "./utilities/compression";
 import axios from "axios";
 
 import React from "react";
@@ -46,6 +47,9 @@ function App() {
             path=":data"
             element={<ComparativeScore http={http} />}
           ></Route>
+        </Route>
+        <Route path="utilities">
+          <Route path="compression" element={<Compression http={http} />} />
         </Route>
       </Route>
     </Routes>

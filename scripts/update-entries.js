@@ -16,6 +16,9 @@ function run(filePath, inFileName, outFileName) {
     addIdentifier,
     addMetaData,
     changeScoreFromZeroToOne,
+    createIds,
+    addAnswerKey,
+    updateItemsWithKeyType,
   ];
 
   const runner = (state, item) => {
@@ -33,6 +36,47 @@ function run(filePath, inFileName, outFileName) {
   const finalData = runSteps.reduce(runner, input);
 
   fs.writeFileSync(outFile, JSON.stringify(finalData));
+}
+
+function updateItemsWithKeyType(input) {
+  const updateEntries = (s, c) => {
+    const entries = c.entries.map((e) =>
+      Object.assign({}, e, { key: "yesNoInProgress" })
+    );
+    Object.assign({}, s, { entries });
+  };
+
+  const items = input.items.reduce(updateEntries);
+
+  return Object.assign({}, input, { items });
+}
+
+function addAnswerKey(input) {
+  const key = {
+    0: "No",
+    1: "In Progress",
+    2: "Yes",
+  };
+
+  return Object.assign({}, input, { answerKeys: [{ yesNoInProgress: key }] });
+}
+
+function createEntryWithId(item, position) {
+  const entries = item.entries.reduce((s, c, p) => {
+    const withId = Object.assign({}, c, { id: `${position}:${p}` });
+    return [...s, withId];
+  }, []);
+
+  return Object.assign({}, item, { entries, position, id: position });
+}
+
+function createIds(input) {
+  const items = input.items.reduce((s, c, p) => {
+    const updatedEntry = createEntryWithId(c, p);
+    return [...s, updatedEntry];
+  }, []);
+
+  return Object.assign({}, input, { items });
 }
 
 function changeScoreFromZeroToOne(input) {

@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import {
-  convertAndParse,
-  getChecklist,
-  calculateMetrics,
-  convertForUrl,
-} from "./checklist";
+import { convertAndParse, calculateMetrics, convertForUrl } from "./checklist";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -19,6 +14,8 @@ import {
   Legend,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+
+import { getChecklist } from "../utilities/surveyData";
 
 import "./css/main.css";
 
