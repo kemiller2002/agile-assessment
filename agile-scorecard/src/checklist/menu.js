@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import "./css/menu.css";
 
@@ -18,9 +18,10 @@ function copyUrl() {
 }
 
 export default function Menu(props) {
+  const parameters = useParams();
   const uploadReference = React.useRef(null);
   const name = props.name;
-  const data = props.data;
+  const data = props.data || parameters.data;
   const getData = props.getData;
   const disabled = props.disabled;
 
