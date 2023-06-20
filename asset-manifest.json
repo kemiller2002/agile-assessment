@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/agile-assessment/static/css/main.6a210bdb.css",
-    "main.js": "/agile-assessment/static/js/main.4a182a9d.js",
+    "main.js": "/agile-assessment/static/js/main.e36e4d37.js",
     "static/js/787.a2451e9d.chunk.js": "/agile-assessment/static/js/787.a2451e9d.chunk.js",
     "index.html": "/agile-assessment/index.html",
     "main.6a210bdb.css.map": "/agile-assessment/static/css/main.6a210bdb.css.map",
-    "main.4a182a9d.js.map": "/agile-assessment/static/js/main.4a182a9d.js.map",
+    "main.e36e4d37.js.map": "/agile-assessment/static/js/main.e36e4d37.js.map",
     "787.a2451e9d.chunk.js.map": "/agile-assessment/static/js/787.a2451e9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a210bdb.css",
-    "static/js/main.4a182a9d.js"
+    "static/js/main.e36e4d37.js"
   ]
 }
