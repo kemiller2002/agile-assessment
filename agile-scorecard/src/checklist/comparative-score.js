@@ -226,6 +226,14 @@ export function ComparativeScore(props) {
         display: true,
         text: "Assessment Chart",
       },
+      tooltip: {
+        titleFont: {
+          size: 16,
+        },
+        bodyFont: {
+          size: 16,
+        },
+      },
     },
     scales: {
       y: {
