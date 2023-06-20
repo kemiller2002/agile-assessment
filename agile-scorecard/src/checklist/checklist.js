@@ -33,7 +33,7 @@ function updateDataObject(state, key, value) {
   const stateAnswerKeyWithNewValue = Object.assign({});
 
   return Object.assign({}, state, {
-    [key]: value,
+    [key]: parseInt(value, 10),
   });
 }
 
@@ -115,6 +115,8 @@ export function Checklist({ data, callback, disabled, http }) {
     updateState(updatedTeam);
   };
 
+  const getAnswerKey = (name) => survey.answerKeys[name] || [];
+
   return (
     <div>
       <div data-header>
@@ -147,7 +149,8 @@ export function Checklist({ data, callback, disabled, http }) {
             createSectionKey,
             (entries) => calculateScore(entries, sectionScoreDefault),
             updateSectionScore,
-            disabled
+            disabled,
+            getAnswerKey
           )
         )}
       </div>
@@ -166,10 +169,11 @@ export function Checklist({ data, callback, disabled, http }) {
 
 function calculateScore(entries, defaultValue) {
   const sortedEntries = mapEntriesToSorted(entries);
+
   const scored = sortedEntries.reduce(
     (s, c) => {
       if (c.score < 0) {
-        if (c.value && c.value !== "no") {
+        if (c.value && parseInt(c.value, 10) !== 0) {
           return {
             inProcessScore: -1,
             continueToProcess: false,
@@ -184,7 +188,8 @@ function calculateScore(entries, defaultValue) {
         return s;
       }
 
-      const continueToProcess = s.continueToProcess && c.value === "yes";
+      const continueToProcess =
+        s.continueToProcess && parseInt(c.value, 10) === 2;
 
       const newState = {
         inProcessScore: s.score < c.score ? s.score : s.inProcessScore,
@@ -207,10 +212,6 @@ function calculateScore(entries, defaultValue) {
 export function convertForUrl(input) {
   const steps = [
     (i) => JSON.stringify(i),
-    (i) => {
-      console.log(i);
-      return i;
-    },
     (i) => CompressionUtilities.compress(i),
   ];
   const convert = (e, fn) => (e ? fn(e) : e);
@@ -238,7 +239,8 @@ function createSection(
   createSectionKey,
   calculateScore,
   updateSectionScore,
-  disabled
+  disabled,
+  getAnswerKey
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
@@ -251,27 +253,46 @@ function createSection(
   updateSectionScore(sectionKey, score);
 
   return (
-    <section data-section-wrapper>
+    <section data-section-wrapper key={`${section}-${name}`}>
       <div data-name="name" key={`name-${name}`}>
         <h2 data-section-name>{section}</h2>
         <h3 key={"score-" + sectionKey}>Score: {score}</h3>
       </div>
       <section key={sectionKey}>
         {sortedEntriesWithValues.map((x) =>
-          createEntry(x, updateSection, disabled, sectionKey)
+          createEntry(x, updateSection, disabled, sectionKey, getAnswerKey)
         )}
       </section>
     </section>
   );
 }
 
-function createEntry(entry, update, disabled, sectionName) {
+function makeOptions(id, value, disabled, updateEvent, descriptor, checked) {
+  return (
+    <label data-input-value={descriptor} key={`${id}-${descriptor}`}>
+      <input
+        type="radio"
+        name={id}
+        value={value}
+        key={`${descriptor}-${id}`}
+        onChange={updateEvent}
+        checked={checked}
+        disabled={disabled}
+      ></input>
+      <span>{descriptor}</span>
+    </label>
+  );
+}
+
+function createEntry(entry, update, disabled, sectionName, getAnswerKey) {
   const { descriptor, score, value, id } = entry;
   const updateEvent = (e) => {
     const value = e.target.value;
     entry.value = value;
     update(id, value);
   };
+
+  const options = getAnswerKey(entry.options);
 
   return (
     <div
@@ -283,42 +304,10 @@ function createEntry(entry, update, disabled, sectionName) {
         {descriptor}
       </div>
       <div data-entry-value>
-        <label data-input-value="no">
-          <input
-            type="radio"
-            name={id}
-            value="no"
-            key={`no-${id}`}
-            onChange={updateEvent}
-            checked={!value}
-            disabled={disabled}
-          ></input>
-          <span>No</span>
-        </label>
-        <label data-input-value="in progress">
-          <input
-            type="radio"
-            name={id}
-            value="in-progress"
-            onChange={updateEvent}
-            checked={value === "in-progress"}
-            key={`inprogress-${id}`}
-            disabled={disabled}
-          ></input>
-          <span>In Progress</span>
-        </label>
-        <label data-input-value="yes">
-          <input
-            type="radio"
-            name={id}
-            value="yes"
-            checked={value === "yes"}
-            key={`yes-${id}`}
-            onChange={updateEvent}
-            disabled={disabled}
-          ></input>
-          <span>Yes</span>
-        </label>
+        {Reflect.ownKeys(options).map((k) => {
+          const option = options[k];
+          return makeOptions(id, k, disabled, updateEvent, option, k == value);
+        })}
       </div>
     </div>
   );

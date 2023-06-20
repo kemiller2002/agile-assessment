@@ -28,13 +28,38 @@ function lookupAndChangeToId(survey, data) {
     return Object.assign({}, s, { [propertyName]: data[c] });
   }, {});
 
-  return dataWithId;
+  return { survey, data: dataWithId };
+}
+
+function convertAnswer({ survey, data }) {
+  const lookupValue = (v) => {
+    switch (v.toUpperCase()) {
+      case "YES":
+        return 2;
+      case "IN-PROGRESS":
+        return 1;
+      case "NO":
+        return 0;
+      default:
+        return v;
+    }
+  };
+
+  return Reflect.ownKeys(data).reduce((s, c) => {
+    return Object.assign({}, s, { [c]: lookupValue(data[c]) });
+  }, {});
 }
 
 function convertToId(surveyName, data) {
   const surveyPromise = getSurvey(this.http, surveyName);
 
-  return surveyPromise.then((s) => lookupAndChangeToId(s, data));
+  return surveyPromise
+    .then((s) => lookupAndChangeToId(s, data))
+    .then((x) => convertAnswer(x))
+    .then((x) => {
+      console.log(x);
+      return x;
+    });
 }
 
 function convertEvent(urlData) {
@@ -79,6 +104,15 @@ export function Compression({ http }) {
 
   const [dataToConvert, updateUrlData] = useState(testData);
   const [compressedData, updateCompressed] = useState("");
+
+  const [compressedChecklistData, updateCompressedChecklistData] = useState("");
+  const [decompressedChecklistData, updateDecompressedData] = useState("");
+
+  //decompress and convert
+  const [decompressAndConvertedData, updateDecompressAndConvertedData] =
+    useState("");
+  const [convertData, updateConvertData] = useState("");
+
   const convertWithState = convert.bind({ updateCompressed });
   const updateDataStoreWithState = updateDataStore.bind({
     updateUrlData,
@@ -89,18 +123,69 @@ export function Compression({ http }) {
     http,
   });
 
+  const decompressData = (data) => {
+    const results = decompress(data);
+    console.log(results);
+    updateDecompressedData(results);
+  };
+
+  const updateChecklistCompressedData = (e) => {
+    updateCompressedChecklistData(e.target.value);
+  };
+
+  const convertAndCompress = (data) => {
+    const steps = [(d) => atob(data), (d) => compress(d)];
+    const results = steps.reduce((s, c) => c(s), data);
+
+    updateDecompressAndConvertedData(results);
+  };
+
   return (
     <div>
-      <textarea
-        onChange={updateDataStoreWithState}
-        value={dataToConvert}
-      ></textarea>
-      <input
-        type="button"
-        value="convert"
-        onClick={() => convertEventWithState(dataToConvert)}
-      />
-      <div>{compressedData}</div>
+      <h2>Convert, Update, and Compress</h2>
+      <div>
+        <textarea
+          onChange={updateDataStoreWithState}
+          value={dataToConvert}
+        ></textarea>
+        <input
+          type="button"
+          value="convert"
+          onClick={() => convertEventWithState(dataToConvert)}
+        />
+        <div>{compressedData}</div>
+      </div>
+      <hr />
+      <div>
+        <h2>Decompress</h2>
+        <br />
+        <textarea
+          onChange={updateChecklistCompressedData}
+          value={compressedChecklistData}
+        ></textarea>
+        <input
+          type="button"
+          value="convert"
+          onClick={() => decompressData(compressedChecklistData)}
+        />
+        <div>{decompressedChecklistData}</div>
+      </div>
+
+      <hr />
+      <div>
+        <h2>Convert and Compress</h2>
+        <br />
+        <textarea
+          onChange={(e) => updateConvertData(e.target.value)}
+          value={convertData}
+        ></textarea>
+        <input
+          type="button"
+          value="convert"
+          onClick={() => convertAndCompress(convertData)}
+        />
+        <div>{decompressAndConvertedData}</div>
+      </div>
     </div>
   );
 }

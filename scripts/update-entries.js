@@ -39,14 +39,14 @@ function run(filePath, inFileName, outFileName) {
 }
 
 function updateItemsWithKeyType(input) {
-  const updateEntries = (s, c) => {
-    const entries = c.entries.map((e) =>
-      Object.assign({}, e, { key: "yesNoInProgress" })
-    );
-    Object.assign({}, s, { entries });
-  };
+  const updateEntries = (e) =>
+    Object.assign({}, e, { options: "yesNoInProgress" });
 
-  const items = input.items.reduce(updateEntries);
+  const items = input.items.map((x) => {
+    const entries = x.entries.map(updateEntries);
+
+    return Object.assign({}, x, { entries });
+  });
 
   return Object.assign({}, input, { items });
 }
@@ -58,7 +58,7 @@ function addAnswerKey(input) {
     2: "Yes",
   };
 
-  return Object.assign({}, input, { answerKeys: [{ yesNoInProgress: key }] });
+  return Object.assign({}, input, { answerKeys: { yesNoInProgress: key } });
 }
 
 function createEntryWithId(item, position) {

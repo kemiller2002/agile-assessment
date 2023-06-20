@@ -83,18 +83,16 @@ function createMonthArray(state, number, start) {
     : state;
 }
 
-function createDateEntries(min, max) {
+function createDateEntries(min, max, bracketLength) {
   let months = (max.getFullYear() - min.getFullYear()) * 12;
   months -= min.getMonth();
   months += max.getMonth();
 
-  const bracketNumber = 2;
-
   const minFirstOfMonth = new Date(min.setDate(1));
 
-  const bracketMonths = months + bracketNumber * 2;
+  const bracketMonths = months + bracketLength * 2;
   const bracketMinDate = new Date(
-    minFirstOfMonth.setMonth(minFirstOfMonth.getMonth() - bracketNumber)
+    minFirstOfMonth.setMonth(minFirstOfMonth.getMonth() - bracketLength)
   );
 
   const dates = createMonthArray([], bracketMonths, bracketMinDate);
@@ -111,7 +109,7 @@ function findBasedOnDate(searchObjects, date) {
   return foundEntries.length === 0 ? null : foundEntries[0];
 }
 
-function transformIntoChartsDataEntry(legendDates, dataObject) {
+function transformIntoChartsDataEntry(legendDates, dataObject, bracketLength) {
   const rawData = Object.keys(dataObject).map((x) =>
     Object.assign({}, dataObject[x], { date: new Date(x) })
   );
@@ -122,8 +120,11 @@ function transformIntoChartsDataEntry(legendDates, dataObject) {
     .map((x) => findBasedOnDate(rawData, x))
     .map((x) => (x ? x.score : x))
     .reduce(
-      ({ entries, previousValue }, i) => {
-        const entry = i || previousValue;
+      ({ entries, previousValue }, i, currentIndex, reducedArray) => {
+        const entry =
+          reducedArray.length - (currentIndex + bracketLength) <= 0
+            ? undefined
+            : i || previousValue;
 
         return { entries: [...entries, entry], previousValue: entry };
       },
@@ -135,6 +136,7 @@ function transformIntoChartsDataEntry(legendDates, dataObject) {
     data,
   };
 }
+const bracketLength = 2;
 
 function createDashboardDataset(data) {
   const separatedData = Object.keys(data).reduce((s, key) => {
@@ -158,13 +160,14 @@ function createDashboardDataset(data) {
 
   const dateEntries = createDateEntries(
     separatedData.minDate,
-    separatedData.maxDate
+    separatedData.maxDate,
+    bracketLength
   );
 
   const datasets = Object.keys(separatedData)
     .filter((x) => x !== "minDate" && x !== "maxDate")
     .map((x) => separatedData[x])
-    .map((x) => transformIntoChartsDataEntry(dateEntries, x));
+    .map((x) => transformIntoChartsDataEntry(dateEntries, x, bracketLength));
 
   return {
     labels: dateEntries.map((d) => `${d.getMonth() + 1} - ${d.getFullYear()}`),
