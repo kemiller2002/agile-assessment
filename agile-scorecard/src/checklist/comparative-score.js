@@ -58,6 +58,7 @@ function separatePropertyName(name) {
 
 function createMetricLegendDisplay(data) {
   return Object.keys(data)
+    .filter((x) => x !== "metadata")
     .map((key) => ({ key, data: data[key] }))
     .map(({ key, data }) => {
       const { team, dateAsString } = separatePropertyName(key);
@@ -322,9 +323,7 @@ export function ComparativeScore(props) {
               </div>
             </div>
           </div>
-          <div data-graph>
-            {createMetricLegendDisplay(metricsData.datasets)}
-          </div>
+          <div data-graph>{createMetricLegendDisplay(metricsData.data)}</div>
         </div>
         <label className="flyout-indicator" htmlFor="enactFlyout">
           <div className="pad-top"></div>
