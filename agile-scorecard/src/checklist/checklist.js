@@ -28,13 +28,19 @@ export function calculateMetrics(survey, getValue) {
   });
 }
 
-function updateDataObject(state, key, value) {
+function updateDataObject(state, key, value, keepAsString) {
   const stateAnswerKey = state.answerKey || {};
   const stateAnswerKeyWithNewValue = Object.assign({});
 
-  return Object.assign({}, state, {
-    [key]: parseInt(value, 10),
+  const convertedValue = parseInt(value, 10);
+  const evaluatedValue =
+    isNaN(convertedValue) || keepAsString ? value : convertedValue;
+
+  const update = Object.assign({}, state, {
+    [key]: evaluatedValue,
   });
+
+  return update;
 }
 
 export function calculateScoreData(data) {
@@ -111,7 +117,8 @@ export function Checklist({ data, callback, disabled, http }) {
 
   const updateAssessmentDate = (e) => {
     const date = e.target.value;
-    const updatedTeam = updateDataObject(urlData, "assessmentDate", date);
+    const updatedTeam = updateDataObject(urlData, "assessmentDate", date, true);
+
     updateState(updatedTeam);
   };
 
