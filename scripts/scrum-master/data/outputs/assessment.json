@@ -1,0 +1,189 @@
+[
+  {
+    "section": "Coach and Mentorship",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Guide and mentor team members in self-management",
+        "key": "R3VpZGUgYW5kIG1lbnRvciB0ZWFtIG1lbWJlcnMgaW4gc2VsZi1tYW5hZ2VtZW50",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Empowers the team to maximize productivity and efficiency within the Scrum framework.",
+        "key": "RW1wb3dlcnMgdGhlIHRlYW0gdG8gbWF4aW1pemUgcHJvZHVjdGl2aXR5IGFuZCBlZmZpY2llbmN5IHdpdGhpbiB0aGUgU2NydW0gZnJhbWV3b3JrLg==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "0"
+  },
+  {
+    "section": "Value Creation",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Relentlessly focuses on delivering incremental value aligned with the Definition of Done",
+        "key": "UmVsZW50bGVzc2x5IGZvY3VzZXMgb24gZGVsaXZlcmluZyBpbmNyZW1lbnRhbCB2YWx1ZSBhbGlnbmVkIHdpdGggdGhlIERlZmluaXRpb24gb2YgRG9uZQ==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Facilitates the team's commitment to achieving sprint objectives.",
+        "key": "RmFjaWxpdGF0ZXMgdGhlIHRlYW0ncyBjb21taXRtZW50IHRvIGFjaGlldmluZyBzcHJpbnQgb2JqZWN0aXZlcy4=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "1"
+  },
+  {
+    "section": "Obstacle Removal",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Proactively identifies and resolves impediments that hinder the team's progress.",
+        "key": "UHJvYWN0aXZlbHkgaWRlbnRpZmllcyBhbmQgcmVzb2x2ZXMgaW1wZWRpbWVudHMgdGhhdCBoaW5kZXIgdGhlIHRlYW0ncyBwcm9ncmVzcy4=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Enables seamless workflow and productivity.",
+        "key": "RW5hYmxlcyBzZWFtbGVzcyB3b3JrZmxvdyBhbmQgcHJvZHVjdGl2aXR5Lg==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "2"
+  },
+  {
+    "section": "Scrum Events",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Ensure the smooth execution and positive outcomes of Scrum events",
+        "key": "RW5zdXJlIHRoZSBzbW9vdGggZXhlY3V0aW9uIGFuZCBwb3NpdGl2ZSBvdXRjb21lcyBvZiBTY3J1bSBldmVudHM=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Fosters an environment of collaboration, efficiency and continuous improvement.",
+        "key": "Rm9zdGVycyBhbiBlbnZpcm9ubWVudCBvZiBjb2xsYWJvcmF0aW9uLCBlZmZpY2llbmN5IGFuZCBjb250aW51b3VzIGltcHJvdmVtZW50Lg==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "3"
+  },
+  {
+    "section": "Product Management",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Assists in refining the Product Backlog",
+        "key": "QXNzaXN0cyBpbiByZWZpbmluZyB0aGUgUHJvZHVjdCBCYWNrbG9n",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Contributes to effective Product Goal definition",
+        "key": "Q29udHJpYnV0ZXMgdG8gZWZmZWN0aXZlIFByb2R1Y3QgR29hbCBkZWZpbml0aW9u",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Facilitates its management to align with stakeholder expectations.",
+        "key": "RmFjaWxpdGF0ZXMgaXRzIG1hbmFnZW1lbnQgdG8gYWxpZ24gd2l0aCBzdGFrZWhvbGRlciBleHBlY3RhdGlvbnMu",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "4"
+  },
+  {
+    "section": "Empirical Product Planning",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Fosters and facilitates empirical product planning methodologies within a complex work environment",
+        "key": "Rm9zdGVycyBhbmQgZmFjaWxpdGF0ZXMgZW1waXJpY2FsIHByb2R1Y3QgcGxhbm5pbmcgbWV0aG9kb2xvZ2llcyB3aXRoaW4gYSBjb21wbGV4IHdvcmsgZW52aXJvbm1lbnQ=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Ensures adaptability and responsiveness to evolving requirements.",
+        "key": "RW5zdXJlcyBhZGFwdGFiaWxpdHkgYW5kIHJlc3BvbnNpdmVuZXNzIHRvIGV2b2x2aW5nIHJlcXVpcmVtZW50cy4=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "5"
+  },
+  {
+    "section": "Stakeholder Collaboration",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Facilitate seamless collaboration between internal and external stakeholders",
+        "key": "RmFjaWxpdGF0ZSBzZWFtbGVzcyBjb2xsYWJvcmF0aW9uIGJldHdlZW4gaW50ZXJuYWwgYW5kIGV4dGVybmFsIHN0YWtlaG9sZGVycw==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Ensures alignment with project objectives and priorities.",
+        "key": "RW5zdXJlcyBhbGlnbm1lbnQgd2l0aCBwcm9qZWN0IG9iamVjdGl2ZXMgYW5kIHByaW9yaXRpZXMu",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "6"
+  },
+  {
+    "section": "Training and Leadership",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Leads, trains, and coach the organization in Scrum adoption and maturity",
+        "key": "TGVhZHMsIHRyYWlucywgYW5kIGNvYWNoIHRoZSBvcmdhbml6YXRpb24gaW4gU2NydW0gYWRvcHRpb24gYW5kIG1hdHVyaXR5",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Advocates for an empirical approach to complex work and promoting a culture of continuous improvement.",
+        "key": "QWR2b2NhdGVzIGZvciBhbiBlbXBpcmljYWwgYXBwcm9hY2ggdG8gY29tcGxleCB3b3JrIGFuZCBwcm9tb3RpbmcgYSBjdWx0dXJlIG9mIGNvbnRpbnVvdXMgaW1wcm92ZW1lbnQu",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "7"
+  },
+  {
+    "section": "Barriers Removal",
+    "entries": [
+      {
+        "score": 0,
+        "descriptor": "Actively eliminates barriers between stakeholders and the team",
+        "key": "QWN0aXZlbHkgZWxpbWluYXRlcyBiYXJyaWVycyBiZXR3ZWVuIHN0YWtlaG9sZGVycyBhbmQgdGhlIHRlYW0=",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      },
+      {
+        "score": 0,
+        "descriptor": "Fosters open communication channels and mutual understanding.",
+        "key": "Rm9zdGVycyBvcGVuIGNvbW11bmljYXRpb24gY2hhbm5lbHMgYW5kIG11dHVhbCB1bmRlcnN0YW5kaW5nLg==",
+        "id": "dW5kZWZpbmVk",
+        "options": "likert10"
+      }
+    ],
+    "sectionId": "8"
+  }
+]

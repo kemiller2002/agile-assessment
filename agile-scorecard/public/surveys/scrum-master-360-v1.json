@@ -1,0 +1,19 @@
+{
+  "name": "Scrum Master 360 V1",
+  "items": [
+    {
+      "section": "Team Structure",
+      "descriptor": "Build long-lived teams and bring the work to them",
+      "raw": "Team Structure Build long-lived teams and bring the work to them",
+      "number": -1,
+      "entries": [
+                {
+          "score": -1,
+          "descriptor": "Team has significantly unhealthy churn.",
+          "key": 1,
+          "id": "0:0",
+          "options": "Likert10"
+        }
+      ]
+    ]
+}
