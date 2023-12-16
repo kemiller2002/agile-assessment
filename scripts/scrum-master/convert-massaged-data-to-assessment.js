@@ -26,16 +26,21 @@ function addSectionIds(entries) {
   }, []);
 }
 
-function addItemIdToItem(item) {
-  return { ...item, id: btoa(item.description) };
+function addItemIdToItem(sectionId, itemIndexId, item) {
+  return { ...item, id: `${sectionId}:${itemIndexId}` };
 }
 
-function addItemIdsToItems(entry) {
-  return { ...entry, entries: entry.entries.map(addItemIdToItem) };
+function addItemIdsToItems(section) {
+  return {
+    ...section,
+    entries: section.entries.map((x, i) =>
+      addItemIdToItem(section.sectionId, i, x)
+    ),
+  };
 }
 
-function addItemIds(entries) {
-  return entries.map(addItemIdsToItems);
+function addItemIds(sections) {
+  return sections.map(addItemIdsToItems);
 }
 
 function convertToAssessmentObject(entries) {
@@ -76,7 +81,7 @@ const logFolder = path.join(__dirname, "data", "outputs");
 const output = path.join(logFolder, "scrum-master-360-v1.json");
 
 /*
-    Fix Ids from sldkfjsldfk= to "x:y"
+    Fix key, make hash
 
 */
 
