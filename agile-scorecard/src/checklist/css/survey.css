@@ -234,3 +234,7 @@ input:checked~[data-menu-options] {
 {
     cursor: pointer;
 }
+
+[data-hide-total-display = true]{
+    visibility: hidden;
+}

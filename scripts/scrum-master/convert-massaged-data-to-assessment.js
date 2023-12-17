@@ -43,16 +43,31 @@ function addItemIds(sections) {
   return sections.map(addItemIdsToItems);
 }
 
+function addPeriod(description) {
+  return description[description.length - 1] === "."
+    ? description
+    : `${description}.`;
+}
+
+function createEntriesFromDescription(description) {
+  return [
+    addPeriod,
+    (y) => ({
+      score: 0,
+      descriptor: y,
+      key: generateHash(y),
+      id: "x:y",
+      options: "likert5",
+    }),
+  ].reduce(reducer, description);
+}
+
 function convertToAssessmentObject(entries) {
   return entries.map((x) => ({
     section: x.section,
-    entries: x.descriptions.map((y) => ({
-      score: 0,
-      descriptor: y,
-      key: btoa(y),
-      id: "x:y",
-      options: "likert10",
-    })),
+    descriptor: "",
+    number: -1,
+    entries: x.descriptions.map(createEntriesFromDescription),
   }));
 }
 
@@ -68,6 +83,7 @@ function run(input, output) {
     addSectionIds,
     addItemIds,
     addContainer,
+    addLikertKey,
     (d) => write(output, d),
   ].reduce((s, i, p) => reducerLogger(s, i, p, "run"), input);
 }
@@ -76,13 +92,46 @@ function reducerLogger(s, i, p) {
   return reducer(s, i);
 }
 
+function generateHash(input) {
+  var hash = 0,
+    i,
+    chr;
+  if (input.length === 0) return hash;
+  for (i = 0; i < input.length; i++) {
+    chr = input.charCodeAt(i);
+    hash = (hash << 5) - hash + chr;
+    hash |= 0; // Convert to 32bit integer
+  }
+  return hash;
+}
+
+function addLikertKey(container) {
+  return {
+    ...container,
+    sectionScoreDefault: 0,
+    answerKeys: {
+      likert5: {
+        0: "Never",
+        1: "Rarely",
+        2: "Sometimes",
+        3: "Often",
+        4: "Always",
+      },
+    },
+  };
+}
+
 const input = path.join(__dirname, "data", "outputs", "data-massaged.json");
 const logFolder = path.join(__dirname, "data", "outputs");
-const output = path.join(logFolder, "scrum-master-360-v1.json");
 
-/*
-    Fix key, make hash
-
-*/
+const output = path.join(
+  __dirname,
+  "..",
+  "..",
+  "agile-scorecard",
+  "public",
+  "surveys",
+  "scrum-master-360-v1.json"
+);
 
 run(input, output);

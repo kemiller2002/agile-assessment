@@ -5,6 +5,7 @@ import Menu from "./menu";
 import * as CompressionUtilities from "../utilities/compression";
 
 import { getChecklist } from "../utilities/surveyData";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
@@ -124,6 +125,9 @@ export function Checklist({ data, callback, disabled, http }) {
 
   const getAnswerKey = (name) => survey.answerKeys[name] || [];
 
+  //HIDE TOTAL CALCULATE HERE.
+  const hideTotals = false;
+
   return (
     <div>
       <div data-header>
@@ -131,7 +135,7 @@ export function Checklist({ data, callback, disabled, http }) {
         <input
           type="text"
           key="team-name"
-          placeholder="Team Name"
+          placeholder="Survey Target"
           data-team-name
           disabled={disabled}
           onChange={updateTeam}
@@ -161,7 +165,7 @@ export function Checklist({ data, callback, disabled, http }) {
           )
         )}
       </div>
-      <h2 data-total-score>
+      <h2 data-total-score data-hide-total-display={hideTotals}>
         Total Score: {calculateScoreData(scoreData) || 0}
       </h2>
       <Menu
