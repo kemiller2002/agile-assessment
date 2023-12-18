@@ -49,10 +49,77 @@ export function calculateScoreData(data) {
   return results;
 }
 
+function makeId(length) {
+  let result = "";
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  const charactersLength = characters.length;
+  let counter = 0;
+  while (counter < length) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    counter += 1;
+  }
+  return result;
+}
+
+function createInstanceId() {
+  return makeId(20);
+}
+
+export function makeHeader(survey, disabled, updateState, urlData, getValue) {
+  function updateTeam(e) {
+    const team = e.target.value;
+    const updatedTeam = updateDataObject(urlData, "team", team);
+    updateState(updatedTeam);
+  }
+
+  function updateAssessmentDate(e) {
+    const date = e.target.value;
+    const updatedTeam = updateDataObject(urlData, "assessmentDate", date, true);
+
+    updateState(updatedTeam);
+  }
+
+  return (
+    <div data-header>
+      <h1 data-survey-title>{survey.name}</h1>
+      <input
+        type="text"
+        key="team-name"
+        placeholder="Survey Target"
+        data-team-name
+        disabled={disabled}
+        onChange={updateTeam}
+        value={getValue("team")}
+        id="team-name"
+      ></input>
+      <input
+        type="date"
+        data-assessment-date
+        value={getValue("assessmentDate")}
+        onChange={updateAssessmentDate}
+        key="assessmentDate"
+        id="assessmentDate"
+        disabled={disabled}
+      ></input>
+    </div>
+  );
+}
+
+export function updateStateDetermineNavigate(newKeyValue) {
+  this.navigate(convertForUrl(newKeyValue), { replace: false });
+}
+
+function reducer(s, i) {
+  return i(s);
+}
+
 export function Checklist({ data, callback, disabled, http }) {
   const [survey, updateChecklist] = useState({ items: [] });
   const parameters = useParams();
   const navigate = useNavigate();
+
+  const updateState = updateStateDetermineNavigate.bind({ navigate });
 
   const parsedData = convertAndParse(data || parameters.data);
   const name = parameters.name || parsedData.surveyName;
@@ -62,10 +129,7 @@ export function Checklist({ data, callback, disabled, http }) {
   const getData = () => parsedData || { surveyName: name };
 
   const urlData = getData();
-  const getValue = (k) => {
-    return urlData[k];
-  };
-
+  const getValue = (key) => urlData[key];
   const notify = callback || (() => {});
 
   const loadChecklist = () => {
@@ -84,10 +148,6 @@ export function Checklist({ data, callback, disabled, http }) {
       .filter((x) => x.id === id)[0];
   };
 
-  const updateState = (newKeyValue) => {
-    navigate(convertForUrl(newKeyValue), { replace: false });
-  };
-
   const updateChecklistValue = (sectionKey, entries, id, value) => {
     const item = findItem(id);
     item.value = value;
@@ -104,16 +164,17 @@ export function Checklist({ data, callback, disabled, http }) {
     updateState(updatedSection);
   };
 
+  const populateInstanceIdValue = (k) => {
+    return [
+      getValue,
+      (v) => v || [createInstanceId, updateAssessmentId].reduce(reducer, null),
+    ].reduce(reducer, k);
+  };
+
   useEffect(loadChecklist, []);
 
   const updateSectionScore = (k, s) => {
     scoreData[k] = s;
-  };
-
-  const updateTeam = (e) => {
-    const team = e.target.value;
-    const updatedTeam = updateDataObject(urlData, "team", team);
-    updateState(updatedTeam);
   };
 
   const updateAssessmentDate = (e) => {
@@ -123,6 +184,12 @@ export function Checklist({ data, callback, disabled, http }) {
     updateState(updatedTeam);
   };
 
+  function updateAssessmentId(id) {
+    const updatedId = updateDataObject(urlData, "instanceId", id, true);
+    updateState(updatedId);
+    return id;
+  }
+
   const getAnswerKey = (name) => survey.answerKeys[name] || [];
 
   //HIDE TOTAL CALCULATE HERE.
@@ -130,26 +197,15 @@ export function Checklist({ data, callback, disabled, http }) {
 
   return (
     <div>
-      <div data-header>
-        <h1 data-survey-title>{survey.name}</h1>
+      {makeHeader(survey, disabled, updateState, urlData, getValue)}
+      <div>
         <input
           type="text"
-          key="team-name"
-          placeholder="Survey Target"
-          data-team-name
-          disabled={disabled}
-          onChange={updateTeam}
-          value={getValue("team")}
-          id="team-name"
-        ></input>
-        <input
-          type="date"
-          data-assessment-date
-          value={getValue("assessmentDate")}
-          onChange={updateAssessmentDate}
-          key="assessmentDate"
-          id="assessmentDate"
-          disabled={disabled}
+          data-assessment-id
+          value={populateInstanceIdValue("instanceId")}
+          key="assessmentId"
+          id="assessmentId"
+          disabled
         ></input>
       </div>
       <div>

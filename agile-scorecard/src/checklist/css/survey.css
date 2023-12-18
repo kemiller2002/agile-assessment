@@ -62,6 +62,7 @@ label {
 input:checked ~ span {
     font-weight: 600;
     color: black;
+    text-decoration: underline;
 }
 
 input ~ span{
@@ -104,7 +105,8 @@ div[data-header]{
 
 [data-input-value]{
     background-color: #6693F5;
-    color:white
+    color:white;
+    font-weight: 600;
 }
 
 [data-entry-value]:first-child{
@@ -126,16 +128,18 @@ div[data-header]{
 }
 
 [data-team-name],
-[data-assessment-date]{
+[data-assessment-date],
+[data-assessment-id]{
     padding:.8em;
     margin-left: 5em;
     margin-right: 5em;
+    margin-bottom: .2em;
     text-align: center;
     font-size: 18pt;
     font-weight: 600;
     color:#444444;
     border-radius: 10px;
-    border: thin gray solid
+    border: thin gray solid;
 }
 
 [data-menu]{
