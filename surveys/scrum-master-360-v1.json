@@ -1,0 +1,221 @@
+{
+  "name": "Scrum Master 360 V1",
+
+  "items": [
+    {
+      "section": "Coach and Mentorship",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Guide and mentor team members in self-management.",
+          "key": -1094916083,
+          "id": "0:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Empowers the team to maximize productivity and efficiency within the Scrum framework.",
+          "key": -1911235423,
+          "id": "0:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "0"
+    },
+    {
+      "section": "Value Creation",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Relentlessly focuses on delivering incremental value aligned with the Definition of Done.",
+          "key": 1294447228,
+          "id": "1:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Facilitates the team's commitment to achieving sprint objectives.",
+          "key": -1147900519,
+          "id": "1:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "1"
+    },
+    {
+      "section": "Obstacle Removal",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Proactively identifies and resolves impediments that hinder the team's progress.",
+          "key": 346099167,
+          "id": "2:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Enables seamless workflow and productivity.",
+          "key": 1176323371,
+          "id": "2:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "2"
+    },
+    {
+      "section": "Scrum Events",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Ensure the smooth execution and positive outcomes of Scrum events.",
+          "key": -2068462384,
+          "id": "3:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Fosters an environment of collaboration, efficiency and continuous improvement.",
+          "key": 424065717,
+          "id": "3:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "3"
+    },
+    {
+      "section": "Product Management",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Assists in refining the Product Backlog.",
+          "key": 1981365762,
+          "id": "4:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Contributes to effective Product Goal definition.",
+          "key": 1169779203,
+          "id": "4:1",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Facilitates its management to align with stakeholder expectations.",
+          "key": -1682246457,
+          "id": "4:2",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "4"
+    },
+    {
+      "section": "Empirical Product Planning",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Fosters and facilitates empirical product planning methodologies within a complex work environment.",
+          "key": 506579863,
+          "id": "5:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Ensures adaptability and responsiveness to evolving requirements.",
+          "key": 1443319134,
+          "id": "5:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "5"
+    },
+    {
+      "section": "Stakeholder Collaboration",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Facilitate seamless collaboration between internal and external stakeholders.",
+          "key": -1179940128,
+          "id": "6:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Ensures alignment with project objectives and priorities.",
+          "key": -1929333034,
+          "id": "6:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "6"
+    },
+    {
+      "section": "Training and Leadership",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Leads, trains, and coach the organization in Scrum adoption and maturity.",
+          "key": 247797800,
+          "id": "7:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Advocates for an empirical approach to complex work and promoting a culture of continuous improvement.",
+          "key": -1631239999,
+          "id": "7:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "7"
+    },
+    {
+      "section": "Barriers Removal",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Actively eliminates barriers between stakeholders and the team.",
+          "key": -31234752,
+          "id": "8:0",
+          "options": "likert5"
+        },
+        {
+          "score": 0,
+          "descriptor": "Fosters open communication channels and mutual understanding.",
+          "key": -310711335,
+          "id": "8:1",
+          "options": "likert5"
+        }
+      ],
+      "sectionId": "8"
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "likert5": {
+      "0": "Never",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Always"
+    }
+  }
+}
