@@ -192,6 +192,10 @@ export function Checklist({ data, callback, disabled, http }) {
 
   const getAnswerKey = (name) => survey.answerKeys[name] || [];
 
+  useEffect(() => {
+    populateInstanceIdValue("instanceId");
+  }, []);
+
   //HIDE TOTAL CALCULATE HERE.
   const hideScore = !(survey.scores || {}).show;
   const assessmentId = populateInstanceIdValue("instanceId");
