@@ -2,6 +2,7 @@ import "./App.css";
 import { Survey } from "./checklist/survey";
 import { ComparativeScore } from "./checklist/comparative-score";
 import { Compression } from "./utilities/compression";
+import { CreateInstance } from "./checklist/create-instance";
 import axios from "axios";
 
 import React from "react";
@@ -41,7 +42,12 @@ function App() {
         <Route path="survey/:name" element={<Survey http={http} />}>
           <Route path=":data" element={<Survey http={http} />}></Route>
         </Route>
-
+        <Route
+          path="create-instance/:name"
+          element={<CreateInstance http={http} />}
+        >
+          <Route path=":data" element={<CreateInstance http={http} />}></Route>
+        </Route>
         <Route path="graph" element={<ComparativeScore http={http} />}>
           <Route
             path=":data"

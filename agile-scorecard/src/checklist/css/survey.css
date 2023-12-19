@@ -227,7 +227,7 @@ input:checked~[data-menu-options] {
     display: none;
 }
 
-[data-menu-options] > button{
+[data-menu-options] > button {
     margin: .25em;
     border-radius: 5px;
     cursor: pointer;
@@ -239,6 +239,49 @@ input:checked~[data-menu-options] {
     cursor: pointer;
 }
 
-[data-hide-total-display = true]{
+[data-hide-score-display = true]{
     visibility: hidden;
+}
+
+
+[data-title]{
+    text-align: center;
+}
+
+[data-survey-create-instance-name]{
+    text-align: center;
+}
+
+[data-url-send-container]
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+[data-url-instance]{
+    color:red;
+    font-weight: 600;
+    margin-bottom: .5em;
+}
+
+[data-copy-url]{
+    padding: .5em 3em .5em 3em;
+    font-size: 1em;
+    color:white;
+    font-weight: 600;
+    background-color: #6693F5;
+    border-radius: 10px;
+}
+[data-assessment-id-container]
+{
+    display: flex;
+    flex-direction: column;
+}
+
+[data-assessment-id-container-text]
+{
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
 }

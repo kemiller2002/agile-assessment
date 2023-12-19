@@ -3,13 +3,28 @@ import { Link } from "react-router-dom";
 function AssessmentList({ assessment }) {
   const list = assessment || [];
   return (
-    <ol>
-      {list.map((l) => (
-        <li>
-          <Link to={`survey/${l.file}`}> {l.name}</Link>
-        </li>
-      ))}
-    </ol>
+    <div>
+      <div>
+        <h2>Create Single Assessment Instance</h2>
+        <ol>
+          {list.map((l) => (
+            <li>
+              <Link to={`survey/${l.file}`}> {l.name}</Link>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <div>
+        <h2>Create Link for 360 Assessment use</h2>
+        <ol>
+          {list.map((l) => (
+            <li>
+              <Link to={`create-instance/${l.file}`}> {l.name}</Link>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
   );
 }
 

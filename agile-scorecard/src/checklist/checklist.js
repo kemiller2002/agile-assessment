@@ -90,13 +90,13 @@ export function makeHeader(survey, disabled, updateState, urlData, getValue) {
         data-team-name
         disabled={disabled}
         onChange={updateTeam}
-        value={getValue("team")}
+        value={getValue("team") || ""}
         id="team-name"
       ></input>
       <input
         type="date"
         data-assessment-date
-        value={getValue("assessmentDate")}
+        value={getValue("assessmentDate") || ""}
         onChange={updateAssessmentDate}
         key="assessmentDate"
         id="assessmentDate"
@@ -184,30 +184,36 @@ export function Checklist({ data, callback, disabled, http }) {
     updateState(updatedTeam);
   };
 
-  function updateAssessmentId(id) {
+  const updateAssessmentId = (id) => {
     const updatedId = updateDataObject(urlData, "instanceId", id, true);
     updateState(updatedId);
     return id;
-  }
+  };
 
   const getAnswerKey = (name) => survey.answerKeys[name] || [];
 
   //HIDE TOTAL CALCULATE HERE.
-  const hideTotals = false;
+  const hideScore = !(survey.scores || {}).show;
+  const assessmentId = populateInstanceIdValue("instanceId");
 
   return (
     <div>
-      {makeHeader(survey, disabled, updateState, urlData, getValue)}
       <div>
-        <input
-          type="text"
-          data-assessment-id
-          value={populateInstanceIdValue("instanceId")}
-          key="assessmentId"
-          id="assessmentId"
-          disabled
-        ></input>
+        <label data-assessment-id-container>
+          <span data-assessment-id-container-text>Assessment Instance Id</span>
+          <input
+            type="text"
+            data-assessment-id
+            value={assessmentId}
+            key="assessmentId"
+            id="assessmentId"
+            disabled
+          ></input>
+        </label>
       </div>
+
+      {makeHeader(survey, disabled, updateState, urlData, getValue)}
+
       <div>
         {(survey.items || []).map((x) =>
           createSection(
@@ -217,11 +223,12 @@ export function Checklist({ data, callback, disabled, http }) {
             (entries) => calculateScore(entries, sectionScoreDefault),
             updateSectionScore,
             disabled,
-            getAnswerKey
+            getAnswerKey,
+            hideScore
           )
         )}
       </div>
-      <h2 data-total-score data-hide-total-display={hideTotals}>
+      <h2 data-total-score data-hide-score-display={hideScore}>
         Total Score: {calculateScoreData(scoreData) || 0}
       </h2>
       <Menu
@@ -307,7 +314,8 @@ function createSection(
   calculateScore,
   updateSectionScore,
   disabled,
-  getAnswerKey
+  getAnswerKey,
+  hideScore
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
@@ -323,7 +331,9 @@ function createSection(
     <section data-section-wrapper key={`${section}-${name}`}>
       <div data-name="name" key={`name-${name}`}>
         <h2 data-section-name>{section}</h2>
-        <h3 key={"score-" + sectionKey}>Score: {score}</h3>
+        <h3 key={"score-" + sectionKey} data-hide-score-display={hideScore}>
+          Score: {score}
+        </h3>
       </div>
       <section key={sectionKey}>
         {sortedEntriesWithValues.map((x) =>
