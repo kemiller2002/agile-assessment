@@ -117,8 +117,7 @@ div[data-header]{
 
 [data-total-score]{
     position: fixed;
-    display: float;
-    bottom: 20px;
+    bottom: 40px;
     left: calc(100% - 220px);
     background-color: white;
     border: thin solid darkgray;
@@ -283,6 +282,7 @@ input:checked~[data-menu-options] {
     border-radius: 10px;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 }
 [data-assessment-id-container]
 {
