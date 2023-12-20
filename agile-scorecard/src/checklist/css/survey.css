@@ -285,3 +285,25 @@ input:checked~[data-menu-options] {
     display: block;
     text-align: center;
 }
+
+[data-complete-assessment-container]{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+[data-prepare-for-processing]{
+    display: block;
+    text-align: center;
+}
+
+[data-url-to-send-completed]{
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+    padding: 1em 0em 1em 0em;
+    word-break: break-all;
+}
+
+[data-complete-url-container]{
+    text-align:center
+}

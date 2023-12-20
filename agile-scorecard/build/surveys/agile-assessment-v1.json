@@ -1,5 +1,6 @@
 {
   "name": "Agile Survey V1",
+  "scores": { "show": true },
   "items": [
     {
       "section": "Team Structure",

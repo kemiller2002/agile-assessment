@@ -29,123 +29,6 @@ ChartJS.register(
   Legend
 );
 
-function createChecklist(encodedData, http) {
-  const data = convertAndParse(encodedData);
-  const getValue = (k) => data[k];
-  const surveyName = getValue("surveyName");
-  const assessmentDate = getValue("assessmentDate");
-  const team = getValue("team");
-
-  const calculateTotalScore = ({ score, maximum }, i) => {
-    const findMaximum = (s, i) => (s > i.score ? s : i.score);
-
-    return {
-      score: (score += i.score),
-      maximum: (maximum += i.entries.reduce(findMaximum)),
-    };
-  };
-
-  return getChecklist(http, surveyName)
-    .then((s) => calculateMetrics(s, getValue))
-    .then((d) => d.items.reduce(calculateTotalScore, { score: 0, maximum: 0 }))
-    .then((s) => Object.assign({}, s, { surveyName, assessmentDate, team }));
-}
-
-function separatePropertyName(name) {
-  const [team, dateAsString] = name.split("~");
-  return { team, dateAsString };
-}
-
-function createMetricLegendDisplay(data) {
-  return Object.keys(data)
-    .filter((x) => x !== "metadata")
-    .map((key) => ({ key, data: data[key] }))
-    .map(({ key, data }) => {
-      const { team, dateAsString } = separatePropertyName(key);
-      return { team, date: new Date(dateAsString), data };
-    })
-    .map(({ team, data, date }) => (
-      <div key={`${team}${date}`}>
-        {team} : {date.getMonth() + 1} - {date.getFullYear()}
-      </div>
-    ));
-}
-
-function createMonthArray(state, number, start) {
-  const adjustMonth = new Date(start.getTime());
-  const adjustedMonth = new Date(
-    adjustMonth.setMonth(adjustMonth.getMonth() + number)
-  );
-
-  return number >= 0
-    ? createMonthArray([adjustedMonth, ...state], --number, start)
-    : state;
-}
-
-function createDateEntries(min, max, bracketLength) {
-  let months = (max.getFullYear() - min.getFullYear()) * 12;
-  months -= min.getMonth();
-  months += max.getMonth();
-
-  const minFirstOfMonth = new Date(min.setDate(1));
-
-  const bracketMonths = months + bracketLength * 2;
-  const bracketMinDate = new Date(
-    minFirstOfMonth.setMonth(minFirstOfMonth.getMonth() - bracketLength)
-  );
-
-  const dates = createMonthArray([], bracketMonths, bracketMinDate);
-
-  return dates;
-}
-
-function findBasedOnDate(searchObjects, date) {
-  const foundEntries = searchObjects.filter(
-    (x) =>
-      x.date.getMonth() === date.getMonth() &&
-      x.date.getFullYear() === date.getFullYear()
-  );
-  return foundEntries.length === 0 ? null : foundEntries[0];
-}
-
-function transformIntoChartsDataEntry(legendDates, dataObject, bracketLength) {
-  const rawData = Object.keys(dataObject).map((x) =>
-    Object.assign({}, dataObject[x], { date: new Date(x) })
-  );
-
-  const label = (rawData[0] || { team: "none" }).team;
-
-  const data = legendDates
-    .map((x) => findBasedOnDate(rawData, x))
-    .map((x) => (x ? x.score : x))
-    .reduce(
-      ({ entries, previousValue }, i, currentIndex, reducedArray) => {
-        const entry =
-          reducedArray.length - (currentIndex + bracketLength) <= 0
-            ? undefined
-            : i || previousValue;
-
-        return { entries: [...entries, entry], previousValue: entry };
-      },
-      { entries: [], previousValue: undefined }
-    ).entries;
-
-  return {
-    label,
-    data,
-  };
-}
-const bracketLength = 2;
-
-function saveMetric(metric) {
-  const data = this.get();
-  const updatedData = Object.assign({}, data, {
-    [`${metric.team}~${metric.assessmentDate}`]: metric,
-  });
-
-  this.save(updatedData);
-}
-
 function updateComparisonName(event) {
   const name = event.target.value;
   const data = this.get();
@@ -165,7 +48,15 @@ function createDashboardDataset(data) {
   }
 }
 
-export function ComparativeScore(props) {
+function addMetric(data) {
+  console.log("NOT DEFINED");
+}
+
+function createMetricLegendDisplay(data) {
+  console.log("NOT DEFINED");
+}
+
+export function ThreeSixtyComparison() {
   const parameters = useParams();
   const [url, updateUrl] = useState("");
   const encodedParameterData = parameters.data;
@@ -186,17 +77,11 @@ export function ComparativeScore(props) {
     navigate(convertForUrl(newKeyValue), { replace: false });
   };
 
-  const saveMetricBound = saveMetric.bind({
-    get,
+  const boundUpdateComparisonName = updateComparisonName.bind({
+    updateSystem: updateTitle,
     save: updateState,
+    get,
   });
-
-  const addMetric = () => {
-    const data = url.split("/").reverse()[0].split("?")[0];
-    const checklistCreation = createChecklist(data, props.http);
-
-    checklistCreation.then((x) => saveMetricBound(x)).then(() => updateUrl(""));
-  };
 
   const updateUrlData = (e) => updateUrl(e.target.value);
   const metricsData = createDashboardDataset(decodedData); //hERE
@@ -204,12 +89,6 @@ export function ComparativeScore(props) {
     labels: metricsData.labels,
     datasets: metricsData.datasets,
   };
-
-  const boundUpdateComparisonName = updateComparisonName.bind({
-    updateSystem: updateTitle,
-    save: updateState,
-    get,
-  });
 
   const chartOptions = {
     responsive: true,

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import Menu from "./menu";
-
 import * as CompressionUtilities from "../utilities/compression";
 
 import { getChecklist } from "../utilities/surveyData";
@@ -241,6 +240,12 @@ export function Checklist({ data, callback, disabled, http }) {
         getData={getData}
         disabled={disabled}
       ></Menu>
+
+      <div data-complete-assessment>
+        <Link to={`/prepare-results/${name}/${parameters.data}`}>
+          Prepare to Send Results
+        </Link>
+      </div>
     </div>
   );
 }
