@@ -129,7 +129,8 @@ div[data-header]{
 
 [data-team-name],
 [data-assessment-date],
-[data-assessment-id]{
+[data-assessment-id],
+[data-assessment-display-administrator]{
     padding:.8em;
     margin-left: 5em;
     margin-right: 5em;
@@ -140,6 +141,10 @@ div[data-header]{
     color:#444444;
     border-radius: 10px;
     border: thin gray solid;
+}
+
+[data-hide-administrator="true"]{
+    display: none;
 }
 
 [data-menu]{
@@ -256,22 +261,28 @@ input:checked~[data-menu-options] {
 {
     display: flex;
     flex-direction: column;
+}
+
+[data-url-direction]{
     text-align: center;
 }
 
 [data-url-instance]{
     color:red;
     font-weight: 600;
-    margin-bottom: .5em;
+    word-break: break-all;
 }
 
-[data-copy-url]{
+[data-copy-url],
+[start-post-process-button]{
     padding: .5em 3em .5em 3em;
     font-size: 1em;
     color:white;
     font-weight: 600;
     background-color: #6693F5;
     border-radius: 10px;
+    margin: 0 auto;
+    display: block;
 }
 [data-assessment-id-container]
 {
@@ -288,8 +299,14 @@ input:checked~[data-menu-options] {
 
 [data-complete-assessment-container]{
     display: flex;
-    flex-direction: column;
-    padding: 1em;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    border-top: thin solid #555555 ;
+    width:100%;
+    padding-bottom:5px;
+    padding: 15px;
 }
 
 [data-prepare-for-processing]{
@@ -299,11 +316,42 @@ input:checked~[data-menu-options] {
 
 [data-url-to-send-completed]{
     margin-bottom: 1em;
-    flex-wrap: wrap;
     padding: 1em 0em 1em 0em;
     word-break: break-all;
+    display: flex;
+    flex-direction: row;
 }
 
 [data-complete-url-container]{
-    text-align:center
+    text-align:center;
+}
+[data-container]{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5em;
+}
+[data-spacer]{
+    flex-basis: 30%;
+}
+
+[data-admin]{
+    font-weight: 600;
+}
+
+[data-complete-assessment]{
+    flex-grow: 1;
+    text-align: center;
+}
+
+[data-prepare-to-send-link]{
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #6693F5;
+    padding: 8px;
+    border-radius: 10px;
+    color:white
+}
+
+[data-survey-container]{
+    margin-bottom: 60px;
 }

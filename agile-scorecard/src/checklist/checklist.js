@@ -65,7 +65,14 @@ function createInstanceId() {
   return makeId(20);
 }
 
-export function makeHeader(survey, disabled, updateState, urlData, getValue) {
+export function makeHeader(
+  survey,
+  disabled,
+  updateState,
+  urlData,
+  getValue,
+  displayAdministrator
+) {
   function updateTeam(e) {
     const team = e.target.value;
     const updatedTeam = updateDataObject(urlData, "team", team);
@@ -74,9 +81,21 @@ export function makeHeader(survey, disabled, updateState, urlData, getValue) {
 
   function updateAssessmentDate(e) {
     const date = e.target.value;
-    const updatedTeam = updateDataObject(urlData, "assessmentDate", date, true);
+    const updateDate = updateDataObject(urlData, "assessmentDate", date, true);
 
-    updateState(updatedTeam);
+    updateState(updateDate);
+  }
+
+  function updateAdministrator(e) {
+    const date = e.target.value;
+    const updateAdministrator = updateDataObject(
+      urlData,
+      "administrator",
+      date,
+      true
+    );
+
+    updateState(updateAdministrator);
   }
 
   return (
@@ -99,6 +118,17 @@ export function makeHeader(survey, disabled, updateState, urlData, getValue) {
         onChange={updateAssessmentDate}
         key="assessmentDate"
         id="assessmentDate"
+        disabled={disabled}
+      ></input>
+      <input
+        type="text"
+        data-assessment-display-administrator
+        data-hide-administrator={!displayAdministrator}
+        value={getValue("administrator") || ""}
+        onChange={updateAdministrator}
+        key="administrator"
+        id="administrator"
+        placeholder="Administrator Information"
         disabled={disabled}
       ></input>
     </div>
@@ -217,7 +247,7 @@ export function Checklist({ data, callback, disabled, http }) {
 
       {makeHeader(survey, disabled, updateState, urlData, getValue)}
 
-      <div>
+      <div data-survey-container>
         {(survey.items || []).map((x) =>
           createSection(
             x,
@@ -241,10 +271,15 @@ export function Checklist({ data, callback, disabled, http }) {
         disabled={disabled}
       ></Menu>
 
-      <div data-complete-assessment>
-        <Link to={`/prepare-results/${name}/${parameters.data}`}>
-          Prepare to Send Results
-        </Link>
+      <div data-complete-assessment-container>
+        <div data-complete-assessment>
+          <Link
+            to={`/prepare-results/${name}/${parameters.data}`}
+            data-prepare-to-send-link="true"
+          >
+            Send Results
+          </Link>
+        </div>
       </div>
     </div>
   );

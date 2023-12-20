@@ -48,11 +48,17 @@ export function CreateInstance({ data, http }) {
   return (
     <div>
       <h1 data-title>Create instance for 360 reviews</h1>
-      <div>{makeHeader(survey, false, updateState, urlData, getValue)}</div>
-
+      <div>
+        {makeHeader(survey, false, updateState, urlData, getValue, true)}
+      </div>
       <div data-url-send-container>
-        <h3>URL to copy and send to participants.</h3>
-        <div data-url-instance>{surveyInstanceUrl}</div>
+        <h3 data-url-direction>URL to copy and send to participants.</h3>
+        <div data-container>
+          <div data-spacer></div>
+          <div data-url-instance>{surveyInstanceUrl}</div>
+          <div data-spacer></div>
+        </div>
+
         <div>
           <button
             data-copy-url
