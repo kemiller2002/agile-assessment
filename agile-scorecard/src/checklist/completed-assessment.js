@@ -2,6 +2,7 @@ import { useLocation } from "react-router";
 
 import { convertAndParse } from "./checklist";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 function copyUrl(urlToSend) {
   navigator.clipboard.writeText(urlToSend);
@@ -32,7 +33,7 @@ export function CompletedAssessment() {
   return (
     <div data-container>
       <div data-spacer></div>
-      <div data-complete-assessment-container>
+      <div data-complete-assessment-container-next-steps>
         <h1 data-prepare-for-processing>Prepare for Processing</h1>
         <h2>Next Steps</h2>
         <div>
@@ -59,6 +60,16 @@ export function CompletedAssessment() {
               Copy URL
             </button>
           </div>
+        </div>
+
+        <div data-went-in-error-container>
+          <h2>If You Went to This Step in Error</h2>
+          <Link
+            to={`/survey/${parameters.name}/${parameters.data}`}
+            data-return-to-survey-link="true"
+          >
+            Return to Assessment
+          </Link>
         </div>
       </div>
       <div data-spacer></div>
