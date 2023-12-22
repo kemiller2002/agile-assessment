@@ -12,7 +12,7 @@ import { Report } from "./checklist/report";
 import { ThreeSixtyComparison } from "./checklist/360-comparison";
 import { SomethingWentWrong } from "./checklist/somthing-wrong";
 
-import { CompletedAssessment } from "./checklist/completed-assessment";
+import { CompletedInstrument } from "./checklist/completed-instrument";
 
 function Http() {
   const axiosInstance = axios.create();
@@ -26,6 +26,7 @@ function Http() {
 
 function App() {
   const http = new Http();
+  const surveyListUrl = "surveys/survey-list.json";
 
   return (
     <Routes>
@@ -33,10 +34,7 @@ function App() {
         <Route
           index
           element={
-            <Listing
-              http={http}
-              surveyListUrl="surveys/survey-list.json"
-            ></Listing>
+            <Listing http={http} surveyListUrl={surveyListUrl}></Listing>
           }
         />
         <Route
@@ -49,11 +47,11 @@ function App() {
 
         <Route
           path="prepare-results/:name"
-          element={<CompletedAssessment http={http} />}
+          element={<CompletedInstrument http={http} />}
         >
           <Route
             path=":data"
-            element={<CompletedAssessment http={http} />}
+            element={<CompletedInstrument http={http} />}
           ></Route>
         </Route>
 
@@ -70,7 +68,12 @@ function App() {
           ></Route>
         </Route>
 
-        <Route path="360" element={<ThreeSixtyComparison http={http} />}>
+        <Route
+          path="360"
+          element={
+            <ThreeSixtyComparison http={http} surveyListUrl={surveyListUrl} />
+          }
+        >
           <Route
             path=":data"
             element={<ComparativeScore http={http} />}

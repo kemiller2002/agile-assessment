@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { convertAndParse, calculateMetrics, convertForUrl } from "./checklist";
+import { convertAndParse, calculateMetrics, convertForUrl } from "./instrument";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -15,7 +15,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-import { getChecklist } from "../utilities/surveyData";
+import { getInstrument } from "../utilities/surveyData";
 
 import "./css/main.css";
 
@@ -45,7 +45,7 @@ function createChecklist(encodedData, http) {
     };
   };
 
-  return getChecklist(http, surveyName)
+  return getInstrument(http, surveyName)
     .then((s) => calculateMetrics(s, getValue))
     .then((d) => d.items.reduce(calculateTotalScore, { score: 0, maximum: 0 }))
     .then((s) => Object.assign({}, s, { surveyName, assessmentDate, team }));

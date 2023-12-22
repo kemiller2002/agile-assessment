@@ -3,8 +3,10 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import Menu from "./menu";
 import * as CompressionUtilities from "../utilities/compression";
 
-import { getChecklist } from "../utilities/surveyData";
+import { getInstrument } from "../utilities/surveyData";
 import { faL } from "@fortawesome/free-solid-svg-icons";
+
+import { functionReducer } from "../utilities/reducer";
 
 function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
@@ -28,7 +30,7 @@ export function calculateMetrics(survey, getValue) {
   });
 }
 
-function updateDataObject(state, key, value, keepAsString) {
+export function updateDataObject(state, key, value, keepAsString) {
   const stateAnswerKey = state.answerKey || {};
   const stateAnswerKeyWithNewValue = Object.assign({});
 
@@ -139,11 +141,7 @@ export function updateStateDetermineNavigate(newKeyValue) {
   this.navigate(convertForUrl(newKeyValue), { replace: false });
 }
 
-function reducer(s, i) {
-  return i(s);
-}
-
-export function Checklist({ data, callback, disabled, http }) {
+export function Instrument({ data, callback, disabled, http }) {
   const [survey, updateChecklist] = useState({ items: [] });
   const parameters = useParams();
   const navigate = useNavigate();
@@ -162,7 +160,7 @@ export function Checklist({ data, callback, disabled, http }) {
   const notify = callback || (() => {});
 
   const loadChecklist = () => {
-    getChecklist(http, name)
+    getInstrument(http, name)
       .then((d) => calculateMetrics(d, getValue))
       .then((x) => {
         return x;
@@ -196,8 +194,10 @@ export function Checklist({ data, callback, disabled, http }) {
   const populateInstanceIdValue = (k) => {
     return [
       getValue,
-      (v) => v || [createInstanceId, updateAssessmentId].reduce(reducer, null),
-    ].reduce(reducer, k);
+      (v) =>
+        v ||
+        [createInstanceId, updateAssessmentId].reduce(functionReducer, null),
+    ].reduce(functionReducer, k);
   };
 
   useEffect(loadChecklist, []);
@@ -233,7 +233,7 @@ export function Checklist({ data, callback, disabled, http }) {
     <div>
       <div>
         <label data-assessment-id-container>
-          <span data-assessment-id-container-text>Assessment Instance Id</span>
+          <span data-assessment-id-container-text>Instrument Instance Id</span>
           <input
             type="text"
             data-assessment-id

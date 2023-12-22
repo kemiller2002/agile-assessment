@@ -1,6 +1,6 @@
 import { useLocation } from "react-router";
 
-import { convertAndParse } from "./checklist";
+import { convertAndParse } from "./instrument";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ function getAdministrator(data) {
   return data.administrator;
 }
 
-export function CompletedAssessment() {
+export function CompletedInstrument() {
   const location = useLocation();
   const parameters = useParams();
   const urlToSend = buildUrl(location, window);

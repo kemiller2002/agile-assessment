@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LZString from "lz-string";
-import { getChecklist as getSurvey } from "./surveyData";
+import { getInstrument as getSurvey } from "./surveyData";
 
 export function compress(data) {
   return LZString.compressToEncodedURIComponent(data);

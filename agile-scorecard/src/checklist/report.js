@@ -1,7 +1,7 @@
 import React from "react";
-import { Checklist } from "./checklist";
+import { Instrument } from "./instrument";
 import "./css/main.css";
 
 export function Report(props) {
-  return <Checklist http={props.http} disabled={true} />;
+  return <Instrument http={props.http} disabled={true} />;
 }

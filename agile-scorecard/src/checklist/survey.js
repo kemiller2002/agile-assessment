@@ -1,9 +1,9 @@
 import React from "react";
-import { Checklist } from "./checklist";
+import { Instrument } from "./instrument";
 import "./css/main.css";
 
 import "./css/survey.css";
 
 export function Survey(props) {
-  return <Checklist http={props.http} />;
+  return <Instrument http={props.http} />;
 }

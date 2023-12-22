@@ -2,10 +2,10 @@ import {
   makeHeader,
   updateStateDetermineNavigate,
   convertAndParse,
-} from "./checklist";
+} from "./instrument";
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { getChecklist } from "../utilities/surveyData";
+import { getInstrument } from "../utilities/surveyData";
 
 import { useHistory, useLocation } from "react-router-dom";
 export function CreateInstance({ data, http }) {
@@ -14,7 +14,7 @@ export function CreateInstance({ data, http }) {
   const navigate = useNavigate();
 
   const loadChecklist = () => {
-    getChecklist(http, name)
+    getInstrument(http, name)
       .then((x) => {
         return x;
       })
