@@ -77,6 +77,11 @@ function loadInstruments(http, url, updateInstruments) {
   return getInstrumentListing(http, url).then((x) => updateInstruments(x));
 }
 
+function write(x) {
+  console.log(x);
+  return x;
+}
+
 export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const parameters = useParams();
   const navigate = useNavigate();
@@ -84,7 +89,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const updateState = updateStateDetermineNavigate.bind({ navigate });
 
   const urlData =
-    [convertAndParse].reduce(functionReducer, parameters.data) || {};
+    [convertAndParse, write].reduce(functionReducer, parameters.data) || {};
 
   const [instruments, updateInstruments] = useState([]);
   const instrument = {};
@@ -96,10 +101,12 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
 
   //test here after loading instruments.
   const saveSelectedInstrument = (e) =>
-    updateInput(updateState, urlData, "instrument", e.target.value);
+    updateInput(updateState, urlData, "instrumentFile", e.target.value);
 
   //replace later.
   const inputProvidedDataUrl = "";
+
+  console.log(urlData.instrument);
 
   //
   useEffect(() => {
@@ -120,7 +127,11 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
                 >
                   <option>Select Instrument</option>
                   {instruments.map((x) => (
-                    <option key={x.name} value={x}>
+                    <option
+                      key={x.name}
+                      value={x.file}
+                      defaultValue={x.file === urlData.instrumentFile}
+                    >
                       {x.name}
                     </option>
                   ))}
@@ -135,6 +146,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
                   placeholder="Comparison Name"
                   className="comparison-name"
                   onChange={updateComparisonName}
+                  value={urlData.comparisonName}
                 />
               </div>
             </div>

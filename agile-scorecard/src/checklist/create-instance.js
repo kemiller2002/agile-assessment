@@ -2,11 +2,12 @@ import {
   makeHeader,
   updateStateDetermineNavigate,
   convertAndParse,
+  updateDataObject,
 } from "./instrument";
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getInstrument } from "../utilities/surveyData";
-
+import { createInstanceId } from "../utilities/identifiers";
 import { useHistory, useLocation } from "react-router-dom";
 export function CreateInstance({ data, http }) {
   const [survey, updateChecklist] = useState({ items: [] });
@@ -44,6 +45,20 @@ export function CreateInstance({ data, http }) {
   const surveyInstanceUrl = buildUrl(useLocation());
 
   const copyUrl = (url) => navigator.clipboard.writeText(url);
+
+  const updateGroupId = (urlGroupId) => {
+    if (!urlGroupId) {
+      const update = updateDataObject(
+        getData(),
+        "groupId",
+        createInstanceId(5)
+      );
+
+      updateState(update);
+    }
+  };
+
+  useEffect(() => updateGroupId(getData().groupId), []);
 
   return (
     <div>

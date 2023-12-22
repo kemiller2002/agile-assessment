@@ -8,6 +8,8 @@ import { faL } from "@fortawesome/free-solid-svg-icons";
 
 import { functionReducer } from "../utilities/reducer";
 
+import { createInstanceId } from "../utilities/identifiers";
+
 function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
 }
@@ -22,12 +24,10 @@ export function calculateMetrics(survey, getValue) {
     const entries = section.entries.map(updateItem);
     const score = calculateScore(entries, defaultValue);
 
-    return Object.assign({}, section, { entries, score });
+    return { ...section, entries, score };
   };
 
-  return Object.assign({}, survey, {
-    items: survey.items.map(updateSection),
-  });
+  return { ...survey, items: survey.items.map(updateSection) };
 }
 
 export function updateDataObject(state, key, value, keepAsString) {
@@ -48,23 +48,6 @@ export function updateDataObject(state, key, value, keepAsString) {
 export function calculateScoreData(data) {
   const results = Object.keys(data).reduce((s, i) => (data[i] += s), 0);
   return results;
-}
-
-function makeId(length) {
-  let result = "";
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const charactersLength = characters.length;
-  let counter = 0;
-  while (counter < length) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    counter += 1;
-  }
-  return result;
-}
-
-function createInstanceId() {
-  return makeId(20);
 }
 
 export function makeHeader(
