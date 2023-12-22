@@ -26,7 +26,7 @@ function Http() {
 
 function App() {
   const http = new Http();
-  const surveyListUrl = "surveys/survey-list.json";
+  const instrumentListUrl = "surveys/survey-list.json";
 
   return (
     <Routes>
@@ -34,7 +34,10 @@ function App() {
         <Route
           index
           element={
-            <Listing http={http} surveyListUrl={surveyListUrl}></Listing>
+            <Listing
+              http={http}
+              instrumentListUrl={instrumentListUrl}
+            ></Listing>
           }
         />
         <Route
@@ -71,7 +74,10 @@ function App() {
         <Route
           path="360"
           element={
-            <ThreeSixtyComparison http={http} surveyListUrl={surveyListUrl} />
+            <ThreeSixtyComparison
+              http={http}
+              instrumentListUrl={instrumentListUrl}
+            />
           }
         >
           <Route

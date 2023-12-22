@@ -28,19 +28,19 @@ function AssessmentList({ assessment }) {
   );
 }
 
-function getAssessments({ get }, assessmentUrl) {
-  return get(assessmentUrl).then((x) => x.data);
+function getInstruments({ get }, instrumentListUrl) {
+  return get(instrumentListUrl).then((x) => x.data);
 }
 
 export default function Listing(props) {
-  const [assessments, setAssessments] = useState([]);
-  const mountAssessments = () => {
-    getAssessments(props.http, props.surveyListUrl).then((x) =>
-      setAssessments(x)
+  const [instruments, setInstruments] = useState([]);
+  const mountInstruments = () => {
+    getInstruments(props.http, props.instrumentListUrl).then((x) =>
+      setInstruments(x)
     );
   };
 
-  useEffect(mountAssessments, []);
+  useEffect(mountInstruments, []);
 
   return (
     <div key="base">
@@ -51,7 +51,7 @@ export default function Listing(props) {
         Surveys
       </div>
       <nav>
-        <AssessmentList assessment={assessments}></AssessmentList>
+        <AssessmentList assessment={instruments}></AssessmentList>
       </nav>
     </div>
   );

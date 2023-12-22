@@ -15,7 +15,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 
-import { getInstrument } from "../utilities/surveyData";
+import { getInstrument, getInstrumentListing } from "../utilities/surveyData";
 
 import { decompress } from "../utilities/compression";
 
@@ -73,7 +73,11 @@ function updateInput(updateState, urlData, key, value) {
   updateState(update);
 }
 
-export function ThreeSixtyComparison({ http }) {
+function loadInstruments(http, url, updateInstruments) {
+  return getInstrumentListing(http, url).then((x) => updateInstruments(x));
+}
+
+export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const parameters = useParams();
   const navigate = useNavigate();
 
@@ -82,7 +86,7 @@ export function ThreeSixtyComparison({ http }) {
   const urlData =
     [convertAndParse].reduce(functionReducer, parameters.data) || {};
 
-  const instruments = [];
+  const [instruments, updateInstruments] = useState([]);
   const instrument = {};
   const chartOptions = {};
   const graphData = {};
@@ -96,6 +100,11 @@ export function ThreeSixtyComparison({ http }) {
 
   //replace later.
   const inputProvidedDataUrl = "";
+
+  //
+  useEffect(() => {
+    loadInstruments(http, instrumentListUrl, updateInstruments);
+  }, []);
 
   return (
     <div>
@@ -111,7 +120,9 @@ export function ThreeSixtyComparison({ http }) {
                 >
                   <option>Select Instrument</option>
                   {instruments.map((x) => (
-                    <option value={x}>{x.name}</option>
+                    <option key={x.name} value={x}>
+                      {x.name}
+                    </option>
                   ))}
                 </select>
               </div>
