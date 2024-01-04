@@ -28,6 +28,8 @@ import "./css/main.css";
 
 import Select from "react-select";
 
+import { createRandomColor } from "../utilities/identifiers";
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -107,10 +109,13 @@ function createSortedDataArray(item, keys) {
 }
 
 function createDatasetEntry(item, instrumentKeys) {
+  const color = createRandomColor(item.instanceId);
+
+  console.log(color);
   return {
     label: item.instanceId,
     data: instrumentKeys.map((y, x) => ({ y: item.data[y], x })),
-    //borderColor: Utils.CHART_COLORS.red,
+    borderColor: "#beccc2", //createRandomColor(item.instanceId),
     //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
   };
 }
@@ -159,14 +164,18 @@ function write(x) {
   return x;
 }
 
-function createSection(item) {
-  const createQuestionEntry = (entry) => {
-    return <div>{entry.descriptor}</div>;
+function createSection(item, instrumentKeyPositions) {
+  const createQuestionEntry = (entry, instrumentKeyPositions) => {
+    return (
+      <div key={entry.descriptor}>
+        {instrumentKeyPositions[entry.id]}. {entry.descriptor}
+      </div>
+    );
   };
   return (
-    <div>
+    <div key={item.section}>
       <h4>{item.section}</h4>
-      item.entries.map(createQuestionEntry)
+      {item.entries.map((x) => createQuestionEntry(x, instrumentKeyPositions))}
     </div>
   );
 }
@@ -184,7 +193,12 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const [instruments, updateInstruments] = useState([]);
   const [instrument, updateInstrument] = useState({ items: [] });
   const [instrumentKeys, updateInstrumentKeys] = useState([]);
-  console.log(instrument.items.length);
+
+  //creates a lookup to see where the item is in the list of questions for reference.
+  const instrumentKeyPositions = instrumentKeys.reduce(
+    (s, i, p) => ({ ...s, [i]: p + 1 }),
+    {}
+  );
   const chartOptions = {
     scales: {
       x: {
@@ -242,7 +256,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const graphData = createDatasets(urlData, instrumentKeys);
 
   return (
-    <div>
+    <div data-360-container>
       <div data-flyout>
         <input type="checkbox" id="enactFlyout"></input>
         <div data-window>
@@ -311,12 +325,14 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
 
       <div data-dashboard-container>
         <div data-pad-left></div>
-        <div data-container>
+        <div data-360-scatter>
           <Scatter options={chartOptions} data={graphData} />
 
           <div>
             <h3>Instrument Questions</h3>
-            {instrument.items.map()}
+            {instrument.items.map((x) =>
+              createSection(x, instrumentKeyPositions)
+            )}
           </div>
         </div>
         <div data-pad-right></div>
