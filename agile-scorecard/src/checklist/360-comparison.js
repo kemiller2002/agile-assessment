@@ -13,7 +13,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Line } from "react-chartjs-2";
+import { Scatter } from "react-chartjs-2";
 
 import { getInstrument, getInstrumentListing } from "../utilities/surveyData";
 
@@ -25,6 +25,8 @@ import { functionReducer } from "../utilities/reducer";
 import { updateStateDetermineNavigate } from "./instrument";
 
 import "./css/main.css";
+
+import Select from "react-select";
 
 ChartJS.register(
   CategoryScale,
@@ -39,7 +41,7 @@ ChartJS.register(
 const dataKeyRegex = /\d+:\d+/;
 
 function log(data) {
-  console.log(data);
+  //console.log(data);
   return data;
 }
 function extractData(url) {
@@ -99,6 +101,7 @@ function sortDataKeys(a, b) {
   const bNumber = convertToNumber(b);
   return aNumber - bNumber;
 }
+
 function createSortedDataArray(item, keys) {
   return [(k) => k.map((x) => item[k])].reduce(functionReducer, keys);
 }
@@ -106,26 +109,35 @@ function createSortedDataArray(item, keys) {
 function createDatasetEntry(item, instrumentKeys) {
   return {
     label: item.instanceId,
-    data: createSortedDataArray(item, instrumentKeys),
+    data: instrumentKeys.map((y, x) => ({ y: item.data[y], x })),
     //borderColor: Utils.CHART_COLORS.red,
     //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
   };
 }
 
 function formatDataForGraph(data, keys) {
-  const createDatabaseEntryWithKeys = (x) => createDatasetEntry(data, keys);
+  const createDatabaseEntryWithKeys = (x) => createDatasetEntry(x, keys);
+
   return [
-    (k) => k.filter(/data-.*/),
-    (k) => data[k],
+    (k) => k.filter((x) => x.match(/data-.*/)),
+    (k) => k.map((x) => data[x]),
     (x) => x.map(createDatabaseEntryWithKeys),
   ].reduce(functionReducer, Object.keys(data));
 }
 
-function createDatasets(data, instrument) {
-  const instrumentKeys = Object.keys(data);
+function getInstrumentKeys(instrument) {
+  return [
+    (x) => x.items,
+    (x) => x.map((y) => y.entries),
+    (x) => x.flat(),
+    (x) => x.map((y) => y.id),
+  ].reduce(functionReducer, instrument);
+}
+
+function createDatasets(data, instrumentKeys) {
   return {
     labels: [], //labels,
-    datasets: data.map((x) => formatDataForGraph(x, instrumentKeys)),
+    datasets: formatDataForGraph(data, instrumentKeys),
   };
 }
 
@@ -147,6 +159,18 @@ function write(x) {
   return x;
 }
 
+function createSection(item) {
+  const createQuestionEntry = (entry) => {
+    return <div>{entry.descriptor}</div>;
+  };
+  return (
+    <div>
+      <h4>{item.section}</h4>
+      item.entries.map(createQuestionEntry)
+    </div>
+  );
+}
+
 export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const parameters = useParams();
   const navigate = useNavigate();
@@ -154,19 +178,39 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const updateState = updateStateDetermineNavigate.bind({ navigate });
 
   const urlData =
-    [convertAndParse, write].reduce(functionReducer, parameters.data) || {};
+    [convertAndParse].reduce(functionReducer, parameters.data) || {};
 
+  const defaultInstrument = { items: [] };
   const [instruments, updateInstruments] = useState([]);
-  const instrument = {};
-  const chartOptions = {};
-  const graphData = {};
+  const [instrument, updateInstrument] = useState({ items: [] });
+  const [instrumentKeys, updateInstrumentKeys] = useState([]);
+  console.log(instrument.items.length);
+  const chartOptions = {
+    scales: {
+      x: {
+        type: "linear",
+        position: "bottom",
+        min: 0,
+        max: instrumentKeys.length + 1,
+      },
+
+      y: {
+        min: 0,
+        max: 5,
+      },
+    },
+    ticks: {
+      // forces step size to be 1 unit
+      stepSize: 1,
+    },
+  };
 
   const updateComparisonName = (e) =>
     updateInput(updateState, urlData, "comparisonName", e.target.value);
 
   //test here after loading instruments.
-  const saveSelectedInstrument = (e) =>
-    updateInput(updateState, urlData, "instrumentFile", e.target.value);
+  const saveSelectedInstrument = ({ value }) =>
+    updateInput(updateState, urlData, "instrumentFile", value);
 
   //replace later.
   const inputProvidedDataUrl =
@@ -177,8 +221,25 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
     loadInstruments(http, instrumentListUrl, updateInstruments);
   }, []);
 
+  useEffect(() => {
+    if (urlData.instrumentFile) {
+      getInstrument(http, urlData.instrumentFile).then((x) => {
+        updateInstrument(x);
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    [getInstrumentKeys, updateInstrumentKeys].reduce(
+      functionReducer,
+      instrument
+    );
+  }, [instrument]);
+
   const updateInputWithStoredValues = (key, value) =>
     updateInput(updateState, urlData, key, value);
+
+  const graphData = createDatasets(urlData, instrumentKeys);
 
   return (
     <div>
@@ -188,21 +249,15 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
           <div data-legend>
             <div data-add>
               <div data-input-entry>
-                <select
+                <Select
                   placeholder="Instrument"
                   onChange={saveSelectedInstrument}
-                >
-                  <option>Select Instrument</option>
-                  {instruments.map((x) => (
-                    <option
-                      key={x.name}
-                      value={x.file}
-                      defaultValue={x.file === urlData.instrumentFile}
-                    >
-                      {x.name}
-                    </option>
-                  ))}
-                </select>
+                  defaultValue={urlData.instrumentFile}
+                  options={instruments.map((x) => ({
+                    value: x.file,
+                    label: x.name,
+                  }))}
+                ></Select>
               </div>
             </div>
             <div data-add>
@@ -256,7 +311,14 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
 
       <div data-dashboard-container>
         <div data-pad-left></div>
-        <div data-container>GRAPH GOES HERE</div>
+        <div data-container>
+          <Scatter options={chartOptions} data={graphData} />
+
+          <div>
+            <h3>Instrument Questions</h3>
+            {instrument.items.map()}
+          </div>
+        </div>
         <div data-pad-right></div>
       </div>
     </div>
