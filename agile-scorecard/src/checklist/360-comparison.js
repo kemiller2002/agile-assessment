@@ -13,7 +13,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { Scatter } from "react-chartjs-2";
+import { Scatter, Bubble } from "react-chartjs-2";
 
 import { getInstrument, getInstrumentListing } from "../utilities/surveyData";
 
@@ -121,6 +121,15 @@ function createDatasetEntry(item, instrumentKeys) {
 }
 
 function formatDataForGraph(data, keys) {
+  const scatterFormat = formatDataForScatterGraph(data, keys);
+  return [
+    (d) => d.data,
+    (d) => {}, //HERE! create pivot to bobble
+    //https://www.chartjs.org/docs/latest/charts/bubble.html
+  ].reduce(functionReducer, scatterFormat);
+}
+
+function formatDataForScatterGraph(data, keys) {
   const createDatabaseEntryWithKeys = (x) => createDatasetEntry(x, keys);
 
   return [
@@ -193,6 +202,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const [instruments, updateInstruments] = useState([]);
   const [instrument, updateInstrument] = useState({ items: [] });
   const [instrumentKeys, updateInstrumentKeys] = useState([]);
+  const [inputProvidedDataUrl, updateInputProvidedDataUrl] = useState("");
 
   //creates a lookup to see where the item is in the list of questions for reference.
   const instrumentKeyPositions = instrumentKeys.reduce(
@@ -226,11 +236,6 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const saveSelectedInstrument = ({ value }) =>
     updateInput(updateState, urlData, "instrumentFile", value);
 
-  //replace later.
-  const inputProvidedDataUrl =
-    "https://kemiller2002.github.io/agile-assessment/survey/scrum-master-360-v1.json/N4IgzgrgTgbgpgTwHIEMC2cQC5wGMoRoC0aKYALnFEQMwBsADETAIwB0AVmAPYB2IAGhCV02EABUEAGyoACALK4AInxRSAJoJBkwcMGAy9ySlJTEAmBuZpEW5ouZZaU6tAEtebilFPcoY9ykZKABrAAEoOE9eXDZcbjQtDwoUGLgASU0cDgApAGk4KSQAB24lAA8Wco4lc24ANRCIAEUtBiwGbHMhdqcsGiEWDuwAFkGsPrGQc2H+oRnJoRpZqeXFkBGVoU2+gY2sc2w9gFYJrqFTzqwpulmWIVvdoQB2LZBX9YAOWb3vyYBfIA";
-
-  //
   useEffect(() => {
     loadInstruments(http, instrumentListUrl, updateInstruments);
   }, []);
@@ -294,7 +299,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
                   key="url"
                   id="urlInput"
                   name="urlInput"
-                  onChange={(x) => x}
+                  onChange={(e) => updateInputProvidedDataUrl(e.target.value)}
                   value={inputProvidedDataUrl}
                   data-input-url
                   placeholder="Paste survey URL"
