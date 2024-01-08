@@ -111,7 +111,6 @@ function createSortedDataArray(item, keys) {
 function createDatasetEntry(item, instrumentKeys) {
   const color = createRandomColor(item.instanceId);
 
-  console.log(color);
   return {
     label: item.instanceId,
     data: instrumentKeys.map((y, x) => ({ y: item.data[y], x })),
@@ -120,11 +119,47 @@ function createDatasetEntry(item, instrumentKeys) {
   };
 }
 
+function updateStructureWithAggregate(state, item) {
+  //{3: 1, 4: 1} -- output, value 3 - one tally, value 4 - one tally
+  const stateOrDefault = state || {};
+  return { ...stateOrDefault, [item]: (stateOrDefault[item] || 0) + 1 };
+}
+
+function aggregateEntries(xAndYData) {
+  const reducer = (s, i) => {
+    return {
+      ...s,
+      [i.x]: updateStructureWithAggregate(s[i.x], [i.y]),
+    };
+  };
+
+  return xAndYData.reduce(reducer, {});
+}
+
+function expandIntoObjects(bubbleItem) {
+  console.log(bubbleItem);
+  return [
+    (k) => k.filter((x) => x.match(/\d+/)),
+    (key) => key.map((k) => ({ x: bubbleItem.x + 1, y: k })),
+    (i) => i.map((x) => ({ ...x, r: bubbleItem[x.y] * 3 })),
+  ].reduce(functionReducer, Object.keys(bubbleItem));
+}
+function createBubbleDataset(data) {
+  return [
+    (k) => k.map((x) => ({ x: parseInt(x), ...data[x] })),
+    (x) => x.map(expandIntoObjects),
+    (x) => x.flat(),
+  ].reduce(functionReducer, Object.keys(data));
+}
+
 function formatDataForGraph(data, keys) {
   const scatterFormat = formatDataForScatterGraph(data, keys);
+
   return [
-    (d) => d.data,
-    (d) => {}, //HERE! create pivot to bobble
+    (x) => x.map((d) => d.data),
+    (x) => x.flat(),
+    aggregateEntries, //HERE! create pivot to bobble
+    createBubbleDataset,
     //https://www.chartjs.org/docs/latest/charts/bubble.html
   ].reduce(functionReducer, scatterFormat);
 }
@@ -149,9 +184,15 @@ function getInstrumentKeys(instrument) {
 }
 
 function createDatasets(data, instrumentKeys) {
+  const dataset = formatDataForGraph(data, instrumentKeys);
   return {
-    labels: [], //labels,
-    datasets: formatDataForGraph(data, instrumentKeys),
+    datasets: [
+      {
+        label: "Results", //labels,
+        data: dataset,
+        backgroundColor: "rgb(255, 99, 132)",
+      },
+    ],
   };
 }
 
@@ -331,7 +372,7 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
       <div data-dashboard-container>
         <div data-pad-left></div>
         <div data-360-scatter>
-          <Scatter options={chartOptions} data={graphData} />
+          <Bubble data={graphData} options={chartOptions} />
 
           <div>
             <h3>Instrument Questions</h3>
