@@ -42,10 +42,6 @@ ChartJS.register(
 
 const dataKeyRegex = /\d+:\d+/;
 
-function log(data) {
-  //console.log(data);
-  return data;
-}
 function extractData(url) {
   return url.split("/").pop();
 }
@@ -76,7 +72,7 @@ function saveData(data, saveDataAction) {
 
 function addMetric(data, saveDataAction) {
   const saveDataBound = (data) => saveData(data, saveDataAction);
-  [extractData, decompress, parse, log, formatData, saveDataBound].reduce(
+  [extractData, decompress, parse, formatData, saveDataBound].reduce(
     functionReducer,
     data
   );
@@ -137,7 +133,6 @@ function aggregateEntries(xAndYData) {
 }
 
 function expandIntoObjects(bubbleItem) {
-  console.log(bubbleItem);
   return [
     (k) => k.filter((x) => x.match(/\d+/)),
     (key) => key.map((k) => ({ x: bubbleItem.x + 1, y: k })),
@@ -230,6 +225,24 @@ function createSection(item, instrumentKeyPositions) {
   );
 }
 
+function getAnswerKey(answerKey) {
+  return [
+    (x) => Object.keys(x),
+    (x) => x.filter((y) => y.match(/\d+/)),
+    (x) => x.map((y) => parseInt(y)),
+  ].reduce(functionReducer, answerKey);
+}
+
+function determineYRangeForChart(instrument) {
+  return [
+    (x) => x.map((y) => instrument.answerKeys[x]),
+    (x) => x.map(getAnswerKey),
+    (x) => x.flat(),
+    (x) => x.sort((a, b) => a - b),
+    (x) => ({ mix: x[0], max: x[x.length - 1] }),
+  ].reduce(functionReducer, Object.keys(instrument.answerKeys));
+}
+
 export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const parameters = useParams();
   const navigate = useNavigate();
@@ -241,7 +254,10 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
 
   const defaultInstrument = { items: [] };
   const [instruments, updateInstruments] = useState([]);
-  const [instrument, updateInstrument] = useState({ items: [] });
+  const [instrument, updateInstrument] = useState({
+    items: [],
+    answerKeys: {},
+  });
   const [instrumentKeys, updateInstrumentKeys] = useState([]);
   const [inputProvidedDataUrl, updateInputProvidedDataUrl] = useState("");
 
@@ -250,6 +266,10 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
     (s, i, p) => ({ ...s, [i]: p + 1 }),
     {}
   );
+
+  const yRange = determineYRangeForChart(instrument);
+  console.log(yRange);
+
   const chartOptions = {
     scales: {
       x: {
@@ -260,8 +280,8 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
       },
 
       y: {
-        min: 0,
-        max: 5,
+        min: yRange.min,
+        max: yRange.max + 1,
       },
     },
     ticks: {
