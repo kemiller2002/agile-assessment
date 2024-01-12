@@ -387,14 +387,36 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
         position: "bottom",
         min: 0,
         max: instrumentKeys.length + 1,
+        title: {
+          display: true,
+          text: "Question Number",
+          font: {
+            weight: 600,
+            size: 14,
+          },
+        },
       },
 
       y: {
         min: (yRange.min || 0) - 1,
         max: yRange.max + 1,
+        title: {
+          display: true,
+          text: "Score",
+          font: {
+            weight: 600,
+            size: 14,
+          },
+        },
       },
     },
   };
+
+  /*
+  scaleLabel: {
+        display: true,
+        labelString: 'probability'
+      } */
 
   const updateComparisonName = (e) =>
     updateInput(updateState, urlData, "comparisonName", e.target.value);
