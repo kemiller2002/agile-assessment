@@ -211,7 +211,7 @@
   "sectionScoreDefault": 0,
   "answerKeys": {
     "likert5": {
-      "meta-name": "Likert Scale",
+      "meta-name": "Likert with 5 distractors",
       "meta-description": "Likert Scale with 5 distractors.",
       "0": "Never",
       "1": "Rarely",
