@@ -54,6 +54,7 @@ input[id="enactFlyout"]:checked ~ [data-window] {
     display: flex;
     flex-direction: column;
     flex-grow: 4;
+    width: 80%;
 }
 
 [data-container]
@@ -175,6 +176,10 @@ div.questionType{
 
     .detailsLabel{
         visibility: hidden;
+    }
+
+    [data-question-details] {
+        display: block !important;
     }
 
 }
