@@ -5,3 +5,5 @@ export function getInstrument({ get }, fileName) {
 export function getInstrumentListing({ get }, url) {
   return get(url).then((x) => x.data);
 }
+
+export const scoreFormat = new RegExp("^[-.0-9]+$");

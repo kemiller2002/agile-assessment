@@ -163,6 +163,46 @@ function createDashboardDataset(data) {
       data: [],
     };
   }
+  const separatedData = Object.keys(data)
+    .filter((x) => x !== "metadata")
+    .reduce((s, key) => {
+      const value = data[key];
+      const { team, dateAsString } = separatePropertyName(key);
+      const date = new Date(dateAsString);
+      const entryName = `${team}~${value.surveyName}`;
+      const entries = s[entryName] || {};
+      const minDate = s.minDate < date ? s.minDate : date;
+      const maxDate = s.maxDate > date ? s.maxDate : date;
+
+      const teamData = Object.assign(entries, { [date]: value });
+
+      return Object.assign(
+        {},
+        s,
+        { minDate, maxDate },
+        { [entryName]: teamData }
+      );
+    }, {});
+
+  const dateEntries =
+    separatedData.minDate && separatedData.maxDate
+      ? createDateEntries(
+          separatedData.minDate,
+          separatedData.maxDate,
+          bracketLength
+        )
+      : [];
+
+  const datasets = Object.keys(separatedData)
+    .filter((x) => x !== "minDate" && x !== "maxDate")
+    .map((x) => separatedData[x])
+    .map((x) => transformIntoChartsDataEntry(dateEntries, x, bracketLength));
+
+  return {
+    labels: dateEntries.map((d) => `${d.getMonth() + 1} - ${d.getFullYear()}`),
+    datasets,
+    data,
+  };
 }
 
 export function ComparativeScore(props) {
@@ -200,6 +240,11 @@ export function ComparativeScore(props) {
 
   const updateUrlData = (e) => updateUrl(e.target.value);
   const metricsData = createDashboardDataset(decodedData); //hERE
+
+  if (!metricsData) {
+    return <div>loading</div>;
+  }
+
   const graphData = {
     labels: metricsData.labels,
     datasets: metricsData.datasets,

@@ -10,6 +10,8 @@ import { functionReducer } from "../utilities/reducer";
 
 import { createInstanceId } from "../utilities/identifiers";
 
+import { scoreFormat } from "../utilities/surveyData";
+
 function mapEntriesToSorted(entries) {
   return [...entries].sort((a, b) => a.score - b.score);
 }
@@ -408,10 +410,19 @@ function createEntry(entry, update, disabled, sectionName, getAnswerKey) {
         {descriptor}
       </div>
       <div data-entry-value>
-        {Reflect.ownKeys(options).map((k) => {
-          const option = options[k];
-          return makeOptions(id, k, disabled, updateEvent, option, k == value);
-        })}
+        {Reflect.ownKeys(options)
+          .filter((x) => x.match(scoreFormat))
+          .map((k) => {
+            const option = options[k];
+            return makeOptions(
+              id,
+              k,
+              disabled,
+              updateEvent,
+              option,
+              k == value
+            );
+          })}
       </div>
     </div>
   );

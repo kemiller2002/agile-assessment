@@ -98,3 +98,57 @@ input.comparison-name {
 [data-360-container]{
     padding:4em;
 }
+
+
+[data-toggle]{
+    display: none;
+}
+
+[data-toggle]:not(:checked)~[data-question-details] {
+    display: none;
+}
+
+[data-toggle]:checked ~ [data-question-details]{
+    display: block;
+}
+
+
+.data-descriptor{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.questionType{
+    margin-right:.2em;
+}
+
+
+.dt {
+    font-family: "Font Awesome 5 Duotone";
+    font-weight: 900;
+    content: "show details";
+    padding-left: 1em;
+        /* position both layers of the icon to the left, set our fixed-width width, horizontally center layers, and then vertically align them so they flex with different line heights */
+}
+
+.statistics{
+    display: flex;
+    flex-direction: row;
+}
+.statistics > div{
+    margin-right: .5em;
+}
+
+[data-question-details] {
+    margin-left: 3em;
+}
+
+div.questionType{
+    margin-bottom: .5em;
+}
+
+
+.sectionName{
+    margin-bottom: .2em;
+}

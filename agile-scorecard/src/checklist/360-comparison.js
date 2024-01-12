@@ -30,6 +30,8 @@ import Select from "react-select";
 
 import { createRandomColor } from "../utilities/identifiers";
 
+import { scoreFormat } from "../utilities/surveyData";
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -78,9 +80,7 @@ function addMetric(data, saveDataAction) {
   );
 }
 
-function createMetricLegendDisplay(data) {
-  //console.log("NOT DEFINED");
-}
+function createMetricLegendDisplay(data) {}
 
 function createNumberFromPartsReducer(s, i, p) {
   return s + i * (1000 * p);
@@ -134,11 +134,17 @@ function aggregateEntries(xAndYData) {
 
 function expandIntoObjects(bubbleItem) {
   return [
-    (k) => k.filter((x) => x.match(/\d+/)),
+    (k) => k.filter((x) => x.match(scoreFormat)),
     (key) => key.map((k) => ({ x: bubbleItem.x + 1, y: k })),
-    (i) => i.map((x) => ({ ...x, r: bubbleItem[x.y] * 3 })),
+    (i) =>
+      i.map((x) => ({
+        ...x,
+        r: bubbleItem[x.y] * 3,
+        selectionCount: bubbleItem[x.y],
+      })),
   ].reduce(functionReducer, Object.keys(bubbleItem));
 }
+
 function createBubbleDataset(data) {
   return [
     (k) => k.map((x) => ({ x: parseInt(x), ...data[x] })),
@@ -208,19 +214,92 @@ function write(x) {
   console.log(x);
   return x;
 }
+function expandDataPoints(dataset) {
+  return [
+    (x) => x.map((x) => Array(x.selectionCount).fill(x.y)),
+    (x) => x.flat(),
+    (x) => x.map((y) => parseInt(y)),
+  ].reduce(functionReducer, dataset);
+}
 
-function createSection(item, instrumentKeyPositions) {
-  const createQuestionEntry = (entry, instrumentKeyPositions) => {
+function calculateMedian(dataPoints) {
+  if (!dataPoints || dataPoints.length == 0) {
+    return 0;
+  }
+
+  const numberOfPoints = dataPoints.length;
+  const hasMiddleNumber = numberOfPoints % 2 === 1;
+  const middleNumber = dataPoints.length / 2;
+
+  return hasMiddleNumber
+    ? dataPoints[Math.ceil(middleNumber)]
+    : (dataPoints[middleNumber] + dataPoints[middleNumber + 1]) / 2;
+}
+
+function createSection(
+  item,
+  instrumentKeyPositions,
+  answerKeys,
+  groupedDataPoints
+) {
+  const createQuestionEntry = (
+    entry,
+    instrumentKeyPositions,
+    answerKeys,
+    dataPoints
+  ) => {
+    const questionNumber = instrumentKeyPositions[entry.id];
+    const entryDataPoints = dataPoints[questionNumber] || [];
+    const expandedDataPoints = expandDataPoints(entryDataPoints);
+    const statistics = calculateStatistics(expandedDataPoints);
+
     return (
-      <div key={entry.descriptor}>
-        {instrumentKeyPositions[entry.id]}. {entry.descriptor}
+      <div>
+        <label className="data-descriptor" key={entry.descriptor}>
+          <div className="questionDetails">
+            {questionNumber}. {entry.descriptor}
+          </div>
+          <input data-toggle className="dt" type="checkbox"></input>
+
+          <span className="dt">details</span>
+
+          <div data-question-details>
+            <div className="questionType">
+              <span className="questionType">Question Type:</span>
+              <span>{answerKeys[entry.options]["meta-name"]}</span>
+            </div>
+            <div key={`div-statistics-${entry.id}`} className="statistics">
+              <div>
+                <span>Mean:</span>
+                <span>
+                  {Math.round((statistics.mean + Number.EPSILON) * 100) / 100}
+                </span>
+              </div>
+              <div>
+                <span>Median:</span>
+                <span>{statistics.median}</span>
+              </div>
+              <div>
+                <span>Mode:</span>
+                <span>{statistics.mode}</span>
+              </div>
+            </div>
+          </div>
+        </label>
       </div>
     );
   };
   return (
     <div key={item.section}>
-      <h4>{item.section}</h4>
-      {item.entries.map((x) => createQuestionEntry(x, instrumentKeyPositions))}
+      <h4 className="sectionName">{item.section}</h4>
+      {item.entries.map((x) =>
+        createQuestionEntry(
+          x,
+          instrumentKeyPositions,
+          answerKeys,
+          groupedDataPoints
+        )
+      )}
     </div>
   );
 }
@@ -228,7 +307,7 @@ function createSection(item, instrumentKeyPositions) {
 function getAnswerKey(answerKey) {
   return [
     (x) => Object.keys(x),
-    (x) => x.filter((y) => y.match(/\d+/)),
+    (x) => x.filter((y) => y.match(scoreFormat)),
     (x) => x.map((y) => parseInt(y)),
   ].reduce(functionReducer, answerKey);
 }
@@ -241,6 +320,38 @@ function determineYRangeForChart(instrument) {
     (x) => x.sort((a, b) => a - b),
     (x) => ({ mix: x[0], max: x[x.length - 1] }),
   ].reduce(functionReducer, Object.keys(instrument.answerKeys));
+}
+
+function groupDataPoints(dataPoints) {
+  return Object.groupBy(dataPoints, ({ x }) => x);
+}
+
+function calculateMode(dataPointArray) {
+  return [
+    (x) => Object.groupBy(x || [], (y) => y),
+    (x) => Object.keys(x).map((k) => x[k]),
+    (x) => x.sort((a, b) => b.length - a.length),
+    (x) => ((x || []).length === 0 ? [0] : x),
+    (x) => x[0][0],
+  ].reduce(functionReducer, dataPointArray);
+}
+
+function calculateMean(dataset) {
+  return (
+    dataset.reduce((s, i) => (s += i), 0) / (dataset.length || 1)
+    // || 1 -> stop divide by zero
+  );
+}
+
+function calculateStatistics(dataset) {
+  return [
+    (x) => ({
+      data: x,
+      mode: calculateMode(x),
+      mean: calculateMean(x),
+      median: calculateMedian(x),
+    }),
+  ].reduce(functionReducer, dataset || []);
 }
 
 export function ThreeSixtyComparison({ http, instrumentListUrl }) {
@@ -268,7 +379,6 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   );
 
   const yRange = determineYRangeForChart(instrument);
-  console.log(yRange);
 
   const chartOptions = {
     scales: {
@@ -320,6 +430,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
     updateInput(updateState, urlData, key, value);
 
   const graphData = createDatasets(urlData, instrumentKeys);
+  const groupedDataPoints = groupDataPoints(
+    (graphData.datasets || [{ data: [] }])[0].data
+  );
 
   return (
     <div data-360-container>
@@ -397,7 +510,12 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
           <div>
             <h3>Instrument Questions</h3>
             {instrument.items.map((x) =>
-              createSection(x, instrumentKeyPositions)
+              createSection(
+                x,
+                instrumentKeyPositions,
+                instrument.answerKeys,
+                groupedDataPoints
+              )
             )}
           </div>
         </div>
