@@ -395,6 +395,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
             size: 14,
           },
         },
+        ticks: {
+          stepSize: 1,
+        },
       },
 
       y: {
@@ -407,6 +410,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
             weight: 600,
             size: 14,
           },
+        },
+        ticks: {
+          stepSize: 1,
         },
       },
     },
