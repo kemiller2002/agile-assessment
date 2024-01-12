@@ -261,7 +261,7 @@ function createSection(
           </div>
           <input data-toggle className="dt" type="checkbox"></input>
 
-          <span className="dt">details</span>
+          <span className="detailsLabel">details</span>
 
           <div data-question-details>
             <div className="questionType">
@@ -269,18 +269,18 @@ function createSection(
               <span>{answerKeys[entry.options]["meta-name"]}</span>
             </div>
             <div key={`div-statistics-${entry.id}`} className="statistics">
-              <div>
-                <span>Mean:</span>
+              <div className="statisticsContainer">
+                <span className="statisticsLabel">Mean:</span>
                 <span>
                   {Math.round((statistics.mean + Number.EPSILON) * 100) / 100}
                 </span>
               </div>
-              <div>
-                <span>Median:</span>
+              <div className="statisticsContainer">
+                <span className="statisticsLabel">Median:</span>
                 <span>{statistics.median}</span>
               </div>
-              <div>
-                <span>Mode:</span>
+              <div className="statisticsContainer">
+                <span className="statisticsLabel">Mode:</span>
                 <span>{statistics.mode}</span>
               </div>
             </div>
@@ -390,13 +390,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
       },
 
       y: {
-        min: yRange.min,
+        min: (yRange.min || 0) - 1,
         max: yRange.max + 1,
       },
-    },
-    ticks: {
-      // forces step size to be 1 unit
-      stepSize: 1,
     },
   };
 

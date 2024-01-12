@@ -124,7 +124,7 @@ input.comparison-name {
 }
 
 
-.dt {
+.detailsLabel {
     font-family: "Font Awesome 5 Duotone";
     font-weight: 900;
     content: "show details";
@@ -151,4 +151,30 @@ div.questionType{
 
 .sectionName{
     margin-bottom: .2em;
+}
+
+.statisticsLabel{
+    margin-right:.2em
+}
+
+.statisticsContainer{
+    padding-right:.4em
+}
+
+
+@media print {
+
+    /* All your print styles go here */
+    [data-pad-left],
+    [data-flyout]{
+        display: none !important;
+    }
+    [data-360-scatter]{
+        width:90%
+    }
+
+    .detailsLabel{
+        visibility: hidden;
+    }
+
 }
