@@ -182,4 +182,35 @@ div.questionType{
         display: block !important;
     }
 
+    [data-section-wrapper]{
+        page-break-before: always;
+        border: none !important;
+    }
+
+    [data-prepare-to-send-link]{
+        display: none;
+    }
+
+    
+    [data-total-score]{
+        display: block !important;
+        position: inherit !important;
+        width: 80% !important;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    [data-entry]{
+        page-break-inside: avoid;
+    }
+
+    .className{
+        display: none;
+    }
+    [data-menu]{
+        display: none !important;
+    }
+
+    @page last_page {
+        }
 }

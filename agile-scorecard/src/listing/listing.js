@@ -24,6 +24,17 @@ function AssessmentList({ assessment }) {
           ))}
         </ol>
       </div>
+      <div>
+        <h2>Create reporting instance</h2>
+        <ol>
+          <li>
+            <Link to="360">360 Review</Link>
+          </li>
+          <li>
+            <Link to="graph">Time Comparison</Link>
+          </li>
+        </ol>
+      </div>
     </div>
   );
 }
