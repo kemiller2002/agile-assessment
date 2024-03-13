@@ -74,10 +74,18 @@ function saveData(data, saveDataAction) {
 
 function addMetric(data, saveDataAction) {
   const saveDataBound = (data) => saveData(data, saveDataAction);
-  [extractData, decompress, parse, formatData, saveDataBound].reduce(
-    functionReducer,
-    data
-  );
+  [
+    extractData,
+    decompress,
+    parse,
+    formatData,
+    saveDataBound,
+    reloadPage,
+  ].reduce(functionReducer, data);
+}
+
+function reloadPage() {
+  window.location.reload();
 }
 
 function createMetricLegendDisplay(data) {}
@@ -105,11 +113,9 @@ function createSortedDataArray(item, keys) {
 }
 
 function createDatasetEntry(item, instrumentKeys) {
-  const color = createRandomColor(item.instanceId);
-
   return {
     label: item.instanceId,
-    data: instrumentKeys.map((y, x) => ({ y: item.data[y], x })),
+    data: instrumentKeys.map((y, x) => ({ y: item.data[y], x, key: y })),
     borderColor: "#beccc2", //createRandomColor(item.instanceId),
     //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.red, 0.5),
   };
@@ -122,17 +128,22 @@ function updateStructureWithAggregate(state, item) {
 }
 
 function aggregateEntries(xAndYData) {
+  console.log("XANDY", xAndYData);
   const reducer = (s, i) => {
     return {
       ...s,
-      [i.x]: updateStructureWithAggregate(s[i.x], [i.y]),
+      [i.key]: updateStructureWithAggregate(s[i.x], [i.y]),
     };
   };
 
-  return xAndYData.reduce(reducer, {});
+  const val = xAndYData.reduce(reducer, {});
+
+  console.log("V", val);
+  return val;
 }
 
 function expandIntoObjects(bubbleItem) {
+  console.log("BI", bubbleItem);
   return [
     (k) => k.filter((x) => x.match(scoreFormat)),
     (key) => key.map((k) => ({ x: bubbleItem.x + 1, y: k })),
@@ -146,8 +157,14 @@ function expandIntoObjects(bubbleItem) {
 }
 
 function createBubbleDataset(data) {
+  console.log("DATA", data);
   return [
-    (k) => k.map((x) => ({ x: parseInt(x), ...data[x] })),
+    (k) =>
+      k.map((x) => ({
+        x: calculateEntryNumberByStandardId(x),
+        ...data[x],
+        key: [],
+      })),
     (x) => x.map(expandIntoObjects),
     (x) => x.flat(),
   ].reduce(functionReducer, Object.keys(data));
@@ -155,14 +172,21 @@ function createBubbleDataset(data) {
 
 function formatDataForGraph(data, keys) {
   const scatterFormat = formatDataForScatterGraph(data, keys);
-
+  console.log("STJLRE");
   return [
     (x) => x.map((d) => d.data),
     (x) => x.flat(),
     aggregateEntries, //HERE! create pivot to bobble
+    log,
+
     createBubbleDataset,
     //https://www.chartjs.org/docs/latest/charts/bubble.html
   ].reduce(functionReducer, scatterFormat);
+}
+
+function log(x) {
+  console.log(x);
+  return x;
 }
 
 function formatDataForScatterGraph(data, keys) {
@@ -175,18 +199,26 @@ function formatDataForScatterGraph(data, keys) {
   ].reduce(functionReducer, Object.keys(data));
 }
 
+function createIdListFromItems(items) {
+  return items.map((x) => x.id);
+}
+
 function getInstrumentKeys(instrument) {
   return [
     (x) => x.items,
     (x) => x.map((y) => y.entries),
-    (x) => x.flat(),
-    (x) => x.map((y) => y.id),
+    //(x) => x.flat(),
+    //(x) => x.map((y) => y.id),
+    (x) => x.map(createIdListFromItems),
   ].reduce(functionReducer, instrument);
 }
 
-function createDatasets(data, instrumentKeys) {
-  const dataset = formatDataForGraph(data, instrumentKeys);
-  return {
+function createDatasets(data, instrumentKeyLists) {
+  const datasets = instrumentKeyLists.map((instrumentKeys) =>
+    formatDataForGraph(data, instrumentKeys)
+  );
+
+  return datasets.map((dataset) => ({
     datasets: [
       {
         label: "Results", //labels,
@@ -194,7 +226,7 @@ function createDatasets(data, instrumentKeys) {
         backgroundColor: "rgb(255, 99, 132)",
       },
     ],
-  };
+  }));
 }
 
 function getAssessments({ get }, assessmentUrl) {
@@ -210,10 +242,6 @@ function loadInstruments(http, url, updateInstruments) {
   return getInstrumentListing(http, url).then((x) => updateInstruments(x));
 }
 
-function write(x) {
-  console.log(x);
-  return x;
-}
 function expandDataPoints(dataset) {
   return [
     (x) => x.map((x) => Array(x.selectionCount).fill(x.y)),
@@ -236,11 +264,65 @@ function calculateMedian(dataPoints) {
     : (dataPoints[middleNumber] + dataPoints[middleNumber + 1]) / 2;
 }
 
+function calculateEntryNumberByStandardId(id) {
+  return [
+    (x) => x || ":",
+    (x) => x.split(":"),
+    (x) => x.pop(),
+    (x) => parseInt(x),
+  ].reduce(functionReducer, id);
+}
+
+function createBubbleChartDisplay(graphData, instrument, instrumentKeys) {
+  const yRange = determineYRangeForChart(instrument);
+
+  const chartOptions = {
+    scales: {
+      x: {
+        type: "linear",
+        position: "bottom",
+        min: 0,
+        max: graphData.datasets[0].data.length,
+        title: {
+          display: true,
+          text: "Question Number",
+          font: {
+            weight: 600,
+            size: 14,
+          },
+        },
+        ticks: {
+          stepSize: 1,
+        },
+      },
+
+      y: {
+        min: (yRange.min || 0) - 1,
+        max: yRange.max + 1,
+        title: {
+          display: true,
+          text: "Score",
+          font: {
+            weight: 600,
+            size: 14,
+          },
+        },
+        ticks: {
+          stepSize: 1,
+        },
+      },
+    },
+  };
+
+  return <Bubble data={graphData} options={chartOptions} />;
+}
+
 function createSection(
   item,
   instrumentKeyPositions,
   answerKeys,
-  groupedDataPoints
+  groupedDataPoints,
+  getEntryId
 ) {
   const createQuestionEntry = (
     entry,
@@ -248,8 +330,9 @@ function createSection(
     answerKeys,
     dataPoints
   ) => {
-    const questionNumber = instrumentKeyPositions[entry.id];
-    const entryDataPoints = dataPoints[questionNumber] || [];
+    const questionNumber = getEntryId(entry.id); //instrumentKeyPositions[entry.id];
+    const questionPosition = instrumentKeyPositions[entry.id];
+    const entryDataPoints = dataPoints[questionPosition] || [];
     const expandedDataPoints = expandDataPoints(entryDataPoints);
     const statistics = calculateStatistics(expandedDataPoints);
 
@@ -354,6 +437,10 @@ function calculateStatistics(dataset) {
   ].reduce(functionReducer, dataset || []);
 }
 
+function moveToOneBasedIndexing(fnGetPositionNumber) {
+  return (x) => fnGetPositionNumber(x) + 1;
+}
+
 export function ThreeSixtyComparison({ http, instrumentListUrl }) {
   const parameters = useParams();
   const navigate = useNavigate();
@@ -377,46 +464,6 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
     (s, i, p) => ({ ...s, [i]: p + 1 }),
     {}
   );
-
-  const yRange = determineYRangeForChart(instrument);
-
-  const chartOptions = {
-    scales: {
-      x: {
-        type: "linear",
-        position: "bottom",
-        min: 0,
-        max: instrumentKeys.length + 1,
-        title: {
-          display: true,
-          text: "Question Number",
-          font: {
-            weight: 600,
-            size: 14,
-          },
-        },
-        ticks: {
-          stepSize: 1,
-        },
-      },
-
-      y: {
-        min: (yRange.min || 0) - 1,
-        max: yRange.max + 1,
-        title: {
-          display: true,
-          text: "Score",
-          font: {
-            weight: 600,
-            size: 14,
-          },
-        },
-        ticks: {
-          stepSize: 1,
-        },
-      },
-    },
-  };
 
   /*
   scaleLabel: {
@@ -452,10 +499,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
 
   const updateInputWithStoredValues = (key, value) =>
     updateInput(updateState, urlData, key, value);
-
-  const graphData = createDatasets(urlData, instrumentKeys);
-  const groupedDataPoints = groupDataPoints(
-    (graphData.datasets || [{ data: [] }])[0].data
+  const graphDataEntries = createDatasets(urlData, instrumentKeys);
+  const groupedDataPoints = graphDataEntries.map((graphData) =>
+    groupDataPoints((graphData.datasets || [{ data: [] }])[0].data)
   );
 
   return (
@@ -529,8 +575,9 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
       <div data-dashboard-container>
         <div data-pad-left></div>
         <div data-360-scatter>
-          <Bubble data={graphData} options={chartOptions} />
-
+          {graphDataEntries.map((x) =>
+            createBubbleChartDisplay(x, instrument, instrumentKeys || [])
+          )}
           <div>
             <h3>Instrument Questions</h3>
             {instrument.items.map((x) =>
@@ -538,7 +585,8 @@ export function ThreeSixtyComparison({ http, instrumentListUrl }) {
                 x,
                 instrumentKeyPositions,
                 instrument.answerKeys,
-                groupedDataPoints
+                groupedDataPoints,
+                moveToOneBasedIndexing(calculateEntryNumberByStandardId)
               )
             )}
           </div>

@@ -3573,6 +3573,12 @@
   ],
   "sectionScoreDefault": 0,
   "answerKeys": {
-    "yesNoInProgress": { "0": "No", "1": "In Progress", "2": "Yes" }
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
   }
 }

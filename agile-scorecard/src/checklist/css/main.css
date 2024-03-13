@@ -163,6 +163,11 @@ div.questionType{
 }
 
 
+div.survey-list-container{
+    margin: 2em;
+}
+
+
 @media print {
 
     /* All your print styles go here */

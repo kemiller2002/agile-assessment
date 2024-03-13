@@ -15,7 +15,7 @@ function AssessmentList({ assessment }) {
         </ol>
       </div>
       <div>
-        <h2>Create Link for 360 Assessment use</h2>
+        <h2>Create Link for Comparative Assessment</h2>
         <ol>
           {list.map((l) => (
             <li>
@@ -54,13 +54,7 @@ export default function Listing(props) {
   useEffect(mountInstruments, []);
 
   return (
-    <div key="base">
-      <div key="title" className="listing-title">
-        <Link to="graph">Create Dashboard</Link>
-      </div>
-      <div key="title" className="listing-title">
-        Surveys
-      </div>
+    <div key="base" class="survey-list-container">
       <nav>
         <AssessmentList assessment={instruments}></AssessmentList>
       </nav>
