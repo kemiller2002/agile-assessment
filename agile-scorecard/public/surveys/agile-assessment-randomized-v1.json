@@ -1,5 +1,5 @@
 {
-  "name": "Agile Survey V1",
+  "name": "Agile Survey Short Form V1",
   "scores": { "show": true },
   "items": [
     {
@@ -13,77 +13,77 @@
           "descriptor": "Team has significantly unhealthy churn.",
           "key": 603643639,
           "id": "0:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Communication is ineffective, for example reliance on email or other asynchronous forms of communication.",
           "key": 51650458,
           "id": "0:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "Team has limited reliance on outside resources for day-to-day needs, and this is not causing a significant bottleneck for the team.",
           "key": -1932378888,
           "id": "0:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Product owner is at least part time, 50% of time dedicated to team.",
           "key": -262049105,
           "id": "0:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team has limited distractions outside of sprint goals.",
           "key": -1398304618,
           "id": "0:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team can deliver end to end features with business value.",
           "key": -161009569,
           "id": "0:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team is cross-functional with skill set mix that is well-balanced to match the needs of the work.",
           "key": 1901380099,
           "id": "0:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team is dedicated to single value stream and does not multi-task outside of sprint goals.",
           "key": 1287856108,
           "id": "0:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Product owner is dedicated to team and spends whatever time necessary for direct collaboration with team members.",
           "key": 746186312,
           "id": "0:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team members are becoming T-shaped and can manage a variety of responsibilities as the work demands.",
           "key": 1556315022,
           "id": "0:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Team members' skill sets are highly flexible - almost any team member can flex to take on any type of work.",
           "key": -1646158005,
           "id": "0:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -1889210512,
@@ -101,77 +101,70 @@
           "descriptor": "Developers operate \"on an island\" and might not check in with others every day",
           "key": -567793722,
           "id": "1:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Developers work from written documents and do not communicate directly with PO or other teammates",
           "key": 3959548,
           "id": "1:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "Developers work in close digital proximity to each other",
           "key": 1584517284,
           "id": "1:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team has standard tools for sharing in their workflow",
           "key": 1452737540,
           "id": "1:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team has digital collaboration space dedicated to the team",
           "key": -1247690948,
           "id": "1:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team has management support to acquire additional non-standard tools needed to be successful",
           "key": -889696090,
           "id": "1:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Product Owner works closely with the rest of the team",
           "key": -277512583,
           "id": "1:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team has flexibility to schedule face-to-face video chats as needed",
           "key": 1111337322,
           "id": "1:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Other key stakeholders are available to the team",
           "key": 453312622,
           "id": "1:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team members are empowered to get time with those they need without regard to organizational hierarchy",
           "key": 723578962,
           "id": "1:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "TBD",
-          "key": 1509430836,
-          "id": "1:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1216700962,
@@ -189,70 +182,63 @@
           "descriptor": "Chaos, no defined standards or processes have been formed.",
           "key": 2068507542,
           "id": "2:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "The team has some defined practices, which may include; definition of done, meeting rhythms, coding standards, story size guidelines and code management & integration practices.",
           "key": -1836603809,
           "id": "2:1",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Everyone is aware of the practices.",
-          "key": -1490855440,
-          "id": "2:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Everyone follows the practices consistently.",
           "key": 121610272,
           "id": "2:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team has discussed and agreed on the practices they will follow.",
           "key": -1773773535,
           "id": "2:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
-          "descriptor": "If asked, all team members would describe this common set of practices consistently .",
+          "descriptor": "If asked, all team members would describe this common set of practices consistently.",
           "key": -1592716630,
           "id": "2:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "All team members generally respect and mostly follow the agreements.",
           "key": -234716999,
           "id": "2:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves.",
           "key": 388917736,
           "id": "2:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
           "key": -198321221,
           "id": "2:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Working agreements include elements that encourage innovation, cross-training, excellent collaboration, and growth for the team members.",
           "key": -25634667,
           "id": "2:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -1505826117,
@@ -270,91 +256,77 @@
           "descriptor": "Processes are decided and documented by what the performing team feels is required, i.e not collaboratively.",
           "key": -1854722342,
           "id": "3:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Ad-hoc and unplanned working agreements are in place around security scans, risk management, export control, cross team integration for full feature integration regarding release and deploy procedures.",
           "key": 170492182,
           "id": "3:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "An attempt at collaboratively authoring working agreements has been made and they meet the needs of most parties.",
           "key": 1129318934,
           "id": "3:2",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Scrum of scrums in place.",
-          "key": -1696622781,
-          "id": "3:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Key dependencies between teams are mostly delivered on-time.",
           "key": -971133386,
           "id": "3:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Working agreements have been collaboratively authored, and they meet the needs of all concerned.",
           "key": -247095338,
           "id": "3:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Working agreements may be expressed as SLAs.",
           "key": -1487270053,
           "id": "3:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "When SLAs are not met, efforts are made to retrospect and identify cause.",
           "key": -1766297097,
           "id": "3:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Inspection of unmet agreements result in continuous improvement changes.",
           "key": -256647188,
           "id": "3:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Teams work together to proactively find and address problems before they arise.",
           "key": 1196909876,
           "id": "3:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Improvements are implemented that will break down the cross-team dependencies such as empowering teams to perform functions internally.",
           "key": 1198352165,
           "id": "3:10",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Meritocracy is used among teams.",
-          "key": -1005783558,
-          "id": "3:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Self-organizing approaches to collaboration have emerged and are providing significant value to teams.",
           "key": -413711917,
           "id": "3:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1139281595,
@@ -372,98 +344,98 @@
           "descriptor": "There are frequent misunderstandings around scope and schedule.",
           "key": 642564547,
           "id": "4:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Business partners are not clear on their role or are not providing support needed to be successful.",
           "key": 1322306266,
           "id": "4:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Poor transparency, inconsistent information as to real project status.",
           "key": 1800559373,
           "id": "4:2",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "There are realistic expectations as to how scope and schedule will be managed.",
           "key": -1773505228,
           "id": "4:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Some agreement as to roles / responsibilities exists.",
           "key": 1089616891,
           "id": "4:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Informal expectations or agreement on how the team should interact with the business or what the business should expect from the team exist.",
           "key": 965727204,
           "id": "4:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "When the business adds new scope, realistic tradeoffs are made.",
           "key": 1055267110,
           "id": "4:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Roles and expectations are clear and understood by all parties.",
           "key": 978065518,
           "id": "4:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The project management approach is well-understood and agreed upon",
           "key": 1190085998,
           "id": "4:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Both parties are committed to transparency and reality-based management and agree adjustments to scope and timeline will be negotiated as risks emerge.",
           "key": -1264085012,
           "id": "4:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The backlog is the only mechanism by which scope is managed.",
           "key": -1662751963,
           "id": "4:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The business partner has taken steps to revise their governance (which may be a tollgate process) to align to the development team's agile processes.",
           "key": -87598195,
           "id": "4:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Business and Engineering form true collaborative partnership.",
           "key": 1940374511,
           "id": "4:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Engineering is a key player in driving product strategic direction, while business team leverages agile process to drive discovery and critical learning to guide business direction.",
           "key": 37066014,
           "id": "4:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1086781168,
@@ -481,126 +453,126 @@
           "descriptor": "Estimates are not done by the team who will be doing the work.",
           "key": 1178882223,
           "id": "5:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
-          "descriptor": "There is no flexibility on resources, scope, or timeframe (iron triangle).",
+          "descriptor": "There is no flexibility on resources, scope, or time frame (iron triangle).",
           "key": -991809900,
           "id": "5:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "The team is asked to commit without a realistic plan.",
           "key": -1825609648,
           "id": "5:2",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "Some but not all key stakeholders and functions are included.",
           "key": -1979864217,
           "id": "5:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team capacity is considered during release planning.",
           "key": 1785147812,
           "id": "5:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team velocity (if available) is considered during release planning.",
           "key": 898960314,
           "id": "5:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Planning is completed in a reasonable time and completed before the start of the next release.",
           "key": -270746209,
           "id": "5:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is an understanding that scope will change during the release as new information is discovered.",
           "key": -2007799161,
           "id": "5:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Risks, opportunities, and assumptions are made visible.",
           "key": -154888969,
           "id": "5:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The release plan covers a time box no larger than 3 months and if larger than six weeks, includes at least 1 internal release (UAT).",
           "key": 784831051,
           "id": "5:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Clear and measurable success criteria for the release have been agreed upon and documented.",
           "key": -206099579,
           "id": "5:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "All key stakeholders and functions are included.",
           "key": -1344865413,
           "id": "5:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Adequate slack is left in the plan to allow for discovery and risk.",
           "key": 1420786769,
           "id": "5:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The release plan considers historical performance beyond just velocity.",
           "key": 161064775,
           "id": "5:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The release plan is well-understood by the team and reviewed and reworked on a regular basis.",
           "key": -1946204382,
           "id": "5:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Just enough UX and architectural runway work for this release was done ahead of time.",
           "key": -1480098332,
           "id": "5:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team and stakeholders are readily available at short notice to build or update the release plan.",
           "key": 816659634,
           "id": "5:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team applies the concept of MVP to advantage and is skilled at crafting a scope that answers critical questions and tests assumptions.",
           "key": -443656282,
           "id": "5:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1097260950,
@@ -618,126 +590,126 @@
           "descriptor": "Vague expressions of need received from the business.",
           "key": -90366598,
           "id": "6:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "The business is not bought into our methodology around requirements definition.",
           "key": 238914748,
           "id": "6:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "There are less than 20 high level goals.",
           "key": -2125393830,
           "id": "6:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Goals map back to users and their problems.",
           "key": 1159771215,
           "id": "6:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Goals have metrics (KPI's) that will prove business value delivered.",
           "key": 1639509632,
           "id": "6:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There are less than 12 high level goals.",
           "key": 889453949,
           "id": "6:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Relative prioritization of the business goals and objectives is in place.",
           "key": 412778896,
           "id": "6:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is clear traceability from business goals to the release backlog.",
           "key": -1940558958,
           "id": "6:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Business goals are revisited after each deployment, reviewed and updated.",
           "key": 2115188850,
           "id": "6:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The business goals have acceptance criteria.",
           "key": -1008102015,
           "id": "6:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The problem, who the users are and the goals themselves have been experimentally tested and validated with some kind of experiment.",
           "key": -1290549686,
           "id": "6:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team seeks ways to evaluate the KPI's as soon as reasonably possible after deployment.",
           "key": 969309782,
           "id": "6:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The business goals have customer success criteria.",
           "key": -1524067285,
           "id": "6:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "There is fluid collaboration between the team and the business.",
           "key": -666816785,
           "id": "6:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The business has supplied one or more people who are experts in the problem domain.",
           "key": 1260871794,
           "id": "6:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The engineering and business partnership is flexible to adapt to emergent requirements and needs.",
           "key": -1540632327,
           "id": "6:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Timely specification documents are created and revised so that external stakeholders are informed.",
           "key": 2106196017,
           "id": "6:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "This document could have the capability of linking the specification to the working application in an automated fashion.",
           "key": 343233659,
           "id": "6:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1521760116,
@@ -755,140 +727,140 @@
           "descriptor": "Development work is driven by large requirements documents.",
           "key": 1090026646,
           "id": "7:0",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Development work isplanned out 6 months in advance or longer.",
           "key": -1514344438,
           "id": "7:1",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Development work issplit along process lines orfunctional areas, e.g., design, code, test, integrate, architect, UX etc.",
           "key": -1041573921,
           "id": "7:2",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": -1,
           "descriptor": "Development work issplit along architectural lines, e.g., UI, database, data access layer, etc.",
           "key": 588015327,
           "id": "7:3",
-          "options": "yesNoInProgress"
+          "options": "likert5Reversed"
         },
         {
           "score": 1,
           "descriptor": "User stories include 'end user' aspect.",
           "key": -2092661598,
           "id": "7:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories can all be easily foundin one place.",
           "key": -130995449,
           "id": "7:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories areordered by priority in a backlog.",
           "key": -1986111307,
           "id": "7:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories are sized or estimated. (E in INVEST)",
           "key": 604737598,
           "id": "7:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories define a complete vertical slice of functionality.(I in INVEST)",
           "key": 1862383731,
           "id": "7:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories contain acceptance criteria.(T in INVEST)",
           "key": 678092195,
           "id": "7:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories are a starting point for a conversation and there is evidence that the team refines or rewrites user stories. (N in INVEST)",
           "key": -13868428,
           "id": "7:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories have a narrative around business value.(V in INVEST)",
           "key": 608703510,
           "id": "7:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories are all small enough to be finished in a sprint. (S in INVEST)",
           "key": -723318666,
           "id": "7:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User storiesfollow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>.",
           "key": 1712016642,
           "id": "7:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User story development is driven by collaborative lightweight artifacts (e.g. lo-fi prototypes, story mapping).",
           "key": -1524955088,
           "id": "7:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories represent an agreement between the Product Owner (business, customer) and the development team.",
           "key": -216383851,
           "id": "7:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "User story acceptance criteriafollow a BDD approach an example of which can be found in the Gherkin syntax(https://cucumber.io/docs/gherkin/).",
           "key": -129606981,
           "id": "7:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Multiple scenarios are included in acceptance criteria including success conditions, failure modes and edge cases.",
           "key": -1431545583,
           "id": "7:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "All user stories are traceable back to the vision and business goals & objectives.",
           "key": 991149262,
           "id": "7:18",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Other stakeholders and users are brought into the discussion whenever needed to develop user stories.",
           "key": 2126652055,
           "id": "7:19",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -952510210,
@@ -906,56 +878,49 @@
           "descriptor": "No project status information of any kind is posted in the (physical or digital) team area.",
           "key": -1356644742,
           "id": "8:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Project status details are available in the (physical or digital) team area.",
           "key": -2133546050,
           "id": "8:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Information radiators are up-to-date.",
           "key": -173471586,
           "id": "8:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "At least one of the following valuable project status indicators is available to the team AND to in-house visitors:Release Plan & Road BlocksBurn Up & VelocityStory Card WallUnit Test & Acceptance Test CoverageCI Metrics",
           "key": 796882616,
           "id": "8:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team decides what is visible.",
           "key": 910914915,
           "id": "8:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Some advanced examples of information radiators are used - like for instance;Flow of information is centered around the workspace. The walls should tell a story to the team and customerCharts track everything from future product requests to fully-tested stories",
           "key": -1625341927,
           "id": "8:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Other charts are available and accurate - may include;Organizational Value stream mapProgram Demand ManagementPersonas / Persona Maps",
           "key": 718858293,
           "id": "8:6",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "TBD",
-          "key": 55419563,
-          "id": "8:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 638386443,
@@ -973,105 +938,105 @@
           "descriptor": "The only learning is mandated corporate learning.",
           "key": 1441518394,
           "id": "9:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is budget available for learning and development.",
           "key": -1062946145,
           "id": "9:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Both management and team values learning and development.",
           "key": -1804005076,
           "id": "9:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is some level of team self-organized and self-motivated learning.",
           "key": 1788137585,
           "id": "9:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Opportunities are taken by team members to learn from each other and knowledge share.",
           "key": -629995473,
           "id": "9:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Learning and development takes place even when teams are stretched or understaffed.",
           "key": 1049774313,
           "id": "9:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team owns budget and decides how to invest in learning and development.",
           "key": -718897230,
           "id": "9:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Majority of team are involved when a learning & development activity takes place.",
           "key": -1537507496,
           "id": "9:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Learning and development is included in OKRs.",
           "key": -2139491740,
           "id": "9:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Attendance at conferences, meetups, and other Socratic forums is encouraged and sponsored.",
           "key": 787765328,
           "id": "9:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Majority of team is involved in deciding topics and developing content for learning and development.",
           "key": -119586030,
           "id": "9:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team shares learning and development information on the team wiki.",
           "key": -553845248,
           "id": "9:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team makes use of local communities for learning and development.",
           "key": -672579049,
           "id": "9:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Learning groups go beyond team members and include members from management.",
           "key": 870979828,
           "id": "9:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team holds regular (weekly) learning events.",
           "key": -220185665,
           "id": "9:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 995538800,
@@ -1089,105 +1054,105 @@
           "descriptor": "Sprint planning is a long meeting >5% of a sprint duration) that includes backlog grooming, narrative writing, estimation, capacity planning and/or other context setting activities.",
           "key": 35786887,
           "id": "10:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Attempts are made to plan a sprint day by day or per team member.",
           "key": 2027401429,
           "id": "10:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "The team is handed a commitment.",
           "key": 571136941,
           "id": "10:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Sprint Planning always takes place.",
           "key": 907224524,
           "id": "10:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Product owner participates in the planning.",
           "key": 80023089,
           "id": "10:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team members gain valuable direction from Sprint Planning.",
           "key": -691562840,
           "id": "10:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "All user stories meet the definition of ready prior to the start of the sprint.",
           "key": -1576944905,
           "id": "10:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories are tasked out (if necessary) in the sprint planning meeting.",
           "key": 2003004114,
           "id": "10:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team makes their own commitments for the sprint based on velocity and capacity planning.",
           "key": -1721168934,
           "id": "10:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team has a shared agreement on the achievable scope of work plan for the sprint.",
           "key": 208082182,
           "id": "10:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Sprint planning is a short event where team comes together to get a go/no-go decision on stories.",
           "key": -1345262969,
           "id": "10:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Acceptance criteria and assumptions are revisited and tasks are highlighted as a reminder.",
           "key": 923087764,
           "id": "10:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The focus of planning shifts from the team to product owners and the business to prioritize the next set of user stories.",
           "key": 1389293442,
           "id": "10:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Planning is real-time based on a blue-print of an agile release plan.",
           "key": -1101137711,
           "id": "10:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Intent behind planning is not team commitment but adaptive change, balancing business value with cost and time.",
           "key": -1226389511,
           "id": "10:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -121495901,
@@ -1205,56 +1170,56 @@
           "descriptor": "There is no meeting to refine the backlog.",
           "key": 1394254598,
           "id": "11:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The three amigos sometimes meet to refine the backlog.",
           "key": -38486138,
           "id": "11:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The three amigos always meet to refine the backlog.",
           "key": 2042342217,
           "id": "11:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Sufficient work is done during the Backlog Refinement meeting (and perhaps afterward) so that stories for Sprint Planning generally meet most INVEST criteria and have well-understood acceptance criteria so that the team considers them \"ready\".",
           "key": -377224053,
           "id": "11:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "By the end of the Backlog Refinement meeting all stories pre-positioned for the coming sprint have sufficient definition and acceptance criteria so that the team considers them \"ready\".",
           "key": 453502639,
           "id": "11:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Work on defining stories for the next release(s) sometimes occurs.",
           "key": 1319522306,
           "id": "11:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "By the end of the Backlog Refinement meeting all stories pre-positioned for the coming sprint have Gherkin (or other behavioral specification) acceptance criteria and the team considers them \"ready\".",
           "key": 531638953,
           "id": "11:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Work on defining stories and story maps for the next release(s) occurs regularly enough that additional events for epic decomposition, story writing and mapping is not required prior to Release Planning (regular in-the-flow-of-the-day collaboration on stories is not an additional event).",
           "key": 643004505,
           "id": "11:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 128714894,
@@ -1272,105 +1237,105 @@
           "descriptor": "Stand-ups are frequently monopolized by individuals or hijacked by management.",
           "key": -1304139681,
           "id": "12:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Standup is used to update the team board causing longer meetings.",
           "key": -1622011569,
           "id": "12:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "The standup is not attended on time.",
           "key": -1730096788,
           "id": "12:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team members highlight what they did yesterday, what they will do today.",
           "key": 1143265501,
           "id": "12:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team members highlight any impediments/blockers.",
           "key": 412880925,
           "id": "12:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Highlights are related to the sprint backlog.",
           "key": -749842917,
           "id": "12:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team avoids using Daily Standup to solve problems.",
           "key": 848359567,
           "id": "12:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Standups are completed in an average of < 15 mins.",
           "key": -1833477234,
           "id": "12:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The full team turns up on time.",
           "key": -1430734000,
           "id": "12:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Problem solving is taken outside of the standup.",
           "key": -358973670,
           "id": "12:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Someone will stop conversations from going down 'rat holes'.",
           "key": 1763246482,
           "id": "12:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Stand ups are always completed in 15 mins.",
           "key": 240739694,
           "id": "12:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team has improved stand ups through the retrospective process.",
           "key": 324795091,
           "id": "12:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Standup is self-facilitated by the team.",
           "key": -1970863115,
           "id": "12:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Team has reinvented the daily standup to fit their circumstances to better enable fast feedback and adaption of plans.",
           "key": -1368935879,
           "id": "12:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "level": {
@@ -1841,105 +1806,105 @@
           "descriptor": "There is no clear indication of working software.",
           "key": 282105810,
           "id": "13:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Demonstrationalways takes place.",
           "key": -241690030,
           "id": "13:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Feedback is captured.",
           "key": -110702932,
           "id": "13:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The Product Owner is present.",
           "key": 1694231379,
           "id": "13:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team knows the stories to demonstrate, and they are complete.",
           "key": 1725315459,
           "id": "13:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Effective time management allow team to complete demonstration of planned stories within the meeting timebox.",
           "key": -1389702054,
           "id": "13:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented",
           "key": -282210512,
           "id": "13:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Stories are accepted and approved by Product Owner in order for stories to make it to the demo.",
           "key": 34951276,
           "id": "13:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Demonstration is planned in advance and demoed features clearly work.",
           "key": 1902833000,
           "id": "13:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Demonstration uses realistic data.",
           "key": 2005486416,
           "id": "13:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Demonstration only shows new features, unless old features are necessary to provide context.",
           "key": -1180013195,
           "id": "13:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Demonstrationsare well scripted with a value-based story line.",
           "key": -1499194928,
           "id": "13:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Majority of stakeholders get to see the demo. For example, this may be achieved by multiple demos or recording.",
           "key": -963114627,
           "id": "13:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Product Ownerarticulates on how sprint results align to business goals & objectives.",
           "key": 1932243443,
           "id": "13:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Product Owner finds ways of maximizing business participation.",
           "key": 530294992,
           "id": "13:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1256146985,
@@ -1956,77 +1921,77 @@
           "descriptor": "No sprint retrospective held",
           "key": -1151344100,
           "id": "14:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "When retrospectives are held, the same topics resurface again and again because problems are not being solved.",
           "key": 981838675,
           "id": "14:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Retrospectives are held every sprint.",
           "key": -1952744867,
           "id": "14:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Retrospectives generate a list of pluses and deltas for improvement action.",
           "key": 516506577,
           "id": "14:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is a list of who is assigned to each action item and be accountable for the task.",
           "key": 1724496436,
           "id": "14:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Problems identified in the retrospective have resulted in a root cause analysis or have been followed by change to the team's set of working agreements.",
           "key": 1264376146,
           "id": "14:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress.",
           "key": -105187097,
           "id": "14:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Retrospective action items are followed up in subsequent retrospectives.",
           "key": -729358723,
           "id": "14:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Retrospectives identify learning & development opportunities.",
           "key": 2032533367,
           "id": "14:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Retrospectives have flexibility so that a specific topic may be addressed and solved in the session.",
           "key": 673961958,
           "id": "14:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "This higher order of agility around retrospectives describes an organization where best lessons learned and best practices resulting from retrospective activities are rapidly shared and implemented, where appropriate, across all teams.",
           "key": -772951485,
           "id": "14:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 2046020253,
@@ -2043,77 +2008,70 @@
           "descriptor": "The team does not understand or value unit testing.",
           "key": 1713664220,
           "id": "15:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Developers write unit tests during a sprint for some stories.",
           "key": 986502833,
           "id": "15:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is an awareness ofmocks, stubs and test doublesand some use of them in tests.",
           "key": 615372685,
           "id": "15:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The unit tests always isolate the functionality under test, hence a failing test pinpoints a problem.",
           "key": -976043620,
           "id": "15:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The unit tests are part of the CI build.",
           "key": 244443851,
           "id": "15:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Tests are independent, can be run in anyorder, and don't share test data.",
           "key": 2098609526,
           "id": "15:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team values fast and durable tests.",
           "key": -2109287649,
           "id": "15:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI).",
           "key": -56892298,
           "id": "15:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team has a standard mocking framework that they use for all mocks, stubs, doubles.",
           "key": 1566932386,
           "id": "15:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The entire team recognizes the value of refactoring of unit tests.",
           "key": -1427326649,
           "id": "15:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "TBD",
-          "key": -755511390,
-          "id": "15:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -201863308,
@@ -2130,70 +2088,70 @@
           "descriptor": "Heavy post development Test Case suite generation culture followed by a UAT phase.",
           "key": -1846722146,
           "id": "16:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team understands BDD conceptually.",
           "key": -288102284,
           "id": "16:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Test cases utilize BDD style specifications.",
           "key": 1707067471,
           "id": "16:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "User stories have BDD style acceptance criteria, which are leveraged for QA (could be manual or automated testing).",
           "key": -1796797771,
           "id": "16:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The Three Amigo's have collective ownership of the testing approach.",
           "key": -869226944,
           "id": "16:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "User stories are rich in Acceptance Criteria illustrated by example(s) that have corresponding automated (acceptance/regression) test suites.",
           "key": -1775798821,
           "id": "16:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "These tests are developed in parallel to story development by QA using our standard tools - Karate and Playwright.",
           "key": 437920594,
           "id": "16:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Tests are peer-reviewed and managed like code",
           "key": -79105908,
           "id": "16:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "These tests are kept fresh with newer richer examples with the growth of codebase and are frequently reviewed by the business.",
           "key": -122397168,
           "id": "16:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Acceptance Criteria generated by the business with rich example(s) are the core of user stories.",
           "key": -1697959053,
           "id": "16:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -1709086249,
@@ -2210,211 +2168,89 @@
           "descriptor": "The value of the continuous improvement of the design of the code is not understood by the team.",
           "key": -226563567,
           "id": "17:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is a general understanding of what refactoring is.",
           "key": -1869203260,
           "id": "17:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team knows how to use the IDE tools for refactoring.",
           "key": 2087799953,
           "id": "17:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team understands refactoring and how to apply it.",
           "key": -181346012,
           "id": "17:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Refactoring is applied to targeted problem areas.",
           "key": -2111438419,
           "id": "17:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Static code analysis metrics are used to target areas in the code base for refactoring.",
           "key": 277259152,
           "id": "17:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Refactoring is applied consistently across the code base.",
           "key": 1768769970,
           "id": "17:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Static code analysis thresholds are a gating item for the definition of a successful build.",
           "key": 780457616,
           "id": "17:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "There is a technical debt list that is used to prioritize refactoring activities with new feature development or other sustaining activities.",
           "key": -646879866,
           "id": "17:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team refactors tests as well as code (all code artifacts - Models, Views, Controllers, DB Schema, Stored Procedures, HTML, CSS, etc).",
           "key": -1135252533,
           "id": "17:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Design patterns such as the SOLID principles are applied to guide improvement.",
           "key": -1965353635,
           "id": "17:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Refactoring enables emergent design.",
           "key": -762730503,
           "id": "17:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -1021457600,
       "position": 17,
       "id": 17
-    },
-    {
-      "section": "Pair Programming",
-      "descriptor": "Often perform work in pairs to improve quality and limit specialization",
-      "number": -1,
-      "entries": [
-        {
-          "score": -1,
-          "descriptor": "No understanding of pair programming or there is concern that It will lower the utilization rate of individual developers.",
-          "key": 554758396,
-          "id": "18:0",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Random acts of pair programming.",
-          "key": -1680109529,
-          "id": "18:1",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "At least 1 hour per developer per week of pair programming.",
-          "key": -1044580570,
-          "id": "18:2",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Pairing happens when an issue arises and there is significant pressure to fix it fast.",
-          "key": -1030576153,
-          "id": "18:3",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "At least 1 hour per developer per day of pair programming.",
-          "key": 503068270,
-          "id": "18:4",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Pair programming includes the navigator and driver, switching roles often.",
-          "key": 2141968789,
-          "id": "18:5",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Pair programming takes place whenever a new person joins the team.",
-          "key": 1173728448,
-          "id": "18:6",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "There is some thought by the team to rotate or switch pairs on a regular basis.",
-          "key": -469510713,
-          "id": "18:7",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Since pair programming results in more intense work, active attention is given to sustainable pace - perhaps the pomodoro technique is employed.",
-          "key": 1895375038,
-          "id": "18:8",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "More than 4 hours of pair programming per day.",
-          "key": 247655293,
-          "id": "18:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "The team has a working agreement to actively switch pair partners and ensure everyone has a chance to pair with everyone else on the team.",
-          "key": -1224996887,
-          "id": "18:10",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Management encourages pair programming.",
-          "key": 836734347,
-          "id": "18:11",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Promiscuous pairing.",
-          "key": -705068152,
-          "id": "18:12",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday.",
-          "key": -288302154,
-          "id": "18:13",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Team manages risk and uncertainty for the team by making coding decisions in pairs leading to a higher degree of confidence when problems or solutions are not 100% defined.",
-          "key": -1935882701,
-          "id": "18:14",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Pair programming is a promoted as part of a desirable environment for potential recruits.",
-          "key": 1923438816,
-          "id": "18:15",
-          "options": "yesNoInProgress"
-        }
-      ],
-      "key": -101784429,
-      "position": 18,
-      "id": 18
     },
     {
       "section": "Design Simplicity",
@@ -2426,112 +2262,112 @@
           "descriptor": "Big up-front design that attempts to accommodate all potential future needs.",
           "key": 316274228,
           "id": "19:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Team disagrees with YAGNI (You Aren't Going to Need It).",
           "key": 255358624,
           "id": "19:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Team disagrees with evolving design and architecture.",
           "key": 1287560935,
           "id": "19:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Team does not feel they can update their design / refactor their way to the future - they feel a need to invent everything up front - especially data design.",
           "key": 898582182,
           "id": "19:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team is aware of YAGNI and evolving design and architecture, and there is some evidence of following these principles.",
           "key": 952335684,
           "id": "19:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "If there is an external architecture group, then the team has some input on architectural choices.",
           "key": -1505236969,
           "id": "19:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Team is aware of low coupling and high cohesion and can find examples in their code base.",
           "key": -8437521,
           "id": "19:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Most of the team has some understanding of design patterns and can find examples in their code base.",
           "key": -174070597,
           "id": "19:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is some acceptance by the team that refactoring can be a valuable tool in updating their design with new requirements.",
           "key": 794709881,
           "id": "19:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team discusses accidental complexity and will make changes to remove it.",
           "key": 205674275,
           "id": "19:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Many of the developers embrace single responsibility, design by contract, dependency injection, the Law of Demeter etc.",
           "key": 1017779331,
           "id": "19:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team polices each other on YAGNI and are disciplined about implementing only the code to pass the story acceptance tests.",
           "key": -47414135,
           "id": "19:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Spikes are used with each release to introduce new ideas and test architectural decisions.",
           "key": 111501338,
           "id": "19:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "All of the developers understand and work to SOLID (https://en.wikipedia.org/wiki/SOLID).",
           "key": 19372086,
           "id": "19:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team values and updates the design documents to ensure we can teach new people and potential customers.",
           "key": -607868172,
           "id": "19:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team actively works to recognize and remove accidental complexity from evolving designs.",
           "key": 910496091,
           "id": "19:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1888735171,
@@ -2548,98 +2384,98 @@
           "descriptor": "There is no Definition of Done.",
           "key": -1098738963,
           "id": "20:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "There is a Definition of Done that is 'code complete' only.",
           "key": 288245280,
           "id": "20:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Individuals complete work to varying levels of done-ness with no visibility to what work is or is not being completed for each story.",
           "key": -15908355,
           "id": "20:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is a reasonable and documented Definition of Done.",
           "key": 513995738,
           "id": "20:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Definition of Done is mostly followed.",
           "key": 1806389792,
           "id": "20:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Definition of Done was created by the team",
           "key": 1936740098,
           "id": "20:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Definition of Done documents the breadth of activities necessary for code to be ready for production.",
           "key": -248014839,
           "id": "20:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Everyone on the team knows the Definition of Done, follows it consistently and can explain what Done means for their team.",
           "key": 869967889,
           "id": "20:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There may be a Release level Definition of Done that captures activities that cannot be achieved in a user story definition of done.",
           "key": 1393288611,
           "id": "20:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Stories that do not meet the Definition of Done are not accepted and are not demonstrated to the customer.",
           "key": -13167536,
           "id": "20:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed.",
           "key": -1696476223,
           "id": "20:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories.",
           "key": -2120135462,
           "id": "20:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Changes to process, infrastructure, teams or organizational structure are made as needed to enable all work to meet the Definition of Done at the story level so any Release level Definition of Done becomes moot.",
           "key": 1822829650,
           "id": "20:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Continuous deployment enabled.",
           "key": 758810549,
           "id": "20:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 1902318238,
@@ -2656,133 +2492,133 @@
           "descriptor": "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
           "key": 1296098912,
           "id": "21:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Steps to run and configure builds are not captured in any manner.",
           "key": -1146762025,
           "id": "21:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "The build process is considered 'tribal knowledge'.",
           "key": -449654831,
           "id": "21:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Build to a dedicated environment is repeatable and automated.",
           "key": 2004354035,
           "id": "21:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is automated unit testing in the build.",
           "key": 1750457391,
           "id": "21:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "State of the build is a responsibility of the team.",
           "key": -1633155976,
           "id": "21:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Build is automatically triggered.",
           "key": 941541727,
           "id": "21:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Broken builds get fixed within 24 hours.",
           "key": 1362021287,
           "id": "21:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is reporting of code quality, build statistics, and testing results.",
           "key": -486569584,
           "id": "21:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
           "key": 1074750945,
           "id": "21:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The commit build provides feedback on common build problems in under 10 minutes.",
           "key": 202022675,
           "id": "21:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Each team member's code is pulled regularly (at least once a day) triggering the CI system.",
           "key": 41585830,
           "id": "21:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Build stages (incremental and regression) are linked in order to remove duplication across end-to-end build process.",
           "key": 798807711,
           "id": "21:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
           "key": -1428877358,
           "id": "21:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
           "key": -698119235,
           "id": "21:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Builds are done in parallel reducing overall build time.",
           "key": -76491443,
           "id": "21:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Targeted feedback for corrective measures on failed builds occur across builds.",
           "key": -1412088127,
           "id": "21:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
           "key": 1868732307,
           "id": "21:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "There are rollback capabilities for broken builds.",
           "key": -507775932,
           "id": "21:18",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": -431178631,
@@ -2790,143 +2626,7 @@
       "id": 21
     },
     {
-      "section": "Continuous Integration - Microservices",
-      "descriptor": "Bring changes together very frequently to avoid conflicts and speed learning",
-      "number": -1,
-      "entries": [
-        {
-          "score": -1,
-          "descriptor": "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
-          "key": 31907079,
-          "id": "22:0",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": -1,
-          "descriptor": "Steps to run and configure builds are not captured in any manner.",
-          "key": 1779463166,
-          "id": "22:1",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": -1,
-          "descriptor": "The build process is considered 'tribal knowledge'.",
-          "key": 342226744,
-          "id": "22:2",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Build to a dedicated environment is repeatable and automated.",
-          "key": 1110070938,
-          "id": "22:3",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "There is automated unit testing in the build.",
-          "key": -1455924010,
-          "id": "22:4",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "State of the build is a responsibility of the team.",
-          "key": -841274401,
-          "id": "22:5",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Build is automatically triggered.",
-          "key": -680014714,
-          "id": "22:6",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Broken builds get fixed within 24 hours.",
-          "key": -494256480,
-          "id": "22:7",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "There is reporting of code quality, build statistics, and testing results.",
-          "key": -195253257,
-          "id": "22:8",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
-          "key": 1069820424,
-          "id": "22:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "The commit build provides feedback on common build problems in under 10 minutes.",
-          "key": 22406412,
-          "id": "22:10",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Each team member pushes code regularly (at least once a day) triggering the CI system.",
-          "key": 1747036471,
-          "id": "22:11",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
-          "key": 910946891,
-          "id": "22:12",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
-          "key": -2123294556,
-          "id": "22:13",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Builds are done in parallel reducing overall build time.",
-          "key": -1864288698,
-          "id": "22:14",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Targeted feedback for corrective measures on failed builds occur across builds.",
-          "key": -1417882200,
-          "id": "22:15",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
-          "key": 1711736186,
-          "id": "22:16",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "There are rollback capabilities for broken builds.",
-          "key": 1734525949,
-          "id": "22:17",
-          "options": "yesNoInProgress"
-        }
-      ],
-      "key": 1093229682,
-      "position": 22,
-      "id": 22
-    },
-    {
-      "section": "Continuous Delivery - Legacy",
+      "section": "Continuous Delivery",
       "descriptor": "Strive to make the output of every sprint potentially releasable",
       "number": -1,
       "entries": [
@@ -2935,225 +2635,110 @@
           "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "key": 643155718,
           "id": "23:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Deployment is owned by a specific member of the team.",
           "key": 2109118412,
           "id": "23:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "key": 127378123,
           "id": "23:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "key": -1829356363,
           "id": "23:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Software is built in every stage of the deployment pipeline.",
           "key": -252485475,
           "id": "23:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "key": 2091276122,
           "id": "23:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "State of the deployment is the responsibility of the team.",
           "key": -959317745,
           "id": "23:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary.",
           "key": -20034762,
           "id": "23:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Testing and release environment mirror production.",
           "key": 1661294038,
           "id": "23:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
           "key": 1909098619,
           "id": "23:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
           "key": -300547316,
           "id": "23:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Automation extends to non-server configuration such as networks, and external services.",
           "key": -636943571,
           "id": "23:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Deploy can be made based on limited access to specific target end users.",
           "key": 1091675311,
           "id": "23:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Incremental rollback occurs as needed.",
           "key": -344351579,
           "id": "23:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
           "key": -1143884170,
           "id": "23:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 970491671,
       "position": 23,
       "id": 23
-    },
-    {
-      "section": "Continuous Delivery - Microservices",
-      "descriptor": "Strive to make the output of every sprint potentially releasable",
-      "number": -1,
-      "entries": [
-        {
-          "score": -1,
-          "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
-          "key": -445191959,
-          "id": "24:0",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": -1,
-          "descriptor": "Deployment is owned by a specific member of the team.",
-          "key": 1859174127,
-          "id": "24:1",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
-          "key": 1208167982,
-          "id": "24:2",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "State of the deployment is a responsibility of a role defined for build and release engineer.",
-          "key": -2105326376,
-          "id": "24:3",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Software is built in every stage of the deployment pipeline.",
-          "key": -264733670,
-          "id": "24:4",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
-          "key": 512988861,
-          "id": "24:5",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "State of the deployment is the responsibility of the team.",
-          "key": 1051840460,
-          "id": "24:6",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary.",
-          "key": -78356109,
-          "id": "24:7",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Testing and release environment mirror production.",
-          "key": 1102375353,
-          "id": "24:8",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
-          "key": -1901268642,
-          "id": "24:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
-          "key": -1217069329,
-          "id": "24:10",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Automation extends to non-server configuration such as networks, and external services.",
-          "key": 427532688,
-          "id": "24:11",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Deploy can be made based on limited access to specific target end users.",
-          "key": -931107668,
-          "id": "24:12",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Incremental rollback occurs as needed.",
-          "key": 2008576994,
-          "id": "24:13",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
-          "key": -2092473165,
-          "id": "24:14",
-          "options": "yesNoInProgress"
-        }
-      ],
-      "key": -1247804396,
-      "position": 24,
-      "id": 24
     },
     {
       "section": "Automated Regression Testing",
@@ -3165,140 +2750,140 @@
           "descriptor": "No automated regression tests - it is all done manually.",
           "key": -890399040,
           "id": "25:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "The team complains that they have tried to get automated functional tests to work in the past, but they say it slows them down and is too expensive for this group to do.",
           "key": -1051024274,
           "id": "25:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Little to no organizational support for leadership promoting an investment in test automation.",
           "key": -1878228845,
           "id": "25:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "There is some automated testing, including some in the automated regression build.",
           "key": -328189419,
           "id": "25:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Automated regression tests complete in less than two hours.",
           "key": 247569100,
           "id": "25:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Code coverage is measured on automated functional tests.",
           "key": -347360573,
           "id": "25:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "All of the tests are included in a CI build and there are rarely test cases commented out or ignored.",
           "key": 1547534439,
           "id": "25:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team values automated testing.",
           "key": -1625766023,
           "id": "25:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Pipeline includes gating factor to ensure that important code quality metrics don't backslide",
           "key": 1743554994,
           "id": "25:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "The team agrees that the automated tests are valuable and organize to run them in various CI builds.",
           "key": 163630454,
           "id": "25:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "They recognize that they can't be run all of the time for each build, so they will be segregated and run at different times.",
           "key": -1588273875,
           "id": "25:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "There may be time sequences where all of the builds are not running successfully because the tests are failing.",
           "key": 970689254,
           "id": "25:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Sometimes they will allow a small set of tests to be commented out as they are difficult to debug/fix.",
           "key": 478302336,
           "id": "25:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Similar to automated unit testing, the team understands and works to have fast and reliable automated feature tests.",
           "key": 1153078946,
           "id": "25:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "A smoke test is included with the unit tests to ensure major capabilities continue to work with each check-in.",
           "key": 1041199141,
           "id": "25:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Speed and durability are significant concerns, and the team works at writing good and fast tests.",
           "key": -1499691935,
           "id": "25:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "All the tests are allocated to a CI build to ensure they run at some times.",
           "key": -1807084772,
           "id": "25:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The team understand that the automated tests are a real safety net and use them to strive for zero defects to production.",
           "key": -1786372677,
           "id": "25:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Performance and other non-functional requirements are included in the tests.",
           "key": 920392700,
           "id": "25:18",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "The tests are structured so that the developers run all unit tests and key functional tests (smoke tests) prior to every check-in.",
           "key": 329231545,
           "id": "25:19",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 140881345,
@@ -3315,264 +2900,154 @@
           "descriptor": "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
           "key": -1772188769,
           "id": "26:0",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
           "key": -1530757537,
           "id": "26:1",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": -1,
           "descriptor": "Code branches are not well understood or managed.",
           "key": 809377864,
           "id": "26:2",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team uses a supported SCM for code and tests..",
           "key": -1774829701,
           "id": "26:3",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "IDE(s) integrate with SCM.",
           "key": 1722687067,
           "id": "26:4",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Developers include meaningful comments in commits.",
           "key": 1067143293,
           "id": "26:5",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Build can pull code from repository.",
           "key": -545750573,
           "id": "26:6",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "The team checks in at least every couple of days into the mainline trunk.",
           "key": -703282812,
           "id": "26:7",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Mainline branches are protected from inadvertent changes.",
           "key": -863766391,
           "id": "26:8",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 1,
           "descriptor": "Each team member can often merge their code with no merge problems.",
           "key": 2091833481,
           "id": "26:9",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "SCM supports merging; optimistic check-ins.",
           "key": -966377076,
           "id": "26:10",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Build does pull code from repository.",
           "key": 1466610672,
           "id": "26:11",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Check-ins are done daily, if not several times per day.",
           "key": -131225498,
           "id": "26:12",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
           "key": 485400489,
           "id": "26:13",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 2,
           "descriptor": "Production or release branch fixes are always applied consistently to trunk.",
           "key": 802971301,
           "id": "26:14",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Commits are logically orchestrated; all development and release collateral is in SCM.",
           "key": -62157527,
           "id": "26:15",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
           "key": -1604029502,
           "id": "26:16",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         },
         {
           "score": 3,
           "descriptor": "Branches are used effectively, and merges are are easily supported.",
           "key": -1028175933,
           "id": "26:17",
-          "options": "yesNoInProgress"
+          "options": "likert5"
         }
       ],
       "key": 589451275,
       "position": 26,
       "id": 26
-    },
-    {
-      "section": "Source Code Management - Microservices",
-      "descriptor": "Employ modern tools to control and manage all items that constitute the application",
-      "number": -1,
-      "entries": [
-        {
-          "score": -1,
-          "descriptor": "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
-          "key": -325950294,
-          "id": "27:0",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": -1,
-          "descriptor": "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
-          "key": -235190742,
-          "id": "27:1",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": -1,
-          "descriptor": "Code branches are not well understood or managed.",
-          "key": -1248845741,
-          "id": "27:2",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "The team uses a supported SCM for code and tests..",
-          "key": -1155252016,
-          "id": "27:3",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "IDE(s) integrate with SCM.",
-          "key": -505246032,
-          "id": "27:4",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Developers include meaningful comments in commits.",
-          "key": 1686720978,
-          "id": "27:5",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Build can pull code from repository.",
-          "key": 1741704168,
-          "id": "27:6",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "The team checks in at least every couple of days into the mainline trunk.",
-          "key": -1283846001,
-          "id": "27:7",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Mainline branches are protected from inadvertent changes.",
-          "key": 1053212052,
-          "id": "27:8",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 1,
-          "descriptor": "Each team member can often merge their code with no merge problems.",
-          "key": -405599276,
-          "id": "27:9",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "SCM supports merging; optimistic check-ins.",
-          "key": -1324358185,
-          "id": "27:10",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Build does pull code from repository.",
-          "key": -636736389,
-          "id": "27:11",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Check-ins are done daily, if not several times per day.",
-          "key": -35376079,
-          "id": "27:12",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 2,
-          "descriptor": "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
-          "key": -1736104258,
-          "id": "27:13",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "key": -1730960460,
-          "id": "27:14",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
-          "key": 2110374605,
-          "id": "27:15",
-          "options": "yesNoInProgress"
-        },
-        {
-          "score": 3,
-          "descriptor": "Branches are used effectively, and merges are are easily supported.",
-          "key": 769358606,
-          "id": "27:16",
-          "options": "yesNoInProgress"
-        }
-      ],
-      "key": 1709441184,
-      "position": 27,
-      "id": 27
     }
   ],
   "sectionScoreDefault": 0,
   "answerKeys": {
+    "likert5": {
+      "meta-name": "Likert with 5 distractors",
+      "meta-description": "Likert Scale with 5 distractors.",
+      "0": "Never",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Always"
+    },
+
+    "likert5Reversed": {
+      "meta-name": "Likert with 5 distractors",
+      "meta-description": "Likert Scale with 5 distractors.",
+      "4": "Never",
+      "3": "Rarely",
+      "2": "Sometimes",
+      "1": "Often",
+      "0": "Always"
+    },
     "yesNoInProgress": {
       "meta-name": "Yes, No, In Progress",
       "meta-description": "Three options to determine if an action is not started, in progress, or completed",
