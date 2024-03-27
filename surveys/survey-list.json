@@ -4,6 +4,10 @@
     "file": "agile-assessment-v1.json"
   },
   {
+    "name": "Agile Assessment Distributed",
+    "file": "agile-assessment-distributed-v1.json"
+  },
+  {
     "name": "Scrum Master 360 Review v1",
     "file": "scrum-master-360-v1.json"
   }
