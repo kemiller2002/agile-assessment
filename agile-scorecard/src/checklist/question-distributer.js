@@ -15,10 +15,6 @@ import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { functionReducer } from "../utilities/reducer";
 
-function reducer(s, i) {
-  return i(s);
-}
-
 function splitOutCalibrationItems(items) {
   return items.reduce(
     (s, i) => {
@@ -85,7 +81,7 @@ function createDataState(studyDataObject, input, groupId) {
     (x) => updateDataObject(studyDataObject, "questionList", x, true),
     (state) => ({ ...state, groupId }),
     convertForUrl,
-  ].reduce(reducer, input);
+  ].reduce(functionReducer, input);
 }
 
 function createUrlsForDistribution(
@@ -113,7 +109,7 @@ function createUrlsForDistribution(
     (x) => x.map(shuffleArray),
     (x) => x.map(dataStateFunction),
     (x) => x.map(createUrl),
-  ].reduce(reducer, instrument);
+  ].reduce(functionReducer, instrument);
 }
 
 function makeUrlDistributionUI(entry, copyAction) {
@@ -131,7 +127,7 @@ function makeUrlDistributionUI(entry, copyAction) {
 }
 
 function getBaseData(data) {
-  return [(i) => i].reduce(reducer, data);
+  return [(i) => i].reduce(functionReducer, data);
 }
 
 export function QuestionDistributer({ data, http }) {
