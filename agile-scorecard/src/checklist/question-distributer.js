@@ -74,11 +74,16 @@ function createQuestionDistribution(
       );
 }
 
-function createDataState(studyDataObject, input) {
+function createGroupId() {
+  return createInstanceId(5);
+}
+
+function createDataState(studyDataObject, input, groupId) {
   return [
     (i) => i.map((x) => x.id),
     (i) => i.join(";"),
     (x) => updateDataObject(studyDataObject, "questionList", x, true),
+    (state) => ({ ...state, groupId }),
     convertForUrl,
   ].reduce(reducer, input);
 }
@@ -90,7 +95,8 @@ function createUrlsForDistribution(
   baseData
 ) {
   const createUrl = (data) => `${baseUrl}/${data}`;
-  const dataStateFunction = (data) => createDataState(baseData, data);
+  const groupId = createGroupId();
+  const dataStateFunction = (data) => createDataState(baseData, data, groupId);
 
   return [
     (i) => i.items,
@@ -105,15 +111,7 @@ function createUrlsForDistribution(
         Math.ceil(x.standard.length / numberOfParticipants)
       ),
     (x) => x.map(shuffleArray),
-    (x) => {
-      console.log(x);
-      return x;
-    },
     (x) => x.map(dataStateFunction),
-    (x) => {
-      console.log(baseUrl, x);
-      return x;
-    },
     (x) => x.map(createUrl),
   ].reduce(reducer, instrument);
 }
@@ -229,7 +227,15 @@ export function QuestionDistributer({ data, http }) {
     <div className="distribute-questions-list-container">
       <h1>Distribute Questions Among Group</h1>
       <div>
-        {makeHeader(instrument, false, updateState, urlData, getValue, true)}
+        {makeHeader(
+          instrument,
+          false,
+          updateState,
+          urlData,
+          getValue,
+          true,
+          true
+        )}
       </div>
       <div>
         <h2>

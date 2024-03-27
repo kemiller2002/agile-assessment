@@ -808,14 +808,14 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories define a complete vertical slice of functionality.(I in INVEST)",
+          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST)",
           "key": 1862383731,
           "id": "7:8",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories contain acceptance criteria.(T in INVEST)",
+          "descriptor": "User stories contain acceptance criteria. (T in INVEST)",
           "key": 678092195,
           "id": "7:9",
           "options": "yesNoInProgress"
@@ -829,7 +829,7 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories have a narrative around business value.(V in INVEST)",
+          "descriptor": "User stories have a narrative around business value. (V in INVEST)",
           "key": 608703510,
           "id": "7:11",
           "options": "yesNoInProgress"

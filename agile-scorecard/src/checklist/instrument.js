@@ -2,14 +2,10 @@ import React, { useState, useEffect, useReducer } from "react";
 import { useParams, useNavigate, Link, redirect } from "react-router-dom";
 import Menu from "./menu";
 import * as CompressionUtilities from "../utilities/compression";
-
 import { getInstrument } from "../utilities/surveyData";
 import { faL } from "@fortawesome/free-solid-svg-icons";
-
 import { functionReducer } from "../utilities/reducer";
-
 import { createInstanceId } from "../utilities/identifiers";
-
 import { scoreFormat } from "../utilities/surveyData";
 
 function mapEntriesToSorted(entries) {
@@ -58,8 +54,14 @@ export function makeHeader(
   updateState,
   urlData,
   getValue,
-  displayAdministrator
+  displayAdministrator,
+  administrationMode
 ) {
+  const surveyIndicateDisableDate = (survey.date || {}).preventModification;
+  const surveyTargetDisableTarget = (survey.target || {}).preventModification;
+
+  const notAdministrationMode = !administrationMode;
+
   function updateTeam(e) {
     const team = e.target.value;
     const updatedTeam = updateDataObject(urlData, "team", team);
@@ -93,7 +95,9 @@ export function makeHeader(
         key="team-name"
         placeholder="Survey Target"
         data-team-name
-        disabled={disabled}
+        disabled={
+          disabled || (surveyTargetDisableTarget && notAdministrationMode)
+        }
         onChange={updateTeam}
         value={getValue("team") || ""}
         id="team-name"
@@ -105,7 +109,9 @@ export function makeHeader(
         onChange={updateAssessmentDate}
         key="assessmentDate"
         id="assessmentDate"
-        disabled={disabled}
+        disabled={
+          disabled || (surveyIndicateDisableDate && notAdministrationMode)
+        }
       ></input>
       <input
         type="text"
@@ -146,7 +152,7 @@ function setSurveyQuestions(survey, questionList) {
       ...survey,
       items: [
         {
-          section: "",
+          section: "Survey Questionnaire",
           descriptor: "",
           entries: makeQuestions(survey, questionList),
         },
@@ -257,8 +263,7 @@ export function Instrument({ data, callback, disabled, http }) {
   //HIDE TOTAL CALCULATE HERE.
   const hideScore = !(survey.scores || {}).show;
   const assessmentId = populateInstanceIdValue("instanceId");
-
-  console.log(survey);
+  const groupId = getValue("groupId");
 
   return (
     <div>
@@ -271,6 +276,19 @@ export function Instrument({ data, callback, disabled, http }) {
             value={assessmentId}
             key="assessmentId"
             id="assessmentId"
+            disabled
+          ></input>
+        </label>
+      </div>
+      <div>
+        <label data-assessment-id-container>
+          <span data-assessment-id-container-text>Instrument Group Id</span>
+          <input
+            type="text"
+            data-assessment-id
+            value={groupId}
+            key="groupId"
+            id="groupId"
             disabled
           ></input>
         </label>

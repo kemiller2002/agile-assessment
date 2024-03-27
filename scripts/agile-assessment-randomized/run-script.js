@@ -8,7 +8,7 @@ function reducer(s, i) {
 const input = path.join(
   ...[
     __dirname,
-    ..."../../agile-scorecard/public/surveys/agile-assessment-randomized-v1.json".split(
+    ..."../../agile-scorecard/public/surveys/agile-assessment-distributed-v1.json".split(
       "/"
     ),
   ]
@@ -40,11 +40,15 @@ function updateEntry(entry) {
     ...entry,
     options: entry.score === -1 ? "likert5Reversed" : "likert5",
     calibration: calibrationQuestions.includes(entry.id),
+    score: 0,
   };
 }
 
 function update(document) {
-  return { ...document, items: document.items.map(updateItem) };
+  return [
+    (document) => ({ ...document, items: document.items.map(updateItem) }),
+    (document) => ({ ...document, scores: { show: false } }),
+  ].reduce(reducer, document);
 }
 
 function run(input, output) {
