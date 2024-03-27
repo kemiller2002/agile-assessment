@@ -35,6 +35,16 @@ function AssessmentList({ assessment }) {
           </li>
         </ol>
       </div>
+      <div>
+        <h2>Create Assessment Instances For Distributed Questions</h2>
+        <ol>
+          {list.map((l) => (
+            <li>
+              <Link to={`distribute/${l.file}`}> {l.name}</Link>
+            </li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }

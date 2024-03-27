@@ -172,7 +172,6 @@ function createBubbleDataset(data) {
 
 function formatDataForGraph(data, keys) {
   const scatterFormat = formatDataForScatterGraph(data, keys);
-  console.log("STJLRE");
   return [
     (x) => x.map((d) => d.data),
     (x) => x.flat(),

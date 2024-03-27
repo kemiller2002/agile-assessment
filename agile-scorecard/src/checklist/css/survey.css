@@ -271,7 +271,7 @@ input:checked~[data-menu-options] {
     font-weight: 600;
     word-break: break-all;
 }
-
+input[type="button"].question-distributer,
 [data-copy-url],
 [start-post-process-button]{
     padding: .5em 3em .5em 3em;
@@ -284,6 +284,19 @@ input:checked~[data-menu-options] {
     display: block;
     cursor: pointer;
 }
+
+input[type="number"].question-distributer {
+    padding: 0.5em;
+    font-size: larger;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .25em;
+    padding-left: 1.1em;
+    border-radius: .3em;
+    border: thin lightgrey solid;
+}
+
 [data-assessment-id-container]
 {
     display: flex;

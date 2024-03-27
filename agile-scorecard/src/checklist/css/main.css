@@ -162,11 +162,33 @@ div.questionType{
     padding-right:.4em
 }
 
-
+div.distribute-questions-list-container,
 div.survey-list-container{
     margin: 2em;
 }
 
+div.distribute-questions-list-container{
+    display: block;
+    text-align: center;
+}
+
+
+div.question-distributer-url{
+    word-break: break-all;
+    margin-right: 5px;
+}
+
+div.question-distributer-url-entry-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    padding: 0 20% 0 20%;
+}
+
+div.question-distributer-copy-icon {
+    align-items: center;
+    cursor: pointer;
+}
 
 @media print {
 

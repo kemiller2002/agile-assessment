@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import React, { useState, useEffect, useReducer } from "react";
+import { useParams, useNavigate, Link, redirect } from "react-router-dom";
 import Menu from "./menu";
 import * as CompressionUtilities from "../utilities/compression";
 
@@ -126,6 +126,44 @@ export function updateStateDetermineNavigate(newKeyValue) {
   this.navigate(convertForUrl(newKeyValue), { replace: false });
 }
 
+function makeQuestions(survey, questions) {
+  const surveyQuestions = [
+    (survey) => survey.items,
+    (items) => items.map((item) => item.entries),
+    (entries) => entries.flat(),
+    (entries) => entries.reduce((s, i) => ({ ...s, [i.id]: i }), {}),
+  ].reduce(functionReducer, survey);
+
+  return [(q) => q.split(";"), (q) => q.map((x) => surveyQuestions[x])].reduce(
+    functionReducer,
+    questions
+  );
+}
+
+function setSurveyQuestions(survey, questionList) {
+  const makeNewInstrumentInstance = (entries) => {
+    return {
+      ...survey,
+      items: [
+        {
+          section: "",
+          descriptor: "",
+          entries: makeQuestions(survey, questionList),
+        },
+      ],
+    };
+  };
+
+  return !questionList
+    ? survey
+    : [
+        (s) => s.items,
+        (i) => i.map((x) => x.entries),
+        (es) => es.flat(),
+        makeNewInstrumentInstance,
+      ].reduce(functionReducer, survey);
+}
+
 export function Instrument({ data, callback, disabled, http }) {
   const [survey, updateChecklist] = useState({ items: [] });
   const parameters = useParams();
@@ -144,12 +182,18 @@ export function Instrument({ data, callback, disabled, http }) {
   const getValue = (key) => urlData[key];
   const notify = callback || (() => {});
 
+  const displayedQuestionList = getValue("questionList");
+
+  const setSurveyQuestionsForData = (survey) =>
+    setSurveyQuestions(survey, displayedQuestionList);
+
   const loadChecklist = () => {
     getInstrument(http, name)
       .then((d) => calculateMetrics(d, getValue))
       .then((x) => {
         return x;
       })
+      .then(setSurveyQuestionsForData)
       .then((d) => updateChecklist(d));
   };
 
@@ -214,6 +258,8 @@ export function Instrument({ data, callback, disabled, http }) {
   const hideScore = !(survey.scores || {}).show;
   const assessmentId = populateInstanceIdValue("instanceId");
 
+  console.log(survey);
+
   return (
     <div>
       <div>
@@ -229,13 +275,12 @@ export function Instrument({ data, callback, disabled, http }) {
           ></input>
         </label>
       </div>
-
       {makeHeader(survey, disabled, updateState, urlData, getValue)}
 
       <div data-survey-container>
-        {(survey.items || []).map((x) =>
+        {(survey.items || []).map((item) =>
           createSection(
-            x,
+            item,
             updateChecklistValue,
             createSectionKey,
             (entries) => calculateScore(entries, sectionScoreDefault),
@@ -255,7 +300,6 @@ export function Instrument({ data, callback, disabled, http }) {
         getData={getData}
         disabled={disabled}
       ></Menu>
-
       <div data-complete-assessment-container>
         <div data-complete-assessment>
           <Link

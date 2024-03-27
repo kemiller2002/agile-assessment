@@ -14,8 +14,12 @@ const input = path.join(
   ]
 );
 
+const output = input.replace(".json", ".test.json");
+
+const calibrationQuestions = ["4:12", "5:2", "0:1", "25:0", "6:14"];
+
 function write(path, file) {
-  fs.writeSync(file);
+  fs.writeFileSync(path, file);
 
   return file;
 }
@@ -27,26 +31,27 @@ function load(file) {
   );
 }
 
-function updateItems(items) {
-  return items.map((i) => ({ ...i, entries: item.entries.map(updateEntry) }));
+function updateItem(item) {
+  return { ...item, entries: item.entries.map(updateEntry) };
 }
 
 function updateEntry(entry) {
   return {
     ...entry,
-    options: e.score === -1 ? "likert5Reversed" : "likert5",
+    options: entry.score === -1 ? "likert5Reversed" : "likert5",
+    calibration: calibrationQuestions.includes(entry.id),
   };
 }
 
 function update(document) {
-  [(x) => x.items, updateItems, (i) => ({ ...document, items: i })].reduce(
-    reducer,
-    document
-  );
+  return { ...document, items: document.items.map(updateItem) };
 }
 
 function run(input, output) {
-  [load, update, (f) => write(output, f)].reduce(reducer, input);
+  [load, update, JSON.stringify, (f) => write(output, f)].reduce(
+    reducer,
+    input
+  );
 }
 
-run(input, input);
+run(input, output);

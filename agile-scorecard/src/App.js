@@ -13,6 +13,7 @@ import { ThreeSixtyComparison } from "./checklist/360-comparison";
 import { SomethingWentWrong } from "./checklist/somthing-wrong";
 
 import { CompletedInstrument } from "./checklist/completed-instrument";
+import { QuestionDistributer } from "./checklist/question-distributer";
 
 function Http() {
   const axiosInstance = axios.create();
@@ -55,6 +56,16 @@ function App() {
           <Route
             path=":data"
             element={<CompletedInstrument http={http} />}
+          ></Route>
+        </Route>
+
+        <Route
+          path="distribute/:name"
+          element={<QuestionDistributer http={http} />}
+        >
+          <Route
+            path=":data"
+            element={<QuestionDistributer http={http} />}
           ></Route>
         </Route>
 
