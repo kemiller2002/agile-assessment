@@ -15,6 +15,8 @@ import { SomethingWentWrong } from "./checklist/somthing-wrong";
 import { CompletedInstrument } from "./checklist/completed-instrument";
 import { QuestionDistributer } from "./checklist/question-distributer";
 
+import { InterviewAssessmentAdministrator } from "./checklist/interview-assessment-administrator";
+
 function Http() {
   const axiosInstance = axios.create();
 
@@ -48,7 +50,6 @@ function App() {
         <Route path="survey/:name" element={<Survey http={http} />}>
           <Route path=":data" element={<Survey http={http} />}></Route>
         </Route>
-
         <Route
           path="prepare-results/:name"
           element={<CompletedInstrument http={http} />}
@@ -58,7 +59,6 @@ function App() {
             element={<CompletedInstrument http={http} />}
           ></Route>
         </Route>
-
         <Route
           path="distribute/:name"
           element={<QuestionDistributer http={http} />}
@@ -68,7 +68,6 @@ function App() {
             element={<QuestionDistributer http={http} />}
           ></Route>
         </Route>
-
         <Route
           path="create-instance/:name"
           element={<CreateInstance http={http} />}
@@ -83,6 +82,15 @@ function App() {
         </Route>
 
         <Route
+          path="interview"
+          element={<InterviewAssessmentAdministrator http={http} />}
+        >
+          <Route
+            path=":data"
+            element={<InterviewAssessmentAdministrator http={http} />}
+          ></Route>
+        </Route>
+        <Route
           path="360"
           element={
             <ThreeSixtyComparison
@@ -96,7 +104,6 @@ function App() {
             element={<ComparativeScore http={http} />}
           ></Route>
         </Route>
-
         <Route path="utilities">
           <Route path="compression" element={<Compression http={http} />} />
         </Route>

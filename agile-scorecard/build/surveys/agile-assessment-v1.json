@@ -214,7 +214,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Team has discussed and agreed on the practices they will follow. ",
+          "descriptor": "Team has discussed and agreed on the practices they will follow.",
           "key": -1773773535,
           "id": "2:4",
           "options": "yesNoInProgress"
@@ -235,7 +235,7 @@
         },
         {
           "score": 2,
-          "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves. ",
+          "descriptor": "Working agreements are revisited periodically (such as during retrospectives) and refined over time as team evolves and improves.",
           "key": 388917736,
           "id": "2:7",
           "options": "yesNoInProgress"
@@ -344,7 +344,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Meritocracy is used among teams. ",
+          "descriptor": "Meritocracy is used among teams.",
           "key": -1005783558,
           "id": "3:11",
           "options": "yesNoInProgress"
@@ -376,7 +376,7 @@
         },
         {
           "score": -1,
-          "descriptor": "Business partners are not clear on their role or are not providing support needed to be successful. ",
+          "descriptor": "Business partners are not clear on their role or are not providing support needed to be successful.",
           "key": 1322306266,
           "id": "4:1",
           "options": "yesNoInProgress"
@@ -390,7 +390,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There are realistic expectations as to how scope and schedule will be managed.  ",
+          "descriptor": "There are realistic expectations as to how scope and schedule will be managed.",
           "key": -1773505228,
           "id": "4:3",
           "options": "yesNoInProgress"
@@ -418,7 +418,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Roles and expectations are clear and understood by all parties. ",
+          "descriptor": "Roles and expectations are clear and understood by all parties.",
           "key": 978065518,
           "id": "4:7",
           "options": "yesNoInProgress"
@@ -432,7 +432,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Both parties are committed to transparency and reality-based management and agree adjustments to scope and timeline will be negotiated as risks emerge. ",
+          "descriptor": "Both parties are committed to transparency and reality-based management and agree adjustments to scope and timeline will be negotiated as risks emerge.",
           "key": -1264085012,
           "id": "4:9",
           "options": "yesNoInProgress"
@@ -453,7 +453,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Business and Engineering form true collaborative partnership. ",
+          "descriptor": "Business and Engineering form true collaborative partnership.",
           "key": 1940374511,
           "id": "4:12",
           "options": "yesNoInProgress"
@@ -485,7 +485,7 @@
         },
         {
           "score": -1,
-          "descriptor": "There is no flexibility on resources, scope, or timeframe (iron triangle). ",
+          "descriptor": "There is no flexibility on resources, scope, or timeframe (iron triangle).",
           "key": -991809900,
           "id": "5:1",
           "options": "yesNoInProgress"
@@ -541,14 +541,14 @@
         },
         {
           "score": 1,
-          "descriptor": "The release plan covers a time box no larger than 3 months and if larger than six weeks, includes at least 1 internal release (UAT). ",
+          "descriptor": "The release plan covers a time box no larger than 3 months and if larger than six weeks, includes at least 1 internal release (UAT).",
           "key": 784831051,
           "id": "5:9",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Clear and measurable success criteria for the release have been agreed upon and documented. ",
+          "descriptor": "Clear and measurable success criteria for the release have been agreed upon and documented.",
           "key": -206099579,
           "id": "5:10",
           "options": "yesNoInProgress"
@@ -706,28 +706,28 @@
         },
         {
           "score": 3,
-          "descriptor": "There is fluid collaboration between the team and the business. ",
+          "descriptor": "There is fluid collaboration between the team and the business.",
           "key": -666816785,
           "id": "6:13",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "The business has supplied one or more people who are experts in the problem domain. ",
+          "descriptor": "The business has supplied one or more people who are experts in the problem domain.",
           "key": 1260871794,
           "id": "6:14",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "The engineering and business partnership is flexible to adapt to emergent requirements and needs. ",
+          "descriptor": "The engineering and business partnership is flexible to adapt to emergent requirements and needs.",
           "key": -1540632327,
           "id": "6:15",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "Timely specification documents are created and revised so that external stakeholders are informed. ",
+          "descriptor": "Timely specification documents are created and revised so that external stakeholders are informed.",
           "key": 2106196017,
           "id": "6:16",
           "options": "yesNoInProgress"
@@ -752,28 +752,28 @@
       "entries": [
         {
           "score": -1,
-          "descriptor": "Development work is driven by large requirements documents. ",
+          "descriptor": "Development work is driven by large requirements documents.",
           "key": 1090026646,
           "id": "7:0",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Development work is planned out 6 months in advance or longer. ",
+          "descriptor": "Development work isplanned out 6 months in advance or longer.",
           "key": -1514344438,
           "id": "7:1",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Development work is split along process lines or functional areas, e.g., design, code, test, integrate, architect, UX etc. ",
+          "descriptor": "Development work issplit along process lines orfunctional areas, e.g., design, code, test, integrate, architect, UX etc.",
           "key": -1041573921,
           "id": "7:2",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Development work is split along architectural lines, e.g., UI, database, data access layer, etc. ",
+          "descriptor": "Development work issplit along architectural lines, e.g., UI, database, data access layer, etc.",
           "key": 588015327,
           "id": "7:3",
           "options": "yesNoInProgress"
@@ -787,14 +787,14 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories can all be easily found in one place.",
+          "descriptor": "User stories can all be easily foundin one place.",
           "key": -130995449,
           "id": "7:5",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories are ordered by priority in a backlog.",
+          "descriptor": "User stories areordered by priority in a backlog.",
           "key": -1986111307,
           "id": "7:6",
           "options": "yesNoInProgress"
@@ -808,14 +808,14 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST)",
+          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST)",
           "key": 1862383731,
           "id": "7:8",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories contain acceptance criteria. (T in INVEST)",
+          "descriptor": "User stories contain acceptance criteria. (T in INVEST)",
           "key": 678092195,
           "id": "7:9",
           "options": "yesNoInProgress"
@@ -829,7 +829,7 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories have a narrative around business value. (V in INVEST)",
+          "descriptor": "User stories have a narrative around business value. (V in INVEST)",
           "key": 608703510,
           "id": "7:11",
           "options": "yesNoInProgress"
@@ -843,14 +843,14 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories follow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>. ",
+          "descriptor": "User storiesfollow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>.",
           "key": 1712016642,
           "id": "7:13",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User story development is driven by collaborative lightweight artifacts (e.g. lo-fi prototypes, story mapping). ",
+          "descriptor": "User story development is driven by collaborative lightweight artifacts (e.g. lo-fi prototypes, story mapping).",
           "key": -1524955088,
           "id": "7:14",
           "options": "yesNoInProgress"
@@ -864,7 +864,7 @@
         },
         {
           "score": 2,
-          "descriptor": "User story acceptance criteria follow a BDD approach an example of which can be found in the Gherkin syntax (https://cucumber.io/docs/gherkin/). ",
+          "descriptor": "User story acceptance criteriafollow a BDD approach an example of which can be found in the Gherkin syntax(https://cucumber.io/docs/gherkin/).",
           "key": -129606981,
           "id": "7:16",
           "options": "yesNoInProgress"
@@ -885,7 +885,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Other stakeholders and users are brought into the discussion whenever needed to develop user stories. ",
+          "descriptor": "Other stakeholders and users are brought into the discussion whenever needed to develop user stories.",
           "key": 2126652055,
           "id": "7:19",
           "options": "yesNoInProgress"
@@ -991,7 +991,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There is some level of team self-organized and self-motivated learning.  ",
+          "descriptor": "There is some level of team self-organized and self-motivated learning.",
           "key": 1788137585,
           "id": "9:3",
           "options": "yesNoInProgress"
@@ -1142,7 +1142,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Team makes their own commitments for the sprint based on velocity and capacity planning. ",
+          "descriptor": "Team makes their own commitments for the sprint based on velocity and capacity planning.",
           "key": -1721168934,
           "id": "10:8",
           "options": "yesNoInProgress"
@@ -1398,7 +1398,7 @@
           "0",
           "44",
           "444",
-          "Demonstration always takes place.",
+          "Demonstrationalways takes place.",
           "Feedback is captured.",
           "The Product Owner is present.",
           "Team knows the stories to demonstrate, and they are complete.",
@@ -1406,16 +1406,16 @@
           "1",
           "~",
           "444",
-          "Demonstration is at an appropriate level for the stakeholders, focused on how product is used instead of how it is implemented",
+          "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented",
           "Stories are accepted and approved by Product Owner in order for stories to make it to the demo.",
           "Demonstration is planned in advance and demoed features clearly work.",
           "Demonstration uses realistic data.",
           "Demonstration only shows new features, unless old features are necessary to provide context.",
           "2",
-          "Demonstrations are well scripted with a value-based story line.",
+          "Demonstrationsare well scripted with a value-based story line.",
           "Majority of stakeholders get to see the demo. For example, this may be achieved by multiple demos or recording.",
           "3",
-          "Product Owner articulates on how sprint results align to business goals & objectives.",
+          "Product Ownerarticulates on how sprint results align to business goals & objectives.",
           "Product Owner finds ways of maximizing business participation.",
           ""
         ]
@@ -1431,10 +1431,10 @@
           "0",
           "Retrospectives are held every sprint.",
           "1",
-          "Retrospectives generate a list of pluses and deltas for improvement action. ",
+          "Retrospectives generate a list of pluses and deltas for improvement action.",
           "There is a list of who is assigned to each action item and be accountable for the task.",
           "Problems identified in the retrospective have resulted in a root cause analysis or have been followed by change to the team's set of working agreements.",
-          "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress. ",
+          "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress.",
           "Retrospective action items are followed up in subsequent retrospectives.",
           "Retrospectives identify learning & development opportunities.",
           "2",
@@ -1453,15 +1453,15 @@
           "The team does not understand or value unit testing.",
           "0",
           "Developers write unit tests during a sprint for some stories.",
-          "There is an awareness of mocks, stubs and test doubles and some use of them in tests.",
+          "There is an awareness ofmocks, stubs and test doublesand some use of them in tests.",
           "1",
           "The unit tests always isolate the functionality under test, hence a failing test pinpoints a problem.",
           "The unit tests are part of the CI build.",
           "2",
-          "Tests are independent, can be run in any order, and don't share test data.",
-          "The team values fast and durable tests. ",
-          "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI). ",
-          "The team has a standard mocking framework that they use for all mocks, stubs, doubles. ",
+          "Tests are independent, can be run in anyorder, and don't share test data.",
+          "The team values fast and durable tests.",
+          "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI).",
+          "The team has a standard mocking framework that they use for all mocks, stubs, doubles.",
           "The entire team recognizes the value of refactoring of unit tests.",
           "3",
           "TBD",
@@ -1542,7 +1542,7 @@
           "Management encourages pair programming.",
           "3",
           "Promiscuous pairing.",
-          "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday. ",
+          "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday.",
           "Team manages risk and uncertainty for the team by making coding decisions in pairs leading to a higher degree of confidence when problems or solutions are not 100% defined.",
           "Pair programming is a promoted as part of a desirable environment for potential recruits.",
           ""
@@ -1592,14 +1592,14 @@
           "Definition of Done is mostly followed.",
           "1",
           "Definition of Done was created by the team",
-          "Definition of Done documents the breadth of activities necessary for code to be ready for production. ",
+          "Definition of Done documents the breadth of activities necessary for code to be ready for production.",
           "Everyone on the team knows the Definition of Done, follows it consistently and can explain what Done means for their team.",
           "There may be a Release level Definition of Done that captures activities that cannot be achieved in a user story definition of done.",
           "Stories that do not meet the Definition of Done are not accepted and are not demonstrated to the customer.",
           "2",
           "~",
-          "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed. ",
-          "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories. ",
+          "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed.",
+          "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories.",
           "Changes to process, infrastructure, teams or organizational structure are made as needed to enable all work to meet the Definition of Done at the story level so any Release level Definition of Done becomes moot.",
           "3",
           "Continuous deployment enabled.",
@@ -1623,7 +1623,7 @@
           "~",
           "Build is automatically triggered.",
           "Broken builds get fixed within 24 hours.",
-          "There is reporting of code quality, build statistics, and testing results. ",
+          "There is reporting of code quality, build statistics, and testing results.",
           "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
           "The commit build provides feedback on common build problems in under 10 minutes.",
           "Each team member’s code is pulled regularly (at least once a day) triggering the CI system.",
@@ -1656,7 +1656,7 @@
           "~",
           "Build is automatically triggered.",
           "Broken builds get fixed within 24 hours.",
-          "There is reporting of code quality, build statistics, and testing results. ",
+          "There is reporting of code quality, build statistics, and testing results.",
           "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
           "The commit build provides feedback on common build problems in under 10 minutes.",
           "Each team member pushes code regularly (at least once a day) triggering the CI system.",
@@ -1677,18 +1677,18 @@
         "raw": "Continuous Delivery - Legacy Strive to make the output of every sprint potentially releasable",
         "number": -1,
         "entries": [
-          "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
+          "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "Deployment is owned by a specific member of the team.",
           "0",
           "no",
-          "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
+          "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "Software is built in every stage of the deployment pipeline.",
           "1",
-          "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
+          "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "State of the deployment is the responsibility of the team.",
-          "Binaries are built once, and deployed to multiple environments, as necessary. ",
-          "Testing and release environment mirror production. ",
+          "Binaries are built once, and deployed to multiple environments, as necessary.",
+          "Testing and release environment mirror production.",
           "2",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
           "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
@@ -1706,19 +1706,19 @@
         "raw": "Continuous Delivery - Microservices Strive to make the output of every sprint potentially releasable",
         "number": -1,
         "entries": [
-          "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
+          "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "Deployment is owned by a specific member of the team.",
           "0",
           "no",
           "no",
-          "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
+          "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "Software is built in every stage of the deployment pipeline.",
           "1",
-          "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
+          "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "State of the deployment is the responsibility of the team.",
-          "Binaries are built once, and deployed to multiple environments, as necessary. ",
-          "Testing and release environment mirror production. ",
+          "Binaries are built once, and deployed to multiple environments, as necessary.",
+          "Testing and release environment mirror production.",
           "2",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
           "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
@@ -1791,7 +1791,7 @@
           "Production or release branch fixes are always applied consistently to trunk.",
           "3",
           "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "Gated check-in's are enforced; all steps passing with improving metrics. ",
+          "Gated check-in's are enforced; all steps passing with improving metrics.",
           "Branches are used effectively, and merges are are easily supported.",
           ""
         ]
@@ -1822,7 +1822,7 @@
           "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
           "3",
           "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "Gated check-in's are enforced; all steps passing with improving metrics. ",
+          "Gated check-in's are enforced; all steps passing with improving metrics.",
           "Branches are used effectively, and merges are are easily supported.",
           ""
         ]
@@ -1845,7 +1845,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Demonstration always takes place.",
+          "descriptor": "Demonstrationalways takes place.",
           "key": -241690030,
           "id": "13:1",
           "options": "yesNoInProgress"
@@ -1880,7 +1880,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Demonstration is at an appropriate level for the stakeholders, focused on how product is used instead of how it is implemented",
+          "descriptor": "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented",
           "key": -282210512,
           "id": "13:6",
           "options": "yesNoInProgress"
@@ -1915,7 +1915,7 @@
         },
         {
           "score": 2,
-          "descriptor": "Demonstrations are well scripted with a value-based story line.",
+          "descriptor": "Demonstrationsare well scripted with a value-based story line.",
           "key": -1499194928,
           "id": "13:11",
           "options": "yesNoInProgress"
@@ -1929,7 +1929,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Product Owner articulates on how sprint results align to business goals & objectives.",
+          "descriptor": "Product Ownerarticulates on how sprint results align to business goals & objectives.",
           "key": 1932243443,
           "id": "13:13",
           "options": "yesNoInProgress"
@@ -1974,7 +1974,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Retrospectives generate a list of pluses and deltas for improvement action. ",
+          "descriptor": "Retrospectives generate a list of pluses and deltas for improvement action.",
           "key": 516506577,
           "id": "14:3",
           "options": "yesNoInProgress"
@@ -1995,7 +1995,7 @@
         },
         {
           "score": 1,
-          "descriptor": "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress. ",
+          "descriptor": "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress.",
           "key": -105187097,
           "id": "14:6",
           "options": "yesNoInProgress"
@@ -2054,7 +2054,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There is an awareness of mocks, stubs and test doubles and some use of them in tests.",
+          "descriptor": "There is an awareness ofmocks, stubs and test doublesand some use of them in tests.",
           "key": 615372685,
           "id": "15:2",
           "options": "yesNoInProgress"
@@ -2075,28 +2075,28 @@
         },
         {
           "score": 2,
-          "descriptor": "Tests are independent, can be run in any order, and don't share test data.",
+          "descriptor": "Tests are independent, can be run in anyorder, and don't share test data.",
           "key": 2098609526,
           "id": "15:5",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "The team values fast and durable tests. ",
+          "descriptor": "The team values fast and durable tests.",
           "key": -2109287649,
           "id": "15:6",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI). ",
+          "descriptor": "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI).",
           "key": -56892298,
           "id": "15:7",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "The team has a standard mocking framework that they use for all mocks, stubs, doubles. ",
+          "descriptor": "The team has a standard mocking framework that they use for all mocks, stubs, doubles.",
           "key": 1566932386,
           "id": "15:8",
           "options": "yesNoInProgress"
@@ -2392,7 +2392,7 @@
         },
         {
           "score": 3,
-          "descriptor": "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday. ",
+          "descriptor": "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday.",
           "key": -288302154,
           "id": "18:13",
           "options": "yesNoInProgress"
@@ -2587,7 +2587,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Definition of Done documents the breadth of activities necessary for code to be ready for production. ",
+          "descriptor": "Definition of Done documents the breadth of activities necessary for code to be ready for production.",
           "key": -248014839,
           "id": "20:6",
           "options": "yesNoInProgress"
@@ -2615,14 +2615,14 @@
         },
         {
           "score": 2,
-          "descriptor": "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed. ",
+          "descriptor": "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed.",
           "key": -1696476223,
           "id": "20:10",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories. ",
+          "descriptor": "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories.",
           "key": -2120135462,
           "id": "20:11",
           "options": "yesNoInProgress"
@@ -2709,7 +2709,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There is reporting of code quality, build statistics, and testing results. ",
+          "descriptor": "There is reporting of code quality, build statistics, and testing results.",
           "key": -486569584,
           "id": "21:8",
           "options": "yesNoInProgress"
@@ -2852,7 +2852,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There is reporting of code quality, build statistics, and testing results. ",
+          "descriptor": "There is reporting of code quality, build statistics, and testing results.",
           "key": -195253257,
           "id": "22:8",
           "options": "yesNoInProgress"
@@ -2932,7 +2932,7 @@
       "entries": [
         {
           "score": -1,
-          "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
+          "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "key": 643155718,
           "id": "23:0",
           "options": "yesNoInProgress"
@@ -2946,7 +2946,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
+          "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "key": 127378123,
           "id": "23:2",
           "options": "yesNoInProgress"
@@ -2967,7 +2967,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
+          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "key": 2091276122,
           "id": "23:5",
           "options": "yesNoInProgress"
@@ -2981,14 +2981,14 @@
         },
         {
           "score": 1,
-          "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary. ",
+          "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary.",
           "key": -20034762,
           "id": "23:7",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Testing and release environment mirror production. ",
+          "descriptor": "Testing and release environment mirror production.",
           "key": 1661294038,
           "id": "23:8",
           "options": "yesNoInProgress"
@@ -3047,7 +3047,7 @@
       "entries": [
         {
           "score": -1,
-          "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static. ",
+          "descriptor": "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "key": -445191959,
           "id": "24:0",
           "options": "yesNoInProgress"
@@ -3061,7 +3061,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule. ",
+          "descriptor": "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "key": 1208167982,
           "id": "24:2",
           "options": "yesNoInProgress"
@@ -3082,7 +3082,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle. ",
+          "descriptor": "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "key": 512988861,
           "id": "24:5",
           "options": "yesNoInProgress"
@@ -3096,14 +3096,14 @@
         },
         {
           "score": 1,
-          "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary. ",
+          "descriptor": "Binaries are built once, and deployed to multiple environments, as necessary.",
           "key": -78356109,
           "id": "24:7",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Testing and release environment mirror production. ",
+          "descriptor": "Testing and release environment mirror production.",
           "key": 1102375353,
           "id": "24:8",
           "options": "yesNoInProgress"
@@ -3424,7 +3424,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics. ",
+          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
           "key": -1604029502,
           "id": "26:16",
           "options": "yesNoInProgress"
@@ -3553,7 +3553,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics. ",
+          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
           "key": 2110374605,
           "id": "27:15",
           "options": "yesNoInProgress"
@@ -3573,6 +3573,12 @@
   ],
   "sectionScoreDefault": 0,
   "answerKeys": {
-    "yesNoInProgress": { "0": "No", "1": "In Progress", "2": "Yes" }
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
   }
 }

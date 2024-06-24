@@ -45,6 +45,17 @@ function AssessmentList({ assessment }) {
           ))}
         </ol>
       </div>
+
+      <div>
+        <h2>Create Instrument For Assessing Responses</h2>
+        <ol>
+          {list.map((l) => (
+            <li>
+              <Link to={`interview/${l.file}`}> {l.name}</Link>
+            </li>
+          ))}
+        </ol>
+      </div>
     </div>
   );
 }
