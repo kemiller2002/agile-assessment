@@ -82,7 +82,7 @@ function App() {
         </Route>
 
         <Route
-          path="interview"
+          path="interview/:name"
           element={<InterviewAssessmentAdministrator http={http} />}
         >
           <Route

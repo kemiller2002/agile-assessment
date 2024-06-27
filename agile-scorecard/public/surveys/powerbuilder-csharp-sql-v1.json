@@ -1,0 +1,68 @@
+{
+  "name": "Powerbuilder and .NET",
+
+  "items": [
+    {
+      "section": "PowerBuilder",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Empowers the team to maximize productivity and efficiency within the Scrum framework.",
+          "key": -1911235423,
+          "id": "0:1",
+          "options": "text"
+        }
+      ],
+      "sectionId": "0"
+    },
+    {
+      "section": "C#",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Facilitates the team's commitment to achieving sprint objectives.",
+          "key": -1147900519,
+          "id": "1:1",
+          "options": "text"
+        }
+      ],
+      "sectionId": "1"
+    },
+    {
+      "section": "SQL",
+      "descriptor": "",
+      "number": -1,
+      "entries": [
+        {
+          "score": 0,
+          "descriptor": "Enables seamless workflow and productivity.",
+          "key": 1176323371,
+          "id": "2:1",
+          "options": "text"
+        }
+      ],
+      "sectionId": "2"
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "text": {
+      "meta-name": "Text based input",
+      "meta-description": "Text based input"
+    },
+
+    "likert5": {
+      "meta-name": "Likert with 5 distractors",
+      "meta-description": "Likert Scale with 5 distractors.",
+      "0": "Never",
+      "1": "Rarely",
+      "2": "Sometimes",
+      "3": "Often",
+      "4": "Always"
+    }
+  }
+}
