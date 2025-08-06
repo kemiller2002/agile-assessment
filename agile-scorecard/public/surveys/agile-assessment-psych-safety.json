@@ -1,0 +1,97 @@
+{
+  "name": "Psychological Safety",
+  "scores": { "show": true },
+  "items": [
+    {
+      "section": "Psychological Safety",
+      "descriptor": "Assess how safe and supported team members feel when expressing themselves",
+      "raw": "Psychological Safety Assess how safe and supported team members feel when expressing themselves",
+      "number": -1,
+      "entries": [
+        {
+          "score": -1,
+          "descriptor": "Team members fear retribution for speaking up or admitting mistakes.",
+          "key": 2068688112,
+          "id": "100:0",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": -1,
+          "descriptor": "Team culture discourages vulnerability, and failures are rarely discussed.",
+          "key": 3334275379,
+          "id": "100:1",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Some team members feel comfortable sharing concerns, but others remain silent.",
+          "key": 3431253908,
+          "id": "100:2",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Occasional open conversations happen, but only within small subgroups.",
+          "key": 4242300140,
+          "id": "100:3",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Team generally feels safe raising blockers, asking for help, or sharing new ideas.",
+          "key": 3783336065,
+          "id": "100:4",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Feedback is encouraged and usually leads to constructive outcomes.",
+          "key": 2842289036,
+          "id": "100:5",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Mistakes are discussed in retrospectives as learning opportunities, not blame sessions.",
+          "key": 914276251,
+          "id": "100:6",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Team openly surfaces risks, challenges, and divergent perspectives during all ceremonies.",
+          "key": 1189144981,
+          "id": "100:7",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Leaders model vulnerability, and all team members are empowered to give and receive feedback.",
+          "key": 4086147419,
+          "id": "100:8",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Psychological safety is regularly assessed and discussed as part of team health.",
+          "key": 1932139391,
+          "id": "100:9",
+          "options": "yesNoInProgress"
+        }
+      ],
+      "key": 20719522,
+      "position": 100,
+      "id": 100
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
+  }
+}

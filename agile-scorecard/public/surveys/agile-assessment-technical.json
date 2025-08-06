@@ -1,0 +1,97 @@
+{
+  "name": "Technical Agility Maturity",
+  "scores": { "show": true },
+  "items": [
+    {
+      "section": "Technical Agility Maturity",
+      "descriptor": "Evaluate how engineering practices support speed, quality, and sustainable delivery",
+      "raw": "Technical Agility Maturity Evaluate how engineering practices support speed, quality, and sustainable delivery",
+      "number": -1,
+      "entries": [
+        {
+          "score": -1,
+          "descriptor": "Engineering practices are ad hoc with minimal emphasis on testing, automation, or code quality.",
+          "key": 2385668321,
+          "id": "102:0",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": -1,
+          "descriptor": "Technical debt is unmanaged and regularly impedes progress.",
+          "key": 3934805744,
+          "id": "102:1",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Basic CI/CD pipelines are in place, but not consistently used or trusted.",
+          "key": 726930797,
+          "id": "102:2",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Teams have begun writing unit tests but coverage and reliability are low.",
+          "key": 2355897785,
+          "id": "102:3",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Code is peer-reviewed, version-controlled, and integrated daily through automated builds.",
+          "key": 40177743,
+          "id": "102:4",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "CI/CD pipelines enforce gating criteria and provide fast feedback on integration issues.",
+          "key": 1956615812,
+          "id": "102:5",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Teams track and reduce technical debt through prioritized backlog items.",
+          "key": 240959640,
+          "id": "102:6",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Infrastructure as Code and automated testing enable frequent, reliable deployments.",
+          "key": 253616854,
+          "id": "102:7",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Engineering teams use telemetry, monitoring, and alerts to identify and resolve issues rapidly.",
+          "key": 1658761655,
+          "id": "102:8",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Technical practices are continuously improved through retrospectives, learning sessions, and experimentation.",
+          "key": 2338122645,
+          "id": "102:9",
+          "options": "yesNoInProgress"
+        }
+      ],
+      "key": 3878656962,
+      "position": 102,
+      "id": 102
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
+  }
+}

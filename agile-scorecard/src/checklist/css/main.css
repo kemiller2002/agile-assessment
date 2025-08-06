@@ -46,8 +46,7 @@ input[id="enactFlyout"]:checked ~ [data-window] {
 [data-pad-left], 
 [data-pad-right]{
     flex-grow: 1;
-    background-color: aqua;
-   
+  
 }
 
 [data-360-scatter] {
@@ -237,6 +236,7 @@ div.question-distributer-copy-icon {
     [data-menu]{
         display: none !important;
     }
+
 
     @page last_page {
         }

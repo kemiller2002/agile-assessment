@@ -1,0 +1,81 @@
+{
+  "section": "Agile Leadership & Management",
+  "descriptor": "Assess leadership alignment with agile principles and their role in empowering teams",
+  "raw": "Agile Leadership & Management Assess leadership alignment with agile principles and their role in empowering teams",
+  "number": -1,
+  "entries": [
+    {
+      "score": -1,
+      "descriptor": "Leaders prioritize command-and-control practices and discourage autonomy.",
+      "key": 848150494,
+      "id": "101:0",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 0,
+      "descriptor": "Leaders are not actively involved in agile practices and rarely attend team ceremonies.",
+      "key": 3887945629,
+      "id": "101:1",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 1,
+      "descriptor": "Leaders verbally support agile but continue to reward traditional metrics like utilization.",
+      "key": 50577107,
+      "id": "101:2",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 1,
+      "descriptor": "Managers make most key decisions, with limited team input.",
+      "key": 1715187454,
+      "id": "101:3",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 2,
+      "descriptor": "Leaders empower teams to self-organize and make decisions within their domain.",
+      "key": 3586927825,
+      "id": "101:4",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 2,
+      "descriptor": "Leadership encourages experimentation and tolerates failure as part of learning.",
+      "key": 668237925,
+      "id": "101:5",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 2,
+      "descriptor": "Agile values are reflected in performance reviews, goals, and incentives.",
+      "key": 4190603313,
+      "id": "101:6",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 3,
+      "descriptor": "Leaders act as servant leaders, removing obstacles and enabling team growth.",
+      "key": 1099199179,
+      "id": "101:7",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 3,
+      "descriptor": "Leaders actively coach others on agile principles and foster cross-team collaboration.",
+      "key": 127748908,
+      "id": "101:8",
+      "options": "yesNoInProgress"
+    },
+    {
+      "score": 3,
+      "descriptor": "Leadership agility is continuously developed through feedback, reflection, and learning programs.",
+      "key": 3054895492,
+      "id": "101:9",
+      "options": "yesNoInProgress"
+    }
+  ],
+  "key": 689879758,
+  "position": 101,
+  "id": 101
+}

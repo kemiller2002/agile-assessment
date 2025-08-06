@@ -17,6 +17,9 @@ import { QuestionDistributer } from "./checklist/question-distributer";
 
 import { InterviewAssessmentAdministrator } from "./checklist/interview-assessment-administrator";
 
+import { InitializeInstance } from "./checklist/initialize-instance";
+import { SurveyDashboard } from "./SurveyDashboard";
+
 function Http() {
   const axiosInstance = axios.create();
 
@@ -37,10 +40,10 @@ function App() {
         <Route
           index
           element={
-            <Listing
+            <SurveyDashboard
               http={http}
               instrumentListUrl={instrumentListUrl}
-            ></Listing>
+            ></SurveyDashboard>
           }
         />
         <Route
@@ -108,6 +111,11 @@ function App() {
           <Route path="compression" element={<Compression http={http} />} />
         </Route>
       </Route>
+
+      <Route
+        path="initialize-instance/:name/:data"
+        element={<InitializeInstance http={http} />}
+      ></Route>
     </Routes>
   );
 }

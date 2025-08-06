@@ -15,6 +15,8 @@ import { faCopy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { functionReducer } from "../utilities/reducer";
 
+import { Link } from "react-router-dom";
+
 export function InterviewAssessmentAdministrator({ http }) {
   const [instrument, updateInstrument] = useState({ items: [] });
   const [participantUrls, updateParticipantUrls] = useState([]);
@@ -37,7 +39,7 @@ export function InterviewAssessmentAdministrator({ http }) {
   const urlData = getData();
   const getValue = (key) => urlData[key];
 
-  const instanceId = createInstanceId(10);
+  const instanceId = getValue("instanceId") || createInstanceId(10);
 
   const userName = getValue("userName");
   const token = getValue("token");
@@ -64,67 +66,82 @@ export function InterviewAssessmentAdministrator({ http }) {
     updateState(update);
   }
 
+  function updateInstanceId(e) {
+    const value = e.target.value;
+    const update = updateDataObject(urlData, "instanceId", value);
+    updateState(update);
+  }
+
   return (
     <div>
       <div>
         {makeHeader(survey, false, updateState, urlData, getValue, true)}
       </div>
       <div>
-        <div>
-          <label>
-            Assessment Instance
-            <input
-              type="text"
-              value={instanceId}
-              onChange={() => console.log("update")}
-            ></input>
-          </label>
+        <div data-header="true">
+          <input
+            data-assessment-display-administrator
+            type="text"
+            value={instanceId}
+            onChange={updateInstanceId}
+          ></input>
         </div>
-        <div>
-          <label>
-            Group Identifier
-            <input
-              type="text"
-              placeholder="Group Name"
-              value={groupId}
-              onChange={updateGroupId}
-            ></input>
-          </label>
+        <div data-header="true">
+          <input
+            data-assessment-display-administrator
+            type="text"
+            placeholder="Group Name"
+            value={groupId}
+            onChange={updateGroupId}
+          ></input>
         </div>
 
-        <div>
-          <label>
-            Save Results URL
+        <div data-header="true">
+          <h2 className="align-center">Results Authentication</h2>
+
+          <div data-header="true">
             <input
+              data-assessment-display-administrator
               type="text"
               value={resultsUrl}
               onChange={updateResultsUrl}
+              placeholder="Results URL"
             ></input>
-          </label>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Username"
+            value={userName}
+            data-assessment-display-administrator
+          ></input>
+          <input
+            type="text"
+            placeholder="Token"
+            value={token}
+            data-assessment-display-administrator
+          ></input>
         </div>
 
-        <div>
-          <h2>Results Authentication</h2>
-          <label>
-            <input type="text" placeholder="username" value={userName}></input>
-          </label>
-          <label>
-            <input type="text" placeholder="token" value={token}></input>
-          </label>
+        <div data-header="true">
+          <h2 className="align-center">Results Encryption</h2>{" "}
+          <input
+            placeholder="Private Results Passphrase"
+            data-assessment-display-administrator
+            type="text"
+            value={privatePassphrase}
+            onChange={updatePrivatePassphrase}
+          ></input>
         </div>
 
-        <div>
-          <label>
-            Private Results Passphrase
-            <input
-              type="text"
-              value={privatePassphrase}
-              onChange={updatePrivatePassphrase}
-            ></input>
-          </label>
+        <div data-complete-assessment className="pad-top">
+          <Link
+            to={`/initialize-instance/${name}/${parameters.data}`}
+            data-prepare-to-send-link="true"
+          >
+            Create Assessment Instance
+          </Link>
         </div>
-
-        <button>Create Group Instance</button>
       </div>
     </div>
   );

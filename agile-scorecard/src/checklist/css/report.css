@@ -1,234 +1,228 @@
 body {
-    padding: .05em;
+  padding: 0.05em;
 }
 
 section[data-section-wrapper] {
-    padding: 1em;
+  padding: 1em;
 }
 
 [data-name="name"] {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
-[data-name="name"]>H3 {
-    white-space: nowrap
+[data-name="name"] > H3 {
+  white-space: nowrap;
 }
 
 div[data-entry-value] {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: .25em;
-    margin-left: .5em;
-    margin-top: .5em;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.25em;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
 }
 
 [data-entry] {
-    padding: .2em;
-    padding-top: .5em;
-    padding-left: .5em
+  padding: 0.2em;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
 }
 
 [data-entry-description] {
-    font-weight: 600;
-    display: flex;
+  font-weight: 600;
+  display: flex;
 }
 
 [data-section-wrapper] {
-    border: thin solid black;
-    margin: 1em;
+  border: thin solid black;
+  margin: 1em;
 }
 
 [data-name="section"] {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 [data-section-name] {
-    flex-grow: 2;
+  flex-grow: 2;
 }
-
-
 
 label {
-    flex-direction: row-reverse;
-    display: flex;
-    vertical-align: bottom;
-    padding: .25em;
-
+  flex-direction: row-reverse;
+  display: flex;
+  vertical-align: bottom;
+  padding: 0.25em;
 }
 
-input:checked~span {
-    font-weight: 600;
-    color: black;
+input:checked ~ span {
+  font-weight: 600;
+  color: black;
 }
 
-input~span {
-    margin: .2em;
-    cursor: pointer;
+input ~ span {
+  margin: 0.2em;
+  cursor: pointer;
 }
 
-input[type=radio] {
-    display: none;
+input[type="radio"] {
+  display: none;
 }
 
 [data-value="-1"] {
-    background-color: #dd8888;
+  background-color: #dd8888;
 }
 
 [data-value="1"] {
-    background-color: #e69b00;
+  background-color: #e69b00;
 }
 
 [data-value="2"] {
-    background-color: #e5de00;
+  background-color: #e5de00;
 }
 
 [data-value="3"] {
-    background-color: #96D294;
+  background-color: #96d294;
 }
 
 div[data-header] {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 [data-survey-title] {
-    text-align: center
+  text-align: center;
 }
 
 [data-actions]::before {
-    content: 'v';
+  content: "v";
 }
 
 [data-input-value] {
-    background-color: #6693F5;
-    color: white
+  background-color: #6693f5;
+  color: white;
 }
 
 [data-entry-value]:first-child {
-    border-radius: 50px 0px 0px 20px;
-    color: yellow;
+  border-radius: 50px 0px 0px 20px;
+  color: yellow;
 }
 
-
 [data-total-score] {
-    position: fixed;
-    display: float;
-    bottom: 20px;
-    left: calc(100% - 220px);
-    background-color: white;
-    border: thin solid darkgray;
-    padding: .5em .25em .5em .25em;
-    border-radius: 20px;
-    box-shadow: 7px 5px 5px #555555;
+  position: fixed;
+  display: float;
+  bottom: 55px;
+  left: calc(100% - 220px);
+  background-color: white;
+  border: thin solid darkgray;
+  padding: 0.5em 0.25em 0.5em 0.25em;
+  border-radius: 20px;
+  box-shadow: 7px 5px 5px #555555;
 }
 
 [data-team-name],
-[data-assessment-date]{
-    padding: .8em;
-    margin-left: 5em;
-    margin-right: 5em;
-    text-align: center;
-    font-size: 18pt;
-    font-weight: 600;
-    color: #444444;
-    border-radius: 10px;
-    border: thin gray solid
+[data-assessment-date] {
+  padding: 0.8em;
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
+  font-size: 18pt;
+  font-weight: 600;
+  color: #444444;
+  border-radius: 10px;
+  border: thin gray solid;
 }
 
 [data-menu] {
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 155px);
-    font-size: 17pt;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    white-space: nowrap;
-    width: 150px;
+  position: absolute;
+  top: 5px;
+  left: calc(100% - 155px);
+  font-size: 17pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  white-space: nowrap;
+  width: 150px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
 @keyframes show {
-    from {
-        opacity: 0%;
-        display: none;
-    }
+  from {
+    opacity: 0%;
+    display: none;
+  }
 
-    to {
-        opacity: 100%;
-        display: block;
-    }
+  to {
+    opacity: 100%;
+    display: block;
+  }
 }
 
 @keyframes show-reverse {
-    from {
-        opacity: 100%;
-        display: none;
-    }
+  from {
+    opacity: 100%;
+    display: none;
+  }
 
-    to {
-        opacity: 0%;
-        display: block;
-    }
+  to {
+    opacity: 0%;
+    display: block;
+  }
 }
 
 @keyframes animate {
-    0% {
-        width: 0px;
-        height: 0px;
-    }
+  0% {
+    width: 0px;
+    height: 0px;
+  }
 
-    30% {
-        width: 50px;
-        height: 0px;
-    }
+  30% {
+    width: 50px;
+    height: 0px;
+  }
 
-    60% {
-        width: 50px;
-        height: 80px;
-    }
+  60% {
+    width: 50px;
+    height: 80px;
+  }
 }
 
 [data-menu-options] {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 [data-menu-options] {
-    cursor: default
+  cursor: default;
 }
 
-input:not(:checked)~[data-menu-options] {
-    animation-name: show;
-    animation-duration: 4s;
-    animation-direction: reverse;
-    display: none;
+input:not(:checked) ~ [data-menu-options] {
+  animation-name: show;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  display: none;
 }
 
-input:checked~[data-menu-options] {
-    border: thin solid gray;
-    padding: .2em;
-    animation-name: show;
-    animation-duration: 1s;
-    display: flex;
-    background-color: white;
+input:checked ~ [data-menu-options] {
+  border: thin solid gray;
+  padding: 0.2em;
+  animation-name: show;
+  animation-duration: 1s;
+  display: flex;
+  background-color: white;
 }
 
 [data-toggle-menu-checkbox] {
-    display: none;
+  display: none;
 }
 
-[data-menu-options]>button {
-    margin: .25em;
-    border-radius: 5px;
-    cursor: pointer;
+[data-menu-options] > button {
+  margin: 0.25em;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
 
 [data-menu-hamburger] {
-    cursor: pointer;
+  cursor: pointer;
 }
