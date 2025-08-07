@@ -1,0 +1,97 @@
+{
+  "name": "Scaled Agile Alignment",
+  "scores": { "show": true },
+  "items": [
+    {
+      "section": "Scaled Agile Alignment",
+      "descriptor": "Assess how effectively teams coordinate across programs and value streams",
+      "raw": "Scaled Agile Alignment Assess how effectively teams coordinate across programs and value streams",
+      "number": -1,
+      "entries": [
+        {
+          "score": -1,
+          "descriptor": "Teams operate independently with no coordination across products or releases.",
+          "key": 899074774,
+          "id": "104:0",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": -1,
+          "descriptor": "Coordination happens ad hoc or through informal conversations, often leading to misalignment.",
+          "key": 3146870600,
+          "id": "104:1",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Scrum of Scrums or similar coordination meetings occur, but participation is inconsistent.",
+          "key": 2171344662,
+          "id": "104:2",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Shared backlogs or roadmaps exist but are not updated regularly.",
+          "key": 1051781848,
+          "id": "104:3",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Programs use common planning cadences and shared delivery timelines.",
+          "key": 883912491,
+          "id": "104:4",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Dependencies between teams are mapped and regularly reviewed.",
+          "key": 1533823774,
+          "id": "104:5",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Teams understand and align around shared product vision and architectural goals.",
+          "key": 2118678263,
+          "id": "104:6",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Teams proactively resolve cross-team blockers and escalate only when necessary.",
+          "key": 1275887444,
+          "id": "104:7",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Value streams and ARTs (Agile Release Trains) are optimized for flow and minimal handoffs.",
+          "key": 753836178,
+          "id": "104:8",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Program-level metrics and customer outcomes are reviewed collectively across teams.",
+          "key": 3702593051,
+          "id": "104:9",
+          "options": "yesNoInProgress"
+        }
+      ],
+      "key": 3511992912,
+      "position": 104,
+      "id": 104
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
+  }
+}

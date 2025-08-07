@@ -1,0 +1,97 @@
+{
+  "name": "Customer-Centric Agility",
+  "scores": { "show": true },
+  "items": [
+    {
+      "section": "Customer-Centric Agility",
+      "descriptor": "Measure how effectively teams integrate customer feedback into the agile delivery process",
+      "raw": "Customer-Centric Agility Measure how effectively teams integrate customer feedback into the agile delivery process",
+      "number": -1,
+      "entries": [
+        {
+          "score": -1,
+          "descriptor": "Customer input is not actively gathered or incorporated into development decisions.",
+          "key": 485179483,
+          "id": "103:0",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": -1,
+          "descriptor": "Success is primarily measured by internal deliverables, not customer outcomes.",
+          "key": 1998781495,
+          "id": "103:1",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Some user feedback is collected, but it's infrequent or only considered post-release.",
+          "key": 326948861,
+          "id": "103:2",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Teams occasionally reference personas or customer needs during planning.",
+          "key": 1463519623,
+          "id": "103:3",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Customer feedback influences backlog prioritization and product decisions.",
+          "key": 2528345213,
+          "id": "103:4",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Product teams use techniques like user interviews, surveys, or usability testing during development.",
+          "key": 3702363063,
+          "id": "103:5",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Features are designed to validate specific user behaviors or assumptions.",
+          "key": 420355095,
+          "id": "103:6",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Customer success metrics (e.g., retention, satisfaction, task completion) drive product strategy.",
+          "key": 3946159460,
+          "id": "103:7",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Experiments and A/B tests are regularly used to optimize features based on real usage data.",
+          "key": 1641896821,
+          "id": "103:8",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Customer feedback loops are rapid, automated, and integral to the delivery process.",
+          "key": 728229515,
+          "id": "103:9",
+          "options": "yesNoInProgress"
+        }
+      ],
+      "key": 2018097597,
+      "position": 103,
+      "id": 103
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
+  }
+}

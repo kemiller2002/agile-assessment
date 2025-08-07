@@ -1,0 +1,97 @@
+{
+  "name": "UX Integration in Agile",
+  "scores": { "show": true },
+  "items": [
+    {
+      "section": "UX Integration in Agile",
+      "descriptor": "Evaluate how well user experience design is embedded into agile delivery practices",
+      "raw": "UX Integration in Agile Evaluate how well user experience design is embedded into agile delivery practices",
+      "number": -1,
+      "entries": [
+        {
+          "score": -1,
+          "descriptor": "UX work is performed entirely upfront, separate from development iterations.",
+          "key": 215634862,
+          "id": "105:0",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 0,
+          "descriptor": "UX design is delivered to engineering as static documents without collaboration.",
+          "key": 16221453,
+          "id": "105:1",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "UX is consulted occasionally during development but not embedded in the team.",
+          "key": 3873984030,
+          "id": "105:2",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 1,
+          "descriptor": "Design work is reviewed before implementation, but not continuously iterated with developers.",
+          "key": 3720959991,
+          "id": "105:3",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "UX and engineering collaborate regularly during sprints, with shared goals and refinement cycles.",
+          "key": 802244693,
+          "id": "105:4",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "Design decisions are validated with users or customers before implementation begins.",
+          "key": 1684499227,
+          "id": "105:5",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 2,
+          "descriptor": "UX designers attend team ceremonies like stand-ups and retrospectives.",
+          "key": 3859228654,
+          "id": "105:6",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Design, development, and research work in parallel with just-in-time alignment and feedback loops.",
+          "key": 177806800,
+          "id": "105:7",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "Prototypes and user feedback directly shape sprint backlog priorities.",
+          "key": 1602259327,
+          "id": "105:8",
+          "options": "yesNoInProgress"
+        },
+        {
+          "score": 3,
+          "descriptor": "UX and engineering have a shared definition of done, including accessibility and usability outcomes.",
+          "key": 2655761867,
+          "id": "105:9",
+          "options": "yesNoInProgress"
+        }
+      ],
+      "key": 3362916664,
+      "position": 105,
+      "id": 105
+    }
+  ],
+  "sectionScoreDefault": 0,
+  "answerKeys": {
+    "yesNoInProgress": {
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
+      "0": "No",
+      "1": "In Progress",
+      "2": "Yes"
+    }
+  }
+}
