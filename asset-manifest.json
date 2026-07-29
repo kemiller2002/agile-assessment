@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/agile-assessment/static/css/main.e611018d.css",
-    "main.js": "/agile-assessment/static/js/main.a2eee579.js",
-    "static/js/453.af5c2d82.chunk.js": "/agile-assessment/static/js/453.af5c2d82.chunk.js",
-    "index.html": "/agile-assessment/index.html",
-    "main.e611018d.css.map": "/agile-assessment/static/css/main.e611018d.css.map",
-    "main.a2eee579.js.map": "/agile-assessment/static/js/main.a2eee579.js.map",
-    "453.af5c2d82.chunk.js.map": "/agile-assessment/static/js/453.af5c2d82.chunk.js.map"
+    "main.css": "/static/css/main.159be0d6.css",
+    "main.js": "/static/js/main.627c670a.js",
+    "static/js/453.af5c2d82.chunk.js": "/static/js/453.af5c2d82.chunk.js",
+    "index.html": "/index.html",
+    "main.159be0d6.css.map": "/static/css/main.159be0d6.css.map",
+    "main.627c670a.js.map": "/static/js/main.627c670a.js.map",
+    "453.af5c2d82.chunk.js.map": "/static/js/453.af5c2d82.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e611018d.css",
-    "static/js/main.a2eee579.js"
+    "static/css/main.159be0d6.css",
+    "static/js/main.627c670a.js"
   ]
 }
