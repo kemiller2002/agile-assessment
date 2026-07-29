@@ -233,7 +233,8 @@ export function Instrument({ data, callback, disabled, http }) {
     const updatedSurveyObject = updateDataObject(urlData, id, value);
     const updatedSection = updateDataObject(
       updatedSurveyObject,
-      createSectionKey(sectionKey, sectionScore)
+      createSectionKey(sectionKey),
+      sectionScore
     );
 
     updateState(updatedSection);
