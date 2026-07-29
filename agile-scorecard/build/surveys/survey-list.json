@@ -1,14 +1,72 @@
 [
   {
-    "name": "Agile Assessment v1",
-    "file": "agile-assessment-v1.json"
+    "name": "Agile Foundations",
+    "assessments": [
+      {
+        "title": "Core Agile Assessment (v1)",
+        "filename": "agile-assessment-v1.json",
+        "group": "Agile Foundations"
+      },
+      {
+        "title": "Core Agile Assessment (v2)",
+        "filename": "agile-assessment-v2.json",
+        "group": "Agile Foundations"
+      },
+      {
+        "title": "Scaled Agile Alignment",
+        "filename": "agile-assessment-scaled.json",
+        "group": "Agile Foundations"
+      }
+    ]
   },
   {
-    "name": "Agile Assessment Distributed",
-    "file": "agile-assessment-distributed-v1.json"
+    "name": "Leadership & Culture",
+    "assessments": [
+      {
+        "title": "Psychological Safety",
+        "filename": "agile-assessment-psych-safety.json",
+        "group": "Leadership & Culture"
+      },
+      {
+        "title": "Agile Leadership & Management",
+        "filename": "agile-assessment-leadership.json",
+        "group": "Leadership & Culture"
+      }
+    ]
   },
   {
-    "name": "Scrum Master 360 Review v1",
-    "file": "scrum-master-360-v1.json"
+    "name": "Delivery & Technical Practices",
+    "assessments": [
+      {
+        "title": "Technical Agility Maturity",
+        "filename": "agile-assessment-technical.json",
+        "group": "Delivery & Technical Practices"
+      },
+      {
+        "title": "Customer-Centric Agility",
+        "filename": "agile-assessment-customer.json",
+        "group": "Delivery & Technical Practices"
+      },
+      {
+        "title": "UX Integration in Agile",
+        "filename": "agile-assessment-ux.json",
+        "group": "Delivery & Technical Practices"
+      },
+      {
+        "title": "Remote Agility Maturity",
+        "filename": "agile-assessment-distributed-v1.json",
+        "group": "Delivery & Technical Practices"
+      }
+    ]
+  },
+  {
+    "name": "Role-Based 360 Feedback",
+    "assessments": [
+      {
+        "title": "Scrum Master 360",
+        "filename": "scrum-master-360-v1.json",
+        "group": "Role-Based 360 Feedback"
+      }
+    ]
   }
 ]

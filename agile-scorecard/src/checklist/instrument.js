@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useReducer } from "react";
-import { useParams, useNavigate, Link, redirect } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import Menu from "./menu";
 import * as CompressionUtilities from "../utilities/compression";
 import { getInstrument } from "../utilities/surveyData";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 import { functionReducer } from "../utilities/reducer";
 import { createInstanceId } from "../utilities/identifiers";
 import { scoreFormat } from "../utilities/surveyData";
@@ -90,40 +89,54 @@ export function makeHeader(
   return (
     <div data-header>
       <h1 data-survey-title>{survey.name}</h1>
-      <input
-        type="text"
-        key="team-name"
-        placeholder="Survey Target"
-        data-team-name
-        disabled={
-          disabled || (surveyTargetDisableTarget && notAdministrationMode)
-        }
-        onChange={updateTeam}
-        value={getValue("team") || ""}
-        id="team-name"
-      ></input>
-      <input
-        type="date"
-        data-assessment-date
-        value={getValue("assessmentDate") || ""}
-        onChange={updateAssessmentDate}
-        key="assessmentDate"
-        id="assessmentDate"
-        disabled={
-          disabled || (surveyIndicateDisableDate && notAdministrationMode)
-        }
-      ></input>
-      <input
-        type="text"
-        data-assessment-display-administrator
-        data-hide-administrator={!displayAdministrator}
-        value={getValue("administrator") || ""}
-        onChange={updateAdministrator}
-        key="administrator"
-        id="administrator"
-        placeholder="Administrator Information"
-        disabled={disabled}
-      ></input>
+      <p data-survey-introduction>
+        Respond from what you have observed. Choose the closest answer; avoid
+        guessing when evidence is unavailable.
+      </p>
+      <div data-survey-context>
+        <label>
+          <span>Team or assessment target</span>
+          <input
+            type="text"
+            key="team-name"
+            placeholder="For example, Payments team"
+            data-team-name
+            disabled={
+              disabled || (surveyTargetDisableTarget && notAdministrationMode)
+            }
+            onChange={updateTeam}
+            value={getValue("team") || ""}
+            id="team-name"
+          />
+        </label>
+        <label>
+          <span>Assessment date</span>
+          <input
+            type="date"
+            data-assessment-date
+            value={getValue("assessmentDate") || ""}
+            onChange={updateAssessmentDate}
+            key="assessmentDate"
+            id="assessmentDate"
+            disabled={
+              disabled || (surveyIndicateDisableDate && notAdministrationMode)
+            }
+          />
+        </label>
+        <label data-hide-administrator={!displayAdministrator}>
+          <span>Administrator</span>
+          <input
+            type="text"
+            data-assessment-display-administrator
+            value={getValue("administrator") || ""}
+            onChange={updateAdministrator}
+            key="administrator"
+            id="administrator"
+            placeholder="Name or contact"
+            disabled={disabled}
+          />
+        </label>
+      </div>
     </div>
   );
 }
@@ -260,40 +273,60 @@ export function Instrument({ data, callback, disabled, http }) {
     populateInstanceIdValue("instanceId");
   }, []);
 
-  //HIDE TOTAL CALCULATE HERE.
-  const hideScore = !(survey.scores || {}).show;
   const assessmentId = populateInstanceIdValue("instanceId");
   const groupId = getValue("groupId");
+  const allEntries = (survey.items || []).flatMap((item) => item.entries || []);
+  const answeredCount = allEntries.filter(
+    (entry) => entry.value !== undefined && entry.value !== null && entry.value !== ""
+  ).length;
+  const totalCount = allEntries.length;
+  const completion = totalCount ? (answeredCount / totalCount) * 100 : 0;
+  const completionLabel =
+    completion > 0 && completion < 1 ? "<1" : Math.round(completion);
 
   return (
-    <div>
-      <div>
-        <label data-assessment-id-container>
-          <span data-assessment-id-container-text>Instrument Instance Id</span>
-          <input
-            type="text"
-            data-assessment-id
-            value={assessmentId}
-            key="assessmentId"
-            id="assessmentId"
-            disabled
-          ></input>
-        </label>
-      </div>
-      <div>
-        <label data-assessment-id-container>
-          <span data-assessment-id-container-text>Instrument Group Id</span>
-          <input
-            type="text"
-            data-assessment-id
-            value={groupId}
-            key="groupId"
-            id="groupId"
-            disabled
-          ></input>
-        </label>
-      </div>
+    <main data-survey-page>
       {makeHeader(survey, disabled, updateState, urlData, getValue)}
+
+      <div data-assessment-progress aria-label="Assessment progress">
+        <div>
+          <strong>{answeredCount} of {totalCount}</strong> statements answered
+        </div>
+        <span>{completionLabel}% complete</span>
+        <progress max="100" value={completion}>
+          {completion}%
+        </progress>
+      </div>
+
+      <details data-assessment-details>
+        <summary>Assessment details</summary>
+        <div>
+          <label>
+            <span>Instrument instance ID</span>
+            <input
+              type="text"
+              data-assessment-id
+              value={assessmentId}
+              key="assessmentId"
+              id="assessmentId"
+              disabled
+            />
+          </label>
+          {groupId && (
+            <label>
+              <span>Instrument group ID</span>
+              <input
+                type="text"
+                data-assessment-id
+                value={groupId}
+                key="groupId"
+                id="groupId"
+                disabled
+              />
+            </label>
+          )}
+        </div>
+      </details>
 
       <div data-survey-container>
         {(survey.items || []).map((item) =>
@@ -304,14 +337,10 @@ export function Instrument({ data, callback, disabled, http }) {
             (entries) => calculateScore(entries, sectionScoreDefault),
             updateSectionScore,
             disabled,
-            getAnswerKey,
-            hideScore
+            getAnswerKey
           )
         )}
       </div>
-      <h2 data-total-score data-hide-score-display={hideScore}>
-        Total Score: {calculateScoreData(scoreData) || 0}
-      </h2>
       <Menu
         name={name}
         data={data}
@@ -320,15 +349,21 @@ export function Instrument({ data, callback, disabled, http }) {
       ></Menu>
       <div data-complete-assessment-container>
         <div data-complete-assessment>
+          <div>
+            <strong>Ready to finish?</strong>
+            <span>
+              Review your responses before preparing the results.
+            </span>
+          </div>
           <Link
             to={`/prepare-results/${name}/${parameters.data}`}
             data-prepare-to-send-link="true"
           >
-            Send Results
+            Review responses
           </Link>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 
@@ -399,14 +434,13 @@ function createSectionKey(k) {
 }
 
 function createSection(
-  { name, section, entries, key },
+  { name, descriptor, section, entries, key },
   update,
   createSectionKey,
   calculateScore,
   updateSectionScore,
   disabled,
-  getAnswerKey,
-  hideScore
+  getAnswerKey
 ) {
   const updateSection = (entryKey, value) => {
     return update(key, entries, entryKey, value);
@@ -415,20 +449,40 @@ function createSection(
   const sortedEntriesWithValues = mapEntriesToSorted(entries);
   const score = calculateScore(sortedEntriesWithValues);
   const sectionKey = createSectionKey(key);
+  const answered = sortedEntriesWithValues.filter(
+    (entry) => entry.value !== undefined && entry.value !== null && entry.value !== ""
+  ).length;
 
   updateSectionScore(sectionKey, score);
 
   return (
-    <section data-section-wrapper key={`${section}-${name}`}>
+    <section
+      data-section-wrapper
+      aria-labelledby={`${sectionKey}-heading`}
+      key={`${section}-${name}`}
+    >
       <div data-name="name" key={`name-${name}`}>
-        <h2 data-section-name>{section}</h2>
-        <h3 key={"score-" + sectionKey} data-hide-score-display={hideScore}>
-          Score: {score}
-        </h3>
+        <div>
+          <span data-section-kicker>Assessment section</span>
+          <h2 id={`${sectionKey}-heading`} data-section-name>{section}</h2>
+          {(descriptor || name) && (
+            <p data-section-description>{descriptor || name}</p>
+          )}
+        </div>
+        <span data-section-progress>
+          {answered} of {entries.length} answered
+        </span>
       </div>
       <section key={sectionKey}>
-        {sortedEntriesWithValues.map((x) =>
-          createEntry(x, updateSection, disabled, sectionKey, getAnswerKey)
+        {sortedEntriesWithValues.map((x, index) =>
+          createEntry(
+            x,
+            updateSection,
+            disabled,
+            sectionKey,
+            getAnswerKey,
+            index
+          )
         )}
       </section>
     </section>
@@ -437,7 +491,11 @@ function createSection(
 
 function makeOptions(id, value, disabled, updateEvent, descriptor, checked) {
   return (
-    <label data-input-value={descriptor} key={`${id}-${descriptor}`}>
+    <label
+      data-input-value={descriptor}
+      data-selected={checked}
+      key={`${id}-${descriptor}`}
+    >
       <input
         type="radio"
         name={id}
@@ -446,14 +504,21 @@ function makeOptions(id, value, disabled, updateEvent, descriptor, checked) {
         onChange={updateEvent}
         checked={checked}
         disabled={disabled}
-      ></input>
+      />
       <span>{descriptor}</span>
     </label>
   );
 }
 
-function createEntry(entry, update, disabled, sectionName, getAnswerKey) {
-  const { descriptor, score, value, id } = entry;
+function createEntry(
+  entry,
+  update,
+  disabled,
+  sectionName,
+  getAnswerKey,
+  index
+) {
+  const { descriptor, value, id } = entry;
   const updateEvent = (e) => {
     const value = e.target.value;
     entry.value = value;
@@ -463,14 +528,16 @@ function createEntry(entry, update, disabled, sectionName, getAnswerKey) {
   const options = getAnswerKey(entry.options);
 
   return (
-    <div
+    <fieldset
       key={`wrapper-score-${id}:${sectionName}`}
       data-entry
-      data-value={score}
     >
-      <div key={descriptor} data-entry-description>
-        {descriptor}
-      </div>
+      <legend data-entry-description>
+        <span data-question-number aria-hidden="true">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <span>{descriptor}</span>
+      </legend>
       <div data-entry-value>
         {Reflect.ownKeys(options)
           .filter((x) => x.match(scoreFormat))
@@ -482,10 +549,10 @@ function createEntry(entry, update, disabled, sectionName, getAnswerKey) {
               disabled,
               updateEvent,
               option,
-              k == value
+              k === String(value)
             );
           })}
       </div>
-    </div>
+    </fieldset>
   );
 }
