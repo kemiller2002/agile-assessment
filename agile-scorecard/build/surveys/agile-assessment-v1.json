@@ -1,23 +1,25 @@
 {
   "name": "Agile Survey V1",
-  "scores": { "show": true },
+  "scores": {
+    "show": true
+  },
   "items": [
     {
       "section": "Team Structure",
-      "descriptor": "Build long-lived teams and bring the work to them",
-      "raw": "Team Structure Build long-lived teams and bring the work to them",
+      "descriptor": "Evaluate whether stable, cross-functional teams can own and deliver customer value with minimal handoffs.",
+      "raw": "Team Structure Evaluate whether stable, cross-functional teams can own and deliver customer value with minimal handoffs.",
       "number": -1,
       "entries": [
         {
           "score": -1,
-          "descriptor": "Team has significantly unhealthy churn.",
+          "descriptor": "The team experiences frequent involuntary or avoidable membership changes that disrupt delivery and knowledge continuity.",
           "key": 603643639,
           "id": "0:0",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Communication is ineffective, for example reliance on email or other asynchronous forms of communication.",
+          "descriptor": "The team regularly loses context or waits for decisions because communication methods do not match the urgency or complexity of the work.",
           "key": 51650458,
           "id": "0:1",
           "options": "yesNoInProgress"
@@ -31,7 +33,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Product owner is at least part time, 50% of time dedicated to team.",
+          "descriptor": "Product Owner is at least part time, 50% of time dedicated to team.",
           "key": -262049105,
           "id": "0:3",
           "options": "yesNoInProgress"
@@ -45,7 +47,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Team can deliver end to end features with business value.",
+          "descriptor": "Team can deliver end-to-end features with business value.",
           "key": -161009569,
           "id": "0:5",
           "options": "yesNoInProgress"
@@ -66,7 +68,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Product owner is dedicated to team and spends whatever time necessary for direct collaboration with team members.",
+          "descriptor": "Product Owner is dedicated to team and spends whatever time necessary for direct collaboration with team members.",
           "key": 746186312,
           "id": "0:8",
           "options": "yesNoInProgress"
@@ -92,83 +94,83 @@
     },
     {
       "section": "Team Workflow",
-      "descriptor": "Encourage collaboration through deliberate workflow design",
-      "raw": "Team Workflow Encourage collaboration through deliberate workflow design",
+      "descriptor": "Evaluate whether the team's workflow enables timely collaboration, clear ownership, and sustainable flow.",
+      "raw": "Team Workflow Evaluate whether the team's workflow enables timely collaboration, clear ownership, and sustainable flow.",
       "number": -1,
       "entries": [
         {
           "score": -1,
-          "descriptor": "Developers operate \"on an island\" and might not check in with others every day",
+          "descriptor": "Developers operate \"on an island\" and might not check in with others every day.",
           "key": -567793722,
           "id": "1:0",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Developers work from written documents and do not communicate directly with PO or other teammates",
+          "descriptor": "Engineers rely on handoff documents and rarely collaborate directly with product partners or teammates.",
           "key": 3959548,
           "id": "1:1",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Developers work in close digital proximity to each other",
+          "descriptor": "Team members have shared collaboration channels and can reach one another during agreed working hours.",
           "key": 1584517284,
           "id": "1:2",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Team has standard tools for sharing in their workflow",
+          "descriptor": "The team uses a small, agreed set of tools to share work, decisions, and status.",
           "key": 1452737540,
           "id": "1:3",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Team has digital collaboration space dedicated to the team",
+          "descriptor": "The team maintains an accessible collaboration space for current work, decisions, and working agreements.",
           "key": -1247690948,
           "id": "1:4",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Team has management support to acquire additional non-standard tools needed to be successful",
+          "descriptor": "Team has management support to acquire additional non-standard tools needed to be successful.",
           "key": -889696090,
           "id": "1:5",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "Product Owner works closely with the rest of the team",
+          "descriptor": "Product Owner works closely with the rest of the team.",
           "key": -277512583,
           "id": "1:6",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Team has flexibility to schedule face-to-face video chats as needed",
+          "descriptor": "Team has flexibility to schedule face-to-face video chats as needed.",
           "key": 1111337322,
           "id": "1:7",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Other key stakeholders are available to the team",
+          "descriptor": "Other key stakeholders are available to the team.",
           "key": 453312622,
           "id": "1:8",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Team members are empowered to get time with those they need without regard to organizational hierarchy",
+          "descriptor": "Team members are empowered to get time with those they need without regard to organizational hierarchy.",
           "key": 723578962,
           "id": "1:9",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "TBD",
+          "descriptor": "The team adapts its workflow using evidence about flow, collaboration, and communication rather than waiting for external direction.",
           "key": 1509430836,
           "id": "1:10",
           "options": "yesNoInProgress"
@@ -180,8 +182,8 @@
     },
     {
       "section": "Team Working Agreements",
-      "descriptor": "Build a strong team foundation by asking team members to agree upon and document their norms",
-      "raw": "Team Working Agreements Build a strong team foundation by asking team members to agree upon and document their norms",
+      "descriptor": "Evaluate whether the team creates, follows, and improves explicit working agreements.",
+      "raw": "Team Working Agreements Evaluate whether the team creates, follows, and improves explicit working agreements.",
       "number": -1,
       "entries": [
         {
@@ -221,7 +223,7 @@
         },
         {
           "score": 1,
-          "descriptor": "If asked, all team members would describe this common set of practices consistently .",
+          "descriptor": "If asked, all team members would describe this common set of practices consistently.",
           "key": -1592716630,
           "id": "2:5",
           "options": "yesNoInProgress"
@@ -242,7 +244,7 @@
         },
         {
           "score": 2,
-          "descriptor": "The team generally self enforces the working agreements and does not rely on a scrum master or other single authority figure.",
+          "descriptor": "The team generally self-enforces the working agreements and does not rely on a Scrum Master or other single authority figure.",
           "key": -198321221,
           "id": "2:8",
           "options": "yesNoInProgress"
@@ -261,8 +263,8 @@
     },
     {
       "section": "Cross Team Working Agreements",
-      "descriptor": "Formalize the processes teams use to manage cross team dependencies, decreasing cycle time",
-      "raw": "Cross Team Working Agreements Formalize the processes teams use to manage cross team dependencies, decreasing cycle time",
+      "descriptor": "Evaluate how teams make dependencies visible, coordinate delivery, and reduce avoidable handoffs.",
+      "raw": "Cross Team Working Agreements Evaluate how teams make dependencies visible, coordinate delivery, and reduce avoidable handoffs.",
       "number": -1,
       "entries": [
         {
@@ -274,7 +276,7 @@
         },
         {
           "score": -1,
-          "descriptor": "Ad-hoc and unplanned working agreements are in place around security scans, risk management, export control, cross team integration for full feature integration regarding release and deploy procedures.",
+          "descriptor": "Ad-hoc and unplanned working agreements are in place around security scans, risk management, export control, cross-team integration for full feature integration regarding release and deploy procedures.",
           "key": 170492182,
           "id": "3:1",
           "options": "yesNoInProgress"
@@ -288,7 +290,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Scrum of scrums in place.",
+          "descriptor": "Teams use a lightweight coordination mechanism when shared outcomes or dependencies require it.",
           "key": -1696622781,
           "id": "3:3",
           "options": "yesNoInProgress"
@@ -344,7 +346,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Meritocracy is used among teams.",
+          "descriptor": "Cross-team decisions use relevant evidence and expertise, with affected teams able to contribute and challenge assumptions.",
           "key": -1005783558,
           "id": "3:11",
           "options": "yesNoInProgress"
@@ -363,8 +365,8 @@
     },
     {
       "section": "Business Partner Working Agreements",
-      "descriptor": "Formalize the processes used to form a collaborative relationship between engineering and business",
-      "raw": "Business Partner Working Agreements Formalize the processes used to form a collaborative relationship between engineering and business",
+      "descriptor": "Evaluate whether product, business, and engineering partners share decisions, evidence, and tradeoffs.",
+      "raw": "Business Partner Working Agreements Evaluate whether product, business, and engineering partners share decisions, evidence, and tradeoffs.",
       "number": -1,
       "entries": [
         {
@@ -425,7 +427,7 @@
         },
         {
           "score": 1,
-          "descriptor": "The project management approach is well-understood and agreed upon",
+          "descriptor": "The project management approach is well-understood and agreed upon.",
           "key": 1190085998,
           "id": "4:8",
           "options": "yesNoInProgress"
@@ -446,7 +448,7 @@
         },
         {
           "score": 2,
-          "descriptor": "The business partner has taken steps to revise their governance (which may be a tollgate process) to align to the development team's agile processes.",
+          "descriptor": "Governance and funding controls support incremental decisions, evidence-based review, and timely delivery.",
           "key": -87598195,
           "id": "4:11",
           "options": "yesNoInProgress"
@@ -472,8 +474,8 @@
     },
     {
       "section": "Release Planning",
-      "descriptor": "Adjust customer appetite via a velocity-based estimate of engineering capacity",
-      "raw": "Release Planning Adjust customer appetite via a velocity-based estimate of engineering capacity",
+      "descriptor": "Evaluate whether release forecasts use evidence, capacity, risk, and outcome-based scope tradeoffs.",
+      "raw": "Release Planning Evaluate whether release forecasts use evidence, capacity, risk, and outcome-based scope tradeoffs.",
       "number": -1,
       "entries": [
         {
@@ -609,8 +611,8 @@
     },
     {
       "section": "Business Goals & Objectives",
-      "descriptor": "Collaboratively build the customer's definition of success for a program",
-      "raw": "Business Goals & Objectives Collaboratively build the customer’s definition of success for a program",
+      "descriptor": "Evaluate whether teams define measurable customer and business outcomes and use them to guide delivery.",
+      "raw": "Business Goals & Objectives Evaluate whether teams define measurable customer and business outcomes and use them to guide delivery.",
       "number": -1,
       "entries": [
         {
@@ -629,7 +631,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There are less than 20 high level goals.",
+          "descriptor": "The organization maintains a limited, coherent set of high-level goals.",
           "key": -2125393830,
           "id": "6:2",
           "options": "yesNoInProgress"
@@ -643,14 +645,14 @@
         },
         {
           "score": 1,
-          "descriptor": "Goals have metrics (KPI's) that will prove business value delivered.",
+          "descriptor": "Goals include measures that can provide credible evidence of customer or business value.",
           "key": 1639509632,
           "id": "6:4",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "There are less than 12 high level goals.",
+          "descriptor": "Teams focus on a small set of explicitly prioritized outcomes and resolve conflicts between them.",
           "key": 889453949,
           "id": "6:5",
           "options": "yesNoInProgress"
@@ -692,7 +694,7 @@
         },
         {
           "score": 2,
-          "descriptor": "Team seeks ways to evaluate the KPI's as soon as reasonably possible after deployment.",
+          "descriptor": "The team evaluates outcome measures as soon as meaningful evidence is available after release.",
           "key": 969309782,
           "id": "6:11",
           "options": "yesNoInProgress"
@@ -746,8 +748,8 @@
     },
     {
       "section": "User Stories",
-      "descriptor": "Express work as small, independent requests for value from a customer persona's perspective",
-      "raw": "User Stories Express work as small, independent requests for value from a customer persona’s perspective",
+      "descriptor": "Evaluate whether backlog items represent small, testable slices of customer value and support meaningful conversation.",
+      "raw": "User Stories Evaluate whether backlog items represent small, testable slices of customer value and support meaningful conversation.",
       "number": -1,
       "entries": [
         {
@@ -759,21 +761,21 @@
         },
         {
           "score": -1,
-          "descriptor": "Development work isplanned out 6 months in advance or longer.",
+          "descriptor": "Detailed development work is fixed six months or more in advance despite changing evidence.",
           "key": -1514344438,
           "id": "7:1",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Development work issplit along process lines orfunctional areas, e.g., design, code, test, integrate, architect, UX etc.",
+          "descriptor": "Work is split into functional handoffs such as design, coding, testing, integration, architecture, and UX.",
           "key": -1041573921,
           "id": "7:2",
           "options": "yesNoInProgress"
         },
         {
           "score": -1,
-          "descriptor": "Development work issplit along architectural lines, e.g., UI, database, data access layer, etc.",
+          "descriptor": "Work is split by technical layer rather than as end-to-end slices of usable value.",
           "key": 588015327,
           "id": "7:3",
           "options": "yesNoInProgress"
@@ -787,63 +789,63 @@
         },
         {
           "score": 1,
-          "descriptor": "User stories can all be easily foundin one place.",
+          "descriptor": "Current backlog items and their status are easy for relevant participants to find.",
           "key": -130995449,
           "id": "7:5",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories areordered by priority in a backlog.",
+          "descriptor": "Backlog items are ordered using explicit value, risk, learning, and dependency considerations.",
           "key": -1986111307,
           "id": "7:6",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories are sized or estimated. (E in INVEST)",
+          "descriptor": "User stories are sized or estimated. (E in INVEST).",
           "key": 604737598,
           "id": "7:7",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST)",
+          "descriptor": "User stories define a complete vertical slice of functionality. (I in INVEST).",
           "key": 1862383731,
           "id": "7:8",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories contain acceptance criteria. (T in INVEST)",
+          "descriptor": "User stories contain acceptance criteria. (T in INVEST).",
           "key": 678092195,
           "id": "7:9",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories are a starting point for a conversation and there is evidence that the team refines or rewrites user stories. (N in INVEST)",
+          "descriptor": "User stories are a starting point for a conversation and there is evidence that the team refines or rewrites user stories. (N in INVEST).",
           "key": -13868428,
           "id": "7:10",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories have a narrative around business value. (V in INVEST)",
+          "descriptor": "User stories have a narrative around business value. (V in INVEST).",
           "key": 608703510,
           "id": "7:11",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User stories are all small enough to be finished in a sprint. (S in INVEST)",
+          "descriptor": "User stories are all small enough to be finished in a sprint. (S in INVEST).",
           "key": -723318666,
           "id": "7:12",
           "options": "yesNoInProgress"
         },
         {
           "score": 1,
-          "descriptor": "User storiesfollow a standard form such as 'In order to <business value description>, As a <persona>, I want <feature>.",
+          "descriptor": "Backlog items express the user, intended outcome, and need when that format improves shared understanding.",
           "key": 1712016642,
           "id": "7:13",
           "options": "yesNoInProgress"
@@ -924,7 +926,7 @@
         },
         {
           "score": 1,
-          "descriptor": "At least one of the following valuable project status indicators is available to the team AND to in-house visitors:Release Plan & Road BlocksBurn Up & VelocityStory Card WallUnit Test & Acceptance Test CoverageCI Metrics",
+          "descriptor": "At least one of the following valuable project status indicators is available to the team AND to in-house visitors:Release Plan & Road BlocksBurn Up & VelocityStory Card WallUnit Test & Acceptance Test CoverageCI Metrics.",
           "key": 796882616,
           "id": "8:3",
           "options": "yesNoInProgress"
@@ -938,21 +940,21 @@
         },
         {
           "score": 2,
-          "descriptor": "Some advanced examples of information radiators are used - like for instance;Flow of information is centered around the workspace. The walls should tell a story to the team and customerCharts track everything from future product requests to fully-tested stories",
+          "descriptor": "Some advanced examples of information radiators are used - like for instance;Flow of information is centered around the workspace. The walls should tell a story to the team and customerCharts track everything from future product requests to fully-tested stories.",
           "key": -1625341927,
           "id": "8:5",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Other charts are available and accurate - may include;Organizational Value stream mapProgram Demand ManagementPersonas / Persona Maps",
+          "descriptor": "Other charts are available and accurate - may include;Organizational Value stream mapProgram Demand ManagementPersonas / Persona Maps.",
           "key": 718858293,
           "id": "8:6",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "TBD",
+          "descriptor": "Information radiators evolve with decision needs and combine delivery, quality, customer-outcome, and system-health evidence where relevant.",
           "key": 55419563,
           "id": "8:7",
           "options": "yesNoInProgress"
@@ -964,8 +966,8 @@
     },
     {
       "section": "Learning and Development",
-      "descriptor": "Build a culture of sharing and growth while maintaining focus on T-Shaped people",
-      "raw": "Learning and Development Build a culture of sharing and growth while maintaining focus on T-Shaped people",
+      "descriptor": "Evaluate whether the organization builds capability through learning, knowledge sharing, and reduced skill bottlenecks.",
+      "raw": "Learning and Development Evaluate whether the organization builds capability through learning, knowledge sharing, and reduced skill bottlenecks.",
       "number": -1,
       "entries": [
         {
@@ -1080,8 +1082,8 @@
     },
     {
       "section": "Sprint Planning",
-      "descriptor": "Meet to determine which user stories will be taken into the sprint backlog",
-      "raw": "Sprint Planning Meet to determine which user stories will be taken into the sprint backlog",
+      "descriptor": "Evaluate whether teams establish a realistic sprint goal and select a coherent, achievable body of work.",
+      "raw": "Sprint Planning Evaluate whether teams establish a realistic sprint goal and select a coherent, achievable body of work.",
       "number": -1,
       "entries": [
         {
@@ -1114,7 +1116,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Product owner participates in the planning.",
+          "descriptor": "Product Owner participates in the planning.",
           "key": 80023089,
           "id": "10:4",
           "options": "yesNoInProgress"
@@ -1196,8 +1198,8 @@
     },
     {
       "section": "Backlog Refinement",
-      "descriptor": "Meet frequently to keep the backlog up-to-date and ready for the next sprint",
-      "raw": "Backlog Refinement Meet frequently to keep the backlog up-to-date and ready for the next sprint",
+      "descriptor": "Evaluate whether teams continuously clarify, split, validate, and order near-term work.",
+      "raw": "Backlog Refinement Evaluate whether teams continuously clarify, split, validate, and order near-term work.",
       "number": -1,
       "entries": [
         {
@@ -1263,8 +1265,8 @@
     },
     {
       "section": "Daily Standup",
-      "descriptor": "Meet briefly to share progress made against the sprint backlog",
-      "raw": "Daily Standup Meet briefly to share progress made against the sprint backlog",
+      "descriptor": "Evaluate whether the team inspects progress toward its goal daily and adapts its plan when needed.",
+      "raw": "Daily Standup Evaluate whether the team inspects progress toward its goal daily and adapts its plan when needed.",
       "number": -1,
       "entries": [
         {
@@ -1390,31 +1392,31 @@
       },
       "section-sprint": {
         "section": "Sprint Demo",
-        "descriptor": "Confirm that sprint output meets customer expectations and gather feedback",
-        "raw": "Sprint Demo Confirm that sprint output meets customer expectations and gather feedback",
+        "descriptor": "Evaluate whether teams inspect usable outcomes with relevant stakeholders and turn feedback into decisions.",
+        "raw": "Sprint Demo Evaluate whether teams inspect usable outcomes with relevant stakeholders and turn feedback into decisions.",
         "number": -1,
         "entries": [
           "There is no clear indication of working software.",
-          "0",
-          "44",
-          "444",
+          "0.",
+          "44.",
+          "444.",
           "Demonstrationalways takes place.",
           "Feedback is captured.",
           "The Product Owner is present.",
           "Team knows the stories to demonstrate, and they are complete.",
           "Effective time management allow team to complete demonstration of planned stories within the meeting timebox.",
-          "1",
+          "1.",
           "~",
-          "444",
-          "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented",
+          "444.",
+          "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented.",
           "Stories are accepted and approved by Product Owner in order for stories to make it to the demo.",
           "Demonstration is planned in advance and demoed features clearly work.",
           "Demonstration uses realistic data.",
           "Demonstration only shows new features, unless old features are necessary to provide context.",
-          "2",
+          "2.",
           "Demonstrationsare well scripted with a value-based story line.",
           "Majority of stakeholders get to see the demo. For example, this may be achieved by multiple demos or recording.",
-          "3",
+          "3.",
           "Product Ownerarticulates on how sprint results align to business goals & objectives.",
           "Product Owner finds ways of maximizing business participation.",
           ""
@@ -1422,97 +1424,97 @@
       },
       "section-retro": {
         "section": "Retrospective",
-        "descriptor": "Team drives their own, effective process of looking for opportunities to improve",
-        "raw": "Retrospective Team drives their own, effective process of looking for opportunities to improve",
+        "descriptor": "Evaluate whether the team regularly identifies, owns, and verifies meaningful improvements.",
+        "raw": "Retrospective Evaluate whether the team regularly identifies, owns, and verifies meaningful improvements.",
         "number": -1,
         "entries": [
-          "No sprint retrospective held",
+          "No sprint retrospective held.",
           "When retrospectives are held, the same topics resurface again and again because problems are not being solved.",
-          "0",
+          "0.",
           "Retrospectives are held every sprint.",
-          "1",
+          "1.",
           "Retrospectives generate a list of pluses and deltas for improvement action.",
           "There is a list of who is assigned to each action item and be accountable for the task.",
           "Problems identified in the retrospective have resulted in a root cause analysis or have been followed by change to the team's set of working agreements.",
           "During the retrospective (or at least once per sprint) the team reviews performance metrics such as velocity, quality, and progress.",
           "Retrospective action items are followed up in subsequent retrospectives.",
           "Retrospectives identify learning & development opportunities.",
-          "2",
+          "2.",
           "Retrospectives have flexibility so that a specific topic may be addressed and solved in the session.",
-          "3",
+          "3.",
           "This higher order of agility around retrospectives describes an organization where best lessons learned and best practices resulting from retrospective activities are rapidly shared and implemented, where appropriate, across all teams.",
           ""
         ]
       },
       "section-unit": {
         "section": "Unit Testing",
-        "descriptor": "Write fast and durable tests to ensure independent units of code continue to work as intended",
-        "raw": "Unit Testing Write fast and durable tests to ensure independent units of code continue to work as intended",
+        "descriptor": "Evaluate whether fast, reliable unit tests support design, change safety, and rapid feedback.",
+        "raw": "Unit Testing Evaluate whether fast, reliable unit tests support design, change safety, and rapid feedback.",
         "number": -1,
         "entries": [
           "The team does not understand or value unit testing.",
-          "0",
+          "0.",
           "Developers write unit tests during a sprint for some stories.",
-          "There is an awareness ofmocks, stubs and test doublesand some use of them in tests.",
-          "1",
+          "Developers use test doubles selectively when they improve isolation without hiding important integration behavior.",
+          "1.",
           "The unit tests always isolate the functionality under test, hence a failing test pinpoints a problem.",
           "The unit tests are part of the CI build.",
-          "2",
-          "Tests are independent, can be run in anyorder, and don't share test data.",
+          "2.",
+          "Unit tests are isolated, order-independent, and do not depend on shared mutable test data.",
           "The team values fast and durable tests.",
           "The team recognizes the value of BDD in the emerging design and the prevention of waste by only building functionality that is required (YAGNI).",
           "The team has a standard mocking framework that they use for all mocks, stubs, doubles.",
           "The entire team recognizes the value of refactoring of unit tests.",
-          "3",
-          "TBD",
+          "3.",
+          "The team continuously improves its daily coordination using evidence about progress, flow, and impediments.",
           ""
         ]
       },
       "section-automated": {
         "section": "Automated Acceptance Testing",
-        "descriptor": "Define rich acceptance criteria in plain language",
-        "raw": "Automated Acceptance Testing Define rich acceptance criteria in plain language",
+        "descriptor": "Evaluate whether executable examples and acceptance tests provide shared, trustworthy evidence of behavior.",
+        "raw": "Automated Acceptance Testing Evaluate whether executable examples and acceptance tests provide shared, trustworthy evidence of behavior.",
         "number": -1,
         "entries": [
           "~",
           "Heavy post development Test Case suite generation culture followed by a UAT phase.",
-          "0",
+          "0.",
           "Team understands BDD conceptually.",
-          "1",
-          "44",
+          "1.",
+          "44.",
           "Test cases utilize BDD style specifications.",
           "User stories have BDD style acceptance criteria, which are leveraged for QA (could be manual or automated testing).",
-          "The Three Amigo's have collective ownership of the testing approach.",
-          "2",
+          "Product, engineering, and testing perspectives jointly shape examples and the testing approach.",
+          "2.",
           "User stories are rich in Acceptance Criteria illustrated by example(s) that have corresponding automated (acceptance/regression) test suites.",
           "These tests are developed in parallel to story development by QA using our standard tools – Karate and Playwright.",
-          "Tests are peer-reviewed and managed like code",
+          "Tests are peer-reviewed and managed like code.",
           "These tests are kept fresh with newer richer examples with the growth of codebase and are frequently reviewed by the business.",
-          "3",
+          "3.",
           "Acceptance Criteria generated by the business with rich example(s) are the core of user stories.",
           ""
         ]
       },
       "section-refactor": {
         "section": "Refactoring",
-        "descriptor": "Consistently rework code to reduce technical debt",
-        "raw": "Refactoring Consistently rework code to reduce technical debt",
+        "descriptor": "Evaluate whether teams continuously improve internal design while preserving observable behavior.",
+        "raw": "Refactoring Evaluate whether teams continuously improve internal design while preserving observable behavior.",
         "number": -1,
         "entries": [
           "The value of the continuous improvement of the design of the code is not understood by the team.",
-          "0",
+          "0.",
           "There is a general understanding of what refactoring is.",
-          "1",
+          "1.",
           "The team knows how to use the IDE tools for refactoring.",
           "The team understands refactoring and how to apply it.",
           "Refactoring is applied to targeted problem areas.",
           "Static code analysis metrics are used to target areas in the code base for refactoring.",
-          "2",
+          "2.",
           "Refactoring is applied consistently across the code base.",
           "Static code analysis thresholds are a gating item for the definition of a successful build.",
           "There is a technical debt list that is used to prioritize refactoring activities with new feature development or other sustaining activities.",
           "The team refactors tests as well as code (all code artifacts – Models, Views, Controllers, DB Schema, Stored Procedures, HTML, CSS, etc).",
-          "3",
+          "3.",
           "Design patterns such as the SOLID principles are applied to guide improvement.",
           "Refactoring enables emergent design.",
           ""
@@ -1520,59 +1522,59 @@
       },
       "section-pair": {
         "section": "Pair Programming",
-        "descriptor": "Often perform work in pairs to improve quality and limit specialization",
-        "raw": "Pair Programming Often perform work in pairs to improve quality and limit specialization",
+        "descriptor": "Evaluate whether collaborative engineering is used deliberately to improve decisions, quality, and knowledge flow.",
+        "raw": "Pair Programming Evaluate whether collaborative engineering is used deliberately to improve decisions, quality, and knowledge flow.",
         "number": -1,
         "entries": [
           "No understanding of pair programming or there is concern that It will lower the utilization rate of individual developers.",
-          "0",
+          "0.",
           "~",
           "Random acts of pair programming.",
-          "At least 1 hour per developer per week of pair programming.",
+          "Team members occasionally collaborate in pairs to solve difficult problems or share knowledge.",
           "Pairing happens when an issue arises and there is significant pressure to fix it fast.",
-          "1",
-          "At least 1 hour per developer per day of pair programming.",
+          "1.",
+          "Collaborative engineering is a normal option for complex, risky, or learning-intensive work.",
           "Pair programming includes the navigator and driver, switching roles often.",
           "Pair programming takes place whenever a new person joins the team.",
           "There is some thought by the team to rotate or switch pairs on a regular basis.",
           "Since pair programming results in more intense work, active attention is given to sustainable pace - perhaps the pomodoro technique is employed.",
-          "2",
-          "More than 4 hours of pair programming per day.",
+          "2.",
+          "The team uses pairing or ensemble work when it materially reduces risk, accelerates learning, or improves design decisions.",
           "The team has a working agreement to actively switch pair partners and ensure everyone has a chance to pair with everyone else on the team.",
           "Management encourages pair programming.",
-          "3",
-          "Promiscuous pairing.",
-          "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday.",
+          "3.",
+          "Pairing partners rotate intentionally to spread context and avoid persistent knowledge silos.",
+          "When pairing, participants rotate roles and partners often enough to maintain engagement and broaden knowledge.",
           "Team manages risk and uncertainty for the team by making coding decisions in pairs leading to a higher degree of confidence when problems or solutions are not 100% defined.",
-          "Pair programming is a promoted as part of a desirable environment for potential recruits.",
+          "The organization explains collaborative engineering practices accurately to candidates and supports teams in choosing them.",
           ""
         ]
       },
       "section-design": {
         "section": "Design Simplicity",
-        "descriptor": "Solve problems with the minimum necessary code and limited complexity",
-        "raw": "Design Simplicity Solve problems with the minimum necessary code and limited complexity",
+        "descriptor": "Evaluate whether teams minimize unnecessary complexity and evolve design using evidence.",
+        "raw": "Design Simplicity Evaluate whether teams minimize unnecessary complexity and evolve design using evidence.",
         "number": -1,
         "entries": [
           "Big up-front design that attempts to accommodate all potential future needs.",
           "Team disagrees with YAGNI (You Aren’t Going to Need It).",
           "Team disagrees with evolving design and architecture.",
           "Team does not feel they can update their design / refactor their way to the future - they feel a need to invent everything up front - especially data design.",
-          "0",
+          "0.",
           "Team is aware of YAGNI and evolving design and architecture, and there is some evidence of following these principles.",
           "If there is an external architecture group, then the team has some input on architectural choices.",
-          "1",
+          "1.",
           "Team is aware of low coupling and high cohesion and can find examples in their code base.",
           "Most of the team has some understanding of design patterns and can find examples in their code base.",
           "There is some acceptance by the team that refactoring can be a valuable tool in updating their design with new requirements.",
-          "2",
+          "2.",
           "The team discusses accidental complexity and will make changes to remove it.",
           "Many of the developers embrace single responsibility, design by contract, dependency injection, the Law of Demeter etc.",
-          "3",
+          "3.",
           "~",
           "The team polices each other on YAGNI and are disciplined about implementing only the code to pass the story acceptance tests.",
-          "Spikes are used with each release to introduce new ideas and test architectural decisions.",
-          "All of the developers understand and work to SOLID (https://en.wikipedia.org/wiki/SOLID).",
+          "Teams use time-boxed experiments when uncertainty warrants them and record what was learned.",
+          "Developers apply appropriate design principles and can explain the tradeoffs in the context of their system.",
           "The team values and updates the design documents to ensure we can teach new people and potential customers.",
           "The team actively works to recognize and remove accidental complexity from evolving designs.",
           ""
@@ -1580,185 +1582,185 @@
       },
       "section-definition": {
         "section": "Definition of Done",
-        "descriptor": "Formalize a shared definition of what it means to be truly “done” with a unit of work",
-        "raw": "Definition of Done Formalize a shared definition of what it means to be truly “done” with a unit of work",
+        "descriptor": "Formalize a shared definition of what it means to be truly “done” with a unit of work.",
+        "raw": "Definition of Done Formalize a shared definition of what it means to be truly “done” with a unit of work.",
         "number": -1,
         "entries": [
           "There is no Definition of Done.",
           "There is a Definition of Done that is 'code complete' only.",
-          "Individuals complete work to varying levels of done-ness with no visibility to what work is or is not being completed for each story.",
-          "0",
+          "Individuals complete work to varying levels of completeness with no visibility to what work is or is not being completed for each story.",
+          "0.",
           "There is a reasonable and documented Definition of Done.",
           "Definition of Done is mostly followed.",
-          "1",
-          "Definition of Done was created by the team",
+          "1.",
+          "Definition of Done was created by the team.",
           "Definition of Done documents the breadth of activities necessary for code to be ready for production.",
           "Everyone on the team knows the Definition of Done, follows it consistently and can explain what Done means for their team.",
           "There may be a Release level Definition of Done that captures activities that cannot be achieved in a user story definition of done.",
           "Stories that do not meet the Definition of Done are not accepted and are not demonstrated to the customer.",
-          "2",
+          "2.",
           "~",
           "Definition of Done is reviewed by the team on a regular basis and adjustments / improvements are made as needed.",
           "Debt repayment needed to bring existing code up to an updated Definition of Done enters the backlog as one or more new stories.",
           "Changes to process, infrastructure, teams or organizational structure are made as needed to enable all work to meet the Definition of Done at the story level so any Release level Definition of Done becomes moot.",
-          "3",
-          "Continuous deployment enabled.",
+          "3.",
+          "The Definition of Done is strong enough that qualifying changes can be released safely on demand.",
           ""
         ]
       },
       "section-continous": {
         "section": "Continuous Integration - Legacy",
-        "descriptor": "Bring changes together very frequently to avoid conflicts and speed learning",
-        "raw": "Continuous Integration - Legacy Bring changes together very frequently to avoid conflicts and speed learning",
+        "descriptor": "Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
+        "raw": "Continuous Integration - Legacy Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
         "number": -1,
         "entries": [
           "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
           "Steps to run and configure builds are not captured in any manner.",
           "The build process is considered 'tribal knowledge'.",
-          "0",
+          "0.",
           "Build to a dedicated environment is repeatable and automated.",
           "There is automated unit testing in the build.",
           "State of the build is a responsibility of the team.",
-          "1",
+          "1.",
           "~",
           "Build is automatically triggered.",
-          "Broken builds get fixed within 24 hours.",
+          "A failing mainline build is treated as urgent, with recovery time measured and improved.",
           "There is reporting of code quality, build statistics, and testing results.",
           "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
           "The commit build provides feedback on common build problems in under 10 minutes.",
           "Each team member’s code is pulled regularly (at least once a day) triggering the CI system.",
-          "2",
+          "2.",
           "Build stages (incremental and regression) are linked in order to remove duplication across end-to-end build process.",
           "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
           "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
-          "3",
-          "Builds are done in parallel reducing overall build time.",
+          "3.",
+          "Pipeline stages run in parallel where this safely shortens decision-relevant feedback.",
           "Targeted feedback for corrective measures on failed builds occur across builds.",
-          "Reporting capabilities provide analytics, and cross module comparisons.",
+          "Delivery telemetry helps teams identify trends and choose improvements without ranking teams by context-free comparisons.",
           "There are rollback capabilities for broken builds.",
           ""
         ]
       },
       "section-continous-micro": {
         "section": "Continuous Integration - Microservices",
-        "descriptor": "Bring changes together very frequently to avoid conflicts and speed learning",
-        "raw": "Continuous Integration - Microservices Bring changes together very frequently to avoid conflicts and speed learning",
+        "descriptor": "Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
+        "raw": "Continuous Integration - Microservices Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
         "number": -1,
         "entries": [
           "Build is manually performed, infrequently, custom every time or may be repeatable but static.",
           "Steps to run and configure builds are not captured in any manner.",
           "The build process is considered 'tribal knowledge'.",
-          "0",
+          "0.",
           "Build to a dedicated environment is repeatable and automated.",
           "There is automated unit testing in the build.",
           "State of the build is a responsibility of the team.",
-          "1",
+          "1.",
           "~",
           "Build is automatically triggered.",
-          "Broken builds get fixed within 24 hours.",
+          "A failing mainline build is treated as urgent, with recovery time measured and improved.",
           "There is reporting of code quality, build statistics, and testing results.",
           "If complete regression build runs too long, then the build may be split into (1) Fast, incremental commit build launched for each check-in and (2) Complete regression build with automated functional tests as part of success criteria.",
           "The commit build provides feedback on common build problems in under 10 minutes.",
           "Each team member pushes code regularly (at least once a day) triggering the CI system.",
-          "2",
+          "2.",
           "Build success criteria extend to non-functional considerations - such as architectural breaches, slow tests, and coding standard violations.",
           "Reporting capabilities provide complete transparency across all aspects of code quality, build statistics, and testing results.",
-          "3",
-          "Builds are done in parallel reducing overall build time.",
+          "3.",
+          "Pipeline stages run in parallel where this safely shortens decision-relevant feedback.",
           "Targeted feedback for corrective measures on failed builds occur across builds.",
-          "Reporting capabilities provide analytics, and cross module comparisons.",
+          "Delivery telemetry helps teams identify trends and choose improvements without ranking teams by context-free comparisons.",
           "There are rollback capabilities for broken builds.",
           ""
         ]
       },
       "section-continuous-legacy": {
         "section": "Continuous Delivery - Legacy",
-        "descriptor": "Strive to make the output of every sprint potentially releasable",
-        "raw": "Continuous Delivery - Legacy Strive to make the output of every sprint potentially releasable",
+        "descriptor": "Evaluate whether software can be released safely, repeatably, and on demand.",
+        "raw": "Continuous Delivery - Legacy Evaluate whether software can be released safely, repeatably, and on demand.",
         "number": -1,
         "entries": [
           "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "Deployment is owned by a specific member of the team.",
-          "0",
-          "no",
+          "0.",
+          "no.",
           "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "Software is built in every stage of the deployment pipeline.",
-          "1",
+          "1.",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "State of the deployment is the responsibility of the team.",
           "Binaries are built once, and deployed to multiple environments, as necessary.",
           "Testing and release environment mirror production.",
-          "2",
+          "2.",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
           "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
           "Automation extends to non-server configuration such as networks, and external services.",
-          "3",
-          "Deploy can be made based on limited access to specific target end users.",
+          "3.",
+          "Teams can progressively expose changes to selected users or traffic segments when risk or learning goals warrant it.",
           "Incremental rollback occurs as needed.",
-          "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
+          "Delivery controls support progressive exposure, production telemetry, rapid rollback, and evidence-based release decisions.",
           ""
         ]
       },
       "section-continousMicro": {
         "section": "Continuous Delivery - Microservices",
-        "descriptor": "Strive to make the output of every sprint potentially releasable",
-        "raw": "Continuous Delivery - Microservices Strive to make the output of every sprint potentially releasable",
+        "descriptor": "Evaluate whether software can be released safely, repeatably, and on demand.",
+        "raw": "Continuous Delivery - Microservices Evaluate whether software can be released safely, repeatably, and on demand.",
         "number": -1,
         "entries": [
           "Deployment is manually performed, infrequently custom every time; or may be repeatable but static.",
           "Deployment is owned by a specific member of the team.",
-          "0",
-          "no",
-          "no",
+          "0.",
+          "no.",
+          "no.",
           "Deployment to a dedicated environment is repeatable and automated and triggered on a schedule.",
           "State of the deployment is a responsibility of a role defined for build and release engineer.",
           "Software is built in every stage of the deployment pipeline.",
-          "1",
+          "1.",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the testing feedback cycle.",
           "State of the deployment is the responsibility of the team.",
           "Binaries are built once, and deployed to multiple environments, as necessary.",
           "Testing and release environment mirror production.",
-          "2",
+          "2.",
           "Deployment occurs based on a cycle that is as short as possible while accommodating a full loop of the user feedback cycle.",
           "Deployment can be made on components that allow for targeted features, - allowing for incremental feature releases.",
           "Automation extends to non-server configuration such as networks, and external services.",
-          "3",
-          "Deploy can be made based on limited access to specific target end users.",
+          "3.",
+          "Teams can progressively expose changes to selected users or traffic segments when risk or learning goals warrant it.",
           "Incremental rollback occurs as needed.",
-          "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
+          "Delivery controls support progressive exposure, production telemetry, rapid rollback, and evidence-based release decisions.",
           ""
         ]
       },
       "section-automatedTesting": {
         "section": "Automated Regression Testing",
-        "descriptor": "Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
-        "raw": "Automated Regression Testing Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria ",
+        "descriptor": "Evaluate whether automated regression tests provide fast, reliable evidence that critical behavior still works.",
+        "raw": "Automated Regression Testing Evaluate whether automated regression tests provide fast, reliable evidence that critical behavior still works.",
         "number": -1,
         "entries": [
           "No automated regression tests - it is all done manually.",
           "The team complains that they have tried to get automated functional tests to work in the past, but they say it slows them down and is too expensive for this group to do.",
           "Little to no organizational support for leadership promoting an investment in test automation.",
-          "0",
+          "0.",
           "There is some automated testing, including some in the automated regression build.",
-          "1",
-          "448",
+          "1.",
+          "448.",
           "Automated regression tests complete in less than two hours.",
-          "Code coverage is measured on automated functional tests.",
+          "The team monitors meaningful regression coverage and known risk gaps without treating a single coverage percentage as proof of quality.",
           "All of the tests are included in a CI build and there are rarely test cases commented out or ignored.",
           "The team values automated testing.",
-          "Pipeline includes gating factor to ensure that important code quality metrics don’t backslide",
-          "2",
+          "Pipeline includes gating factor to ensure that important code quality metrics don’t backslide.",
+          "2.",
           "The team agrees that the automated tests are valuable and organize to run them in various CI builds.",
           "They recognize that they can't be run all of the time for each build, so they will be segregated and run at different times.",
-          "There may be time sequences where all of the builds are not running successfully because the tests are failing.",
-          "Sometimes they will allow a small set of tests to be commented out as they are difficult to debug/fix.",
+          "Regression suites are allowed to remain failing long enough that teams lose confidence in their signal.",
+          "Difficult or flaky tests are disabled without a visible owner, risk decision, and time-bounded repair plan.",
           "Similar to automated unit testing, the team understands and works to have fast and reliable automated feature tests.",
           "A smoke test is included with the unit tests to ensure major capabilities continue to work with each check-in.",
-          "3",
+          "3.",
           "Speed and durability are significant concerns, and the team works at writing good and fast tests.",
-          "All the tests are allocated to a CI build to ensure they run at some times.",
-          "The team understand that the automated tests are a real safety net and use them to strive for zero defects to production.",
+          "Every maintained automated test runs on a defined cadence appropriate to the risk it covers.",
+          "The team treats automated tests as one layer of risk control and tracks escaped defects to improve the overall safety system.",
           "Performance and other non-functional requirements are included in the tests.",
           "The tests are structured so that the developers run all unit tests and key functional tests (smoke tests) prior to every check-in.",
           ""
@@ -1766,64 +1768,64 @@
       },
       "section-sourceCode-legacy": {
         "section": "Source Code Management - Legacy",
-        "descriptor": "Employ modern tools to control and manage all items that constitute the application",
-        "raw": "Source Code Management - Legacy Employ modern tools to control and manage all items that constitute the application",
+        "descriptor": "Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
+        "raw": "Source Code Management - Legacy Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
         "number": -1,
         "entries": [
           "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
           "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
           "Code branches are not well understood or managed.",
-          "0",
-          "The team uses a supported SCM for code and tests..",
-          "1",
+          "0.",
+          "The team versions source code, tests, configuration, and delivery automation in a supported repository.",
+          "1.",
           "~",
           "IDE(s) integrate with SCM.",
-          "Developers include meaningful comments in commits.",
+          "Commits are small, coherent, and traceable to their intent and review context.",
           "Build can pull code from repository.",
           "The team checks in at least every couple of days into the mainline trunk.",
           "Mainline branches are protected from inadvertent changes.",
           "Each team member can often merge their code with no merge problems.",
-          "2",
-          "SCM supports merging; optimistic check-ins.",
+          "2.",
+          "The version-control workflow supports frequent integration and makes conflicts visible early.",
           "Build does pull code from repository.",
           "Check-ins are done daily, if not several times per day.",
           "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
           "Production or release branch fixes are always applied consistently to trunk.",
-          "3",
+          "3.",
           "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "Gated check-in's are enforced; all steps passing with improving metrics.",
-          "Branches are used effectively, and merges are are easily supported.",
+          "Protected branches require proportionate automated checks and explicit handling of exceptions.",
+          "Branches are short-lived where practical, and merges are routine rather than high-risk integration events.",
           ""
         ]
       },
       "section-sourcecode-Micro": {
         "section": "Source Code Management - Microservices",
-        "descriptor": "Employ modern tools to control and manage all items that constitute the application",
-        "raw": "Source Code Management - Microservices Employ modern tools to control and manage all items that constitute the application",
+        "descriptor": "Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
+        "raw": "Source Code Management - Microservices Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
         "number": -1,
         "entries": [
           "Traditional schemes based on file-locking and time-sharing or no code repository is used.",
           "Check-ins are not performed in short time-frames, leaving code unprotected and not integrated for long periods of time (greater than a couple of days).",
           "Code branches are not well understood or managed.",
-          "0",
-          "The team uses a supported SCM for code and tests..",
-          "1",
+          "0.",
+          "The team versions source code, tests, configuration, and delivery automation in a supported repository.",
+          "1.",
           "~",
           "IDE(s) integrate with SCM.",
-          "Developers include meaningful comments in commits.",
+          "Commits are small, coherent, and traceable to their intent and review context.",
           "Build can pull code from repository.",
           "The team checks in at least every couple of days into the mainline trunk.",
           "Mainline branches are protected from inadvertent changes.",
           "Each team member can often merge their code with no merge problems.",
-          "2",
-          "SCM supports merging; optimistic check-ins.",
+          "2.",
+          "The version-control workflow supports frequent integration and makes conflicts visible early.",
           "Build does pull code from repository.",
           "Check-ins are done daily, if not several times per day.",
           "Team does not check in code if the build is broken, unless the check-in is to fix the build.",
-          "3",
+          "3.",
           "Commits are logically orchestrated; all development and release collateral is in SCM.",
-          "Gated check-in's are enforced; all steps passing with improving metrics.",
-          "Branches are used effectively, and merges are are easily supported.",
+          "Protected branches require proportionate automated checks and explicit handling of exceptions.",
+          "Branches are short-lived where practical, and merges are routine rather than high-risk integration events.",
           ""
         ]
       },
@@ -1833,7 +1835,7 @@
     },
     {
       "section": "Sprint Demo",
-      "descriptor": "Confirm that sprint output meets customer expectations and gather feedback",
+      "descriptor": "Evaluate whether teams inspect usable outcomes with relevant stakeholders and turn feedback into decisions.",
       "number": -1,
       "entries": [
         {
@@ -1880,7 +1882,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented",
+          "descriptor": "Demonstration is at an appropriate level for the stakeholders,focused on how product is used instead of how it is implemented.",
           "key": -282210512,
           "id": "13:6",
           "options": "yesNoInProgress"
@@ -1948,12 +1950,12 @@
     },
     {
       "section": "Retrospective",
-      "descriptor": "Team drives their own, effective process of looking for opportunities to improve",
+      "descriptor": "Evaluate whether the team regularly identifies, owns, and verifies meaningful improvements.",
       "number": -1,
       "entries": [
         {
           "score": -1,
-          "descriptor": "No sprint retrospective held",
+          "descriptor": "No sprint retrospective held.",
           "key": -1151344100,
           "id": "14:0",
           "options": "yesNoInProgress"
@@ -2035,7 +2037,7 @@
     },
     {
       "section": "Unit Testing",
-      "descriptor": "Write fast and durable tests to ensure independent units of code continue to work as intended",
+      "descriptor": "Evaluate whether fast, reliable unit tests support design, change safety, and rapid feedback.",
       "number": -1,
       "entries": [
         {
@@ -2054,7 +2056,7 @@
         },
         {
           "score": 1,
-          "descriptor": "There is an awareness ofmocks, stubs and test doublesand some use of them in tests.",
+          "descriptor": "Developers use test doubles selectively when they improve isolation without hiding important integration behavior.",
           "key": 615372685,
           "id": "15:2",
           "options": "yesNoInProgress"
@@ -2075,7 +2077,7 @@
         },
         {
           "score": 2,
-          "descriptor": "Tests are independent, can be run in anyorder, and don't share test data.",
+          "descriptor": "Unit tests are isolated, order-independent, and do not depend on shared mutable test data.",
           "key": 2098609526,
           "id": "15:5",
           "options": "yesNoInProgress"
@@ -2110,7 +2112,7 @@
         },
         {
           "score": 3,
-          "descriptor": "TBD",
+          "descriptor": "Fast, reliable unit tests give developers confidence to refactor, evolve design, and detect regressions close to their source.",
           "key": -755511390,
           "id": "15:10",
           "options": "yesNoInProgress"
@@ -2122,7 +2124,7 @@
     },
     {
       "section": "Automated Acceptance Testing",
-      "descriptor": "Define rich acceptance criteria in plain language",
+      "descriptor": "Evaluate whether executable examples and acceptance tests provide shared, trustworthy evidence of behavior.",
       "number": -1,
       "entries": [
         {
@@ -2155,7 +2157,7 @@
         },
         {
           "score": 1,
-          "descriptor": "The Three Amigo's have collective ownership of the testing approach.",
+          "descriptor": "Product, engineering, and testing perspectives jointly shape examples and the testing approach.",
           "key": -869226944,
           "id": "16:4",
           "options": "yesNoInProgress"
@@ -2169,14 +2171,14 @@
         },
         {
           "score": 2,
-          "descriptor": "These tests are developed in parallel to story development by QA using our standard tools - Karate and Playwright.",
+          "descriptor": "Acceptance tests are developed alongside the behavior by the people best positioned to clarify, implement, and verify it.",
           "key": 437920594,
           "id": "16:6",
           "options": "yesNoInProgress"
         },
         {
           "score": 2,
-          "descriptor": "Tests are peer-reviewed and managed like code",
+          "descriptor": "Tests are peer-reviewed and managed like code.",
           "key": -79105908,
           "id": "16:7",
           "options": "yesNoInProgress"
@@ -2202,7 +2204,7 @@
     },
     {
       "section": "Refactoring",
-      "descriptor": "Consistently rework code to reduce technical debt",
+      "descriptor": "Evaluate whether teams continuously improve internal design while preserving observable behavior.",
       "number": -1,
       "entries": [
         {
@@ -2296,7 +2298,7 @@
     },
     {
       "section": "Pair Programming",
-      "descriptor": "Often perform work in pairs to improve quality and limit specialization",
+      "descriptor": "Evaluate whether collaborative engineering is used deliberately to improve decisions, quality, and knowledge flow.",
       "number": -1,
       "entries": [
         {
@@ -2315,7 +2317,7 @@
         },
         {
           "score": 1,
-          "descriptor": "At least 1 hour per developer per week of pair programming.",
+          "descriptor": "Team members occasionally collaborate in pairs to solve difficult problems or share knowledge.",
           "key": -1044580570,
           "id": "18:2",
           "options": "yesNoInProgress"
@@ -2329,7 +2331,7 @@
         },
         {
           "score": 1,
-          "descriptor": "At least 1 hour per developer per day of pair programming.",
+          "descriptor": "Collaborative engineering is a normal option for complex, risky, or learning-intensive work.",
           "key": 503068270,
           "id": "18:4",
           "options": "yesNoInProgress"
@@ -2364,7 +2366,7 @@
         },
         {
           "score": 2,
-          "descriptor": "More than 4 hours of pair programming per day.",
+          "descriptor": "The team uses pairing or ensemble work when it materially reduces risk, accelerates learning, or improves design decisions.",
           "key": 247655293,
           "id": "18:9",
           "options": "yesNoInProgress"
@@ -2385,14 +2387,14 @@
         },
         {
           "score": 3,
-          "descriptor": "Promiscuous pairing.",
+          "descriptor": "Pairing partners rotate intentionally to spread context and avoid persistent knowledge silos.",
           "key": -705068152,
           "id": "18:12",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "In addition to more than 4 hours of pair programming, regularly switching navigator and driver roles without pairing with the same partner everyday.",
+          "descriptor": "When pairing, participants rotate roles and partners often enough to maintain engagement and broaden knowledge.",
           "key": -288302154,
           "id": "18:13",
           "options": "yesNoInProgress"
@@ -2406,7 +2408,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Pair programming is a promoted as part of a desirable environment for potential recruits.",
+          "descriptor": "The organization explains collaborative engineering practices accurately to candidates and supports teams in choosing them.",
           "key": 1923438816,
           "id": "18:15",
           "options": "yesNoInProgress"
@@ -2418,7 +2420,7 @@
     },
     {
       "section": "Design Simplicity",
-      "descriptor": "Solve problems with the minimum necessary code and limited complexity",
+      "descriptor": "Evaluate whether teams minimize unnecessary complexity and evolve design using evidence.",
       "number": -1,
       "entries": [
         {
@@ -2507,14 +2509,14 @@
         },
         {
           "score": 3,
-          "descriptor": "Spikes are used with each release to introduce new ideas and test architectural decisions.",
+          "descriptor": "Teams use time-boxed experiments when uncertainty warrants them and record what was learned.",
           "key": 111501338,
           "id": "19:12",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "All of the developers understand and work to SOLID (https://en.wikipedia.org/wiki/SOLID).",
+          "descriptor": "Developers apply appropriate design principles and can explain the tradeoffs in the context of their system.",
           "key": 19372086,
           "id": "19:13",
           "options": "yesNoInProgress"
@@ -2540,7 +2542,7 @@
     },
     {
       "section": "Definition of Done",
-      "descriptor": "Formalize a shared definition of what it means to be truly \"done\" with a unit of work",
+      "descriptor": "Evaluate whether a shared Definition of Done produces integrated, usable, and releasable increments.",
       "number": -1,
       "entries": [
         {
@@ -2559,7 +2561,7 @@
         },
         {
           "score": -1,
-          "descriptor": "Individuals complete work to varying levels of done-ness with no visibility to what work is or is not being completed for each story.",
+          "descriptor": "Individuals complete work to varying levels of completeness with no visibility to what work is or is not being completed for each story.",
           "key": -15908355,
           "id": "20:2",
           "options": "yesNoInProgress"
@@ -2580,7 +2582,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Definition of Done was created by the team",
+          "descriptor": "Definition of Done was created by the team.",
           "key": 1936740098,
           "id": "20:5",
           "options": "yesNoInProgress"
@@ -2636,7 +2638,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Continuous deployment enabled.",
+          "descriptor": "The Definition of Done is strong enough that qualifying changes can be released safely on demand.",
           "key": 758810549,
           "id": "20:13",
           "options": "yesNoInProgress"
@@ -2648,7 +2650,7 @@
     },
     {
       "section": "Continuous Integration - Legacy",
-      "descriptor": "Bring changes together very frequently to avoid conflicts and speed learning",
+      "descriptor": "Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
       "number": -1,
       "entries": [
         {
@@ -2702,7 +2704,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Broken builds get fixed within 24 hours.",
+          "descriptor": "A failing mainline build is treated as urgent, with recovery time measured and improved.",
           "key": 1362021287,
           "id": "21:7",
           "options": "yesNoInProgress"
@@ -2758,7 +2760,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Builds are done in parallel reducing overall build time.",
+          "descriptor": "Pipeline stages run in parallel where this safely shortens decision-relevant feedback.",
           "key": -76491443,
           "id": "21:15",
           "options": "yesNoInProgress"
@@ -2772,7 +2774,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
+          "descriptor": "Delivery telemetry helps teams identify trends and choose improvements without ranking teams by context-free comparisons.",
           "key": 1868732307,
           "id": "21:17",
           "options": "yesNoInProgress"
@@ -2791,7 +2793,7 @@
     },
     {
       "section": "Continuous Integration - Microservices",
-      "descriptor": "Bring changes together very frequently to avoid conflicts and speed learning",
+      "descriptor": "Evaluate whether small changes are integrated frequently with fast, trustworthy automated feedback.",
       "number": -1,
       "entries": [
         {
@@ -2845,7 +2847,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Broken builds get fixed within 24 hours.",
+          "descriptor": "A failing mainline build is treated as urgent, with recovery time measured and improved.",
           "key": -494256480,
           "id": "22:7",
           "options": "yesNoInProgress"
@@ -2894,7 +2896,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Builds are done in parallel reducing overall build time.",
+          "descriptor": "Pipeline stages run in parallel where this safely shortens decision-relevant feedback.",
           "key": -1864288698,
           "id": "22:14",
           "options": "yesNoInProgress"
@@ -2908,7 +2910,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Reporting capabilities provide analytics, and cross module comparisons.",
+          "descriptor": "Delivery telemetry helps teams identify trends and choose improvements without ranking teams by context-free comparisons.",
           "key": 1711736186,
           "id": "22:16",
           "options": "yesNoInProgress"
@@ -2927,7 +2929,7 @@
     },
     {
       "section": "Continuous Delivery - Legacy",
-      "descriptor": "Strive to make the output of every sprint potentially releasable",
+      "descriptor": "Evaluate whether software can be released safely, repeatably, and on demand.",
       "number": -1,
       "entries": [
         {
@@ -3016,7 +3018,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Deploy can be made based on limited access to specific target end users.",
+          "descriptor": "Teams can progressively expose changes to selected users or traffic segments when risk or learning goals warrant it.",
           "key": 1091675311,
           "id": "23:12",
           "options": "yesNoInProgress"
@@ -3030,7 +3032,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
+          "descriptor": "Delivery controls support progressive exposure, production telemetry, rapid rollback, and evidence-based release decisions.",
           "key": -1143884170,
           "id": "23:14",
           "options": "yesNoInProgress"
@@ -3042,7 +3044,7 @@
     },
     {
       "section": "Continuous Delivery - Microservices",
-      "descriptor": "Strive to make the output of every sprint potentially releasable",
+      "descriptor": "Evaluate whether software can be released safely, repeatably, and on demand.",
       "number": -1,
       "entries": [
         {
@@ -3131,7 +3133,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Deploy can be made based on limited access to specific target end users.",
+          "descriptor": "Teams can progressively expose changes to selected users or traffic segments when risk or learning goals warrant it.",
           "key": -931107668,
           "id": "24:12",
           "options": "yesNoInProgress"
@@ -3145,7 +3147,7 @@
         },
         {
           "score": 3,
-          "descriptor": "Continuous delivery environment collects data about feature usage and allows for blue green testing before full feature release in production.",
+          "descriptor": "Delivery controls support progressive exposure, production telemetry, rapid rollback, and evidence-based release decisions.",
           "key": -2092473165,
           "id": "24:14",
           "options": "yesNoInProgress"
@@ -3157,7 +3159,7 @@
     },
     {
       "section": "Automated Regression Testing",
-      "descriptor": "Build a fast & durable suite of tests ensuring features continue to meet acceptance criteria",
+      "descriptor": "Evaluate whether automated regression tests provide fast, reliable evidence that critical behavior still works.",
       "number": -1,
       "entries": [
         {
@@ -3197,7 +3199,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Code coverage is measured on automated functional tests.",
+          "descriptor": "The team monitors meaningful regression coverage and known risk gaps without treating a single coverage percentage as proof of quality.",
           "key": -347360573,
           "id": "25:5",
           "options": "yesNoInProgress"
@@ -3218,7 +3220,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Pipeline includes gating factor to ensure that important code quality metrics don't backslide",
+          "descriptor": "Pipeline includes gating factor to ensure that important code quality metrics don't backslide.",
           "key": 1743554994,
           "id": "25:8",
           "options": "yesNoInProgress"
@@ -3238,15 +3240,15 @@
           "options": "yesNoInProgress"
         },
         {
-          "score": 2,
-          "descriptor": "There may be time sequences where all of the builds are not running successfully because the tests are failing.",
+          "score": -1,
+          "descriptor": "Regression suites are allowed to remain failing long enough that teams lose confidence in their signal.",
           "key": 970689254,
           "id": "25:11",
           "options": "yesNoInProgress"
         },
         {
-          "score": 2,
-          "descriptor": "Sometimes they will allow a small set of tests to be commented out as they are difficult to debug/fix.",
+          "score": -1,
+          "descriptor": "Difficult or flaky tests are disabled without a visible owner, risk decision, and time-bounded repair plan.",
           "key": 478302336,
           "id": "25:12",
           "options": "yesNoInProgress"
@@ -3274,14 +3276,14 @@
         },
         {
           "score": 3,
-          "descriptor": "All the tests are allocated to a CI build to ensure they run at some times.",
+          "descriptor": "Every maintained automated test runs on a defined cadence appropriate to the risk it covers.",
           "key": -1807084772,
           "id": "25:16",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "The team understand that the automated tests are a real safety net and use them to strive for zero defects to production.",
+          "descriptor": "The team treats automated tests as one layer of risk control and tracks escaped defects to improve the overall safety system.",
           "key": -1786372677,
           "id": "25:17",
           "options": "yesNoInProgress"
@@ -3307,7 +3309,7 @@
     },
     {
       "section": "Source Code Management - Legacy",
-      "descriptor": "Employ modern tools to control and manage all items that constitute the application",
+      "descriptor": "Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
       "number": -1,
       "entries": [
         {
@@ -3333,7 +3335,7 @@
         },
         {
           "score": 1,
-          "descriptor": "The team uses a supported SCM for code and tests..",
+          "descriptor": "The team versions source code, tests, configuration, and delivery automation in a supported repository.",
           "key": -1774829701,
           "id": "26:3",
           "options": "yesNoInProgress"
@@ -3347,7 +3349,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Developers include meaningful comments in commits.",
+          "descriptor": "Commits are small, coherent, and traceable to their intent and review context.",
           "key": 1067143293,
           "id": "26:5",
           "options": "yesNoInProgress"
@@ -3382,7 +3384,7 @@
         },
         {
           "score": 2,
-          "descriptor": "SCM supports merging; optimistic check-ins.",
+          "descriptor": "The version-control workflow supports frequent integration and makes conflicts visible early.",
           "key": -966377076,
           "id": "26:10",
           "options": "yesNoInProgress"
@@ -3424,14 +3426,14 @@
         },
         {
           "score": 3,
-          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
+          "descriptor": "Protected branches require proportionate automated checks and explicit handling of exceptions.",
           "key": -1604029502,
           "id": "26:16",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "Branches are used effectively, and merges are are easily supported.",
+          "descriptor": "Branches are short-lived where practical, and merges are routine rather than high-risk integration events.",
           "key": -1028175933,
           "id": "26:17",
           "options": "yesNoInProgress"
@@ -3443,7 +3445,7 @@
     },
     {
       "section": "Source Code Management - Microservices",
-      "descriptor": "Employ modern tools to control and manage all items that constitute the application",
+      "descriptor": "Evaluate whether all software and delivery artifacts are versioned, traceable, protected, and easy to integrate.",
       "number": -1,
       "entries": [
         {
@@ -3469,7 +3471,7 @@
         },
         {
           "score": 1,
-          "descriptor": "The team uses a supported SCM for code and tests..",
+          "descriptor": "The team versions source code, tests, configuration, and delivery automation in a supported repository.",
           "key": -1155252016,
           "id": "27:3",
           "options": "yesNoInProgress"
@@ -3483,7 +3485,7 @@
         },
         {
           "score": 1,
-          "descriptor": "Developers include meaningful comments in commits.",
+          "descriptor": "Commits are small, coherent, and traceable to their intent and review context.",
           "key": 1686720978,
           "id": "27:5",
           "options": "yesNoInProgress"
@@ -3518,7 +3520,7 @@
         },
         {
           "score": 2,
-          "descriptor": "SCM supports merging; optimistic check-ins.",
+          "descriptor": "The version-control workflow supports frequent integration and makes conflicts visible early.",
           "key": -1324358185,
           "id": "27:10",
           "options": "yesNoInProgress"
@@ -3553,14 +3555,14 @@
         },
         {
           "score": 3,
-          "descriptor": "Gated check-in's are enforced; all steps passing with improving metrics.",
+          "descriptor": "Protected branches require proportionate automated checks and explicit handling of exceptions.",
           "key": 2110374605,
           "id": "27:15",
           "options": "yesNoInProgress"
         },
         {
           "score": 3,
-          "descriptor": "Branches are used effectively, and merges are are easily supported.",
+          "descriptor": "Branches are short-lived where practical, and merges are routine rather than high-risk integration events.",
           "key": 769358606,
           "id": "27:16",
           "options": "yesNoInProgress"
@@ -3574,11 +3576,11 @@
   "sectionScoreDefault": 0,
   "answerKeys": {
     "yesNoInProgress": {
-      "meta-name": "Yes, No, In Progress",
-      "meta-description": "Three options to determine if an action is not started, in progress, or completed",
       "0": "No",
       "1": "In Progress",
-      "2": "Yes"
+      "2": "Yes",
+      "meta-name": "Yes, No, In Progress",
+      "meta-description": "Three options to determine if an action is not started, in progress, or completed"
     }
   }
 }
